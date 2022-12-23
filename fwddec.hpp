@@ -2,6 +2,7 @@
 
 namespace Item
 {
+	enum class eItemSlot : u8;
 	class ItemSlot;
 	class KartItem;
 }

@@ -1,6 +1,6 @@
 #pragma once
 #include "../types.hpp"
-#include "../fwddec.hpp"
+#include "eItemSlot.hpp"
 #include "../Kart/InfoProxy.hpp"
 #include "../Kart/Vehicle.hpp"
 
