@@ -11,7 +11,9 @@ namespace Kart
 		u8 m_0x99[4];
 		bool m_is_net_send;
 		bool m_is_net_recv;
-		u8 m_0x9F[61];
+		u8 m_0x9F[4];
+		bool m_is_intangible;
+		u8 m_0xA4[56];
 	};
 	static_assert(sizeof(VehicleBase) == 0xDC);
 }
