@@ -20,3 +20,8 @@ namespace Kart
 	class VehicleMove;
 	class VehicleReact;
 }
+
+namespace RaceSys
+{
+	class LapRankChecker;
+}
