@@ -21,6 +21,11 @@ namespace Kart
 	class VehicleReact;
 }
 
+namespace Object
+{
+    class ActorVisitor;
+}
+
 namespace RaceSys
 {
 	class LapRankChecker;
