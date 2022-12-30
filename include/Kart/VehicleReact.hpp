@@ -6,6 +6,17 @@ namespace Kart
 	class VehicleReact : public VehicleMove
 	{
 	public:
+		enum class EAcdType : u32
+		{
+
+		};
+		
+		enum class ECallType : u32
+		{
+
+		};
+
+	public:
 		u8 m_0x1214[40];
 	};
 	static_assert(sizeof(VehicleReact) == 0x123C);
