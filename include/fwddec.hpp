@@ -12,6 +12,7 @@ namespace Kart
 {
 	class InfoProxy;
 	class Rigid;
+	class Unit;
 	class Vehicle;
 	class VehicleBase;
 	class VehicleControl;
