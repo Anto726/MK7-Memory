@@ -6,7 +6,9 @@ namespace Kart
 	class Vehicle : public VehicleReact
 	{
 	public:
-		u8 m_0x123C[1192];
+		u8 m_0x123C[8];
+		s32 m_respawn_frames;
+		u8 m_0x1248[1180];
 	};
 	static_assert(sizeof(Vehicle) == 0x16E4);
 }
