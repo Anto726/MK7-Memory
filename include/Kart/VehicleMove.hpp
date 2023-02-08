@@ -6,7 +6,9 @@ namespace Kart
 	class VehicleMove : public VehicleControlAI
 	{
 	public:
-		u8 m_0xC28[972];
+		u8 m_0xC28[736];
+		float m_miniturbo_charge;
+		u8 m_0xF0C[232];
 		s32 m_star_frames;
 		s32 m_ink_frames;
 		s32 m_anim_frames;
