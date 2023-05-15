@@ -4,12 +4,14 @@
 namespace Item
 {
 	enum class eItemSlot : u8;
+	class ItemDirector;
 	class ItemSlot;
 	class KartItem;
 }
 
 namespace Kart
 {
+	class Director;
 	class InfoProxy;
 	class Rigid;
 	class Unit;
@@ -24,10 +26,25 @@ namespace Kart
 
 namespace Object
 {
+	class Actor;
+	class ActorEngine;
     class ActorVisitor;
+	class CharacterEngine;
+	enum class EEngineType : u32;
 }
 
 namespace RaceSys
 {
 	class LapRankChecker;
+	class ModeManagerBase;
+	class RaceDirector;
+}
+
+namespace System
+{
+	class EngineHolder;
+	class RootScene;
+	class RootSystem;
+	class Scene;
+	class SceneManager;
 }

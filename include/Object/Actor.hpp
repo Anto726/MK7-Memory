@@ -36,4 +36,5 @@ namespace Object
 	public:
 		Actor *m_parent;
 	};
+	static_assert(sizeof(Actor) == 0x8);
 }
