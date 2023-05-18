@@ -1,6 +1,11 @@
 #pragma once
 #include "types.hpp"
 
+namespace Effect
+{
+	class KartEffect;
+}
+
 namespace Item
 {
 	enum class eItemSlot : u8;
