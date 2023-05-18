@@ -2,7 +2,7 @@
 #include "../fwddec.hpp"
 #include "../Object/EEngineType.hpp"
 
-#include <type_traits>
+#include <utility>
 
 namespace System
 {
@@ -25,8 +25,13 @@ namespace System
             };
             static_assert(sizeof(SEngineInfo) == 0x8);
 
+            inline SEngineInfo const &get_engine_info(Object::EEngineType engine_type) const
+            {
+                return m_engine_infos[std::to_underlying(engine_type)];
+            }
+
         public:
-            SEngineInfo m_engine_infos[static_cast<std::underlying_type_t<Object::EEngineType>>(Object::EEngineType::MAX)];
+            SEngineInfo m_engine_infos[std::to_underlying(Object::EEngineType::MAX)];
         };
         static_assert(sizeof(EngineManager) == 0xC);
 
