@@ -1,5 +1,5 @@
 #pragma once
-#include "../fwddec.hpp"
+#include "../forward.hpp"
 
 namespace RaceSys
 {

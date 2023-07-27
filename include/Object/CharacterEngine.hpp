@@ -1,5 +1,5 @@
 #pragma once
-#include "../fwddec.hpp"
+#include "../forward.hpp"
 #include "ActorEngine.hpp"
 
 namespace Object
