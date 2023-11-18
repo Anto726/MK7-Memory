@@ -10,6 +10,7 @@ namespace Item
 {
 	enum class eItemSlot : u8;
 	class ItemDirector;
+	class ItemObjBase;
 	class ItemSlot;
 	class KartItem;
 }
