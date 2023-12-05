@@ -30,6 +30,12 @@ namespace Kart
 	class VehicleReact;
 }
 
+namespace Net
+{
+	class NetworkBuffer;
+	class NetworkEngine;
+}
+
 namespace Object
 {
 	class Actor;
