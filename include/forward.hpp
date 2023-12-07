@@ -11,6 +11,7 @@ namespace Item
 	enum class eItemSlot : u8;
 	class ItemDirector;
 	class ItemObjBase;
+	class ItemObjKouraR;
 	class ItemSlot;
 	class KartItem;
 }
