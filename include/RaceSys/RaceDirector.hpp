@@ -1,4 +1,5 @@
 #pragma once
+
 #include "../forward.hpp"
 
 namespace RaceSys

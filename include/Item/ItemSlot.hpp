@@ -1,5 +1,6 @@
 #pragma once
-#include "eItemSlot.hpp"
+
+#include "../types.hpp"
 
 namespace Item
 {

@@ -1,4 +1,5 @@
 #pragma once
+
 #include "Rigid.hpp"
 
 namespace Kart

@@ -1,4 +1,5 @@
 #pragma once
+
 #include "VehicleBase.hpp"
 
 namespace Kart

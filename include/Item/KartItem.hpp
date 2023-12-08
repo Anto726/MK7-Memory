@@ -1,6 +1,9 @@
 #pragma once
+
 #include "../types.hpp"
+
 #include "eItemSlot.hpp"
+
 #include "../Kart/InfoProxy.hpp"
 #include "../Kart/Vehicle.hpp"
 
@@ -36,4 +39,5 @@ namespace Item
 		eItemSlot m_item;
   		u32 m_item_amount;
 	};
+	static_assert(sizeof(KartItem) == 0x40);
 }
