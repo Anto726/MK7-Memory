@@ -12,7 +12,7 @@ namespace RaceSys
 		};
 
 	public:
-		u8 m_0x0[32];
+		u8 gap_0x0[32];
 		int m_idle_timer_1;
 		float m_idle_timer_2;
 	};

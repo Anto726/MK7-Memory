@@ -11,7 +11,7 @@ namespace System
         inline Object::ActorEngine *get_engine(Object::EEngineType engine_type) const
         {
             auto const &engine_info = m_engine_manager.get_engine_info(engine_type);
-            return engine_info.m_exists ? reinterpret_cast<Object::ActorEngine *>(reinterpret_cast<decltype(c_engine_key)>(engine_info.m_actor_engine) ^ c_engine_key) : nullptr;
+            return engine_info.exists ? reinterpret_cast<Object::ActorEngine *>(reinterpret_cast<decltype(c_engine_key)>(engine_info.actor_engine) ^ c_engine_key) : nullptr;
         }
 
     public:

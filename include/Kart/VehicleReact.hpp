@@ -18,7 +18,7 @@ namespace Kart
 		};
 
 	public:
-		u8 m_0x1214[40];
+		u8 gap_0x1214[40];
 	};
 	static_assert(sizeof(VehicleReact) == 0x123C);
 }

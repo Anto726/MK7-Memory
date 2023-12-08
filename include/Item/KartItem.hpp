@@ -32,9 +32,9 @@ namespace Item
         inline bool isNetSend() const { return m_info_proxy->m_vehicle->m_is_net_send; }
 
 	public:
-		u8 m_0x0[44];
+		u8 gap_0x0[44];
         Kart::InfoProxy *m_info_proxy;
-		u8 m_0x30[4];
+		u8 gap_0x30[4];
 		ItemSlot *m_item_slot;
 		eItemSlot m_item;
   		u32 m_item_amount;
