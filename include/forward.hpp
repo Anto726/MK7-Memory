@@ -9,9 +9,24 @@ namespace Effect
 namespace Item
 {
 	enum class eItemSlot : u8;
+	enum class eItemType : u8;
 	class ItemDirector;
+	class ItemObjBananaDirector;
 	class ItemObjBase;
+	class ItemObjBomheiDirector;
+	class ItemObjDirectorBase;
+	class ItemObjFlowerDirector;
+	class ItemObjGessoDirector;
+	class ItemObjKillerDirector;
+	class ItemObjKinokoDirector;
+	class ItemObjKouraBDirector;
+	class ItemObjKouraGDirector;
 	class ItemObjKouraR;
+	class ItemObjKouraRDirector;
+	class ItemObjSevenDirector;
+	class ItemObjStarDirector;
+	class ItemObjTailDirector;
+	class ItemObjThunderDirector;
 	class ItemSlot;
 	class KartItem;
 }

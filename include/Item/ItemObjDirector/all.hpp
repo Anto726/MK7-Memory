@@ -1,0 +1,15 @@
+#pragma once
+
+#include "ItemObjBananaDirector.hpp"
+#include "ItemObjBomheiDirector.hpp"
+#include "ItemObjFlowerDirector.hpp"
+#include "ItemObjGessoDirector.hpp"
+#include "ItemObjKillerDirector.hpp"
+#include "ItemObjKinokoDirector.hpp"
+#include "ItemObjKouraBDirector.hpp"
+#include "ItemObjKouraGDirector.hpp"
+#include "ItemObjKouraRDirector.hpp"
+#include "ItemObjSevenDirector.hpp"
+#include "ItemObjStarDirector.hpp"
+#include "ItemObjTailDirector.hpp"
+#include "ItemObjThunderDirector.hpp"
