@@ -4,6 +4,5 @@ namespace Object
 {
 	class ActorVisitor
 	{
-	public:
 	};
 }

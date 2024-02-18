@@ -1,5 +1,7 @@
 #pragma once
+
 #include "../forward.hpp"
+
 #include "../Object/EEngineType.hpp"
 
 #include <utility>
@@ -20,8 +22,8 @@ namespace System
         public:
             struct SEngineInfo
             {
-                Object::ActorEngine *m_actor_engine;
-                bool m_exists;
+                Object::ActorEngine *actor_engine;
+                bool exists;
             };
             static_assert(sizeof(SEngineInfo) == 0x8);
 

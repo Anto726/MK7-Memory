@@ -1,4 +1,5 @@
 #pragma once
+
 #include "../types.hpp"
 
 namespace RaceSys
@@ -12,7 +13,7 @@ namespace RaceSys
         };
 
     public:
-        u8 m_0x0[72];
+        u8 gap_0x0[72];
         ERaceState m_race_state;
     };
     static_assert(sizeof(ModeManagerBase) == 0x49);

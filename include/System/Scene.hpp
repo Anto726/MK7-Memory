@@ -1,4 +1,5 @@
 #pragma once
+
 #include "../types.hpp"
 
 namespace System
@@ -9,7 +10,7 @@ namespace System
         virtual ~Scene() = default;
 
     public:
-        u8 m_0x4[476];
+        u8 gap_0x4[476];
     };
     static_assert(sizeof(Scene) == 0x1E0);
 }

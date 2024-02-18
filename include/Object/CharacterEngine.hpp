@@ -1,5 +1,7 @@
 #pragma once
+
 #include "../forward.hpp"
+
 #include "ActorEngine.hpp"
 
 namespace Object
@@ -19,7 +21,7 @@ namespace Object
         static_assert(sizeof(Collection) == 0x3C);
 
     public:
-        u8 m_0x8[20];
+        u8 gap_0x8[20];
         Collection *m_collection;
     };
     static_assert(sizeof(CharacterEngine) == 0x20);
