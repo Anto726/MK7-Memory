@@ -9,7 +9,9 @@ namespace Kart
 	public:
 		u8 gap_0xC28[736];
 		float m_miniturbo_charge;
-		u8 gap_0xF0C[232];
+		u8 gap_0xF0C[0x20];
+		float m_forward_speed;
+		u8 gap_0xF30[0xC4];
 		s32 m_star_frames;
 		s32 m_ink_frames;
 		s32 m_anim_frames;

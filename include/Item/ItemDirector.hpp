@@ -88,7 +88,7 @@ namespace Item
         }
 
     public:
-        u8 m_0x0[40];
+        u8 gap_0x0[40];
         ItemObjBananaDirector *m_banana_director;
         ItemObjKouraGDirector *m_kourag_director;
         ItemObjKouraRDirector *m_kourar_director;
@@ -102,7 +102,7 @@ namespace Item
         ItemObjTailDirector *m_tail_director;
         ItemObjKinokoDirector *m_kinoko_director;
         ItemObjSevenDirector *m_seven_director;
-        u8 m_0x5C[148];
+        u8 gap_0x5C[148];
         RaceSys::ModeManagerBase *m_mode_manager_base;
     };
     static_assert(sizeof(ItemDirector) == 0xF4);

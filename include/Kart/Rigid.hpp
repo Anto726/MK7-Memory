@@ -2,16 +2,18 @@
 
 #include "../types.hpp"
 
-#include <math/seadVectorFwd.h>
+#include <math/seadVector.h>
 
 namespace Kart
 {
 	class Rigid
 	{
 	public:
-		u8 m_0x0[52];
+		u8 gap_0x0[0x18];
+		sead::Vector3f m_up;
+		u8 gap_0x24[0x10];
 		sead::Vector3f *m_position;
-		u8 m_0x38[60];
+		u8 gap_0x38[60];
 	};
 	static_assert(sizeof(Rigid) == 0x74);
 }

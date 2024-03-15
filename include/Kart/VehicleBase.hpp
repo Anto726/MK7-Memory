@@ -7,9 +7,9 @@ namespace Kart
 	class VehicleBase : public Rigid
 	{
 	public:
-		u8 m_0x74[16];
+		u8 gap_0x74[16];
 		s32 m_player_id;
-		u8 m_0x88[16];
+		u8 gap_0x88[16];
 		bool m_is_master;
 		u8 gap_0x99[4];
 		bool m_is_net_send;
