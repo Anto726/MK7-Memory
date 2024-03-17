@@ -49,8 +49,11 @@ namespace Kart
 
 namespace Net
 {
+	enum class eNetworkBufferType : u8;
 	class NetworkBuffer;
 	class NetworkEngine;
+	class NetworkReceivedInfo;
+	class NetworkSystemInfo;
 }
 
 namespace Object
