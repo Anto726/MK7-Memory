@@ -75,6 +75,8 @@ namespace RaceSys
 namespace System
 {
 	class EngineHolder;
+	class KDPadAddBase;
+	class KDPadInputer;
 	class RootScene;
 	class RootSystem;
 	class Scene;
