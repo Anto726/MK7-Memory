@@ -1,16 +1,15 @@
 #pragma once
 
-#include "../../forward.hpp"
-
-#include "ItemObjBase.hpp"
+#include "ItemObjKouraG.hpp"
 
 namespace Item
 {
-    class ItemObjKouraR : public ItemObjBase
+    class ItemObjKouraR : public ItemObjKouraG
     {
     public:
-        u8 gap_0x1F8[144];
+        u8 gap_0x23C[0x4C];
         RaceSys::LapRankChecker *m_lap_rank_checker;
+        u8 gap_0x28C[0x38];
     };
-    static_assert(sizeof(ItemObjKouraR) == 0x28C);
+    static_assert(sizeof(ItemObjKouraR) == 0x2C4);
 }

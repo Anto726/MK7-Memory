@@ -21,6 +21,7 @@ namespace Item
 	class ItemObjKillerDirector;
 	class ItemObjKinokoDirector;
 	class ItemObjKouraBDirector;
+	class ItemObjKouraG;
 	class ItemObjKouraGDirector;
 	class ItemObjKouraR;
 	class ItemObjKouraRDirector;
