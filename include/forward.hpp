@@ -53,6 +53,7 @@ namespace Net
 	enum class eNetworkBufferType : u8;
 	class NetworkBuffer;
 	class NetworkEngine;
+	class NetworkEventModule;
 	class NetworkReceivedInfo;
 	class NetworkSystemInfo;
 }
