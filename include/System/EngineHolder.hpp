@@ -11,33 +11,34 @@ namespace System
     class EngineHolder
     {
     public:
-        virtual ~EngineHolder() = default;
-
-    public:
         class EngineManager
         {
         public:
             virtual ~EngineManager() = default;
 
-        public:
             struct SEngineInfo
             {
-                Object::ActorEngine *actor_engine;
+                Object::ActorEngine *engine;
                 bool exists;
+                u8 gap_0x5[0x7];
             };
-            static_assert(sizeof(SEngineInfo) == 0x8);
+            static_assert(sizeof(SEngineInfo) == 0xC);
 
-            inline SEngineInfo const &get_engine_info(Object::EEngineType engine_type) const
-            {
-                return m_engine_infos[std::to_underlying(engine_type)];
-            }
+            inline auto const &get_engine_info(Object::EEngineType type) const { return m_engine_infos[std::to_underlying(type)]; }
 
-        public:
             SEngineInfo m_engine_infos[std::to_underlying(Object::EEngineType::MAX)];
         };
-        static_assert(sizeof(EngineManager) == 0xC);
+        static_assert(sizeof(EngineManager) == 0x10);
 
-    public:
+        template <typename t>
+        inline t *get_engine(Object::EEngineType type) const
+        {
+            auto constexpr engine_key = u32{0x75F1B26B};
+
+            auto const &engine_info = m_engine_manager.get_engine_info(type);
+            return engine_info.exists ? reinterpret_cast<t *>(reinterpret_cast<decltype(engine_key)>(engine_info.engine) ^ engine_key) : nullptr;
+        }
+
         EngineManager m_engine_manager;
     };
     static_assert(sizeof(EngineHolder) == 0x10);
