@@ -11,7 +11,9 @@ namespace Kart
 		float m_miniturbo_charge;
 		u8 gap_0xF0C[0x20];
 		float m_forward_speed;
-		u8 gap_0xF30[0xC4];
+		u8 gap_0xF30[0xA8];
+		s32 m_draft_frames;
+		u8 gap_0xFDC[0x18];
 		s32 m_star_frames;
 		s32 m_ink_frames;
 		s32 m_anim_frames;
