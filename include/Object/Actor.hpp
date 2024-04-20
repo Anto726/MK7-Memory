@@ -34,8 +34,7 @@ namespace Object
 		virtual void initOuter() {}; // 16
 
 		virtual void _0x44() = 0; // 17
-		
-	public:
+
 		Actor *m_parent;
 	};
 	static_assert(sizeof(Actor) == 0x8);

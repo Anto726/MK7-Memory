@@ -16,10 +16,12 @@ namespace Item
 	class ItemObjBase;
 	class ItemObjBomheiDirector;
 	class ItemObjDirectorBase;
+	class ItemObjFlower;
 	class ItemObjFlowerDirector;
 	class ItemObjGessoDirector;
 	class ItemObjKillerDirector;
 	class ItemObjKinokoDirector;
+	class ItemObjKouraB;
 	class ItemObjKouraBDirector;
 	class ItemObjKouraG;
 	class ItemObjKouraGDirector;
@@ -62,6 +64,7 @@ namespace Net
 namespace Object
 {
 	class Actor;
+	class Actor3DMdl;
 	class ActorEngine;
     class ActorVisitor;
 	class CharacterEngine;
