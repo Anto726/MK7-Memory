@@ -2,3 +2,6 @@
 	path = vendor/sead
 	url = https://github.com/open-ead/sead
 	ignore = dirty
+[submodule "vendor/nnheaders"]
+	path = vendor/nnheaders
+	url = https://github.com/Anto726/nnheaders
