@@ -7,6 +7,8 @@
 
 #include "ItemObjDirector/all.hpp"
 
+#include <container/seadPtrArray.h>
+
 namespace Item
 {
     class ItemDirector
@@ -102,7 +104,9 @@ namespace Item
         ItemObjTailDirector *m_tail_director;
         ItemObjKinokoDirector *m_kinoko_director;
         ItemObjSevenDirector *m_seven_director;
-        u8 gap_0x5C[148];
+        u8 gap_0x5C[0x64];
+        sead::PtrArray<KartItem> m_kart_items;
+        u8 gap_0xCC[0x24];
         RaceSys::ModeManagerBase *m_mode_manager_base;
     };
     static_assert(sizeof(ItemDirector) == 0xF4);

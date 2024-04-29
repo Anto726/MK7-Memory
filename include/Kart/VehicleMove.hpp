@@ -7,7 +7,18 @@ namespace Kart
 	class VehicleMove : public VehicleControlAI
 	{
 	public:
-		u8 gap_0xC28[736];
+		struct StatusFlags
+		{
+			u32 gap_0 : 22;
+			u32 killer : 1;
+			u32 gap_24 : 1;
+			u32 tail : 1;
+		};
+		static_assert(sizeof(StatusFlags) == 0x4);
+
+		u8 gap_0xC28[0x8];
+		StatusFlags m_status_flags;
+		u8 gap_0xC34[0x2D4];
 		float m_miniturbo_charge;
 		u8 gap_0xF0C[0x20];
 		float m_forward_speed;
