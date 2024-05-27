@@ -57,6 +57,7 @@ namespace Net
 	class NetworkBuffer;
 	class NetworkEngine;
 	class NetworkEventModule;
+	class NetworkFriendsManager;
 	class NetworkItemEventDataMgr;
 	class NetworkReceivedInfo;
 	class NetworkSystemInfo;
