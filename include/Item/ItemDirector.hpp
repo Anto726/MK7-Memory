@@ -107,7 +107,7 @@ namespace Item
         u8 gap_0x5C[0x64];
         sead::PtrArray<KartItem> m_kart_items;
         u8 gap_0xCC[0x24];
-        RaceSys::ModeManagerBase *m_mode_manager_base;
+        RaceSys::ModeManagerBase *m_mode_manager;
     };
     static_assert(sizeof(ItemDirector) == 0xF4);
 }

@@ -30,7 +30,7 @@ namespace Object
 
 		virtual void _0x38() = 0; // 14
 
-		virtual void createOuter(const void *) {}; // 15
+		virtual void createOuter(void const *) {}; // 15
 		virtual void initOuter() {}; // 16
 
 		virtual void _0x44() = 0; // 17

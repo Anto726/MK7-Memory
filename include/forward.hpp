@@ -88,5 +88,6 @@ namespace System
 	class RootScene;
 	class RootSystem;
 	class Scene;
+	enum class SceneID : u8;
 	class SceneManager;
 }

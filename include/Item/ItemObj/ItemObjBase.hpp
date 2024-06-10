@@ -29,8 +29,8 @@ namespace Item
         virtual void *getColScale() const { return {}; }; // 24
         virtual u32 getSoundActorType() const { return {}; }; // 25
 
-        virtual void calc_HitGnd(const void *) {}; // 26
-        virtual void calc_HitWall(const void *) {}; // 27
+        virtual void calc_HitGnd(void const *) {}; // 26
+        virtual void calc_HitWall(void const *) {}; // 27
 
         virtual void exit_Lava() {}; // 28
         virtual void setStateStand() {}; // 29
