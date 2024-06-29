@@ -51,6 +51,11 @@ namespace Kart
 	class VehicleReact;
 }
 
+namespace Menu3D
+{
+	class GarageDirector;
+}
+
 namespace Net
 {
 	enum class eNetworkBufferType : u8;
