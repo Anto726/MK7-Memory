@@ -89,8 +89,51 @@ namespace Item
             }
         }
 
-    public:
-        u8 gap_0x0[40];
+        // NOTE: not part of symbols. Extracted from Item::ItemDirector::_calcInvalidFlag.
+        inline static eItemType getItemType_FromItemSlot(eItemSlot item)
+        {
+            switch (item)
+            {
+                case eItemSlot::Banana:
+                case eItemSlot::Banana3:
+                    return eItemType::Banana;
+                case eItemSlot::KouraG:
+                case eItemSlot::KouraG3:
+                    return eItemType::KouraG;
+                case eItemSlot::KouraR:
+                case eItemSlot::KouraR3:
+                    return eItemType::KouraR;
+                case eItemSlot::Kinoko:
+                case eItemSlot::Kinoko3:
+                    return eItemType::Kinoko;
+                case eItemSlot::Bomhei:
+                    return eItemType::Bomhei;
+                case eItemSlot::Gesso:
+                    return eItemType::Gesso;
+                case eItemSlot::KouraB:
+                    return eItemType::KouraB;
+                case eItemSlot::Star:
+                case eItemSlot::Test3:
+                case eItemSlot::Test4:
+                    return eItemType::Star;
+                case eItemSlot::Killer:
+                    return eItemType::Killer;
+                case eItemSlot::Thunder:
+                    return eItemType::Thunder;
+                case eItemSlot::KinokoP:
+                    return eItemType::KinokoP;
+                case eItemSlot::Flower:
+                    return eItemType::Flower;
+                case eItemSlot::Tail:
+                    return eItemType::Tail;
+                case eItemSlot::Seven:
+                    return eItemType::Seven;
+                default:
+                    return eItemType::INVALID;
+            }
+        }
+
+        u8 gap_0x0[0x28];
         ItemObjBananaDirector *m_banana_director;
         ItemObjKouraGDirector *m_kourag_director;
         ItemObjKouraRDirector *m_kourar_director;
