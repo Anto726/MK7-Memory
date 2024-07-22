@@ -85,6 +85,11 @@ namespace RaceSys
 	class RaceDirector;
 }
 
+namespace Sequence
+{
+	class BaseRacePage;
+}
+
 namespace System
 {
 	class EngineHolder;
