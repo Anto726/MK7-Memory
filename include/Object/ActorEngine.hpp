@@ -2,6 +2,8 @@
 
 #include "Actor.hpp"
 
+#include "../System/SceneID.hpp"
+
 namespace Object
 {
     class ActorEngine : public Actor

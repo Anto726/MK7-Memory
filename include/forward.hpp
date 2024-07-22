@@ -1,7 +1,5 @@
 #pragma once
 
-#include "types.hpp"
-
 namespace Effect
 {
 	class KartEffect;
@@ -9,8 +7,6 @@ namespace Effect
 
 namespace Item
 {
-	enum class eItemSlot : u8;
-	enum class eItemType : u8;
 	class ItemDirector;
 	class ItemObjBananaDirector;
 	class ItemObjBase;
@@ -58,7 +54,6 @@ namespace Menu3D
 
 namespace Net
 {
-	enum class eNetworkBufferType : u8;
 	class NetworkBuffer;
 	class NetworkEngine;
 	class NetworkEventModule;
@@ -75,7 +70,6 @@ namespace Object
 	class ActorEngine;
     class ActorVisitor;
 	class CharacterEngine;
-	enum class EEngineType : u32;
 }
 
 namespace RaceSys
@@ -98,6 +92,5 @@ namespace System
 	class RootScene;
 	class RootSystem;
 	class Scene;
-	enum class SceneID : u8;
 	class SceneManager;
 }

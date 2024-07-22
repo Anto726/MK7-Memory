@@ -1,5 +1,7 @@
 #pragma once
 
+#include "../Item/eItemType.hpp"
+
 namespace Net
 {
     class NetworkItemEventDataMgr
