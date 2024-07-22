@@ -24,6 +24,7 @@ namespace Item
 	class ItemObjKouraR;
 	class ItemObjKouraRDirector;
 	class ItemObjSevenDirector;
+	class ItemObjStar;
 	class ItemObjStarDirector;
 	class ItemObjTailDirector;
 	class ItemObjThunderDirector;
