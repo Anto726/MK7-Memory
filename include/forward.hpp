@@ -37,7 +37,7 @@ namespace Kart
 {
 	class Director;
 	class InfoProxy;
-	class NetData;
+	struct NetData;
 	class Rigid;
 	class Unit;
 	class Vehicle;

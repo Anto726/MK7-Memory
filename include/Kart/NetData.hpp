@@ -6,8 +6,31 @@ namespace Kart
 {
     struct NetData
     {
+        struct KartData
+        {
+            u32 _0x1 : 1;
+            u32 _0x2 : 1;
+            u32 _0x4 : 1;
+            u32 _0x8 : 1;
+            u32 _0x10 : 1;
+            u32 _0x20 : 1;
+            u32 _0x40 : 1;
+            u32 _0x80 : 1;
+            u32 _0x100 : 1;
+            u32 _0x200 : 1;
+            u32 _0x400 : 1;
+            u32 _0x800 : 1;
+            u32 _0x1000 : 1;
+            u32 _0x2000 : 1;
+            u32 _0x4000 : 1;
+            u32 _0x8000 : 1;
+            u32 _0x10000 : 1;
+            u32 warp : 1; // 0x20000
+        };
+        static_assert(sizeof(KartData) == 0x4);
+
         u8 gap_0x0[0x4];
-        u32 kart_data;
+        KartData kart_data;
         u8 gap_0x8[0x8];
         sead::Vector3<s16> position;
         sead::Vector3<s16> velocity;
