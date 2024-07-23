@@ -58,6 +58,7 @@ namespace Net
 {
 	class NetworkBuffer;
 	class NetworkEngine;
+	class NetworkErrorHandler;
 	class NetworkEventModule;
 	class NetworkFriendsManager;
 	class NetworkItemEventDataMgr;
