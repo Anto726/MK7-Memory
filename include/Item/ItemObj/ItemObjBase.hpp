@@ -85,7 +85,9 @@ namespace Item
         virtual void _0x110() = 0; // 68
         virtual void _0x114() = 0; // 69
 
-        u8 gap_0x58[0x78];
+        u8 gap_0x58[0x50];
+        sead::Vector3f m_position;
+        u8 gap_0xB4[0x1C];
         float m_gravity;
         u8 gap_0xD4[0x82];
         eItemType m_item_type;
