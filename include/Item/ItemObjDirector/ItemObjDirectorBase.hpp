@@ -59,6 +59,8 @@ namespace Item
 
         virtual void vanishEquip_Multi(int, bool) {}; // 38
         virtual void setDelayFrame(int, int) {}; // 39
+
+        u8 gap_0x8[0xB4];
     };
-    static_assert(sizeof(ItemObjDirectorBase) == 0x8);
+    static_assert(sizeof(ItemObjDirectorBase) == 0xBC);
 }
