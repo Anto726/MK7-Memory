@@ -52,10 +52,11 @@ namespace Kart
 		float m_forward_speed;
 		u8 gap_0xF30[0xA8];
 		s32 m_draft_frames;
-		u8 gap_0xFDC[0x18];
+		u8 gap_0xFDC[0x14];
+		s32 m_trick_frames;
 		s32 m_star_frames;
 		s32 m_ink_frames;
-		s32 m_anim_frames;
+		s32 m_stun_frames;
 		s32 m_thunder_frames;
 		s32 m_press_frames;
 		u8 gap_0x1008[12];
