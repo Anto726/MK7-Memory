@@ -1,5 +1,7 @@
 #pragma once
 
+#include "VehicleReact.hpp"
+
 #include <math/seadVector.hpp>
 
 namespace Kart
@@ -39,7 +41,9 @@ namespace Kart
         s16 forward_speed;
         s16 drift_steering;
         s16 directional_speed;
-        u8 gap_2A[0x1E];
+        u8 gap_0x2A[0xF];
+        VehicleReact::EAcdType m_acd_type;
+        u8 gap_0x3A[0xE];
     };
     static_assert(sizeof(NetData) == 0x48);
 }

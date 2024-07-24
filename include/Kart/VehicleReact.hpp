@@ -7,9 +7,9 @@ namespace Kart
 	class VehicleReact : public VehicleMove
 	{
 	public:
-		enum class EAcdType : u32
+		enum class EAcdType : u8
 		{
-
+			MAX = 0x13,
 		};
 		
 		enum class ECallType : u32
