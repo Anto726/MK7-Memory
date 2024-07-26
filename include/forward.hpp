@@ -16,6 +16,7 @@ namespace Item
 	class ItemObjFlowerDirector;
 	class ItemObjGesso;
 	class ItemObjGessoDirector;
+	class ItemObjKiller;
 	class ItemObjKillerDirector;
 	class ItemObjKinokoDirector;
 	class ItemObjKouraB;
