@@ -33,7 +33,8 @@ namespace Kart
 
         u8 gap_0x0[0x4];
         KartData kart_data;
-        u8 gap_0x8[0x8];
+        VehicleMove::StatusFlags status_flags;
+        u8 gap_0xC[0x4];
         sead::Vector3<s16> position;
         sead::Vector3<s16> velocity;
         sead::Vector3<s16> angular_velocity;
