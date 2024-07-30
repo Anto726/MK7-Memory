@@ -78,6 +78,7 @@ namespace Object
 
 namespace RaceSys
 {
+	class CRaceInfo;
 	class LapRankChecker;
 	class ModeManagerBase;
 	class RaceDirector;
