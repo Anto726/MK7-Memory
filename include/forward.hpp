@@ -99,3 +99,8 @@ namespace System
 	class Scene;
 	class SceneManager;
 }
+
+namespace UI
+{
+	class MessageWriter;
+}
