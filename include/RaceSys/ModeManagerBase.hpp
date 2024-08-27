@@ -1,20 +1,22 @@
 #pragma once
 
-#include "../types.hpp"
+#include "CRaceInfo.hpp"
 
 namespace RaceSys
 {
     class ModeManagerBase
     {
     public:
-        enum class ERaceState : u8
+        enum RaceState : u8
         {
-            Race = 2,
+            RaceState_Race = 2,
         };
 
-    public:
-        u8 gap_0x0[72];
-        ERaceState m_race_state;
+        u8 gap_0x0[0x48];
+        RaceState m_race_state;
+        u8 gap_0x49[0x1B];
+        CRaceInfo m_race_info;
+        u8 gap_0x1F4[0x324];
     };
-    static_assert(sizeof(ModeManagerBase) == 0x49);
+    static_assert(sizeof(ModeManagerBase) == 0x518);
 }

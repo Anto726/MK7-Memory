@@ -32,6 +32,7 @@ namespace Item
 	class ItemObjThunderDirector;
 	class ItemSlot;
 	class KartItem;
+	class KartItemProxy;
 }
 
 namespace Kart
@@ -79,6 +80,7 @@ namespace Object
 namespace RaceSys
 {
 	class CRaceInfo;
+	class CRaceMode;
 	class LapRankChecker;
 	class ModeManagerBase;
 	class RaceDirector;
