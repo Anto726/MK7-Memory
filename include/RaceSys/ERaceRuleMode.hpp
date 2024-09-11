@@ -8,5 +8,7 @@ namespace RaceSys
     {
         GrandPrix,
         TimeTrials,
+        Battle_3 = 3,
+        Battle_7 = 7,
     };
 }

@@ -63,6 +63,7 @@ namespace Net
 	class NetworkErrorHandler;
 	class NetworkEventModule;
 	class NetworkFriendsManager;
+	class NetworkGameMgr;
 	class NetworkItemEventDataMgr;
 	class NetworkReceivedInfo;
 	class NetworkSystemInfo;
