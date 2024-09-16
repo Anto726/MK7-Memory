@@ -52,7 +52,9 @@ namespace Kart
 		float m_miniturbo_charge;
 		u8 gap_0xF0C[0x20];
 		float m_forward_speed;
-		u8 gap_0xF30[0xA8];
+		u8 gap_0xF30[0x6C];
+		s32 m_boost_frames;
+		u8 gap_0xFA0[0x38];
 		s32 m_draft_frames;
 		u8 gap_0xFDC[0x14];
 		s32 m_trick_frames;
@@ -65,7 +67,9 @@ namespace Kart
 		float m_press_size;
 		u8 gap_0x1018[20];
 		s32 m_invincibility_frames;
-		u8 gap_0x1030[484];
+		u8 gap_0x1030[0x24];
+		float m_speed_max_forward_land_base;
+		u8 gap_0x1058[0x1BC];
 	};
 	static_assert(sizeof(VehicleMove) == 0x1214);
 }
