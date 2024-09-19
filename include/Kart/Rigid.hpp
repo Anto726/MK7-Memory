@@ -16,7 +16,8 @@ namespace Kart
 		u8 gap_0x24[0xC];
 		KDAttT *m_angle;
 		sead::Vector3f *m_position;
-		u8 gap_0x38[60];
+		sead::Vector3f m_velocity;
+		u8 gap_0x44[0x30];
 	};
 	static_assert(sizeof(Rigid) == 0x74);
 }
