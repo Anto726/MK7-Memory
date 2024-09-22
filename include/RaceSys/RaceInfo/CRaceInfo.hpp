@@ -1,7 +1,7 @@
 #pragma once
 
-#include "CRaceMode.hpp"
-#include "ERaceModeFlag.hpp"
+#include "../CRaceMode.hpp"
+#include "../ERaceModeFlag.hpp"
 
 namespace RaceSys
 {

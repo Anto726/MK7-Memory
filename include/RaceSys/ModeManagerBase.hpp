@@ -1,6 +1,6 @@
 #pragma once
 
-#include "CRaceInfo.hpp"
+#include "RaceInfo/CRaceInfo.hpp"
 
 namespace RaceSys
 {
