@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../CRaceMode.hpp"
+#include "../EItemPattern.hpp"
 #include "../ERaceModeFlag.hpp"
 
 namespace RaceSys
@@ -12,7 +13,8 @@ namespace RaceSys
         CRaceMode m_race_mode;
         u8 gap_0x170[0x8];
         ERaceModeFlag m_race_mode_flag;
-        u8 gap_0x17C[0x14];
+        EItemPattern m_item_pattern;
+        u8 gap_0x180[0x10];
     };
     static_assert(sizeof(CRaceInfo) == 0x190);
 }
