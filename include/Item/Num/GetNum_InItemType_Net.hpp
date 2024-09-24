@@ -7,7 +7,7 @@
 
 namespace Item
 {
-    s32 GetNum_InItemType_Net(eItemType item_type)
+    static s32 GetNum_InItemType_Net(eItemType item_type)
     {
         auto const race_info = RaceSys::GetRaceInfo();
         auto const pattern = is_item_pattern_selected(race_info);
