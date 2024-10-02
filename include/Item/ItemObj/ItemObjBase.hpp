@@ -92,7 +92,8 @@ namespace Item
         u8 gap_0xD4[0x82];
         eItemType m_item_type;
         Kart::InfoProxy *m_info_proxy;
-        u8 gap_0x15C[0x8];
+        u8 gap_0x15C[0x4];
+        s32 m_item_id;
         s32 m_owner_player_id;
         u8 gap_0x168[0x46];
         bool m_is_dropped;

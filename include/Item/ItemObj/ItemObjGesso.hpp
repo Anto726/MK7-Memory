@@ -1,13 +1,17 @@
 #pragma once
 
-#include "ItemObjBase.hpp"
+#include "ItemObjBanana.hpp"
+
+#include <container/seadBuffer.h>
 
 namespace Item
 {
-    class ItemObjGesso : public ItemObjBase
+    class ItemObjGesso : public ItemObjBanana
     {
     public:
-        u8 gap_0x1F8[0x54];
+        u8 gap_0x20C[0x30];
+        sead::Buffer<bool> m_other;
+        u8 gap_0x244[0x8];
     };
     static_assert(sizeof(ItemObjGesso) == 0x24C);
 }

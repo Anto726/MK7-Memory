@@ -11,7 +11,7 @@
 
 namespace Item
 {
-    class ItemDirector
+    class ItemDirector : public Object::Actor
     {
     public:
         ItemObjDirectorBase *getDirector_FromItemSlot(eItemSlot item)
@@ -133,7 +133,7 @@ namespace Item
             }
         }
 
-        u8 gap_0x0[0x28];
+        u8 gap_0x8[0x20];
         ItemObjBananaDirector *m_banana_director;
         ItemObjKouraGDirector *m_kourag_director;
         ItemObjKouraRDirector *m_kourar_director;
