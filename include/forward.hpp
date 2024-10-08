@@ -5,6 +5,30 @@ namespace Effect
 	class KartEffect;
 }
 
+namespace Field
+{
+	class CourseInfo;
+	class FieldDirector;
+	class MapdataAreaAccessor;
+	class MapdataCameraAccessor;
+	class MapdataCannonPointAccessor;
+	class MapdataCheckPathAccessor;
+	class MapdataCheckPointAccessor;
+	class MapdataCourseAccessor;
+	class MapdataEnemyPathAccessor;
+	class MapdataEnemyPointAccessor;
+	class MapdataGeoObjAccessor;
+	class MapdataGlidePointAccessor;
+	class MapdataGlidePathAccessor;
+	class MapdataItemPathAccessor;
+	class MapdataItemPointAccessor;
+	class MapdataJugemPointAccessor;
+	class MapdataMissionPointAccessor;
+	class MapdataPathAccessor;
+	class MapdataStageAccessor;
+	class MapdataStartPointAccessor;
+}
+
 namespace Item
 {
 	class ItemDirector;

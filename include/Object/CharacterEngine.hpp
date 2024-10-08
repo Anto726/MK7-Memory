@@ -13,7 +13,8 @@ namespace Object
         {
             u8 gap_0x0[16];
             Kart::Director *m_kart_director;
-            u8 gap_0x14[8];
+            Field::FieldDirector *m_field_director;
+            u8 gap_0x18[0x4];
             RaceSys::RaceDirector *m_race_director;
             u8 gap_0x20[24];
             Item::ItemDirector *m_item_director;
