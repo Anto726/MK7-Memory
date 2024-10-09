@@ -125,6 +125,7 @@ namespace System
 	class RootSystem;
 	class Scene;
 	class SceneManager;
+	struct SystemSaveData;
 }
 
 namespace UI
