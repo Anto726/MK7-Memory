@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../forward.hpp"
+#include "Unit.hpp"
 
 #include <container/seadPtrArray.h>
 
@@ -9,6 +9,8 @@ namespace Kart
     class Director
     {
     public:
+        Vehicle *getKart(s32 index) { return m_units(index)->m_vehicle; }
+
         u8 gap_0x0[0x24];
         sead::PtrArray<Unit> m_units;
         u8 gap_0x30[0x170];
