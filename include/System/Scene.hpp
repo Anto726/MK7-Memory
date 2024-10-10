@@ -9,7 +9,6 @@ namespace System
     public:
         virtual ~Scene() = default;
 
-    public:
         u8 gap_0x4[476];
     };
     static_assert(sizeof(Scene) == 0x1E0);
