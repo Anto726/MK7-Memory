@@ -41,7 +41,8 @@ namespace Item
         inline bool isNetRecv() const { return m_info_proxy->m_vehicle->m_is_net_recv; }
         inline bool isNetSend() const { return m_info_proxy->m_vehicle->m_is_net_send; }
 
-		u8 gap_0x0[0x2C];
+		u8 gap_0x0[0x28];
+		s32 m_player_id;
         Kart::InfoProxy *m_info_proxy;
 		u8 gap_0x30[0x4];
  		ItemSlot *m_item_slot;
