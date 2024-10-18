@@ -1,14 +1,18 @@
 #pragma once
 
 #include "Director.hpp"
-#include "../System/RootSystem.hpp"
+#include "Vehicle.hpp"
 
 namespace Kart
 {
 	class InfoProxy
 	{
 	public:
-		InfoProxy(s32 index) : m_vehicle(System::g_root_system->get_kart_director()->getKart(index)) {}
+		InfoProxy(s32 index) : m_vehicle(GetDirector()->getKart(index)) {}
+
+		inline auto isMaster() const { return m_vehicle->m_is_master; }
+        inline auto isNetRecv() const { return m_vehicle->m_is_net_recv; }
+        inline auto isNetSend() const { return m_vehicle->m_is_net_send; }
 
 		Vehicle *m_vehicle;
 	};

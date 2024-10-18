@@ -7,6 +7,8 @@
 
 #include "ItemObjDirector/all.hpp"
 
+#include "../System/RootSystem.hpp"
+
 #include <container/seadPtrArray.h>
 
 namespace Item
@@ -153,4 +155,9 @@ namespace Item
         RaceSys::ModeManagerBase *m_mode_manager;
     };
     static_assert(sizeof(ItemDirector) == 0xF4);
+
+    inline static auto GetDirector()
+    {
+        return System::g_root_system->get_item_director();
+    }
 }

@@ -37,9 +37,9 @@ namespace Item
 			m_stock_item_amount = amount;
 		}
 
-		inline bool isMaster() const { return m_info_proxy->m_vehicle->m_is_master; }
-        inline bool isNetRecv() const { return m_info_proxy->m_vehicle->m_is_net_recv; }
-        inline bool isNetSend() const { return m_info_proxy->m_vehicle->m_is_net_send; }
+		inline bool isMaster() const { return m_info_proxy->isMaster(); }
+        inline bool isNetRecv() const { return m_info_proxy->isNetRecv(); }
+        inline bool isNetSend() const { return m_info_proxy->isNetSend(); }
 
 		u8 gap_0x0[0x28];
 		s32 m_player_id;
