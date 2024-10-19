@@ -131,5 +131,7 @@ namespace System
 namespace UI
 {
 	class BgRaceMapCharaControl;
+	class MessageData;
+	class MessageIDConverter;
 	class MessageWriter;
 }
