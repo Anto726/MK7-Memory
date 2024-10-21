@@ -1,8 +1,8 @@
 #pragma once
 
-#include "../forward.hpp"
-
 #include "SceneManager.hpp"
+
+#include "SystemEngine.hpp"
 
 namespace System
 {
@@ -16,9 +16,13 @@ namespace System
         inline auto get_race_director() const { return m_scene_manager->get_character_engine_collection()->m_race_director; }
         inline auto get_item_director() const { return m_scene_manager->get_character_engine_collection()->m_item_director; }
 
+        inline auto get_game_setting() const { return m_root_scene->get_system_engine()->m_game_setting; }
+
         SceneManager *m_scene_manager;
+        u8 gap_0x8[0x8];
+        RootScene *m_root_scene;
     };
-    static_assert(sizeof(RootSystem) == 0x8);
+    static_assert(sizeof(RootSystem) == 0x14);
 
     // NOTE: must be provided by the user
     inline RootSystem *g_root_system{};

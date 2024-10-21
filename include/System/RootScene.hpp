@@ -9,8 +9,9 @@ namespace System
     {
     public:
         inline auto get_character_engine() const { return m_engine_holder.get_engine<Object::CharacterEngine>(Object::EEngineType::Character); }
+        inline auto get_system_engine() const { return m_engine_holder.get_engine<SystemEngine>(Object::EEngineType::System); }
 
         EngineHolder m_engine_holder;
     };
-    static_assert(sizeof(RootScene) == 0x1F0);
+    static_assert(sizeof(RootScene) == 0x214);
 }

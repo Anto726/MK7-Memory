@@ -28,7 +28,7 @@ namespace System
 
             SEngineInfo m_engine_infos[std::to_underlying(Object::EEngineType::MAX)];
         };
-        static_assert(sizeof(EngineManager) == 0x10);
+        static_assert(sizeof(EngineManager) == 0x34);
 
         template <typename t>
         inline t *get_engine(Object::EEngineType type) const
@@ -41,5 +41,5 @@ namespace System
 
         EngineManager m_engine_manager;
     };
-    static_assert(sizeof(EngineHolder) == 0x10);
+    static_assert(sizeof(EngineHolder) == 0x34);
 }

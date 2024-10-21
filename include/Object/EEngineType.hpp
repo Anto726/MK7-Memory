@@ -7,6 +7,9 @@ namespace Object
     enum class EEngineType : u32
     {
         Character,
+        Camera,
+        Render,
+        System,
         MAX
     };
 }

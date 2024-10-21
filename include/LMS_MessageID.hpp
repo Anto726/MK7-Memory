@@ -2,7 +2,7 @@
 
 #include "types.hpp"
 
-enum class LMS_MessageID : u32
+enum LMS_MessageID : u32
 {
     /// Common
     Driver_Mario = 1000,
@@ -194,6 +194,7 @@ enum class LMS_MessageID : u32
     Activated = 6441,
     Deactivated = 6442,
 
+    Region = 6460,
     Display = 6461,
     Hide = 6462,
 
@@ -203,7 +204,13 @@ enum class LMS_MessageID : u32
     DontUse = 6482,
 
     /// Region
+    Region_region = 50000,
+
+    Region_begin = 50100,
+
     Japan = 50101,
 
     VaticanCity = 68501,
+
+    Region_end = 68502,
 };

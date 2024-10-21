@@ -119,12 +119,14 @@ namespace Sequence
 namespace System
 {
 	class EngineHolder;
+	class GameSetting;
 	class KDPadAddBase;
 	class KDPadInputer;
 	class RootScene;
 	class RootSystem;
 	class Scene;
 	class SceneManager;
+	class SystemEngine;
 	struct SystemSaveData;
 }
 
