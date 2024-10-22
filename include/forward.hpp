@@ -122,6 +122,7 @@ namespace System
 	class GameSetting;
 	class KDPadAddBase;
 	class KDPadInputer;
+	class PlayerData;
 	class RootScene;
 	class RootSystem;
 	class Scene;
