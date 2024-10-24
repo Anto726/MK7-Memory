@@ -4,6 +4,8 @@
 
 enum LMS_MessageID : u32
 {
+    INVALID = 0,
+
     /// Common
     Driver_Mario = 1000,
     Driver_Luigi = 1001,
@@ -170,6 +172,9 @@ enum LMS_MessageID : u32
 
     Mirror = 2223,
 
+    Off = 2314,
+    On = 2315,
+
     Random = 2322,
     InOrder = 2323,
 
@@ -202,6 +207,11 @@ enum LMS_MessageID : u32
 
     Use = 6481,
     DontUse = 6482,
+
+    /// Race
+    Race_begin = 9000,
+
+    Race_end = 10000,
 
     /// Region
     Region_region = 50000,
