@@ -8,4 +8,5 @@ namespace RaceSys
     {
         u32 value;
     };
+    static_assert(sizeof(Rate) == 0x4);
 }
