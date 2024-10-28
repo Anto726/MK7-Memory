@@ -134,9 +134,9 @@ enum LMS_MessageID : u32
     Course_RainbowRoad = 1615,
 
     Course_SNESMarioCircuit2 = 1700,
-    Course_SNESBowserCastle1 = 1701,
-    Course_SNESLuigiRaceway = 1702,
-    Course_SNESKalimariDesert = 1703,
+    Course_GBABowserCastle1 = 1701,
+    Course_N64LuigiRaceway = 1702,
+    Course_N64KalimariDesert = 1703,
     Course_DSLuigisMansion = 1704,
     Course_DSWaluigiPinball = 1705,
     Course_DSDKPass = 1706,
@@ -147,8 +147,8 @@ enum LMS_MessageID : u32
     Course_WiiMushroomGorge = 1711,
     Course_GCNDinoDinoJungle = 1712,
     Course_GCNDaisyCruiser = 1713,
-    Course_GCNKoopaBeach = 1714,
-    Course_GCNRainbowRoad = 1715,
+    Course_N64KoopaBeach = 1714,
+    Course_SNESRainbowRoad = 1715,
 
     Course_HoneybeeHive = 1800,
     Course_SherbetRink = 1801,
