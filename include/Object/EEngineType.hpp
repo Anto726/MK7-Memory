@@ -10,6 +10,7 @@ namespace Object
         Camera,
         Render,
         System,
+        Sequence,
         MAX
     };
 }

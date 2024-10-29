@@ -90,6 +90,7 @@ namespace Net
 	class NetworkGameMgr;
 	class NetworkItemEventDataMgr;
 	class NetworkReceivedInfo;
+	class NetworkSelectMenuProcess;
 	class NetworkSystemInfo;
 }
 
@@ -114,6 +115,8 @@ namespace RaceSys
 namespace Sequence
 {
 	class BaseRacePage;
+	class MenuData;
+	class SequenceEngine;
 }
 
 namespace System

@@ -4,6 +4,8 @@
 
 #include "SystemEngine.hpp"
 
+#include "../Sequence/SequenceEngine.hpp"
+
 namespace System
 {
     class RootSystem
@@ -17,6 +19,8 @@ namespace System
         inline auto get_item_director() const { return m_scene_manager->get_character_engine_collection()->m_item_director; }
 
         inline auto get_game_setting() const { return m_root_scene->get_system_engine()->m_game_setting; }
+
+        inline auto get_message_id_converter() const { return m_root_scene->get_sequence_engine()->m_message_id_converter; }
 
         SceneManager *m_scene_manager;
         u8 gap_0x8[0x8];

@@ -11,7 +11,7 @@
 
 #include "../LMS_MessageID.hpp"
 
-#include <utility>
+#include "../System/RootSystem.hpp"
 
 namespace UI
 {
@@ -29,4 +29,12 @@ namespace UI
         LMS_MessageID m_title_type_message_ids[std::to_underlying(RaceSys::ETitleType::MAX)];
     };
     static_assert(sizeof(MessageIDConverter) == 0x228);
+}
+
+namespace Sequence
+{
+    static auto GetMessageIDConverter()
+    {
+        return System::g_root_system->get_message_id_converter();
+    }
 }
