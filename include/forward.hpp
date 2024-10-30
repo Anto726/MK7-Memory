@@ -89,6 +89,8 @@ namespace Net
 	class NetworkFriendsManager;
 	class NetworkGameMgr;
 	class NetworkItemEventDataMgr;
+	class NetworkPlayerData;
+	class NetworkPlayerDataManager;
 	class NetworkReceivedInfo;
 	class NetworkSelectMenuProcess;
 	class NetworkSystemInfo;
@@ -126,6 +128,7 @@ namespace System
 	class KDPadAddBase;
 	class KDPadInputer;
 	class PlayerData;
+	struct PlayerDataNoMii;
 	class RootScene;
 	class RootSystem;
 	class Scene;
