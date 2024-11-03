@@ -36,6 +36,9 @@ namespace Item
             if (race_info->m_item_pattern == RaceSys::EItemPattern::Bomhei)
                 return EXTRA_NUM;
             return DEFAULT_NUM;
+
+        default:
+            break;
         }
 
         return NONE_NUM;

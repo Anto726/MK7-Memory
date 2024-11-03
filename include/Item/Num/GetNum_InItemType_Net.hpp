@@ -59,6 +59,9 @@ namespace Item
         case eItemType::FakeBox:
         case eItemType::BigKinoko:
             return NONE_NUM;
+
+        default:
+            break;
         };
 
         return INVALID_NUM;
