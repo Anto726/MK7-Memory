@@ -33,7 +33,7 @@ namespace Kart
 			    _0x100000 			: 1,
 			    _0x200000 			: 1,
 			    killer 				: 1, // 0x400000
-			    _0x800000 			: 1,
+			    hang 				: 1, // 0x800000
 			    tail 				: 1, // 0x1000000
 			    battle_restart 		: 1, // 0x2000000
 			    ground_camera 		: 1, // 0x4000000
