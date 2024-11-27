@@ -42,8 +42,10 @@ namespace Kart
         s16 forward_speed;
         s16 drift_steering;
         s16 directional_speed;
-        u8 gap_0x2A[0xF];
-        VehicleReact::EAcdType m_acd_type;
+        u8 gap_0x2A[0xC];
+        u8 respawn_point;
+        u8 gap_0x37[0x2];
+        VehicleReact::EAcdType accident_type;
         u8 gap_0x3A[0xE];
     };
     static_assert(sizeof(NetData) == 0x48);
