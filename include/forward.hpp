@@ -139,6 +139,7 @@ namespace System
 
 namespace UI
 {
+	class BgRaceMapBombControl;
 	class BgRaceMapCharaControl;
 	class MessageData;
 	class MessageIDConverter;
