@@ -1,0 +1,18 @@
+#pragma once
+
+#define FONT_CTRDASH_SF     "\uE020"
+#define FONT_CTRDASH_C      "\uE021"
+#define FONT_CTRDASH_N_1    "\uE022"
+#define FONT_CTRDASH_64_1   "\uE023"
+#define FONT_CTRDASH_GB     "\uE024"
+#define FONT_CTRDASH_A      "\uE025"
+#define FONT_CTRDASH_GC_1   "\uE026"
+#define FONT_CTRDASH_N_2    "\uE027"
+#define FONT_CTRDASH_ICON   "\uE030"
+#define FONT_CTRDASH_SN     "\uE031"
+#define FONT_CTRDASH_ES     "\uE032"
+#define FONT_CTRDASH_DS     "\uE033"
+#define FONT_CTRDASH_GC_2   "\uE034"
+#define FONT_CTRDASH_64_2   "\uE035"
+#define FONT_CTRDASH_Wii    "\uE067"
+#define FONT_CTRDASH_HOME   "\uE073"
