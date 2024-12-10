@@ -107,7 +107,8 @@ enum LMS_MessageID : u32
     Wing_BeastGlider = 1305,
     Wing_GoldGlider = 1306,
 
-    MushroomCup = 1500,
+    Cups_begin = 1500,
+    MushroomCup = Cups_begin,
     FlowerCup = 1501,
     StarCup = 1502,
     SpecialCup = 1503,
@@ -115,6 +116,7 @@ enum LMS_MessageID : u32
     BananaCup = 1505,
     LeafCup = 1506,
     LightningCup = 1507,
+    Cups_end = LightningCup + 1,
 
     Course_MarioCircuit = 1600,
     Course_DaisyHills = 1601,
@@ -195,6 +197,8 @@ enum LMS_MessageID : u32
     Wins = 6406,
     Losses = 6407,
     CoinsCollected = 6408,
+
+    GrandPrix = 6411,
 
     Activated = 6441,
     Deactivated = 6442,
