@@ -18,5 +18,5 @@ namespace Field
         SData *m_data;
         u8 gap_0x4[0xCC];
     };
-    static_assert(sizeof(CheckPoint) == 0xD0);
+    static_assert(sizeof(MapdataCheckPoint) == 0xD0);
 }

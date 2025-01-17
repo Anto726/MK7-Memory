@@ -4,6 +4,7 @@
 
 class KDAttT
 {
+public:
     sead::Vector3f m_forward;
     sead::Vector3f m_right;
     sead::Vector3f m_up;

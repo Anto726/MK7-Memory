@@ -9,8 +9,8 @@ namespace Util
     {
     public:
         virtual ~TStateObserver() {}; // 1
-        void resetState() {}; // 2
-        void executeState() {}; // 3
+        virtual void resetState() {}; // 2
+        virtual void executeState() {}; // 3
 
         u8 m_status_current;
         u8 gap_0x5[0x1B];

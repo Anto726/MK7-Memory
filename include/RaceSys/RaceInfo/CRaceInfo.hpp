@@ -38,6 +38,7 @@ namespace RaceSys
             u16 m_unique_total_rank;
             Rate m_rate;
         };
+        static_assert(sizeof(CKartInfo) == 0x2C);
 
         CKartInfo m_kart_infos[KART_MAX];
         ECourseID m_course_id;
