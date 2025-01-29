@@ -20,6 +20,7 @@ namespace System
 
         inline auto get_game_setting() const { return m_root_scene->get_system_engine()->m_game_setting; }
 
+        inline auto get_menu_data() const { return m_root_scene->get_sequence_engine()->m_menu_data; }
         inline auto get_message_id_converter() const { return m_root_scene->get_sequence_engine()->m_message_id_converter; }
 
         SceneManager *m_scene_manager;
