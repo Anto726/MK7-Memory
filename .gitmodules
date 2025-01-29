@@ -4,3 +4,6 @@
 [submodule "vendor/sead"]
 	path = vendor/sead
 	url = https://github.com/Anto726/sead
+[submodule "vendor/nw4c"]
+	path = vendor/nw4c
+	url = https://github.com/Anto726/nw4c
