@@ -118,6 +118,7 @@ namespace Sequence
 {
 	class BaseRacePage;
 	class MenuData;
+	class RacePage;
 	class SequenceEngine;
 }
 
@@ -144,4 +145,5 @@ namespace UI
 	class MessageData;
 	class MessageIDConverter;
 	class MessageWriter;
+	class TimeControl;
 }
