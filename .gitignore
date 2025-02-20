@@ -1,6 +1,9 @@
 # Visual Studio
 .vs
+.vscode
 
 # CMake
 out
 CMakeSettings.json
+
+include
