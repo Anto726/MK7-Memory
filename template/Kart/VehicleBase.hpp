@@ -5,8 +5,6 @@
 namespace Kart
 {
 	/START_CLASS/NAME@VehicleBase/SIZE@0xDC/BASE@Rigid/BSIZE@0x74/
-	class VehicleBase : public Rigid
-	{
 	public:
 		/M/Director *m_director/0x4/0x78/
 		/M/s32 m_player_id/0x4/0x84/
