@@ -6,7 +6,7 @@ OUTFILES			:=	$(foreach file,$(TEMPLATEFILES),$(BUILD)/$(file))
 
 $(BUILD)/%: $(SOURCES)/%
 	@mkdir -p $(@D)
-	@python process.py $< $@
+	@python3 process.py $< $@
 
 all: $(OUTFILES)
 
