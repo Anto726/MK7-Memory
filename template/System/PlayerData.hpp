@@ -2,7 +2,7 @@
 
 #include "PlayerDataNoMii.hpp"
 
-#include "../CFLStoreData.hpp"
+#include <3ds/services/act.h>
 
 namespace System
 {
