@@ -43,14 +43,15 @@ class Line(Parser):
 
 class ClassParser(Parser):
     class Member:
-        def __init__(self, parent, command: dict):
+        def __init__(self, parent, command: dict, isunknown: bool = False):
             if not "name" in command and not "0" in command:
                 raise ValueError("NAME parameter is mandatory")
-            self.name = command.get("name", command.get("0"))
             if not "size" in command and not "1" in command:
                 raise ValueError("SIZE parameter is mandatory")
             self.size = int(command.get("size", command.get("1")), base=0)
             self.offset = int(command.get("offset", command.get("2", "-1")), base=0)
+            self.name = command.get("name", command.get("0"))
+            self.unknown = isunknown
             self.preamble = command["preamble"]
             self.comment = " " + command.get("comment", "")
             self.parent = parent
@@ -59,14 +60,17 @@ class ClassParser(Parser):
             if len(self.comment) == 1: self.comment = ""
         
         def repr(self, withComment: bool):
+            name = self.name
+            if self.unknown:
+                name = self.name + " m_unk_0x{:X}".format(self.offset)
             if (withComment and not self.isGap):
                 if self.reprPadding is None:
                     maxLen = self.parent.getLongestElementReprLen()
                     while (maxLen % 4 != 0): maxLen += 1
-                    self.reprPadding = " " * (maxLen - (len(self.preamble) + len(self.name) + 1))
-                return "{}{};{}// (O:0x{:X},S:0x{:X}){}\n".format(self.preamble, self.name, self.reprPadding, self.offset, self.size, self.comment)
+                    self.reprPadding = " " * (maxLen - (len(self.preamble) + len(name) + 1))
+                return "{}{};{}// (O:0x{:X},S:0x{:X}){}\n".format(self.preamble, name, self.reprPadding, self.offset, self.size, self.comment)
             else:
-                return "{}{};\n".format(self.preamble, self.name)
+                return "{}{};\n".format(self.preamble, name)
 
         def write(self, o: typing.TextIO):
             o.write(self.repr(True))
@@ -106,8 +110,8 @@ class ClassParser(Parser):
                 self.elements.append(Line(line))
             else:
                 c = command["command"]
-                if c == "m":
-                    self.elements.append(ClassParser.Member(self, command))
+                if c == "m" or c == "u":
+                    self.elements.append(ClassParser.Member(self, command, c == "u"))
                 elif c == "end":
                     res = False
                 elif c == "start_class" or c == "start_struct":

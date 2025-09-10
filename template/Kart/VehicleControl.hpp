@@ -4,7 +4,7 @@
 
 namespace Kart
 {
-	/START_CLASS/NAME@VehicleControl/SIZE@0x11C/BASE@VehicleBase/BSIZE@0xDC/
+	/START_CLASS/NAME@VehicleControl/SIZE@0x11C/BASE@VehicleBase/BSIZE@0xE0/
 	public:
 		struct Controls
 		{

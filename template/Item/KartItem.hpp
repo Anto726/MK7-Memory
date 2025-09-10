@@ -10,6 +10,8 @@
 
 namespace Item
 {
+	class ItemDirector;
+
 	/START_CLASS/NAME@KartItem/SIZE@0x60/
 	public:
 		void setEquipInfo(eItemSlot item, eEquipType type, int amount, bool increment)
@@ -40,6 +42,7 @@ namespace Item
         inline bool isNetRecv() const { return m_info_proxy->isNetRecv(); }
         inline bool isNetSend() const { return m_info_proxy->isNetSend(); }
 
+		/M/ItemDirector* m_item_director/0x4/0x4/
 		/M/s32 m_player_id/0x4/0x28/
 		/M/Kart::InfoProxy *m_info_proxy/0x4/0x2C/
 		/M/ItemSlot *m_item_slot/0x4/0x34/
