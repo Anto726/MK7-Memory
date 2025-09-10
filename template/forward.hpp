@@ -63,7 +63,9 @@ BEGIN_NAMESPACE(Item)
 
 BEGIN_NAMESPACE(Kart)
 {
+	class Camera;
 	class Director;
+	class Driver;
 	class InfoProxy;
 	struct NetData;
 	class Rigid;
