@@ -6,7 +6,7 @@
 
 #include <math/seadVector.h>
 
-namespace Kart
+BEGIN_NAMESPACE(Kart)
 {
 	/START_CLASS/NAME@Rigid/SIZE@0x74/
 	public:

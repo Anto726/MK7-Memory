@@ -1,10 +1,11 @@
 #pragma once
 
 #include "../forward.hpp"
+#include "../types.hpp"
 
 #include "ArgumentObj.hpp"
 
-namespace Object
+BEGIN_NAMESPACE(Object)
 {
 	/START_CLASS/NAME@Actor/SIZE@0x8/VTABLE@True/
 	public:

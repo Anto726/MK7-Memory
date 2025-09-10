@@ -1,12 +1,13 @@
 #pragma once
 
+#include "../types.hpp"
 #include "../forward.hpp"
 
 #include "../Object/EEngineType.hpp"
 
 #include <utility>
 
-namespace System
+BEGIN_NAMESPACE(System)
 {
     class EngineHolder
     {

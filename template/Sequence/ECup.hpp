@@ -2,7 +2,7 @@
 
 #include "../types.hpp"
 
-namespace Sequence
+BEGIN_NAMESPACE(Sequence)
 {
     enum class ECup : u8
     {

@@ -3,12 +3,13 @@
 #include "../eItemType.hpp"
 
 #include "../../RaceSys/RaceInfo/Get.hpp"
+#include "../../types.hpp"
 
 #define EXTRA_NUM 7
 #define DEFAULT_NUM 3
 #define NONE_NUM 0
 
-namespace Item
+BEGIN_NAMESPACE(Item)
 {
     static s32 GetExtraItemNum(eItemType item_type)
     {

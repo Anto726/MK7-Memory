@@ -7,7 +7,7 @@
 #define VR_SHIFT  0
 #define GP_SHIFT 24
 
-namespace System
+BEGIN_NAMESPACE(System)
 {
     struct FlagData
     {

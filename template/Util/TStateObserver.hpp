@@ -2,7 +2,7 @@
 
 #include "../types.hpp"
 
-namespace Util
+BEGIN_NAMESPACE(Util)
 {
     template <class T>
     /START_CLASS/NAME@TStateObserver/SIZE@0x20/SIZEOF@TStateObserver<void>/VTABLE@True/

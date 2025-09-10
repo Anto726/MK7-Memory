@@ -2,7 +2,7 @@
 
 #include "../types.hpp"
 
-namespace System
+BEGIN_NAMESPACE(System)
 {
     class Scene
     {

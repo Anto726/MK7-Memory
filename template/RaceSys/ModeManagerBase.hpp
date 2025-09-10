@@ -1,8 +1,10 @@
 #pragma once
 
+#include "../types.hpp"
+
 #include "RaceInfo/CRaceInfo.hpp"
 
-namespace RaceSys
+BEGIN_NAMESPACE(RaceSys)
 {
     /START_CLASS/NAME@ModeManagerBase/SIZE@0x518/
     public:

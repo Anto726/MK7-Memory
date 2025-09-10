@@ -1,9 +1,11 @@
 #pragma once
 
+#include "../types.hpp"
+
 #include "../Object/Actor.hpp"
 #include "../Util/TStateObserver.hpp"
 
-namespace Item
+BEGIN_NAMESPACE(Item)
 {
 	/START_CLASS/NAME@ItemSlot/SIZE@0x48/BASE@Object::Actor/BSIZE@0x8/
 	public:

@@ -1,8 +1,10 @@
 #pragma once
 
+#include "../types.hpp"
+
 #include "PlayerFlagSaveData.hpp"
 
-namespace System
+BEGIN_NAMESPACE(System)
 {
     struct SystemSaveData
     {

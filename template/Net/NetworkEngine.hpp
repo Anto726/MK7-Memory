@@ -2,7 +2,7 @@
 
 #include "../types.hpp"
 
-namespace Net
+BEGIN_NAMESPACE(Net)
 {
     /START_CLASS/NAME@NetworkEngine/SIZE@0x598/
     public:

@@ -2,7 +2,7 @@
 
 #include "../types.hpp"
 
-namespace Kart
+BEGIN_NAMESPACE(Kart)
 {
     enum class EJugemRecoverType : u32
     {

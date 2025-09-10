@@ -1,5 +1,7 @@
 #pragma once
 
+#include "../../types.hpp"
+
 #include "../CRaceMode.hpp"
 #include "../EBodyID.hpp"
 #include "../ECourseID.hpp"
@@ -16,7 +18,7 @@
 
 #define KART_MAX 8
 
-namespace RaceSys
+BEGIN_NAMESPACE(RaceSys)
 {
     class CRaceInfo
     {

@@ -1,8 +1,10 @@
 #pragma once
 
+#include "../types.hpp"
+
 #include "Control.hpp"
 
-namespace UI
+BEGIN_NAMESPACE(UI)
 {
     class VisualControl : public Control
     {

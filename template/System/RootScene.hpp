@@ -1,9 +1,11 @@
 #pragma once
 
+#include "../types.hpp"
+
 #include "EngineHolder.hpp"
 #include "Scene.hpp"
 
-namespace System
+BEGIN_NAMESPACE(System)
 {
     class RootScene : public Scene
     {

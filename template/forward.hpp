@@ -1,11 +1,13 @@
 #pragma once
 
-namespace Effect
+#include "types.hpp"
+
+BEGIN_NAMESPACE(Effect)
 {
 	class KartEffect;
 }
 
-namespace Field
+BEGIN_NAMESPACE(Field)
 {
 	class CourseInfo;
 	class FieldDirector;
@@ -29,7 +31,7 @@ namespace Field
 	class MapdataStartPointAccessor;
 }
 
-namespace Item
+BEGIN_NAMESPACE(Item)
 {
 	class ItemDirector;
 	class ItemObjBananaDirector;
@@ -59,7 +61,7 @@ namespace Item
 	class KartItemProxy;
 }
 
-namespace Kart
+BEGIN_NAMESPACE(Kart)
 {
 	class Director;
 	class InfoProxy;
@@ -75,12 +77,12 @@ namespace Kart
 	class VehicleReact;
 }
 
-namespace Menu3D
+BEGIN_NAMESPACE(Menu3D)
 {
 	class GarageDirector;
 }
 
-namespace Net
+BEGIN_NAMESPACE(Net)
 {
 	class NetworkBuffer;
 	class NetworkEngine;
@@ -96,7 +98,7 @@ namespace Net
 	class NetworkSystemInfo;
 }
 
-namespace Object
+BEGIN_NAMESPACE(Object)
 {
 	class Actor;
 	class Actor3DMdl;
@@ -105,7 +107,7 @@ namespace Object
 	class CharacterEngine;
 }
 
-namespace RaceSys
+BEGIN_NAMESPACE(RaceSys)
 {
 	class CRaceInfo;
 	class CRaceMode;
@@ -114,7 +116,7 @@ namespace RaceSys
 	class RaceDirector;
 }
 
-namespace Sequence
+BEGIN_NAMESPACE(Sequence)
 {
 	class BaseRacePage;
 	class MenuData;
@@ -122,7 +124,13 @@ namespace Sequence
 	class SequenceEngine;
 }
 
-namespace System
+BEGIN_NAMESPACE(Sound){
+	class SndActorKart;
+	class SndActorBase;
+	class SndHandle;
+}
+
+BEGIN_NAMESPACE(System)
 {
 	class EngineHolder;
 	class GameSetting;
@@ -138,7 +146,7 @@ namespace System
 	struct SystemSaveData;
 }
 
-namespace UI
+BEGIN_NAMESPACE(UI)
 {
 	class BgRaceMapBombControl;
 	class BgRaceMapCharaControl;

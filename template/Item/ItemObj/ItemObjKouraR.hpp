@@ -2,7 +2,7 @@
 
 #include "ItemObjKouraG.hpp"
 
-namespace Item
+BEGIN_NAMESPACE(Item)
 {
     /START_CLASS/NAME@ItemObjKouraR/SIZE@0x2C4/BASE@ItemObjKouraG/BSIZE@0x23C/
     public:

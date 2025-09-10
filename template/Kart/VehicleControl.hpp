@@ -2,7 +2,7 @@
 
 #include "VehicleBase.hpp"
 
-namespace Kart
+BEGIN_NAMESPACE(Kart)
 {
 	/START_CLASS/NAME@VehicleControl/SIZE@0x11C/BASE@VehicleBase/BSIZE@0xE0/
 	public:

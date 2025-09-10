@@ -2,7 +2,9 @@
 
 #include "JmpResourceCourse.hpp"
 
-namespace Field
+#include "../types.hpp"
+
+BEGIN_NAMESPACE(Field)
 {
     /START_CLASS/NAME@CourseInfo/SIZE@0x5C/BASE@JmpResourceCourse/BSIZE@0x58/
     public:

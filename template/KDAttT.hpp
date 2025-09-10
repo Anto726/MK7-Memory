@@ -1,6 +1,10 @@
 #pragma once
 
+#include "types.hpp"
+
 #include <math/seadVector.hpp>
+
+namespace MK7MEMORY_NAMESPACE {
 
 class KDAttT
 {
@@ -10,3 +14,6 @@ public:
     sead::Vector3f m_up;
 };
 static_assert(sizeof(KDAttT) == 0x24);
+
+}
+

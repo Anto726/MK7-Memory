@@ -3,7 +3,9 @@
 #include <container/seadBuffer.h>
 #include <container/seadPtrArray.h>
 
-namespace Field
+#include "../../types.hpp"
+
+BEGIN_NAMESPACE(Field)
 {
     /START_CLASS/NAME@MapdataAccessorBase/TEMPLATE@template <typename Entry, typename Data>/SIZE@0x18/SIZEOF@MapdataAccessorBase<void *, void *>/VTABLE@True/
     public:

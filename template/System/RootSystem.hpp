@@ -1,12 +1,14 @@
 #pragma once
 
+#include "../types.hpp"
+
 #include "SceneManager.hpp"
 
 #include "SystemEngine.hpp"
 
 #include "../Sequence/SequenceEngine.hpp"
 
-namespace System
+BEGIN_NAMESPACE(System)
 {
     class RootSystem
     {

@@ -2,7 +2,7 @@
 
 #include "../types.hpp"
 
-namespace Object
+BEGIN_NAMESPACE(Object)
 {
     enum class EEngineType : u32
     {

@@ -3,6 +3,7 @@
 #include "../eItemType.hpp"
 
 #include "../../RaceSys/RaceInfo/Get.hpp"
+#include "../../types.hpp"
 
 #include "Utils.hpp"
 
@@ -16,7 +17,7 @@
 #define NONE_NUM 0
 #define INVALID_NUM -1
 
-namespace Item
+BEGIN_NAMESPACE(Item)
 {
     static s32 GetNum_InItemType(eItemType item_type)
     {

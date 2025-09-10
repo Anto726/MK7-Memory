@@ -2,7 +2,7 @@
 
 #include "../types.hpp"
 
-namespace Net
+BEGIN_NAMESPACE(Net)
 {
     enum class eNetworkBufferType : u8
     {

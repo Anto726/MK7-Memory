@@ -4,7 +4,9 @@
 
 #include "../Util/JmpResource.hpp"
 
-namespace Field
+#include "../types.hpp"
+
+BEGIN_NAMESPACE(Field)
 {
     /START_CLASS/NAME@JmpResourceCourse/SIZE@0x58/BASE@Util::JmpResource/BSIZE@0x10/
     public:

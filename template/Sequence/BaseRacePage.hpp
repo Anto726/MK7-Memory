@@ -1,11 +1,12 @@
 #pragma once
 
+#include "../types.hpp"
 #include "../forward.hpp"
 #include "RaceSys/CRaceMode.hpp"
 
 #include <container/seadPtrArray.h>
 
-namespace Sequence
+BEGIN_NAMESPACE(Sequence)
 {
     /START_CLASS/NAME@BaseRacePage/SIZE@0x31FC/
     public:

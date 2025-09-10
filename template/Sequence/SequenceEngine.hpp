@@ -3,7 +3,7 @@
 #include "../forward.hpp"
 #include "../types.hpp"
 
-namespace Sequence
+BEGIN_NAMESPACE(Sequence)
 {
     class SequenceEngine
     {

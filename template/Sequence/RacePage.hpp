@@ -1,8 +1,9 @@
 #pragma once
 
+#include "../types.hpp"
 #include "BaseRacePage.hpp"
 
-namespace Sequence
+BEGIN_NAMESPACE(Sequence)
 {
     class RacePage : public BaseRacePage
     {

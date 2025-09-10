@@ -1,10 +1,11 @@
 #pragma once
 
+#include "../types.hpp"
 #include "../RaceSys/ECourseID.hpp"
 
 #include <container/seadPtrArray.h>
 
-namespace Sequence
+BEGIN_NAMESPACE(Sequence)
 {
     class MenuData
     {

@@ -1,9 +1,11 @@
 #pragma once
 
+#include "../types.hpp"
+
 #include "SndActorBase.hpp"
 #include "../Kart/Vehicle.hpp"
 
-namespace Sound
+BEGIN_NAMESPACE(Sound)
 {
     /START_CLASS/NAME@SndActorKart/BASE@SndActorBase/SIZE@0x204/BSIZE@0xD8/
     public:

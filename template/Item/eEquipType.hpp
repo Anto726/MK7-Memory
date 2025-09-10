@@ -2,7 +2,7 @@
 
 #include "../types.hpp"
 
-namespace Item
+BEGIN_NAMESPACE(Item)
 {
     enum class eEquipType : u8
     {

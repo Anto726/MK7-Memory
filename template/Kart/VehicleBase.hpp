@@ -1,12 +1,10 @@
 #pragma once
 
 #include "Rigid.hpp"
+#include "../types.hpp"
+#include "../forward.hpp"
 
-namespace Sound {
-	class SndActorKart;
-}
-
-namespace Kart
+BEGIN_NAMESPACE(Kart)
 {
 	/START_CLASS/NAME@VehicleBase/SIZE@0xE0/BASE@Rigid/BSIZE@0x74/
 	public:

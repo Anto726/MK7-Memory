@@ -8,7 +8,7 @@
 #include "../CourseInfo.hpp"
 #include "../FieldDirector.hpp"
 
-namespace Field
+BEGIN_NAMESPACE(Field)
 {
     class MapdataCheckPointAccessor : public MapdataAccessorBase<MapdataCheckPoint, MapdataCheckPoint::SData> {};
     static_assert(sizeof(MapdataCheckPointAccessor) == 0x18);

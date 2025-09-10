@@ -2,7 +2,7 @@
 
 #include "ItemObjDirectorBase.hpp"
 
-namespace Item
+BEGIN_NAMESPACE(Item)
 {
     /START_CLASS/NAME@ItemObjTailDirector/SIZE@0xBC/BASE@ItemObjDirectorBase/BSIZE@0xBC/
     /END/

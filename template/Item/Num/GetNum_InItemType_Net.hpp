@@ -2,10 +2,12 @@
 
 #include "GetNum_InItemType.hpp"
 
+#include "../../types.hpp"
+
 #define SEVEN_NUM 7
 #define STAR_NUM 2
 
-namespace Item
+BEGIN_NAMESPACE(Item)
 {
     static s32 GetNum_InItemType_Net(eItemType item_type)
     {

@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../forward.hpp"
+#include "../types.hpp"
 
 #include "eItemSlot.hpp"
 #include "eItemType.hpp"
@@ -11,7 +12,7 @@
 
 #include <container/seadPtrArray.h>
 
-namespace Item
+BEGIN_NAMESPACE(Item)
 {
     /START_CLASS/NAME@ItemDirector/SIZE@0xF4/BASE@Object::Actor/BSIZE@0x8/
     public:

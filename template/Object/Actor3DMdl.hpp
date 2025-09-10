@@ -1,8 +1,9 @@
 #pragma once
 
+#include "../types.hpp"
 #include "Actor.hpp"
 
-namespace Object
+BEGIN_NAMESPACE(Object)
 {
     /START_CLASS/NAME@Actor3DMdl/SIZE@0x58/BASE@Actor/BSIZE@0x8/
     public:

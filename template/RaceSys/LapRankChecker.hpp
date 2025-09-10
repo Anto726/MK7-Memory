@@ -2,7 +2,7 @@
 
 #include "../types.hpp"
 
-namespace RaceSys
+BEGIN_NAMESPACE(RaceSys)
 {
 	/START_CLASS/NAME@LapRankChecker/SIZE@0x28/
 	public:

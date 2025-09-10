@@ -2,7 +2,9 @@
 
 #include <math/seadVector.h>
 
-namespace Field
+#include "../../types.hpp"
+
+BEGIN_NAMESPACE(Field)
 {
     /START_CLASS/NAME@MapdataStartPoint/SIZE@0x2C/
     public:

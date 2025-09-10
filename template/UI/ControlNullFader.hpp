@@ -1,6 +1,8 @@
 #pragma once
 
-namespace UI
+#include "../types.hpp"
+
+BEGIN_NAMESPACE(UI)
 {
     class ControlNullFader
     {

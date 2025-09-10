@@ -4,7 +4,7 @@
 
 #include <container/seadBuffer.h>
 
-namespace Item
+BEGIN_NAMESPACE(Item)
 {
     /START_CLASS/NAME@ItemObjGesso/SIZE@0x24C/BASE@ItemObjBanana/BSIZE@0x20C/
     public:

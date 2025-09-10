@@ -1,10 +1,12 @@
 #pragma once
 
+#include "../types.hpp"
+
 #include "PlayerDataNoMii.hpp"
 
 #include <3ds/services/act.h>
 
-namespace System
+BEGIN_NAMESPACE(System)
 {
     class PlayerData : public PlayerDataNoMii
     {

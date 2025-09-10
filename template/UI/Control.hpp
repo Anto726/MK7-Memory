@@ -1,12 +1,14 @@
 #pragma once
 
+#include "../types.hpp"
+
 #include "../Object/Actor.hpp"
 
 #include <nw/lyt/Pane.hpp>
 
 #include "ControlNullFader.hpp"
 
-namespace UI
+BEGIN_NAMESPACE(UI)
 {
     class Control : public Object::Actor
     {

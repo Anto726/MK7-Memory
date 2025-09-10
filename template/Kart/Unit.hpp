@@ -6,7 +6,7 @@
 #include "Vehicle.hpp"
 #include "Driver.hpp"
 
-namespace Kart
+BEGIN_NAMESPACE(Kart)
 {
 	/START_CLASS/NAME@Unit/SIZE@0x400/
 	public:

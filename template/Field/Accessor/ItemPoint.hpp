@@ -8,7 +8,7 @@
 #include "../CourseInfo.hpp"
 #include "../FieldDirector.hpp"
 
-namespace Field
+BEGIN_NAMESPACE(Field)
 {
     class MapdataItemPointAccessor : public MapdataAccessorBase<MapdataItemPoint, MapdataItemPoint::SData> {};
     static_assert(sizeof(MapdataItemPointAccessor) == 0x18);

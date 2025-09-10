@@ -1,10 +1,11 @@
 #pragma once
 
+#include "../types.hpp"
 #include "Actor.hpp"
 
 #include "../System/SceneID.hpp"
 
-namespace Object
+BEGIN_NAMESPACE(Object)
 {
     /START_CLASS/NAME@ActorEngine/SIZE@0x8/BASE@Actor/BSIZE@0x8/
     public:

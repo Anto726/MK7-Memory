@@ -1,10 +1,11 @@
 #pragma once
 
 #include "../../Object/Actor.hpp"
+#include "../../types.hpp"
 
 #include <math/seadVectorFwd.h>
 
-namespace Item
+BEGIN_NAMESPACE(Item)
 {
     /START_CLASS/NAME@ItemObjDirectorBase/SIZE@0xBC/BASE@Object::Actor/BSIZE@0x8/
     public:

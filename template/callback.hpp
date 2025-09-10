@@ -1,8 +1,13 @@
 #pragma once
 
-struct callback
-{
-    void *function;
-    void *gap;
-};
-static_assert(sizeof(callback) == 0x8);
+#include "types.hpp"
+
+namespace MK7MEMORY_NAMESPACE {
+    struct callback
+    {
+        void *function;
+        void *gap;
+    };
+    static_assert(sizeof(callback) == 0x8);
+}
+

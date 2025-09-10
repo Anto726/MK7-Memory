@@ -2,7 +2,9 @@
 
 #include <math/seadVector.h>
 
-namespace Field
+#include "../../types.hpp"
+
+BEGIN_NAMESPACE(Field)
 {
     /START_CLASS/NAME@MapdataEnemyPoint/SIZE@0x54/
     public:

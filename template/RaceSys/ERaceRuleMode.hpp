@@ -2,7 +2,7 @@
 
 #include "../types.hpp"
 
-namespace RaceSys
+BEGIN_NAMESPACE(RaceSys)
 {
     enum class ERaceRuleMode : u32
     {

@@ -1,8 +1,10 @@
 #pragma once
 
+#include "../types.hpp"
+
 #include "ItemDirector.hpp"
 
-namespace Item
+BEGIN_NAMESPACE(Item)
 {
     /START_CLASS/NAME@KartItemProxy/SIZE@0x4/
     public:

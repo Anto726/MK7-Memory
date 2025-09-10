@@ -1,10 +1,11 @@
 #pragma once
 
+#include "../types.hpp"
 #include "NetworkPlayerData.hpp"
 
 #define PLAYER_MAX 10
 
-namespace Net
+BEGIN_NAMESPACE(Net)
 {
     /START_CLASS/NAME@NetworkPlayerDataManager/SIZE@0xE00/
     public:

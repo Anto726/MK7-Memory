@@ -1,10 +1,12 @@
 #pragma once
 
+#include "../types.hpp"
+
 #include "VehicleReact.hpp"
 
 #include <math/seadVector.hpp>
 
-namespace Kart
+BEGIN_NAMESPACE(Kart)
 {
     /START_STRUCT/NAME@NetData/SIZE@0x48/
         struct KartData

@@ -2,7 +2,7 @@
 
 #include "VehicleMove.hpp"
 
-namespace Kart
+BEGIN_NAMESPACE(Kart)
 {
 	/START_CLASS/NAME@VehicleReact/SIZE@0x123C/BASE@VehicleMove/BSIZE@0x1214/
 	public:

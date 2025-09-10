@@ -1,10 +1,11 @@
 #pragma once
 
+#include "../types.hpp"
 #include "../forward.hpp"
 
 #include "ActorEngine.hpp"
 
-namespace Object
+BEGIN_NAMESPACE(Object)
 {
     /START_CLASS/NAME@CharacterEngine/SIZE@0x20/BASE@ActorEngine/BSIZE@0x8/
     public:

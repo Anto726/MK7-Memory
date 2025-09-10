@@ -1,8 +1,9 @@
 #pragma once
 
+#include "../types.hpp"
 #include "../System/PlayerData.hpp"
 
-namespace Net
+BEGIN_NAMESPACE(Net)
 {
     /START_CLASS/NAME@NetworkPlayerData/SIZE@0xA8/BASE@System::PlayerData/BSIZE@0xA0/
     public:

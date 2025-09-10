@@ -2,7 +2,7 @@
 
 #include "VehicleControlAI.hpp"
 
-namespace Kart
+BEGIN_NAMESPACE(Kart)
 {
 	/START_CLASS/NAME@VehicleMove/SIZE@0x1214/BASE@VehicleControlAI/BSIZE@0xC28/
 	public:

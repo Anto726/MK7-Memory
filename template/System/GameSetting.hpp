@@ -1,8 +1,9 @@
 #pragma once
 
+#include "../types.hpp"
 #include <math/seadVector.h>
 
-namespace System
+BEGIN_NAMESPACE(System)
 {
     class GameSetting
     {

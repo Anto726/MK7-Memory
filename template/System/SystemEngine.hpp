@@ -3,7 +3,7 @@
 #include "../forward.hpp"
 #include "../types.hpp"
 
-namespace System
+BEGIN_NAMESPACE(System)
 {
     class SystemEngine
     {

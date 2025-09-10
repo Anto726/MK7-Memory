@@ -2,7 +2,7 @@
 
 #include "../types.hpp"
 
-namespace UI
+BEGIN_NAMESPACE(UI)
 {
     class RaceItemBoxControl
     {

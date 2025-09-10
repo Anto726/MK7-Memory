@@ -1,8 +1,10 @@
 #pragma once
 
+#include "../types.hpp"
+
 #include "TLinkNode.hpp"
 
-namespace Util
+BEGIN_NAMESPACE(Util)
 {
     template <class T>
     /START_CLASS/NAME@TIndLinkList/SIZE@0x10/SIZEOF@TIndLinkList<void>/VTABLE@True/

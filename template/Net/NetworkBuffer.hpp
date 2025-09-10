@@ -1,8 +1,9 @@
 #pragma once
 
 #include "eNetworkBufferType.hpp"
+#include "../types.hpp"
 
-namespace Net
+BEGIN_NAMESPACE(Net)
 {
     /START_CLASS/NAME@NetworkBuffer/SIZE@0x10/
     public:

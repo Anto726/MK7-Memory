@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../types.hpp"
+#include "../forward.hpp"
 
 #include "eEquipType.hpp"
 #include "eItemSlot.hpp"
@@ -8,10 +9,8 @@
 #include "../Kart/InfoProxy.hpp"
 #include "../Kart/Vehicle.hpp"
 
-namespace Item
+BEGIN_NAMESPACE(Item)
 {
-	class ItemDirector;
-
 	/START_CLASS/NAME@KartItem/SIZE@0x60/
 	public:
 		void setEquipInfo(eItemSlot item, eEquipType type, int amount, bool increment)

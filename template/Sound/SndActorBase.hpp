@@ -5,7 +5,7 @@
 #include "../Object/Actor.hpp"
 #include "SndHandle.hpp"
 
-namespace Sound
+BEGIN_NAMESPACE(Sound)
 {
     /START_CLASS/NAME@SndActorBase/BASE@Object::Actor/SIZE@0xD8/BSIZE@0x8/
     public:

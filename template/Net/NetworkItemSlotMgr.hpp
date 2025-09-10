@@ -2,7 +2,7 @@
 
 #include "../types.hpp"
 
-namespace Net
+BEGIN_NAMESPACE(Net)
 {
     /START_CLASS/NAME@NetworkItemSlotMgr/SIZE@0x1/
     public:

@@ -1,8 +1,9 @@
 #pragma once
 
 #include "../Item/eItemType.hpp"
+#include "../types.hpp"
 
-namespace Net
+BEGIN_NAMESPACE(Net)
 {
     /START_CLASS/NAME@NetworkItemEventDataMgr/SIZE@0x1/
     public:

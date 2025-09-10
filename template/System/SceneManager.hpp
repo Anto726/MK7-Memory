@@ -1,10 +1,12 @@
 #pragma once
 
+#include "../types.hpp"
+
 #include "RootScene.hpp"
 
 #include "../Object/CharacterEngine.hpp"
 
-namespace System
+BEGIN_NAMESPACE(System)
 {
     class SceneManager
     {

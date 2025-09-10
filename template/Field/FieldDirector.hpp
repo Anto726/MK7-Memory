@@ -2,7 +2,9 @@
 
 #include "../Object/ActorEngine.hpp"
 
-namespace Field
+#include "../types.hpp"
+
+BEGIN_NAMESPACE(Field)
 {
     /START_CLASS/NAME@FieldDirector/SIZE@0x2AC/BASE@Object::ActorEngine/BSIZE@0x8/
     public:

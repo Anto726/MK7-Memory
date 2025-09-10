@@ -2,7 +2,7 @@
 
 #include "../types.hpp"
 
-namespace Util
+BEGIN_NAMESPACE(Util)
 {
     /START_CLASS/NAME@JmpResource/SIZE@0x10/
     public:

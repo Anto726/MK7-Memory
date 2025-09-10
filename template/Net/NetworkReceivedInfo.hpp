@@ -2,7 +2,7 @@
 
 #include "../types.hpp"
 
-namespace Net
+BEGIN_NAMESPACE(Net)
 {
     /START_STRUCT/NAME@NetworkReceivedInfo/SIZE@0xC/
         /M/void *data/0x4/0x0/

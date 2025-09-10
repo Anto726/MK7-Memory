@@ -1,12 +1,14 @@
 #pragma once
 
+#include "../types.hpp"
+
 #include "Unit.hpp"
 
 #include "../System/RootSystem.hpp"
 
 #include <container/seadPtrArray.h>
 
-namespace Kart
+BEGIN_NAMESPACE(Kart)
 {
     /START_CLASS/NAME@Director/SIZE@0x1A0/
     public:

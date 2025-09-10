@@ -1,8 +1,10 @@
 #pragma once
 
+#include "../types.hpp"
+
 #include "VisualControl.hpp"
 
-namespace UI
+BEGIN_NAMESPACE(UI)
 {
     class BaseMenuViewControl : public VisualControl
     {

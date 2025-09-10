@@ -1,9 +1,11 @@
 #pragma once
 
+#include "../types.hpp"
+
 #include "Director.hpp"
 #include "Vehicle.hpp"
 
-namespace Kart
+BEGIN_NAMESPACE(Kart)
 {
 	/START_CLASS/NAME@InfoProxy/SIZE@0x4/
 	public:

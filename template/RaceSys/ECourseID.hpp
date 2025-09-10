@@ -2,7 +2,7 @@
 
 #include "../types.hpp"
 
-namespace RaceSys
+BEGIN_NAMESPACE(RaceSys)
 {
     // https://tcrf.net/Notes:Mario_Kart_7#Course
     enum class ECourseID : u32

@@ -1,13 +1,14 @@
 #pragma once
 
 #include "../../forward.hpp"
+#include "../../types.hpp"
 
 #include "../../Object/Actor3DMdl.hpp"
 #include "../../Object/ArgumentObj.hpp"
 
 #include <math/seadVectorFwd.h>
 
-namespace Item
+BEGIN_NAMESPACE(Item)
 {
     /START_CLASS/NAME@ItemObjBase/SIZE@0x1F8/BASE@Object::Actor3DMdl/BSIZE@0x58/VTABLE@True/
     public:

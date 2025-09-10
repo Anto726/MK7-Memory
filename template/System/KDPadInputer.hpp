@@ -1,8 +1,10 @@
 #pragma once
 
+#include "../types.hpp"
+
 #include "KDPadAddBase.hpp"
 
-namespace System
+BEGIN_NAMESPACE(System)
 {
     class KDPadInputer : public KDPadAddBase
     {

@@ -1,5 +1,7 @@
 #pragma once
 
+#include "../types.hpp"
+
 #include "../RaceSys/EBodyID.hpp"
 #include "../RaceSys/ECourseID.hpp"
 #include "../RaceSys/EDriverID.hpp"
@@ -13,7 +15,7 @@
 
 #include "../System/RootSystem.hpp"
 
-namespace UI
+BEGIN_NAMESPACE(UI)
 {
     class MessageIDConverter
     {

@@ -5,7 +5,7 @@
 #include <limits>
 #include <type_traits>
 
-namespace Item
+BEGIN_NAMESPACE(Item)
 {
     enum class eItemType : u8
 	{

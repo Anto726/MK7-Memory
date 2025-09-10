@@ -5,7 +5,7 @@
 #include <limits>
 #include <type_traits>
 
-namespace System
+BEGIN_NAMESPACE(System)
 {
     enum class SceneID : u8
     {

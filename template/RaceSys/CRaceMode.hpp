@@ -1,8 +1,10 @@
 #pragma once
 
+#include "../types.hpp"
+
 #include "ERaceRuleMode.hpp"
 
-namespace RaceSys
+BEGIN_NAMESPACE(RaceSys)
 {
     /START_CLASS/NAME@CRaceMode/SIZE@0xC/
     public:

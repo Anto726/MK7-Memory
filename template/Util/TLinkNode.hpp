@@ -2,7 +2,7 @@
 
 #include "../types.hpp"
 
-namespace Util
+BEGIN_NAMESPACE(Util)
 {
     template <class T>
     /START_CLASS/NAME@TLinkNode/SIZE@0x8/SIZEOF@TLinkNode<void>/
