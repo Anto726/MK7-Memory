@@ -32,16 +32,36 @@ BEGIN_NAMESPACE(Kart)
         };
         static_assert(sizeof(KartData) == 0x4);
 
-        /M/KartData kart_data/0x4/0x4/
-        /M/VehicleMove::StatusFlags status_flags/0x4/0x8/
-        /M/sead::Vector3<s16> position/0x6/0x10/
-        /M/sead::Vector3<s16> velocity/0x6/0x16/
-        /M/sead::Vector3<s16> angular_velocity/0x6/0x1C/
-        /M/s16 turning_speed/0x2/0x22/
-        /M/s16 forward_speed/0x2/0x24/
-        /M/s16 drift_steering/0x2/0x26/
-        /M/s16 directional_speed/0x2/0x28/
-        /M/s8 respawn_point/0x1/0x36/
-        /M/VehicleReact::EAcdType accident_type/0x1/0x39/
+        /M/s32 m_frame/0x4/0x0/
+        /M/KartData m_kart_data/0x4/0x4/
+        /M/VehicleMove::StatusFlags m_status_flags/0x4/0x8/
+        /M/s8 m_sender_player_id/0x1/0xC/
+        /M/u8 m_coins/0x1/0xD/
+        /M/u8 m_balloon_points/0x1/0xE/
+        /M/u8 m_balloon_count/0x1/0xF/
+        /M/sead::Vector3<s16> m_position/0x6/0x10/
+        /M/sead::Vector3<s16> m_velocity/0x6/0x16/
+        /M/sead::Vector3<s16> m_angular_velocity/0x6/0x1C/
+        /M/s16 m_turning_speed/0x2/0x22/
+        /M/s16 m_forward_speed/0x2/0x24/
+        /M/s16 m_drift_steering/0x2/0x26/
+        /M/s16 m_directional_speed/0x2/0x28/
+        /M/u8 m_drift_type/0x1/0x2A/
+        /M/u8 m_wing_path_id/0x1/0x2B/
+        /M/u8 m_dokan_warp/0x1/0x2C/
+        /M/u8 m_boost_type/0x1/0x2D/
+        /M/s16 m_boost_speed/0x2/0x2E/
+        /M/u8 m_boost_frames/0x1/0x30/
+        /M/u8 m_star_timer/0x1/0x31/
+        /M/u8 m_ink_timer/0x1/0x32/
+        /M/u8 m_shrink_timer/0x1/0x33/
+        /M/u8 m_squish_timer/0x1/0x34/
+        /M/u8 m_blink_timer/0x1/0x35/
+        /M/s8 m_respawn_point_id/0x1/0x36/
+        /M/u8 m_hit_item_type_id/0x1/0x37/
+        /M/u8 m_hit_player_id/0x1/0x38/
+        /M/VehicleReact::EAcdType m_accident_type/0x1/0x39/
+        /M/sead::Vector3<s16> m_hit_direction_1/0x6/0x3A/
+        /M/sead::Vector3<s16> m_hit_direction_2/0x6/0x40/
     /END/
 }
