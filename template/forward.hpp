@@ -98,6 +98,7 @@ BEGIN_NAMESPACE(Net)
 	class NetworkReceivedInfo;
 	class NetworkSelectMenuProcess;
 	class NetworkSystemInfo;
+	class NetworkStationBufferManager;
 }
 
 BEGIN_NAMESPACE(Object)
