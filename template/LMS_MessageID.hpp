@@ -2,7 +2,8 @@
 
 #include "types.hpp"
 
-namespace MK7MEMORY_NAMESPACE {
+BEGIN_GLOBAL_NAMESPACE
+
     enum LMS_MessageID : u32
     {
         INVALID = 0,
@@ -229,4 +230,5 @@ namespace MK7MEMORY_NAMESPACE {
 
         Region_end = 68502,
     };
-}
+
+END_GLOBAL_NAMESPACE

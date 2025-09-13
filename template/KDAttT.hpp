@@ -4,7 +4,7 @@
 
 #include <math/seadVector.hpp>
 
-namespace MK7MEMORY_NAMESPACE {
+BEGIN_GLOBAL_NAMESPACE
 
 class KDAttT
 {
@@ -15,5 +15,5 @@ public:
 };
 static_assert(sizeof(KDAttT) == 0x24);
 
-}
+END_GLOBAL_NAMESPACE
 
