@@ -10,7 +10,7 @@ BEGIN_NAMESPACE(RaceSys)
         CPU,
         User,
         Ghost,
-        _4,
+        Master_Replay,
         MAX,
         INVALID,
     };
