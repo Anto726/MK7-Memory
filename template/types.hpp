@@ -5,8 +5,12 @@
 
 #ifndef MK7MEMORY_NAMESPACE
   #define BEGIN_NAMESPACE(sub) namespace sub
+  #define BEGIN_GLOBAL_NAMESPACE
+  #define END_GLOBAL_NAMESPACE
 #else
   #define BEGIN_NAMESPACE(sub) namespace MK7MEMORY_NAMESPACE::sub
+  #define BEGIN_GLOBAL_NAMESPACE namespace MK7MEMORY_NAMESPACE {
+  #define END_GLOBAL_NAMESPACE }
 #endif
 
 using s8 = std::int8_t;

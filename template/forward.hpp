@@ -87,6 +87,7 @@ BEGIN_NAMESPACE(Menu3D)
 BEGIN_NAMESPACE(Net)
 {
 	class NetworkBuffer;
+	class NetworkBufferController;
 	class NetworkEngine;
 	class NetworkErrorHandler;
 	class NetworkEventModule;
@@ -98,6 +99,7 @@ BEGIN_NAMESPACE(Net)
 	class NetworkReceivedInfo;
 	class NetworkSelectMenuProcess;
 	class NetworkSystemInfo;
+	class NetworkStationBufferManager;
 }
 
 BEGIN_NAMESPACE(Object)

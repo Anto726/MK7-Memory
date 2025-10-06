@@ -1,11 +1,13 @@
 #pragma once
 
 #include "../types.hpp"
+#include "../forward.hpp"
 
 BEGIN_NAMESPACE(Net)
 {
     /START_CLASS/NAME@NetworkEngine/SIZE@0x598/
     public:
+        /M/NetworkStationBufferManager* m_network_station_buffer_manager/0x4/0x25C/
         /M/s32 m_local_station_id/0x4/0x264/
         /M/s32 m_local_player_id/0x4/0x268/
         /M/s32 m_master_station_id/0x4/0x26C/

@@ -2,7 +2,7 @@
 
 #include "KDAttT.hpp"
 
-namespace MK7MEMORY_NAMESPACE {
+BEGIN_GLOBAL_NAMESPACE
 
 class KDMtxT
 {
@@ -12,5 +12,5 @@ public:
 };
 static_assert(sizeof(KDMtxT) == 0x30);
 
-}
+END_GLOBAL_NAMESPACE
 

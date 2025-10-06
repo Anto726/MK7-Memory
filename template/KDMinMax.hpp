@@ -2,7 +2,7 @@
 
 #include "KDAttT.hpp"
 
-namespace MK7MEMORY_NAMESPACE {
+BEGIN_GLOBAL_NAMESPACE
 
 class KDMinMax
 {
@@ -12,5 +12,5 @@ public:
 };
 static_assert(sizeof(KDMinMax) == 0x18);
 
-}
+END_GLOBAL_NAMESPACE
 
