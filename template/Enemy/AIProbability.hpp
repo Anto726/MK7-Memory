@@ -10,7 +10,7 @@
 
 BEGIN_NAMESPACE(Enemy)
 {
-    /START_CLASS/NAME@AIProbabilityBase/SIZE@0x18/VTABLE@True/
+    /START_CLASS/NAME@AIProbabilityBase/SIZE@0x10/VTABLE@True/
 	public:
         virtual void init() {}
         virtual void calcRocketStartOrWheelSpin() {}
@@ -24,11 +24,9 @@ BEGIN_NAMESPACE(Enemy)
 		/M/AIParamLoader *m_param_loader/0x4/0x4/
         /M/s32 field_0x08/0x4/0x8/
         /M/s32 m_start_boost_level/0x4/0xC/
-        /M/AIInfo *m_info/0x4/0x10/
-        /M/AIManager *m_manager/0x4/0x14/
 	/END/
 
-    /START_CLASS/NAME@AIProbabilityRace/SIZE@0x20/BASE@AIProbabilityBase/BSIZE@0x18/
+    /START_CLASS/NAME@AIProbabilityRace/SIZE@0x20/BASE@AIProbabilityBase/BSIZE@0x10/
 	public:
         AIProbabilityRace();
 
@@ -40,6 +38,8 @@ BEGIN_NAMESPACE(Enemy)
         virtual bool isLaunchJumpAction();
         virtual bool isLaunchSideAttack();
 
+        /M/AIInfo *m_info/0x4/0x10/
+        /M/AIManager *m_manager/0x4/0x14/
         /M/void *field_0x18/0x4/0x18/
         /M/bool m_can_drift/0x4/0x1C/
 	/END/
