@@ -11,6 +11,11 @@ BEGIN_NAMESPACE(Object)
         Render,
         System,
         Sequence,
+        Mii,
+        Sound,
+        Network,
+        Effect,
+        _9,
         MAX
     };
 }
