@@ -27,6 +27,7 @@ BEGIN_NAMESPACE(Kart)
 		/M/bool m_is_net_recv/0x1/0x9E/
 		/M/bool m_is_intangible/0x1/0xA3/
 		/M/bool m_is_fake_goal/0x1/0xA6/
+		/M/RaceSys::LapRankChecker *m_lap_rank_checker/0x4/0xB8/
 		/M/Sound::SndActorKart *m_snd_actor_kart/0x4/0xDC/
 	/END/
 }
