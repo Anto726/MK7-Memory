@@ -16,5 +16,5 @@ BEGIN_NAMESPACE(System)
 
         EngineHolder m_engine_holder;
     };
-    static_assert(sizeof(RootScene) == 0x220);
+    static_assert(sizeof(RootScene) == 0x26C);
 }

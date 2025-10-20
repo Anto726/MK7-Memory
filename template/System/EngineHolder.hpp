@@ -29,7 +29,7 @@ BEGIN_NAMESPACE(System)
 
             SEngineInfo m_engine_infos[std::to_underlying(Object::EEngineType::MAX)];
         };
-        static_assert(sizeof(EngineManager) == 0x40);
+        static_assert(sizeof(EngineManager) == 0x7C);
 
         template <typename t>
         inline t *get_engine(Object::EEngineType type) const
@@ -41,6 +41,8 @@ BEGIN_NAMESPACE(System)
         }
 
         EngineManager m_engine_manager;
+        // It's not clear if this gap is here or in RootScene.
+        u8 gap_0x7C[0x10];
     };
-    static_assert(sizeof(EngineHolder) == 0x40);
+    static_assert(sizeof(EngineHolder) == 0x8C);
 }
