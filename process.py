@@ -6,6 +6,12 @@ class Parser:
         self.child: Parser = None
     
     def parseCommand(self, line: str) -> dict:
+        commentStart = line.find("//")
+        comment = None
+        if commentStart != -1:
+            comment = line[commentStart + 2:].strip()
+            line = line[:commentStart]
+        
         if not line.strip().startswith("/") or not line.strip().endswith("/"):
             return None
         
@@ -16,6 +22,8 @@ class Parser:
         
         result["preamble"] = parts[0]
         result["command"] = parts[1].lower()
+        if comment is not None:
+            result["comment"] = comment
         
         noncolon = 0
         for part in parts[2:]:
