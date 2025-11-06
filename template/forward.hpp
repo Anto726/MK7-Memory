@@ -142,6 +142,7 @@ BEGIN_NAMESPACE(System)
 	class KDPadInputer;
 	class PlayerData;
 	struct PlayerDataNoMii;
+	class ResourceLoader;
 	class RootScene;
 	class RootSystem;
 	class Scene;
