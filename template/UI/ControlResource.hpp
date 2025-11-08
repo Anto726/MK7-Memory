@@ -19,7 +19,7 @@ BEGIN_NAMESPACE(UI)
         /M/u16 m_class_name_offset/0x2/0x0A/
         // See the `ControlSightType` enum
         /M/u16 m_layout_type/0x2/0x0C/
-        // Layout (BCLIM) name offset. Offset relative to start of nameTable
+        // Layout (BCLYT) name offset. Offset relative to start of nameTable
         /M/u16 m_layout_name_offset/0x2/0x0E/
         /**
          * Num Data
