@@ -14,10 +14,10 @@ BEGIN_NAMESPACE(UI)
     {
     public:
         enum ControlSightType {
-            DUMMY = 1,
-            DEFAULT,
-            DIV_ROOT,
-            DIV_PART
+            CONTROL_SIGHT_TYPE_DUMMY = 1,
+            CONTROL_SIGHT_TYPE_DEFAULT,
+            CONTROL_SIGHT_TYPE_DIV_ROOT,
+            CONTROL_SIGHT_TYPE_DIV_PART
         };
 
         class CreateArg

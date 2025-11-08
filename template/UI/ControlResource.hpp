@@ -8,7 +8,6 @@
 
 BEGIN_NAMESPACE(UI)
 {
-
     /START_CLASS/NAME@BCTR/SIZE@0x44/
     public:
         /M/u32 m_magic/0x4/0x00/  // BCTR
@@ -22,7 +21,7 @@ BEGIN_NAMESPACE(UI)
         // Layout (BCLYT) name offset. Offset relative to start of nameTable
         /M/u16 m_layout_name_offset/0x2/0x0E/
         /**
-         * Num Data
+         * Num data
          */
         /M/u16 m_num_message_data/0x2/0x10/
         /M/u16 m_num_textbox/0x2/0x12/
@@ -53,7 +52,7 @@ BEGIN_NAMESPACE(UI)
         /M/u32 field_0x3C/0x4/0x3C/
         // Points to a struct that has the nameTable size
         // and the nameTable strings
-        /M/u32 m_nametable_data_offset/0x4/0x40/
+        /M/u32 m_nametable_offset/0x4/0x40/
     /END/
 
     // Aka BCTRNormalElement
