@@ -29,7 +29,7 @@ BEGIN_NAMESPACE(Sequence)
         SECTION_BLOCK_SCENE_SEQUENCE_PROXY      // Type: SceneSequenceProxyBlock
     };
 
-    /START_CLASS/NAME@BSEQ/BSEQEngineCreatorTable/SIZE@0x4/
+    /START_CLASS/NAME@BSEQEngineCreatorTable/SIZE@0x4/
     public:
         /M/u16 m_engine_creator_name_offset/0x2/0x00/
         /M/u16 m_scene_name_offset/0x2/0x02/
@@ -152,7 +152,7 @@ BEGIN_NAMESPACE(Sequence)
             /M/u16 m_next_return_code_item_index/0x2/0x06/
         /END/
 
-        /START_CLASS/NAME@SequenceBlockFlowListEntry/SIZE@0xC/BASE@SequenceBlockFlowListEntry/BSIZE@0x8/
+        /START_CLASS/NAME@CrossFadeSequenceBlockFlowListEntry/SIZE@0xC/BASE@SequenceBlockFlowListEntry/BSIZE@0x8/
         public:
             /M/u16 m_cross_fade_type/0x2/0x08/
         /END/
@@ -196,6 +196,7 @@ BEGIN_NAMESPACE(Sequence)
         /M/BSEQ *m_bseq_file_buffer/0x4/0x00/
         /M/BSEQ *m_bseq/0x4/0x04/
         /M/char **m_stringTableBlock/0x4/0x08/
+        // Type: BSEQEngineCreatorTable
         /M/u32 m_engine_creator_table_offset/0x4/0x0C/
         /M/SectionBlock **m_section_blocks/0x4/0x10/
     /END/
