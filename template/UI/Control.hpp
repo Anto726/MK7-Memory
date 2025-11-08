@@ -13,6 +13,13 @@ BEGIN_NAMESPACE(UI)
     class Control : public Object::Actor
     {
     public:
+        enum ControlSightType {
+            DUMMY = 1,
+            DEFAULT,
+            DIV_ROOT,
+            DIV_PART
+        };
+
         class CreateArg
         {
         public:
