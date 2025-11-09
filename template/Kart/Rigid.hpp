@@ -1,5 +1,6 @@
 #pragma once
 
+#include "../forward.hpp"
 #include "../types.hpp"
 
 #include "../KDMinMax.hpp"

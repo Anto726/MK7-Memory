@@ -3,15 +3,15 @@
 #include "Rigid.hpp"
 
 #include "../RaceSys/EBodyID.hpp"
+#include "../RaceSys/ECourseID.hpp"
 #include "../RaceSys/EDriverID.hpp"
+#include "../RaceSys/ETeamType.hpp"
 #include "../RaceSys/ETireID.hpp"
 #include "../RaceSys/EWingID.hpp"
 
-#include "../forward.hpp"
-
 BEGIN_NAMESPACE(Kart)
 {
-	/START_CLASS/NAME@VehicleBase/SIZE@0xE0/BASE@Rigid/BSIZE@0x74/
+	/START_CLASS/NAME@VehicleBase/SIZE@0xDC/BASE@Rigid/BSIZE@0x74/
 	public:
 		/M/Vehicle *m_vehicle/0x4/0x74/
 		/M/Director *m_director/0x4/0x78/
@@ -23,11 +23,29 @@ BEGIN_NAMESPACE(Kart)
 		/M/RaceSys::ETireID m_tire_id/0x4/0x90/
 		/M/RaceSys::EWingID m_wing_id/0x4/0x94/
 		/M/bool m_is_master/0x1/0x98/
+		/M/u8 m_ai_id/0x1/0x99/ // needs more research, weird usage
+		/M/bool m_is_ai_path_controlled/0x1/0x9A/
+		/M/bool m_is_ai_pad_controlled/0x1/0x9B/
+		/M/bool m_is_net_object/0x1/0x9C/
 		/M/bool m_is_net_send/0x1/0x9D/
 		/M/bool m_is_net_recv/0x1/0x9E/
+		/M/bool m_0x9F_is_player_or_takeover/0x1/0x9F/ // needs more research, unsure
+		/M/bool m_is_live_view/0x1/0xA0/
+		/M/bool m_is_detail/0x1/0xA1/
+		/M/bool m_is_ghost/0x1/0xA2/
 		/M/bool m_is_intangible/0x1/0xA3/
+		/M/bool m_is_battle_mode/0x1/0xA4/
+		/M/bool m_is_game_mode_award/0x1/0xA5/
 		/M/bool m_is_fake_goal/0x1/0xA6/
+		/M/bool m_is_real_goal/0x1/0xA7/
+		/M/bool m_is_need_big_shaft/0x1/0xA8/
+		/M/RaceSys::ETeamType m_team_type/0x4/0xAC/
+		/M/RaceSys::KartInfo *m_kart_info/0x4/0xB0/
+		/M/RaceSys::ECourseID m_course_id/0x4/0xB4/
 		/M/RaceSys::LapRankChecker *m_lap_rank_checker/0x4/0xB8/
-		/M/Sound::SndActorKart *m_snd_actor_kart/0x4/0xDC/
+		/M/RaceSys::RaceDirector *m_race_director/0x4/0xBC/
+		/M/u32 *m_frame/0x4/0xC0/
+		/M/s32 m_calc_move_count/0x4/0xC4/
+		/M/KartPartsCustomedParam *m_kart_parts_customed_param/0x4/0xC8/
 	/END/
 }
