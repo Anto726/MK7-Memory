@@ -115,6 +115,7 @@ BEGIN_NAMESPACE(RaceSys)
 {
 	class CRaceInfo;
 	class CRaceMode;
+	class CTime;
 	class LapRankChecker;
 	class ModeManagerBase;
 	class RaceDirector;
