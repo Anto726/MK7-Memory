@@ -116,6 +116,7 @@ BEGIN_NAMESPACE(RaceSys)
 	class CRaceInfo;
 	class CRaceMode;
 	class CTime;
+	class KartInfo;
 	class LapRankChecker;
 	class ModeManagerBase;
 	class RaceDirector;
