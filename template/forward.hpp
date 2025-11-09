@@ -67,6 +67,7 @@ BEGIN_NAMESPACE(Kart)
 	class Director;
 	class Driver;
 	class InfoProxy;
+	class KartPartsCustomedParam;
 	struct NetData;
 	class Rigid;
 	class Unit;
