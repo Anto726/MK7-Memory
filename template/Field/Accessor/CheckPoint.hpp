@@ -13,7 +13,7 @@ BEGIN_NAMESPACE(Field)
     class MapdataCheckPointAccessor : public MapdataAccessorBase<MapdataCheckPoint, MapdataCheckPoint::SData> {};
     static_assert(sizeof(MapdataCheckPointAccessor) == 0x18);
 
-    static auto GetCheckPointAccessor()
+    inline auto GetCheckPointAccessor()
     {
         return System::g_root_system->get_field_director()->m_course_info->m_check_point_accessor;
     }
