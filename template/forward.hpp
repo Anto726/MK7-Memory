@@ -129,6 +129,10 @@ BEGIN_NAMESPACE(Sequence)
 	class MenuData;
 	class RacePage;
 	class SequenceEngine;
+	class SequenceResource;
+	class Section;
+	class LayeredSequence;
+	class SequenceLayer;
 }
 
 BEGIN_NAMESPACE(Sound){
