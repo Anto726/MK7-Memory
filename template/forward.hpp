@@ -133,6 +133,12 @@ BEGIN_NAMESPACE(Sequence)
 	class Section;
 	class LayeredSequence;
 	class SequenceLayer;
+	class DelegateSequence;
+	class ParallelSequence;
+	class SerialSequence;
+	class CrossFadeSequence;
+	class SceneSequence;
+	class SceneSequenceProxy;
 }
 
 BEGIN_NAMESPACE(Sound){
