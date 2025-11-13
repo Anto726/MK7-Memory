@@ -4,7 +4,7 @@
 
 BEGIN_NAMESPACE(Sequence)
 {
-    /START_CLASS/NAME@SectionClassInfoBase/SIZE@0x24/
+    /START_CLASS/NAME@SectionClassInfoBase/SIZE@0x24/VTABLE@True/
         virtual char* getClassName() const;
         // TODO: Complete the vtable list
 
