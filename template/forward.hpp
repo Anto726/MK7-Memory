@@ -125,6 +125,7 @@ BEGIN_NAMESPACE(RaceSys)
 
 BEGIN_NAMESPACE(Sequence)
 {
+	class Page;
 	class BaseRacePage;
 	class MenuData;
 	class RacePage;
@@ -139,6 +140,9 @@ BEGIN_NAMESPACE(Sequence)
 	class CrossFadeSequence;
 	class SceneSequence;
 	class SceneSequenceProxy;
+	class SectionClassInfoBase;
+	class PracticalSection;
+	class ExecutableSection;
 }
 
 BEGIN_NAMESPACE(Sound){
