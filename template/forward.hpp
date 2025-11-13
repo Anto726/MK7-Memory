@@ -123,6 +123,11 @@ BEGIN_NAMESPACE(RaceSys)
 	class RaceDirector;
 }
 
+BEGIN_NAMESPACE(Render)
+{
+	class DrawMdl;
+}
+
 BEGIN_NAMESPACE(Sequence)
 {
 	class Page;
@@ -145,7 +150,8 @@ BEGIN_NAMESPACE(Sequence)
 	class ExecutableSection;
 }
 
-BEGIN_NAMESPACE(Sound){
+BEGIN_NAMESPACE(Sound)
+{
 	class SndActorKart;
 	class SndActorBase;
 	class SndHandle;
