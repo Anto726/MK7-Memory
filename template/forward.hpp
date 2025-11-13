@@ -4,6 +4,7 @@
 
 BEGIN_NAMESPACE(Effect)
 {
+	class GameParticle;
 	class KartEffect;
 }
 
@@ -56,6 +57,7 @@ BEGIN_NAMESPACE(Item)
 	class ItemObjStarDirector;
 	class ItemObjTailDirector;
 	class ItemObjThunderDirector;
+	class ItemReactProxy;
 	class ItemSlot;
 	class KartItem;
 	class KartItemProxy;
@@ -119,6 +121,7 @@ BEGIN_NAMESPACE(RaceSys)
 	class CTime;
 	class KartInfo;
 	class LapRankChecker;
+	class LogRecorder;
 	class ModeManagerBase;
 	class RaceDirector;
 }
@@ -126,6 +129,7 @@ BEGIN_NAMESPACE(RaceSys)
 BEGIN_NAMESPACE(Render)
 {
 	class DrawMdl;
+	class ShadowVolume;
 }
 
 BEGIN_NAMESPACE(Sequence)

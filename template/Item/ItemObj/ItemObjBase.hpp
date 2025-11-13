@@ -6,12 +6,22 @@
 #include "../../Object/Actor3DMdl.hpp"
 #include "../../Object/ArgumentObj.hpp"
 
+#include "../../Util/TStateObserver.hpp"
+
 #include <math/seadVectorFwd.h>
 
 BEGIN_NAMESPACE(Item)
 {
     /START_CLASS/NAME@ItemObjBase/SIZE@0x1F8/BASE@Object::Actor3DMdl/BSIZE@0x58/VTABLE@True/
     public:
+        enum class eColMode : u8
+        {
+            None,
+            Equip,
+            SelfMove,
+            Stand,
+        };
+
         virtual void *getDTIClassInfo() const { return {}; }; // 0
 		virtual void *getDTIClass() const { return {}; }; // 1
 
@@ -85,12 +95,32 @@ BEGIN_NAMESPACE(Item)
         virtual void _0x110() = 0; // 68
         virtual void _0x114() = 0; // 69
 
+        /M/Util::TStateObserver<ItemObjBase> m_state_observer_base/0x20/0x58/
+        /M/sead::Matrix34f m_draw_mtx/0x30/0x78/
         /M/sead::Vector3f m_position/0xC/0xA8/
+        /M/sead::Vector3f m_0xB4/0xC/0xB4/ // velocity or angle related?
+        /M/float m_multi_cycle/0x4/0xC0/
+        /M/sead::Vector3f m_velocity/0xC/0xC4/
         /M/float m_gravity/0x4/0xD0/
+        /M/sead::Vector3f m_0xD4/0xC/0xD4/
+        /M/s32 m_multi_id/0x4/0xE0/
+        /M/sead::Vector2f m_multi_position/0x8/0xE4/
+        /M/s32 m_multi_amount/0x4/0xEC/
+        /M/Render::ShadowVolume *m_shadow_volume/0x4/0xF0/
+        /M/bool m_is_thrown_backwards/0x1/0xF4/
+        /M/sead::Vector2f m_stick/0x8/0xF8/
+        /M/u8 m_0x100/0x1/0x100/ // unknown
+        /M/sead::Vector3f m_0x104/0xC/0x104/
+        /M/Effect::GameParticle *m_game_particle_1/0x4/0x110/
+        /M/ItemReactProxy *m_item_react_proxy/0x4/0x114/
+        /M/RaceSys::ModeManagerBase *m_mode_manager/0x4/0x130/
+        /M/RaceSys::CRaceInfo *m_race_info/0x4/0x134/
+        /M/RaceSys::LogRecorder *m_log_recorder/0x4/0x138/
         /M/eItemType m_item_type/0x1/0x156/
         /M/Kart::InfoProxy *m_info_proxy/0x4/0x158/
         /M/s32 m_item_id/0x4/0x160/
         /M/s32 m_owner_player_id/0x4/0x164/
+        /M/eColMode m_col_mode/0x1/0x170/
         /M/bool m_is_dropped/0x1/0x1AE/
     /END/
 }
