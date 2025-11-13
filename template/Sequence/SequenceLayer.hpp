@@ -1,9 +1,7 @@
 #pragma once
 
+#include "../forward.hpp"
 #include "../types.hpp"
-
-#include "Section.hpp"
-#include "LayeredSequence.hpp"
 
 BEGIN_NAMESPACE(Sequence)
 {

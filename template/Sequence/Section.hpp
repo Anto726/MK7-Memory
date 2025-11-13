@@ -1,11 +1,11 @@
 #pragma once
 
-#include "../Object/Actor.hpp"
-
+#include "../forward.hpp"
 #include "../types.hpp"
 
+#include "../Object/Actor.hpp"
+
 #include "SequenceResource.hpp"
-#include "SequenceLayer.hpp"
 
 BEGIN_NAMESPACE(Sequence)
 {
