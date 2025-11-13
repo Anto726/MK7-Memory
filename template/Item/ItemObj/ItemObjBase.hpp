@@ -8,6 +8,8 @@
 
 #include "../../Util/TStateObserver.hpp"
 
+#include "../eItemType.hpp"
+
 #include <math/seadVectorFwd.h>
 
 BEGIN_NAMESPACE(Item)
@@ -121,6 +123,7 @@ BEGIN_NAMESPACE(Item)
         /M/s32 m_item_id/0x4/0x160/
         /M/s32 m_owner_player_id/0x4/0x164/
         /M/eColMode m_col_mode/0x1/0x170/
+        /M/sead::Vector3f m_move/0xC/0x18C/
         /M/bool m_is_dropped/0x1/0x1AE/
     /END/
 }

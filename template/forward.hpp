@@ -2,6 +2,11 @@
 
 #include "types.hpp"
 
+BEGIN_NAMESPACE(BoxCol)
+{
+	class Unit;
+}
+
 BEGIN_NAMESPACE(Effect)
 {
 	class GameParticle;
@@ -186,4 +191,9 @@ BEGIN_NAMESPACE(UI)
 	class MessageIDConverter;
 	class MessageWriter;
 	class TimeControl;
+}
+
+BEGIN_NAMESPACE(Util)
+{
+	class Shape;
 }
