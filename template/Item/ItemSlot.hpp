@@ -12,7 +12,10 @@ BEGIN_NAMESPACE(Item)
 	public:
 		enum ObserverStatus : u8
         {
-            ObserverStatus_Stock = 3,
+			ObserverStatus_Empty,
+			ObserverStatus_Spin,
+			ObserverStatus_LastSpin,
+            ObserverStatus_Stock,
         };
 
 		/M/Kart::InfoProxy *m_info_proxy/0x4/0x8/
