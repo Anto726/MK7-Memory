@@ -78,6 +78,7 @@ BEGIN_NAMESPACE(Item)
 	class ItemObjThunderDirector;
 	class ItemReactProxy;
 	class ItemSlot;
+	class ItemSlotTable;
 	class KartItem;
 	class KartItemProxy;
 }

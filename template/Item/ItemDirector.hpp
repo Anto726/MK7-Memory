@@ -1,8 +1,9 @@
 #pragma once
 
 #include "../forward.hpp"
-#include "../types.hpp"
+#include "../callback.hpp"
 
+#include "eInvalidFlag.hpp"
 #include "eItemSlot.hpp"
 #include "eItemType.hpp"
 
@@ -148,6 +149,20 @@ BEGIN_NAMESPACE(Item)
         /M/ItemObjTailDirector *m_tail_director/0x4/0x50/
         /M/ItemObjKinokoDirector *m_kinoko_director/0x4/0x54/
         /M/ItemObjSevenDirector *m_seven_director/0x4/0x58/
+        /M/s32 m_gesso_time/0x4/0x5C/
+        /M/s32 m_thunder_time/0x4/0x60/
+        /M/s32 m_kourab_time/0x4/0x64/
+        /M/s32 m_killer_time/0x4/0x68/
+        /M/s32 m_seven_time/0x4/0x6C/
+        /M/s32 m_kinokop_time/0x4/0x70/
+        /M/bool m_special_items_threshold_passed/0x4/0x74/
+        /M/eInvalidFlag m_invalid_flag/0x4/0x78/
+        /M/callback f_item_event_recv_handler/0x8/0x84/
+        /M/ItemSlotTable *m_item_slot_table/0x4/0x8C/
+        /M/sead::PtrArray<ItemObjBase> m_ptr_array_equip/0xC/0x90/
+        /M/sead::PtrArray<ItemObjBase> m_ptr_array_selfmove/0xC/0x9C/
+        /M/sead::PtrArray<ItemObjBase> m_ptr_array_stand/0xC/0xA8/
+        /M/sead::PtrArray<ItemObjBase> m_ptr_array_delwait/0xC/0xB4/
         /M/sead::PtrArray<KartItem> m_kart_items/0xC/0xC0/
         /M/RaceSys::ModeManagerBase *m_mode_manager/0x4/0xF0/
     /END/
