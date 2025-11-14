@@ -13,6 +13,12 @@ BEGIN_NAMESPACE(Effect)
 	class KartEffect;
 }
 
+BEGIN_NAMESPACE(Enemy)
+{
+	class AI;
+	class AIPathHandler;
+}
+
 BEGIN_NAMESPACE(Field)
 {
 	class CourseInfo;
