@@ -13,6 +13,21 @@ BEGIN_NAMESPACE(Kart)
 {
 	/START_CLASS/NAME@VehicleBase/SIZE@0xDC/BASE@Rigid/BSIZE@0x74/
 	public:
+		/START_STRUCT/NAME@CreateArg/SIZE@0x24/
+			/M/s32 player_id/0x4/0x0/
+			/M/RaceSys::EDriverID driver_id/0x4/0x4/
+			/M/RaceSys::EBodyID body_id/0x4/0x8/
+			/M/RaceSys::ETireID tire_id/0x4/0xC/
+			/M/RaceSys::EWingID wing_id/0x4/0x10/
+			/M/KartPartsCustomedParam *kart_parts_customed_param/0x4/0x14/
+			/M/bool is_cpu/0x1/0x18/
+			/M/bool is_player/0x1/0x19/
+			/M/bool is_detail/0x1/0x1A/
+			/M/bool is_master/0x1/0x1B/
+			/M/bool is_ghost/0x1/0x1C/
+			/M/void *light_obj/0x4/0x20/ // Render::RaceLight::LightObj *
+		/END/
+
 		/M/Vehicle *m_vehicle/0x4/0x74/
 		/M/Director *m_director/0x4/0x78/
 		/M/Driver *m_driver/0x4/0x7C/
