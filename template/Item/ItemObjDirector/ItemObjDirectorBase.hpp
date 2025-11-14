@@ -3,6 +3,7 @@
 #include "../../Object/Actor.hpp"
 #include "../../types.hpp"
 
+#include <container/seadPtrArray.h>
 #include <math/seadVectorFwd.h>
 
 BEGIN_NAMESPACE(Item)
@@ -60,5 +61,13 @@ BEGIN_NAMESPACE(Item)
         virtual void vanishEquip_Multi(int, bool) {}; // 38
         virtual void setDelayFrame(int, int) {}; // 39
 
+        /M/sead::PtrArray<ItemObjBase> m_item_objs/0xC/0x8/
+        /M/u8 m_0x14/0x1/0x14/ // unused?
+        /M/s32 m_item_obj_last_id/0x4/0x18/
+        /M/s32 m_item_objs_num/0x4/0x1C/
+        /M/u32 m_0x20/0x4/0x20/ // unused?
+        /M/s32 m_entry_num/0x4/0x24/
+        /M/sead::PtrArray<ItemObjBase> m_ptr_arrays[12]/0x90/0x28/
+        /M/u8 m_serial_current/0x1/0xB8/
     /END/
 }
