@@ -4,11 +4,18 @@
 
 BEGIN_NAMESPACE(BoxCol)
 {
+	class Manager;
 	class Unit;
+}
+
+BEGIN_NAMESPACE(Demo)
+{
+	class DemoCameraDirector;
 }
 
 BEGIN_NAMESPACE(Effect)
 {
+	class GameEffectDirector;
 	class GameParticle;
 	class KartEffect;
 }
@@ -41,6 +48,7 @@ BEGIN_NAMESPACE(Field)
 	class MapdataPathAccessor;
 	class MapdataStageAccessor;
 	class MapdataStartPointAccessor;
+	class ObjectDirector;
 }
 
 BEGIN_NAMESPACE(Item)
@@ -74,6 +82,11 @@ BEGIN_NAMESPACE(Item)
 	class KartItemProxy;
 }
 
+BEGIN_NAMESPACE(Jugem)
+{
+	class Director;
+}
+
 BEGIN_NAMESPACE(Kart)
 {
 	class Camera;
@@ -93,9 +106,16 @@ BEGIN_NAMESPACE(Kart)
 	class VehicleReact;
 }
 
+BEGIN_NAMESPACE(KDGndCol)
+{
+	class Manager;
+}
+
 BEGIN_NAMESPACE(Menu3D)
 {
 	class GarageDirector;
+	class ModelCreateManager;
+	class SimpleModelManager;
 }
 
 BEGIN_NAMESPACE(Net)
@@ -122,7 +142,9 @@ BEGIN_NAMESPACE(Object)
 	class Actor3DMdl;
 	class ActorEngine;
     class ActorVisitor;
+	class BattleObjectMgrBase;
 	class CharacterEngine;
+	class Trophy3DModelManager;
 }
 
 BEGIN_NAMESPACE(RaceSys)
