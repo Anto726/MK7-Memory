@@ -6,7 +6,7 @@ BEGIN_NAMESPACE(RaceSys)
 {
     enum class ETitleType : u32
     {
-        ModelDriver_1,
+        ModelDriver_1, // DEFAULT/INVALID?
         ShellShark,
         BananaBlitzer,
         BobombAce,

@@ -7,13 +7,14 @@
 #include "../ECourseID.hpp"
 #include "../EDriverID.hpp"
 #include "../EEngineLevel.hpp"
+#include "../EItemPattern.hpp"
 #include "../EPlayerType.hpp"
+#include "../ERaceModeFlag.hpp"
 #include "../EScrewID.hpp"
 #include "../ETeamType.hpp"
 #include "../ETireID.hpp"
+#include "../ETitleType.hpp"
 #include "../EWingID.hpp"
-#include "../EItemPattern.hpp"
-#include "../ERaceModeFlag.hpp"
 #include "../Rate.hpp"
 
 #define KART_MAX 8
@@ -32,7 +33,7 @@ BEGIN_NAMESPACE(RaceSys)
             /M/EDriverID m_driver_id/0x4/0x10/
             /M/EPlayerType m_player_type/0x4/0x14/
             /M/ETeamType m_team_type/0x4/0x18/
-            /M/u32 m_0x1C/0x4/0x1C/
+            /M/ETitleType m_title_type/0x4/0x1C/
             /M/u16 m_race_point/0x2/0x20/
             /M/u16 m_race_rank/0x2/0x22/
             /M/u16 m_total_rank/0x2/0x24/
