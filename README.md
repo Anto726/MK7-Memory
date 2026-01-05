@@ -17,6 +17,7 @@ Finally, include the needed headers in your project and build it using C++23.
 - open-ead: [sead](https://github.com/open-ead/sead), [nnheaders](https://github.com/open-ead/nnheaders)
 - _tZ: `System::RootSystem`, its nested classes, and much more
 - Marioiscool246: `Kart::NetData` research
+- Anto726: game research
 - PabloMK7: game research
 - B_squo: game research
 
