@@ -1,4 +1,5 @@
 BUILD 		:= include
+CMAKE_BUILD := build
 SOURCES 	:= template
 
 TEMPLATEFILES 	:= $(shell find $(SOURCES) -type f -printf '%P\n')
@@ -13,7 +14,8 @@ $(BUILD)/%: $(SOURCES)/%
 all: $(OUTFILES)
 
 verify:
-	@cmake -S . -B . -DCMAKE_REQUIRED_FLAGS=-m32
+	@rm -rf $(CMAKE_BUILD)
+	@cmake -S . -B $(CMAKE_BUILD) -DCMAKE_REQUIRED_FLAGS=-m32
 
 clean:
 	@rm -rf $(BUILD)
