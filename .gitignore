@@ -2,8 +2,6 @@
 .vs
 .vscode
 
-# CMake
-
 # MK7-Memory
 build
 include
