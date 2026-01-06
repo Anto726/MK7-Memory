@@ -3,7 +3,11 @@
 .vscode
 
 # CMake
+build
 out
+CMakeFiles
+CMakeCache.txt
 CMakeSettings.json
 
+# MK7-Memory
 include
