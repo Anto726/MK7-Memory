@@ -1,12 +1,7 @@
 #pragma once
 
+#include "../forward.hpp"
 #include "../types.hpp"
-
-#include "AIParamLoader.hpp"
-
-#include "AIInfo.hpp"
-
-#include "AIManager.hpp"
 
 BEGIN_NAMESPACE(Enemy)
 {
@@ -44,7 +39,7 @@ BEGIN_NAMESPACE(Enemy)
         /M/bool m_can_drift/0x4/0x1C/
 	/END/
 
-    /START_CLASS/NAME@AIProbabilityBattle/SIZE@0x18/BASE@AIProbabilityBase/BSIZE@0x18/
+    /START_CLASS/NAME@AIProbabilityBattle/SIZE@0x18/BASE@AIProbabilityBase/BSIZE@0x10/
 	public:
         virtual void init() {}
         virtual s32 getRocketStartOrWheelSpin() { return 0; }

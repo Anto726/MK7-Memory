@@ -1,10 +1,8 @@
 #pragma once
 
-#include "../types.hpp"
+#include "../forward.hpp"
 
 #include "EAILevel.hpp"
-
-#include "../CSVUtil/CSVParam.hpp"
 
 BEGIN_NAMESPACE(Enemy)
 {
@@ -32,10 +30,10 @@ BEGIN_NAMESPACE(Enemy)
 	public:
 		/M/EnemyCourseParam *m_course_param/0x4/0x0/
         /M/EnemyProbabilityParam *m_probability_param/0x4/0x4/
-        /M/CSVParam *m_probability_table_easy/0x4/0x8/
-        /M/CSVParam *m_probability_table_normal/0x4/0xC/
-        /M/CSVParam *m_probability_table_hard/0x4/0x10/
-        /M/CSVParam *m_course_param_table/0x4/0x14/
+        /M/CSVUtil::CSVParam *m_probability_table_easy/0x4/0x8/
+        /M/CSVUtil::CSVParam *m_probability_table_normal/0x4/0xC/
+        /M/CSVUtil::CSVParam *m_probability_table_hard/0x4/0x10/
+        /M/CSVUtil::CSVParam *m_course_param_table/0x4/0x14/
         /M/EAILevel m_ai_level/0x4/0x18/
 	/END/
 }

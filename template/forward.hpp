@@ -8,6 +8,11 @@ BEGIN_NAMESPACE(BoxCol)
 	class Unit;
 }
 
+BEGIN_NAMESPACE(CSVUtil)
+{
+	class CSVParam;
+}
+
 BEGIN_NAMESPACE(Demo)
 {
 	class DemoCameraDirector;
@@ -23,6 +28,9 @@ BEGIN_NAMESPACE(Effect)
 BEGIN_NAMESPACE(Enemy)
 {
 	class AI;
+	class AIInfo;
+	class AIManager;
+	class AIParamLoader;
 	class AIPathHandler;
 }
 
