@@ -31,6 +31,7 @@ BEGIN_NAMESPACE(Field)
 	class CourseInfo;
 	class FieldDirector;
 	class MapdataAreaAccessor;
+	class MapdataAreaCalcBase;
 	class MapdataCameraAccessor;
 	class MapdataCannonPointAccessor;
 	class MapdataCheckPathAccessor;

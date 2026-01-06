@@ -2,11 +2,11 @@
 
 #include <math/seadVector.h>
 
+#include "../../forward.hpp"
 #include "../../types.hpp"
 
 BEGIN_NAMESPACE(Field)
 {
-    class MapdataAreaCalcBase;
     /START_CLASS/NAME@MapdataAreaPoint/SIZE@0x8/
     public:
         /START_STRUCT/NAME@SData/SIZE@0x30/
