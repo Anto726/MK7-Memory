@@ -6,7 +6,7 @@
 
 #include "SystemEngine.hpp"
 
-#include "../Sequence/SequenceEngine.hpp"
+#include "../Sequence/DashSequenceEngine.hpp"
 
 BEGIN_NAMESPACE(System)
 {

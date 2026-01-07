@@ -35,7 +35,7 @@ BEGIN_NAMESPACE(UI)
 
 namespace Sequence
 {
-    static auto GetMessageIDConverter()
+    inline auto GetMessageIDConverter()
     {
         return System::g_root_system->get_message_id_converter();
     }

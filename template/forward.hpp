@@ -182,6 +182,7 @@ BEGIN_NAMESPACE(Sequence)
 	class MenuData;
 	class RacePage;
 	class SequenceEngine;
+	class DashSequenceEngine;
 	class SequenceResource;
 	class Section;
 	class LayeredSequence;
