@@ -15,6 +15,7 @@ BEGIN_NAMESPACE(RaceSys)
             Coin,
             Balloon,
             Race,
+            TimeTrials,
         };
 
         /M/ERacePlayMode m_play_mode/0x4/0x0/

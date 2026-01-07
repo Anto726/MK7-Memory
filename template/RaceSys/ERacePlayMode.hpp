@@ -6,5 +6,11 @@ BEGIN_NAMESPACE(RaceSys)
 {
     enum class ERacePlayMode : u32
     {
+        SinglePlayer,
+        MultiPlayer,
+        Online,
+        TitleDemo,
+        Replay,
+        MAX,
     };
 }

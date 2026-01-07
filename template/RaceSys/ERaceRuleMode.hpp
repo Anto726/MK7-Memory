@@ -9,7 +9,12 @@ BEGIN_NAMESPACE(RaceSys)
         GrandPrix,
         TimeTrials,
         Versus,
-        Battle_3,
-        Battle_7 = 7,
+        Battle,
+        Award,
+        CoursePreview,
+        DemoGrandPrix,
+        DemoBattle,
+        _8,
+        MAX,
     };
 }
