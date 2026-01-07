@@ -10,7 +10,10 @@ BEGIN_NAMESPACE(RaceSys)
     public:
         enum RaceState : u8
         {
-            RaceState_Race = 2,
+            RaceState_Sync,
+            RaceState_Countdown,
+            RaceState_Race,
+            RaceState_Goal,
         };
 
         /M/RaceState m_race_state/0x1/0x48/
