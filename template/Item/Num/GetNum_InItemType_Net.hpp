@@ -9,7 +9,7 @@
 
 BEGIN_NAMESPACE(Item)
 {
-    static s32 GetNum_InItemType_Net(eItemType item_type)
+    inline s32 GetNum_InItemType_Net(eItemType item_type)
     {
         auto const race_info = RaceSys::GetRaceInfo();
         auto const pattern = is_item_pattern_selected(race_info);
@@ -20,22 +20,22 @@ BEGIN_NAMESPACE(Item)
         case eItemType::KouraR:
             if (race_info->m_item_pattern == RaceSys::EItemPattern::Koura)
                 return GetNum_InItemType(item_type);
-            return DEFAULT_NUM;
+            return GETNUM_DEFAULT_NUM;
 
         case eItemType::Banana:
             if (race_info->m_item_pattern == RaceSys::EItemPattern::Banana)
                 return GetNum_InItemType(item_type);
-            return DEFAULT_NUM;
+            return GETNUM_DEFAULT_NUM;
 
         case eItemType::Kinoko:
             if (race_info->m_item_pattern == RaceSys::EItemPattern::Kinoko)
                 return GetNum_InItemType(item_type);
-            return DEFAULT_NUM;
+            return GETNUM_DEFAULT_NUM;
 
         case eItemType::Bomhei:
             if (race_info->m_item_pattern == RaceSys::EItemPattern::Bomhei)
                 return GetNum_InItemType(item_type);
-            return DEFAULT_NUM;
+            return GETNUM_DEFAULT_NUM;
 
         case eItemType::Thunder:
         case eItemType::Flower:
