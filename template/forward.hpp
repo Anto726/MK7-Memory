@@ -177,25 +177,25 @@ BEGIN_NAMESPACE(Render)
 
 BEGIN_NAMESPACE(Sequence)
 {
-	class Page;
 	class BaseRacePage;
-	class MenuData;
-	class RacePage;
-	class SequenceEngine;
-	class DashSequenceEngine;
-	class SequenceResource;
-	class Section;
-	class LayeredSequence;
-	class SequenceLayer;
-	class DelegateSequence;
-	class ParallelSequence;
-	class SerialSequence;
 	class CrossFadeSequence;
+	class DashSequenceEngine;
+	class DelegateSequence;
+	class ExecutableSection;
+	class LayeredSequence;
+	class MenuData;
+	class Page;
+	class ParallelSequence;
+	class PracticalSection;
+	class RacePage;
 	class SceneSequence;
 	class SceneSequenceProxy;
+	class Section;
 	class SectionClassInfoBase;
-	class PracticalSection;
-	class ExecutableSection;
+	class SequenceEngine;
+	class SequenceLayer;
+	class SequenceResource;
+	class SerialSequence;
 }
 
 BEGIN_NAMESPACE(Sound)
