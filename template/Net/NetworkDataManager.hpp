@@ -26,10 +26,10 @@ BEGIN_NAMESPACE(Net)
         NetworkBufferController *m_network_buffer_controller;
         NetworkStationBufferManager *m_network_station_buffer_manager;
         u8 unk1[8];
-        callback f_on_received;
+        callback f_on_received; // TODO: same callback type as in TStateObserver
         NetworkEngine *m_network_engine;
-        u8 m_critical_section[0x1C];
-        u8 unk2;
+        u8 m_critical_section[0x1C]; // TODO: sead::CriticalSection CTR version in openEAD
+        u8 unk2; // initialized?
     };
     static_assert(sizeof(NetworkDataManager<void *>) == 0x54);
 }
