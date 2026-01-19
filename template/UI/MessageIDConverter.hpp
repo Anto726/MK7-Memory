@@ -6,10 +6,10 @@
 #include "../RaceSys/ECourseID.hpp"
 #include "../RaceSys/EDriverID.hpp"
 #include "../RaceSys/EEngineLevel.hpp"
+#include "../RaceSys/EGrandPrixID.hpp"
 #include "../RaceSys/ETireID.hpp"
 #include "../RaceSys/ETitleType.hpp"
 #include "../RaceSys/EWingID.hpp"
-#include "../Sequence/ECup.hpp"
 
 #include "../LMS_MessageID.hpp"
 
@@ -27,7 +27,7 @@ BEGIN_NAMESPACE(UI)
         LMS_MessageID m_wing_message_ids[std::to_underlying(RaceSys::EWingID::MAX)];
         LMS_MessageID m_course_message_ids[std::to_underlying(RaceSys::ECourseID::MAX)];
         LMS_MessageID m_engine_level_message_ids[std::to_underlying(RaceSys::EEngineLevel::MAX)];
-        LMS_MessageID m_cup_message_ids[std::to_underlying(Sequence::ECup::MAX)];
+        LMS_MessageID m_grand_prix_message_ids[std::to_underlying(RaceSys::EGrandPrixID::MAX)];
         LMS_MessageID m_title_type_message_ids[std::to_underlying(RaceSys::ETitleType::MAX)];
     };
     static_assert(sizeof(MessageIDConverter) == 0x228);
