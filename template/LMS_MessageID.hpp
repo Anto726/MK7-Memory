@@ -163,6 +163,11 @@ BEGIN_GLOBAL_NAMESPACE
 
         Course_Random = 1806,
 
+        Title1_begin = 1900,
+        Title1_ShellShark = Title1_begin,
+        
+        Title2_begin = 1950,
+
         /// Menu
         MarioKart7 = 2000,
         OK = 2001,

@@ -2,16 +2,24 @@
 
 #include "../types.hpp"
 
-#define VR_MASK 0x0001FFFF
-#define GP_MASK 0x3F000000
-#define VR_SHIFT  0
-#define GP_SHIFT 24
+#include "../RaceSys/ETitleType.hpp"
+
+#include <utility>
+
+#define VR_MASK     0x0001FFFF
+#define GP_MASK     0x3F000000
+#define TITLE_MASK  0x003E0000
+
+#define VR_SHIFT    0
+#define GP_SHIFT    24
+#define TITLE_SHIFT 17
 
 BEGIN_NAMESPACE(System)
 {
     struct FlagData
     {
-        struct GP_VR
+        // Unknown symbol
+        struct ProfileData
         {
             u32 packed;
 
@@ -20,6 +28,9 @@ BEGIN_NAMESPACE(System)
 
             u32 get_gp() { return (packed & GP_MASK) >> GP_SHIFT; }
             void set_gp(u32 gp) { packed = (packed & ~GP_MASK) | ((gp << GP_SHIFT) & GP_MASK); }
+
+            RaceSys::ETitleType get_title() { return static_cast<RaceSys::ETitleType>((packed & TITLE_MASK) >> TITLE_SHIFT); }
+            void set_title(RaceSys::ETitleType title) { packed = (packed & ~TITLE_MASK) | ((std::to_underlying(title) << TITLE_SHIFT) & TITLE_MASK); }
         };
 
         u8 gap_0x0[0x358];
@@ -29,7 +40,7 @@ BEGIN_NAMESPACE(System)
         u8 gap_0x558[0xC];
         u32 wins;
         u32 losses;
-        GP_VR gp_vr;
+        ProfileData profile_data;
         u8 gap_0x570[0x84];
     };
     static_assert(sizeof(FlagData) == 0x5F4);
