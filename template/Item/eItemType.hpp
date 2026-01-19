@@ -2,11 +2,9 @@
 
 #include "../types.hpp"
 
-#include <limits>
-#include <type_traits>
-
 BEGIN_NAMESPACE(Item)
 {
+    // https://tcrf.net/Notes:Mario_Kart_7#Item_Type_.28eItemType.29
     enum class eItemType : u8
 	{
         KouraG,    // Green Shell
@@ -26,6 +24,6 @@ BEGIN_NAMESPACE(Item)
         Tail,      // Super Leaf
         Seven,     // Lucky Seven
         MAX,
-        INVALID = std::numeric_limits<std::underlying_type_t<eItemType>>::max(),
+        INVALID = TYPE_MAX(eItemType),
     };
 }

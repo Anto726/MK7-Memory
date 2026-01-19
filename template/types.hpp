@@ -3,6 +3,9 @@
 #include <cstddef>
 #include <cstdint>
 
+#include <limits>
+#include <type_traits>
+
 #ifndef MK7MEMORY_NAMESPACE
   #define BEGIN_NAMESPACE(sub) namespace sub
   #define BEGIN_GLOBAL_NAMESPACE
@@ -12,6 +15,8 @@
   #define BEGIN_GLOBAL_NAMESPACE namespace MK7MEMORY_NAMESPACE {
   #define END_GLOBAL_NAMESPACE }
 #endif
+
+#define TYPE_MAX(T) std::numeric_limits<std::underlying_type_t<T>>::max()
 
 using s8 = std::int8_t;
 using s16 = std::int16_t;

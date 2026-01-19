@@ -2,11 +2,9 @@
 
 #include "../types.hpp"
 
-#include <limits>
-#include <type_traits>
-
 BEGIN_NAMESPACE(Item)
 {
+	// https://tcrf.net/Notes:Mario_Kart_7#Item_Slot_.28eItemSlot.29
 	enum class eItemSlot : u8
 	{
 		Banana,  // Banana
@@ -29,7 +27,15 @@ BEGIN_NAMESPACE(Item)
 		Banana3, // Triple Bananas
 		KouraG3, // Triple Green Shells
 		KouraR3, // Triple Red Shells
-		MAX,
-		Empty = std::numeric_limits<std::underlying_type_t<eItemSlot>>::max(),
+
+		// NOTE: hidden, used for item spy icons
+		Kinoko2, // Double Mushrooms
+		Box,     // Item Box
+		Flag,    // Checkered Flag
+
+		Empty = TYPE_MAX(eItemSlot),
+
+		MAX = KouraR3 + 1,
+		EXTRA = Flag + 1,
 	};
 }
