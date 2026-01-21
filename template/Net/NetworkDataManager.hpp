@@ -6,6 +6,7 @@
 
 #include "eNetworkBufferType.hpp"
 
+#include <prim/seadDelegate.h>
 #include <thread/seadCriticalSection.h>
 
 BEGIN_NAMESPACE(Net)
@@ -13,6 +14,8 @@ BEGIN_NAMESPACE(Net)
     template <class T>
     class NetworkDataManager : public sead::IDisposer
     {
+        using CriticalSection = u8 [0x1C]; // TODO: sead::CriticalSection CTR version in openEAD
+
     public:
         virtual ~NetworkDataManager() = default;
         virtual bool preUpdate() { return {}; }
@@ -25,11 +28,10 @@ BEGIN_NAMESPACE(Net)
         eNetworkBufferType m_network_buffer_type;
         NetworkBufferController *m_network_buffer_controller;
         NetworkStationBufferManager *m_network_station_buffer_manager;
-        u8 unk1[8];
-        callback f_on_received; // TODO: same callback type as in TStateObserver
+        sead::Delegate1R<NetworkDataManager<T>, NetworkReceivedInfo const &, bool> m_delegate_on_received;
         NetworkEngine *m_network_engine;
-        u8 m_critical_section[0x1C]; // TODO: sead::CriticalSection CTR version in openEAD
-        u8 unk2; // initialized?
+        CriticalSection m_critical_section;
+        bool unk; // initialized?
     };
     static_assert(sizeof(NetworkDataManager<void *>) == 0x54);
 }
