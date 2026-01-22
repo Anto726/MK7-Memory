@@ -8,11 +8,12 @@
 
 #include "../Sequence/DashSequenceEngine.hpp"
 
+#include <prim/seadDelegateEventSlot.h>
+
 BEGIN_NAMESPACE(System)
 {
-    class RootSystem
-    {
-    public:
+    /START_CLASS/NAME@RootSystem/SIZE@0x60/VTABLE@True/
+	public:
         virtual ~RootSystem() = default;
 
         inline auto get_kart_director() const { return m_scene_manager->get_character_engine_collection()->m_kart_director; }
@@ -25,11 +26,16 @@ BEGIN_NAMESPACE(System)
         inline auto get_menu_data() const { return m_root_scene->get_sequence_engine()->m_menu_data; }
         inline auto get_message_id_converter() const { return m_root_scene->get_sequence_engine()->m_message_id_converter; }
 
-        SceneManager *m_scene_manager;
-        u8 gap_0x8[0x8];
-        RootScene *m_root_scene;
-    };
-    static_assert(sizeof(RootSystem) == 0x14);
+        /M/SceneManager *m_scene_manager/0x4/0x4/
+        /M/ThreadManager *m_thread_manager/0x4/0xC/
+        /M/RootScene *m_root_scene/0x4/0x10/
+        /M/GameFramework *m_game_framework/0x4/0x14/
+        /M/sead::DelegateEvent<char const *>::Slot m_delegate_event_slot/0x38/0x18/
+        /M/bool m_0x50/0x1/0x50/
+        /M/sead::ListImpl *m_list/0x4/0x54/
+        /M/BootRenderThread *m_boot_render_thread/0x4/0x58/
+        /M/bool m_is_sleep_acceptable/0x1/0x5C/
+    /END/
 
     // NOTE: must be provided by the user
     inline RootSystem *g_root_system{};

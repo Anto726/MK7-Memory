@@ -207,7 +207,9 @@ BEGIN_NAMESPACE(Sound)
 
 BEGIN_NAMESPACE(System)
 {
+	class BootRenderThread;
 	class EngineHolder;
+	class GameFramework;
 	class GameSetting;
 	class KDPadAddBase;
 	class KDPadInputer;
@@ -220,6 +222,7 @@ BEGIN_NAMESPACE(System)
 	class SceneManager;
 	class SystemEngine;
 	struct SystemSaveData;
+	class ThreadManager;
 }
 
 BEGIN_NAMESPACE(UI)
