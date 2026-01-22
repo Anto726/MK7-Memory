@@ -167,6 +167,7 @@ BEGIN_NAMESPACE(RaceSys)
 	class LogRecorder;
 	class ModeManagerBase;
 	class RaceDirector;
+	class RaceTimer;
 }
 
 BEGIN_NAMESPACE(Render)
