@@ -11,7 +11,17 @@ BEGIN_NAMESPACE(System)
 {
     class EngineHolder
     {
+        auto static constexpr ENGINE_KEY = u32{0x75F1B26B};
+
     public:
+        struct Priority
+        {
+            s16 m_0x0;
+            s8 m_0x2;
+            s8 m_0x3;
+        };
+        static_assert(sizeof(Priority) == 0x4);
+
         class EngineManager
         {
         public:
@@ -21,7 +31,7 @@ BEGIN_NAMESPACE(System)
             {
                 Object::ActorEngine *engine;
                 bool exists;
-                u8 gap_0x5[0x7];
+                Priority priority;
             };
             static_assert(sizeof(SEngineInfo) == 0xC);
 
@@ -34,10 +44,8 @@ BEGIN_NAMESPACE(System)
         template <typename t>
         inline t *get_engine(Object::EEngineType type) const
         {
-            auto constexpr engine_key = u32{0x75F1B26B};
-
             auto const &engine_info = m_engine_manager.get_engine_info(type);
-            return engine_info.exists ? reinterpret_cast<t *>(reinterpret_cast<decltype(engine_key)>(engine_info.engine) ^ engine_key) : nullptr;
+            return engine_info.exists ? reinterpret_cast<t *>(reinterpret_cast<decltype(ENGINE_KEY)>(engine_info.engine) ^ ENGINE_KEY) : nullptr;
         }
 
         EngineManager m_engine_manager;
