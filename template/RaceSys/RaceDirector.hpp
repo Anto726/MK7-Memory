@@ -8,7 +8,7 @@
 
 BEGIN_NAMESPACE(RaceSys)
 {
-    /START_CLASS/NAME@RaceDirector/SIZE@0x3B4/
+    /START_CLASS/NAME@RaceDirector/SIZE@0x338/
     public:
         /M/RaceTimer *m_race_timer/0x4/0x28/
         /M/CRaceInfo m_race_info/0x190/0x2C/
@@ -17,6 +17,5 @@ BEGIN_NAMESPACE(RaceSys)
         /M/Random m_fixed_random/0x7C/0x1C4/
         /M/Random m_unfixed_random/0x7C/0x240/
         /M/Random m_half_fixed_random/0x7C/0x2BC/
-        /M/Random m_0x338/0x7C/0x338/
     /END/
 }
