@@ -118,6 +118,9 @@ BEGIN_NAMESPACE(Item)
         /M/RaceSys::ModeManagerBase *m_mode_manager/0x4/0x130/
         /M/RaceSys::CRaceInfo *m_race_info/0x4/0x134/
         /M/RaceSys::LogRecorder *m_log_recorder/0x4/0x138/
+        /M/bool m_0x149/0x1/0x149/ // related to move mode?
+        /M/bool m_has_shadow/0x1/0x14A/
+        /M/bool m_is_multi_trail/0x1/0x14D/
         /M/eItemType m_item_type/0x1/0x156/
         /M/Kart::InfoProxy *m_info_proxy/0x4/0x158/
         /M/s32 m_item_id/0x4/0x160/
