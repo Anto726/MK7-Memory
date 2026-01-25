@@ -97,6 +97,13 @@ BEGIN_NAMESPACE(Item)
 BEGIN_NAMESPACE(Jugem)
 {
 	class Director;
+	class Switch;
+	class SwitchCountDown;
+	class SwitchGoal;
+	class SwitchLap;
+	class SwitchLift;
+	class SwitchReverse;
+	class Unit;
 }
 
 BEGIN_NAMESPACE(Kart)
