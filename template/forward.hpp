@@ -36,6 +36,7 @@ BEGIN_NAMESPACE(Enemy)
 
 BEGIN_NAMESPACE(Field)
 {
+	class ClipContext;
 	class CourseInfo;
 	class FieldDirector;
 	class MapdataAreaAccessor;
@@ -58,6 +59,7 @@ BEGIN_NAMESPACE(Field)
 	class MapdataStageAccessor;
 	class MapdataStartPointAccessor;
 	class ObjectDirector;
+	class QuadTree;
 }
 
 BEGIN_NAMESPACE(Item)
@@ -150,6 +152,7 @@ BEGIN_NAMESPACE(Object)
 {
 	class Actor;
 	class Actor3DMdl;
+	class Actor3DMdlList;
 	class ActorEngine;
     class ActorVisitor;
 	class BattleObjectMgrBase;
@@ -201,8 +204,9 @@ BEGIN_NAMESPACE(Sequence)
 
 BEGIN_NAMESPACE(Sound)
 {
-	class SndActorKart;
 	class SndActorBase;
+	class SndActorItem;
+	class SndActorKart;
 	class SndHandle;
 }
 

@@ -3,6 +3,8 @@
 #include "../../forward.hpp"
 #include "../../types.hpp"
 
+#include "../../KDGndCol/CheckIF_EX.hpp"
+
 #include "../../Object/Actor3DMdl.hpp"
 #include "../../Object/ArgumentObj.hpp"
 
@@ -97,11 +99,11 @@ BEGIN_NAMESPACE(Item)
         virtual void _0x110() = 0; // 68
         virtual void _0x114() = 0; // 69
 
-        /M/Util::TStateObserver<ItemObjBase> m_state_observer_base/0x20/0x58/
+        /M/Util::TStateObserver<ItemObjBase> m_state_observer_base/0x20/0x58/ // some ItemObjs also have a specialized Observer
         /M/sead::Matrix34f m_draw_mtx/0x30/0x78/
         /M/sead::Vector3f m_position/0xC/0xA8/
         /M/sead::Vector3f m_0xB4/0xC/0xB4/ // velocity or angle related?
-        /M/float m_multi_cycle/0x4/0xC0/
+        /M/float m_equip_scale/0x4/0xC0/
         /M/sead::Vector3f m_velocity/0xC/0xC4/
         /M/float m_gravity/0x4/0xD0/
         /M/sead::Vector3f m_0xD4/0xC/0xD4/
@@ -115,18 +117,56 @@ BEGIN_NAMESPACE(Item)
         /M/sead::Vector3f m_0x104/0xC/0x104/
         /M/Effect::GameParticle *m_game_particle_1/0x4/0x110/
         /M/ItemReactProxy *m_item_react_proxy/0x4/0x114/
+        /M/KDGndCol::CheckIF_EX m_check_if_ex/0x10/0x118/
         /M/RaceSys::ModeManagerBase *m_mode_manager/0x4/0x130/
         /M/RaceSys::CRaceInfo *m_race_info/0x4/0x134/
         /M/RaceSys::LogRecorder *m_log_recorder/0x4/0x138/
-        /M/bool m_0x149/0x1/0x149/ // related to move mode?
+        /M/sead::Vector3f m_0x13C/0xC/0x13C/
+        /M/bool m_0x148/0x1/0x148/
+        /M/bool m_has_vanish_effect/0x1/0x149/
         /M/bool m_has_shadow/0x1/0x14A/
+        /M/bool m_is_tc_board_area/0x1/0x14B/
+        /M/bool m_0x14C/0x1/0x14C/
         /M/bool m_is_multi_trail/0x1/0x14D/
+        /M/u8 m_0x14E/0x1/0x14E/
+        /M/s32 m_serial/0x4/0x150/
         /M/eItemType m_item_type/0x1/0x156/
         /M/Kart::InfoProxy *m_info_proxy/0x4/0x158/
+        /M/float m_compare/0x4/0x15C/
         /M/s32 m_item_id/0x4/0x160/
         /M/s32 m_owner_player_id/0x4/0x164/
+        /M/s32 m_entry_id/0x4/0x168/
+        /M/s32 m_0x16C/0x4/0x16C/ // collisionless num?
         /M/eColMode m_col_mode/0x1/0x170/
+        /M/u32 m_exit_frame/0x4/0x174/
+        /M/u32 m_exit_director_frame/0x4/0x178/
+        /M/void *m_light_obj/0x4/0x17C/ // Render::RaceLight::LightObj *
+        /M/sead::Vector3f m_position_previous/0xC/0x180/
         /M/sead::Vector3f m_move/0xC/0x18C/
+        /M/bool m_is_draw/0x1/0x198/
+        /M/bool m_is_clip_context_visible/0x1/0x199/
+        /M/Field::QuadTree *m_quad_tree/0x4/0x19C/
+        /M/Field::ClipContext *m_clip_context/0x4/0x1A0/
+        /M/bool m_is_state_init_equip_hang/0x1/0x1A4/
+        /M/Sound::SndActorItem *m_snd_actor_item/0x4/0x1A8/
+        /M/bool m_is_immediate_throw/0x1/0x1AC/
+        /M/bool m_is_collisionless/0x1/0x1AD/
         /M/bool m_is_dropped/0x1/0x1AE/
+        /M/bool m_is_awaiting_delete/0x1/0x1AF/
+        /M/bool m_0x1B0/0x1/0x1B0/ // related to drop?
+        /M/float m_water_box/0x4/0x1B4/
+        /M/float m_0x1B8/0x4/0x1B8/
+        /M/float m_moon_box/0x4/0x1BC/
+        /M/s32 m_0x1C0/0x4/0x1C0/
+        /M/sead::Vector3f m_0x1C4/0xC/0x1C4/ // scale anim?
+        /M/sead::Vector3f m_0x1D0/0xC/0x1D0/ // angular velocity?
+        /M/bool m_is_exiting/0x1/0x1DC/
+        /M/s32 m_0x1E0/0x4/0x1E0/ // player ID equipped?
+        /M/s32 m_0x1E4/0x4/0x1E4/ // player ID unequipped?
+        /M/bool m_0x1E8/0x1/0x1E8/
+        /M/u32 m_delay_frame/0x4/0x1EC/
+        /M/float m_speed/0x4/0x1F0/
+        /M/bool m_is_doing_recovery/0x1/0x1F4/
+        /M/u8 m_0x1F5/0x1/0x1F5/
     /END/
 }
