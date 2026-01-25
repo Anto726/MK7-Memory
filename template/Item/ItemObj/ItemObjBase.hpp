@@ -135,7 +135,7 @@ BEGIN_NAMESPACE(Item)
         /M/float m_compare/0x4/0x15C/
         /M/s32 m_item_id/0x4/0x160/
         /M/s32 m_owner_player_id/0x4/0x164/
-        /M/s32 m_entry_id/0x4/0x168/
+        /M/s32 m_current_life/0x4/0x168/
         /M/s32 m_0x16C/0x4/0x16C/ // collisionless num?
         /M/eColMode m_col_mode/0x1/0x170/
         /M/u32 m_exit_frame/0x4/0x174/
