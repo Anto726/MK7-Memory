@@ -11,7 +11,7 @@
 
 BEGIN_NAMESPACE(Item)
 {
-	/START_CLASS/NAME@KartItem/SIZE@0x60/
+	/START_CLASS/NAME@KartItem/SIZE@0x60/BASE@Object::TDirectorArray<Object::Actor, Object::TLinkSocket<Object::Actor, Object::Actor>>/BSIZE@0x28/
 	public:
 		void decreaseEquipNum()
 		{
@@ -42,7 +42,6 @@ BEGIN_NAMESPACE(Item)
         inline bool isNetRecv() const { return m_info_proxy->isNetRecv(); }
         inline bool isNetSend() const { return m_info_proxy->isNetSend(); }
 
-		/M/ItemDirector* m_item_director/0x4/0x4/
 		/M/s32 m_player_id/0x4/0x28/
 		/M/Kart::InfoProxy *m_info_proxy/0x4/0x2C/
 		/M/bool m_was_cleared/0x1/0x30/

@@ -9,13 +9,17 @@
 
 #include "ItemObjDirector/all.hpp"
 
+#include "../Object/Actor.hpp"
+#include "../Object/TDirectorArray.hpp"
+#include "../Object/TLinkSocket.hpp"
+
 #include "../System/RootSystem.hpp"
 
 #include <container/seadPtrArray.h>
 
 BEGIN_NAMESPACE(Item)
 {
-    /START_CLASS/NAME@ItemDirector/SIZE@0xF4/BASE@Object::Actor/BSIZE@0x8/
+    /START_CLASS/NAME@ItemDirector/SIZE@0x12C/BASE@Object::TDirectorArray<Object::Actor, Object::TLinkSocket<Object::Actor, Object::Actor>>/BSIZE@0x28/
     public:
         ItemObjDirectorBase *getDirector_FromItemSlot(eItemSlot item)
         {

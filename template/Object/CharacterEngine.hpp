@@ -4,10 +4,13 @@
 #include "../forward.hpp"
 
 #include "ActorEngine.hpp"
+#include "TDirectorList.hpp"
+
+#include "../Util/TLinkList.hpp"
 
 BEGIN_NAMESPACE(Object)
 {
-    /START_CLASS/NAME@CharacterEngine/SIZE@0x20/BASE@ActorEngine/BSIZE@0x8/
+    /START_CLASS/NAME@CharacterEngine/SIZE@0x54/BASE@TDirectorList<Actor, ActorEngine>/BSIZE@0x1C/
     public:
         // NOTE: unknown struct name
         /START_STRUCT/NAME@Collection/SIZE@0x58/
@@ -28,6 +31,10 @@ BEGIN_NAMESPACE(Object)
             /M/Trophy3DModelManager *m_trophy_3d_model_manager/0x4/0x54/
         /END/
 
+        using creator_t = void (*)(CharacterEngine *, Collection *);
+
         /M/Collection *m_collection/0x4/0x1C/
+        /M/creator_t f_creators[8]/0x20/0x20/
+        /M/Util::TLinkList<Actor3DMdlList> m_link_list/0x14/0x40/
     /END/
 }
