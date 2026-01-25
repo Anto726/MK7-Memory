@@ -12,8 +12,8 @@ BEGIN_NAMESPACE(Object)
 {
     /START_CLASS/NAME@CharacterEngine/SIZE@0x54/BASE@TDirectorList<Actor, ActorEngine>/BSIZE@0x1C/
     public:
-        // NOTE: unknown struct name
-        /START_STRUCT/NAME@Collection/SIZE@0x58/
+        // NOTE: guessed name
+        /START_STRUCT/NAME@SDirectorList/SIZE@0x58/
             /M/KDGndCol::Manager *m_gnd_col_manager/0x4/0x8/
             /M/BoxCol::Manager *m_box_col_manager/0x4/0xC/
             /M/Kart::Director *m_kart_director/0x4/0x10/
@@ -31,10 +31,10 @@ BEGIN_NAMESPACE(Object)
             /M/Trophy3DModelManager *m_trophy_3d_model_manager/0x4/0x54/
         /END/
 
-        using creator_t = void (*)(CharacterEngine *, Collection *);
+        using creator_t = void (*)(CharacterEngine *, SDirectorList *);
 
-        /M/Collection *m_collection/0x4/0x1C/
-        /M/creator_t f_creators[8]/0x20/0x20/
+        /M/SDirectorList *m_director_list/0x4/0x1C/
+        /M/creator_t m_creator_list[8]/0x20/0x20/
         /M/Util::TLinkList<Actor3DMdlList> m_link_list/0x14/0x40/
     /END/
 }

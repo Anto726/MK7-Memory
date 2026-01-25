@@ -13,7 +13,7 @@ BEGIN_NAMESPACE(System)
     public:
         virtual ~SceneManager() = default;
 
-        inline auto get_character_engine_collection() const { return m_root_scene->get_character_engine()->m_collection; }
+        inline auto get_character_engine_director_list() const { return m_root_scene->get_character_engine()->m_director_list; }
 
         RootScene *m_root_scene;
     };

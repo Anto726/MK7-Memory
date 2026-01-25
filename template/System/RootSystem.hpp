@@ -16,10 +16,10 @@ BEGIN_NAMESPACE(System)
 	public:
         virtual ~RootSystem() = default;
 
-        inline auto get_kart_director() const { return m_scene_manager->get_character_engine_collection()->m_kart_director; }
-        inline auto get_field_director() const { return m_scene_manager->get_character_engine_collection()->m_field_director; }
-        inline auto get_race_director() const { return m_scene_manager->get_character_engine_collection()->m_race_director; }
-        inline auto get_item_director() const { return m_scene_manager->get_character_engine_collection()->m_item_director; }
+        inline auto get_kart_director() const { return m_scene_manager->get_character_engine_director_list()->m_kart_director; }
+        inline auto get_field_director() const { return m_scene_manager->get_character_engine_director_list()->m_field_director; }
+        inline auto get_race_director() const { return m_scene_manager->get_character_engine_director_list()->m_race_director; }
+        inline auto get_item_director() const { return m_scene_manager->get_character_engine_director_list()->m_item_director; }
 
         inline auto get_game_setting() const { return m_root_scene->get_system_engine()->m_game_setting; }
 
