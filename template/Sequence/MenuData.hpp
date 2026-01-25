@@ -12,7 +12,7 @@ BEGIN_NAMESPACE(Sequence)
     public:
         struct CourseVote
         {
-            u8 gap_0x0[0x4];
+            s32 station_id;
             RaceSys::ECourseID course_id;
         };
         static_assert(sizeof(CourseVote) == 0x8);
