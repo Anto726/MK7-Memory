@@ -15,9 +15,9 @@ BEGIN_NAMESPACE(Kart)
 {
     /START_CLASS/NAME@Director/SIZE@0x1A0/BASE@Object::TDirectorArray<Object::Actor, Object::TLinkSocket<Object::Actor, Object::Actor>>/BSIZE@0x28/
     public:
-        Vehicle *getKart(s32 index) { return m_units(index).m_vehicle; }
+        Vehicle *getKart(s32 index) { return m_units(index)->m_vehicle; }
 
-        /M/sead::Buffer<Unit> m_units/0x8/0x28/
+        /M/sead::Buffer<Unit *> m_units/0x8/0x28/
     /END/
 
     inline static auto GetDirector()
