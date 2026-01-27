@@ -23,6 +23,7 @@ BEGIN_NAMESPACE(Effect)
 	class GameEffectDirector;
 	class GameParticle;
 	class KartEffect;
+	class ParticleDrawer;
 }
 
 BEGIN_NAMESPACE(Enemy)
@@ -183,7 +184,9 @@ BEGIN_NAMESPACE(RaceSys)
 BEGIN_NAMESPACE(Render)
 {
 	class DrawMdl;
+	class RenderEngine;
 	class ShadowVolume;
+	class UIDrawDirector;
 }
 
 BEGIN_NAMESPACE(Sequence)
