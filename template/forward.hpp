@@ -244,6 +244,7 @@ BEGIN_NAMESPACE(UI)
 {
 	class BgRaceMapBombControl;
 	class BgRaceMapCharaControl;
+	class BgRaceMapControl;
 	class MessageData;
 	class MessageIDConverter;
 	class MessageWriter;

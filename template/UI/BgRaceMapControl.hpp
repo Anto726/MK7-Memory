@@ -1,0 +1,27 @@
+#pragma once
+
+#include "../types.hpp"
+
+#include "VisualControl.hpp"
+
+#include <math/seadVector.h>
+
+BEGIN_NAMESPACE(UI)
+{
+    /START_CLASS/NAME@BgRaceMapControl/SIZE@0x104/BASE@VisualControl/BSIZE@0x78/VTABLE@True/
+    public:
+        /M/sead::Vector2f m_0x88/0x8/0x88/
+        /M/sead::Vector2f m_0x90/0x8/0x90/
+        /M/sead::Vector2f m_0x98/0x8/0x98/
+        /M/sead::Vector2f m_0xA0/0x8/0xA0/
+        /M/sead::Vector2f m_0xA8/0x8/0xA8/
+        /M/sead::Vector2f m_0xB0/0x8/0xB0/
+        /M/sead::Vector2f m_0xB8/0x8/0xB8/ // rect?
+        /M/sead::Vector2f m_0xC0/0x8/0xC0/ // scale?
+        /M/sead::Vector2f m_0xC8/0x8/0xC8/
+        /M/sead::Vector2f m_0xD0/0x8/0xD0/
+        /M/sead::Vector2f m_0xD8/0x8/0xD8/
+        /M/sead::Vector2f m_0xE0/0x8/0xE0/
+        /M/sead::Vector2f m_0xE8/0x8/0xE8/
+    /END/
+}
