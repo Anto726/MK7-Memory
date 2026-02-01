@@ -2,13 +2,16 @@
 
 #include "../types.hpp"
 
+#include <container/seadPtrArray.h>
+
 BEGIN_NAMESPACE(Util)
 {
     template <typename T>
     class TClassPtrArray
     {
     public:
-        u8 unk[16]; // sead::PtrArray somewhere?
+        sead::PtrArray<T> m_ptr_array;
+        u8 m_unk;
     };
     static_assert(sizeof(TClassPtrArray<void *>) == 0x10);
 }
