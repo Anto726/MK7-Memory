@@ -6,9 +6,12 @@
 #include "RaceInfo/CRaceInfo.hpp"
 #include "Random.hpp"
 
+#include "../Object/TDirectorArray.hpp"
+#include "../Object/TLinkSocket.hpp"
+
 BEGIN_NAMESPACE(RaceSys)
 {
-    /START_CLASS/NAME@RaceDirector/SIZE@0x338/
+    /START_CLASS/NAME@RaceDirector/SIZE@0x338/BASE@Object::TDirectorArray<Object::Actor, Object::TLinkSocket<Object::Actor, Object::Actor>>/BSIZE@0x28/
     public:
         /M/RaceTimer *m_race_timer/0x4/0x28/
         /M/CRaceInfo m_race_info/0x190/0x2C/

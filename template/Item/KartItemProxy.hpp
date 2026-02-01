@@ -3,6 +3,7 @@
 #include "../types.hpp"
 
 #include "ItemDirector.hpp"
+#include "ItemSlot.hpp"
 
 BEGIN_NAMESPACE(Item)
 {

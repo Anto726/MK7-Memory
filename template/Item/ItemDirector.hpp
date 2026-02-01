@@ -17,6 +17,7 @@
 
 #include "../System/RootSystem.hpp"
 
+#include <container/seadBuffer.h>
 #include <container/seadPtrArray.h>
 #include <prim/seadDelegate.h>
 
