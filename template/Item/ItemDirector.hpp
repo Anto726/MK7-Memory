@@ -9,6 +9,8 @@
 
 #include "ItemObjDirector/all.hpp"
 
+#include "../Net/NetworkItemEventDataMgr.hpp"
+
 #include "../Object/Actor.hpp"
 #include "../Object/TDirectorArray.hpp"
 #include "../Object/TLinkSocket.hpp"
@@ -16,6 +18,7 @@
 #include "../System/RootSystem.hpp"
 
 #include <container/seadPtrArray.h>
+#include <prim/seadDelegate.h>
 
 BEGIN_NAMESPACE(Item)
 {
@@ -161,14 +164,22 @@ BEGIN_NAMESPACE(Item)
         /M/s32 m_kinokop_time/0x4/0x70/
         /M/bool m_special_items_threshold_passed/0x4/0x74/
         /M/eInvalidFlag m_invalid_flag/0x4/0x78/
-        /M/callback f_item_event_recv_handler/0x8/0x84/
+        /M/sead::Delegate1R<ItemDirector, Net::NetworkItemEventDataMgr::SlotData const &, bool> m_item_event_recv_handler_delegate/0x10/0x7C/
         /M/ItemSlotTable *m_item_slot_table/0x4/0x8C/
-        /M/sead::PtrArray<ItemObjBase> m_ptr_array_equip/0xC/0x90/
-        /M/sead::PtrArray<ItemObjBase> m_ptr_array_selfmove/0xC/0x9C/
-        /M/sead::PtrArray<ItemObjBase> m_ptr_array_stand/0xC/0xA8/
-        /M/sead::PtrArray<ItemObjBase> m_ptr_array_delwait/0xC/0xB4/
+        /M/sead::PtrArray<ItemObjBase> m_equip_item_objs/0xC/0x90/
+        /M/sead::PtrArray<ItemObjBase> m_selfmove_item_objs/0xC/0x9C/
+        /M/sead::PtrArray<ItemObjBase> m_stand_item_objs/0xC/0xA8/
+        /M/sead::PtrArray<ItemObjBase> m_delwait_item_objs/0xC/0xB4/
         /M/sead::PtrArray<KartItem> m_kart_items/0xC/0xC0/
+        /M/s32 m_director_frame/0x4/0xCC/
+        /M/sead::Buffer<bool> m_current_presses/0x8/0xD0/
+        /M/sead::Buffer<bool> m_previous_presses/0x8/0xD8/
+        /M/sead::Buffer<ItemSlot> m_item_usages/0x8/0xE0/
+        /M/sead::Buffer<s32> m_kinoko_frames/0x8/0xE8/
         /M/RaceSys::ModeManagerBase *m_mode_manager/0x4/0xF0/
+        /M/CSVUtil::CSVParam *m_csv_param/0x4/0xF4/
+        /M/bool m_is_lava_course/0x1/0xF8/
+        /M/Field::MapdataCheckPointAccessor *m_check_point_accessor/0x4/0x100/
     /END/
 
     inline static auto GetDirector()
