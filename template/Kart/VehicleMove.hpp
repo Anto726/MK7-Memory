@@ -84,6 +84,7 @@ BEGIN_NAMESPACE(Kart)
 
 		/M/BoostFlags m_boost_flags/0x4/0xC28/
 		/M/StatusFlags m_status_flags/0x4/0xC30/
+		/M/s32 m_air_frames/0x4/0xD48/
 		/M/sead::Vector3f m_front_pitch/0xC/0xD6C/
 		/M/s32 m_dokan_warp/0x4/0xDA8/
 		/U/bool/0x1/0xE81/
