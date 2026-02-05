@@ -33,7 +33,7 @@ BEGIN_NAMESPACE(UI)
     static_assert(sizeof(MessageIDConverter) == 0x228);
 }
 
-namespace Sequence
+BEGIN_NAMESPACE(Sequence)
 {
     inline auto GetMessageIDConverter()
     {
