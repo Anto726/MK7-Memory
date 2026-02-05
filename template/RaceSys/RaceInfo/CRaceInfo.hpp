@@ -21,8 +21,7 @@
 
 BEGIN_NAMESPACE(RaceSys)
 {
-    class CRaceInfo
-    {
+    /START_CLASS/NAME@CRaceInfo/SIZE@0x190/
     public:
         /START_CLASS/NAME@CKartInfo/SIZE@0x2C/
         public:
@@ -41,20 +40,19 @@ BEGIN_NAMESPACE(RaceSys)
             /M/Rate m_rate/0x4/0x28/
         /END/
 
-        CKartInfo m_kart_infos[KART_MAX];
-        ECourseID m_course_id;
-        CRaceMode m_race_mode;
-        EEngineLevel m_engine_level;
-        bool m_is_mirror_mode;
-        bool m_is_team_mode;
-        u8 m_lap_num;
-        ERaceModeFlag m_race_mode_flag;
-        EItemPattern m_item_pattern;
-        u32 m_kart_num;
-        s16 m_detail_kart_id;
-        u16 m_camera_target_player_id;
-        u32 m_fixed_random_seed;
-        u32 m_half_fixed_random_seed;
-    };
-    static_assert(sizeof(CRaceInfo) == 0x190);
+        /M/CKartInfo m_kart_infos[KART_MAX]/0x160/0x0/
+        /M/ECourseID m_course_id/0x4/0x160/
+        /M/CRaceMode m_race_mode/0xC/0x164/
+        /M/EEngineLevel m_engine_level/0x4/0x170/
+        /M/bool m_is_mirror_mode/0x1/0x174/
+        /M/bool m_is_team_mode/0x1/0x175/
+        /M/u8 m_lap_num/0x1/0x176/
+        /M/ERaceModeFlag m_race_mode_flag/0x4/0x178/
+        /M/EItemPattern m_item_pattern/0x4/0x17C/
+        /M/u32 m_kart_num/0x4/0x180/
+        /M/s16 m_detail_kart_id/0x2/0x184/
+        /M/u16 m_camera_target_player_id/0x2/0x186/
+        /M/u32 m_fixed_random_seed/0x4/0x188/
+        /M/u32 m_half_fixed_random_seed/0x4/0x18C/
+    /END/
 }
