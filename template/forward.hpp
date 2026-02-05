@@ -111,10 +111,15 @@ BEGIN_NAMESPACE(Kart)
 {
 	class Camera;
 	class Director;
+	class DispBody;
+	class DispKiller;
+	class DispWing;
 	class Driver;
 	class InfoProxy;
 	class KartPartsCustomedParam;
 	struct NetData;
+	class PartsDriveParam;
+	class ReplayInfo;
 	class Rigid;
 	class Unit;
 	class Vehicle;
@@ -136,6 +141,11 @@ BEGIN_NAMESPACE(Menu3D)
 	class GarageDirector;
 	class ModelCreateManager;
 	class SimpleModelManager;
+}
+
+BEGIN_NAMESPACE(Mii)
+{
+	class Face;
 }
 
 BEGIN_NAMESPACE(Net)
@@ -223,6 +233,7 @@ BEGIN_NAMESPACE(Sound)
 BEGIN_NAMESPACE(System)
 {
 	class BootRenderThread;
+	class ControllerBase;
 	class EngineHolder;
 	class GameFramework;
 	class GameSetting;
