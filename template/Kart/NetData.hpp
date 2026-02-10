@@ -11,24 +11,27 @@ BEGIN_NAMESPACE(Kart)
     /START_STRUCT/NAME@NetData/SIZE@0x48/
         struct KartData
         {
-            u32 _0x1 : 1;
-            u32 _0x2 : 1;
-            u32 _0x4 : 1;
-            u32 _0x8 : 1;
-            u32 _0x10 : 1;
-            u32 _0x20 : 1;
-            u32 _0x40 : 1;
-            u32 _0x80 : 1;
-            u32 _0x100 : 1;
-            u32 _0x200 : 1;
-            u32 _0x400 : 1;
-            u32 _0x800 : 1;
-            u32 _0x1000 : 1;
-            u32 _0x2000 : 1;
-            u32 _0x4000 : 1;
-            u32 _0x8000 : 1;
-            u32 _0x10000 : 1;
-            u32 warp : 1; // 0x20000
+            u32
+                // VehicleControl::Controls
+                accelerate_forwards     : 1, // 0x1
+                accelerate_backwards    : 1, // 0x2
+                hop                     : 1, // 0x4
+
+                _0x8                    : 1,
+                _0x10                   : 1,
+                _0x20                   : 1,
+                _0x40                   : 1,
+                _0x80                   : 1,
+                _0x100                  : 1,
+                _0x200                  : 1,
+                _0x400                  : 1,
+                _0x800                  : 1,
+                _0x1000                 : 1,
+                _0x2000                 : 1,
+                _0x4000                 : 1,
+                _0x8000                 : 1,
+                _0x10000                : 1,
+                warp                    : 1; // 0x20000
         };
         static_assert(sizeof(KartData) == 0x4);
 
