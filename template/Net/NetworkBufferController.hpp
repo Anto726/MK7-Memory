@@ -7,21 +7,23 @@
 
 BEGIN_NAMESPACE(Net)
 {
-    /START_CLASS/NAME@NetworkBufferController/SIZE@0x50/
+    /START_CLASS/NAME@NetworkBufferController/SIZE@0x50/VTABLE@True/
     public:
-        /START_CLASS/NAME@Buffer/SIZE@0x1C/
-        public:
-            /M/sead::FixedPtrArray<NetworkBuffer, 2> m_double_buffer/0x14/
-            /M/u32 m_active_buffer/0x4/
-            /M/u8 m_should_swap/0x1/
-
-            NetworkBuffer* getActiveBuffer() {                
+        /START_STRUCT/NAME@Buffer/SIZE@0x1C/
+            NetworkBuffer *getActiveBuffer()
+            {
                 return m_double_buffer.at(m_active_buffer);
             }
 
+            /M/sead::FixedPtrArray<NetworkBuffer, 2> m_double_buffer/0x14/0x0/
+            /M/u32 m_active_buffer/0x4/0x14/
+            /M/bool m_should_swap/0x1/0x18/
         /END/
 
-        NetworkBuffer* getWriteBuffer() {            
+        virtual void allocBuffer() {}; // 0
+
+        NetworkBuffer *getWriteBuffer()
+        {            
             return m_write_buffers.at(0)->getActiveBuffer();
         }
 

@@ -12,11 +12,13 @@ BEGIN_NAMESPACE(Net)
     public:
         /START_CLASS/NAME@StationInfo/SIZE@0x14/
         public:
-            enum class Status : u32 {
-                Free = 0,
-                Registered = 1,
-                Unregistered = 2,
+            enum class Status : u32
+            {
+                Free,
+                Registered,
+                Unregistered,
             };
+
             /M/Status m_status/0x4/0x0/
             /M/bool m_is_ai/0x1/0x4/
             /M/s32 m_station_id/0x4/0x8/
@@ -26,7 +28,7 @@ BEGIN_NAMESPACE(Net)
 
         /START_CLASS/NAME@ConnectorInfo/SIZE@0xC/
         public:
-            /M/StationInfo* m_station_info/0x4/0x0/
+            /M/StationInfo *m_station_info/0x4/0x0/
             /M/s32 m_player_id/0x4/0x4/
             /M/u32 m_aid/0x4/0x8/
         /END/
@@ -38,17 +40,20 @@ BEGIN_NAMESPACE(Net)
             /M/s32 m_count/0x4/0xC/
         /END/
 
-        NetworkBuffer* getWriteBuffer(eNetworkBufferType type) {
-            return m_buffer_controllers.at((s32)type)->getWriteBuffer();
+        NetworkBuffer *getWriteBuffer(eNetworkBufferType type)
+        {
+            return m_buffer_controllers.at(std::to_underlying(type))->getWriteBuffer();
         }
 
-        int getPlayerID(int aid) {
-            if (aid == -1) {
+        int getPlayerID(int aid)
+        {
+            if (aid == -1)
                 return -1;
-            }
-            if (m_connector_info_racers[aid].m_player_id != -1) {
-                return m_connector_info_racers[aid].m_player_id;
-            }
+
+            auto player_id = m_connector_info_racers[aid].m_player_id;
+            if (player_id != -1)
+                return player_id;
+            
             return m_connector_info_audience[aid].m_player_id;
         }
 
