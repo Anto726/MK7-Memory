@@ -204,6 +204,11 @@ BEGIN_NAMESPACE(RaceSys)
 
 BEGIN_NAMESPACE(Render)
 {
+	BEGIN_NAMESPACE(RaceLight)
+	{
+		class LightObj;
+	}
+
 	class DrawMdl;
 	class RenderEngine;
 	class ShadowVolume;
