@@ -28,11 +28,21 @@ BEGIN_NAMESPACE(Effect)
 
 BEGIN_NAMESPACE(Enemy)
 {
-	class AI;
-	class AIInfo;
-	class AIManager;
-	class AIParamLoader;
+	class DriveInfo;
+	class AIStuck;
+	class AIRank;
+	class AIProbabilityBase;
+	class AIPathPoint;
+	class AIPathManager;
 	class AIPathHandler;
+	class AIParamLoader;
+	class AIManager;
+	class AIItemBase;
+	class AIInfo;
+	class AIDriftDrive;
+	class AIBlockLine;
+	class AIAutoSteer;
+	class AI;
 }
 
 BEGIN_NAMESPACE(Field)
@@ -54,6 +64,7 @@ BEGIN_NAMESPACE(Field)
 	class MapdataGlidePathAccessor;
 	class MapdataItemPathAccessor;
 	class MapdataItemPointAccessor;
+	class MapdataJugemPoint;
 	class MapdataJugemPointAccessor;
 	class MapdataMissionPointAccessor;
 	class MapdataPathAccessor;
@@ -239,6 +250,7 @@ BEGIN_NAMESPACE(System)
 	class GameSetting;
 	class KDPadAddBase;
 	class KDPadInputer;
+	class KDPlayerRecordPad;
 	class PlayerData;
 	struct PlayerDataNoMii;
 	class ResourceLoader;
