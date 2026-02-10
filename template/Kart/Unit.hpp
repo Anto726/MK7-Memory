@@ -3,9 +3,6 @@
 #include "../forward.hpp"
 #include "../types.hpp"
 
-#include "Vehicle.hpp"
-#include "Driver.hpp"
-
 #include "../Object/Actor3DMdl.hpp"
 #include "../Object/TDirectorList.hpp"
 #include "../Object/TLinkSocket.hpp"

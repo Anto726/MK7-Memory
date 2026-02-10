@@ -3,7 +3,7 @@
 #include "../types.hpp"
 
 #include "SndActorBase.hpp"
-#include "../Kart/Vehicle.hpp"
+#include "../Kart/Vehicle/Vehicle.hpp"
 
 BEGIN_NAMESPACE(Sound)
 {

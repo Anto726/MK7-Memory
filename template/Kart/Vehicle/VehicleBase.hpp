@@ -2,12 +2,12 @@
 
 #include "Rigid.hpp"
 
-#include "../RaceSys/EBodyID.hpp"
-#include "../RaceSys/ECourseID.hpp"
-#include "../RaceSys/EDriverID.hpp"
-#include "../RaceSys/ETeamType.hpp"
-#include "../RaceSys/ETireID.hpp"
-#include "../RaceSys/EWingID.hpp"
+#include "../../RaceSys/EBodyID.hpp"
+#include "../../RaceSys/ECourseID.hpp"
+#include "../../RaceSys/EDriverID.hpp"
+#include "../../RaceSys/ETeamType.hpp"
+#include "../../RaceSys/ETireID.hpp"
+#include "../../RaceSys/EWingID.hpp"
 
 BEGIN_NAMESPACE(Kart)
 {

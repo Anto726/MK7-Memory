@@ -2,7 +2,7 @@
 
 #include "../types.hpp"
 
-#include "VehicleReact.hpp"
+#include "Vehicle/VehicleReact.hpp"
 
 #include <math/seadVector.hpp>
 

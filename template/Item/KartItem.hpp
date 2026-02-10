@@ -7,7 +7,6 @@
 #include "eItemSlot.hpp"
 
 #include "../Kart/InfoProxy.hpp"
-#include "../Kart/Vehicle.hpp"
 
 BEGIN_NAMESPACE(Item)
 {

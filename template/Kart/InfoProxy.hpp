@@ -3,7 +3,7 @@
 #include "../types.hpp"
 
 #include "Director.hpp"
-#include "Vehicle.hpp"
+#include "Vehicle/Vehicle.hpp"
 
 BEGIN_NAMESPACE(Kart)
 {

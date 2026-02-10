@@ -1,10 +1,10 @@
 #pragma once
 
-#include "../forward.hpp"
-#include "../types.hpp"
+#include "../../forward.hpp"
+#include "../../types.hpp"
 
-#include "../KDMinMax.hpp"
-#include "../KDMtxT.hpp"
+#include "../../KDMinMax.hpp"
+#include "../../KDMtxT.hpp"
 
 #include <math/seadVector.h>
 
