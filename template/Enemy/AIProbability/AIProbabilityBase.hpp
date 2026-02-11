@@ -19,7 +19,7 @@ BEGIN_NAMESPACE(Enemy)
         virtual bool isLaunchSideAttack() { return false; } // 7
 
 		/M/AIParamLoader *m_param_loader/0x4/0x4/
-        /M/s32 field_0x08/0x4/0x8/
+        /M/s32 field_0x08/0x4/0x8/ // AIRank *?
         /M/s32 m_start_boost_level/0x4/0xC/
 	/END/
 }

@@ -50,9 +50,9 @@ BEGIN_NAMESPACE(Enemy)
         /M/DriveInfo *m_drive_info/0x4/0x30/
         /M/Field::MapdataCheckPointAccessor *m_check_point_accessor/0x4/0x34/
         /M/Field::MapdataEnemyPointAccessor *m_enemy_point_accessor/0x4/0x38/
-        /M/System::KDPlayerRecordPad *m_kd_player_record_pad/0x4/0x3C/
+        /M/System::KDAIPad *m_kd_ai_pad/0x4/0x3C/
         /M/sead::Vector2f m_stick/0x8/0x40/
-        /M/u32 m_0x48/0x4/0x48/
+        /M/u32 m_search_mode/0x4/0x48/
         /M/s32 m_player_id/0x4/0x4C/
     /END/
 }

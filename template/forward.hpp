@@ -253,19 +253,20 @@ BEGIN_NAMESPACE(System)
 	class EngineHolder;
 	class GameFramework;
 	class GameSetting;
+	class KDAIPad;
 	class KDPadAddBase;
 	class KDPadInputer;
 	class KDPlayerRecordPad;
 	class PlayerData;
-	struct PlayerDataNoMii;
 	class ResourceLoader;
 	class RootScene;
 	class RootSystem;
 	class Scene;
 	class SceneManager;
 	class SystemEngine;
-	struct SystemSaveData;
 	class ThreadManager;
+	struct PlayerDataNoMii;
+	struct SystemSaveData;
 }
 
 BEGIN_NAMESPACE(UI)
