@@ -13,13 +13,13 @@ Finally, include the needed headers in your project and build it using C++23.
 
 ## Credits
 
-- Nintendo
-- open-ead: [sead](https://github.com/open-ead/sead), [nnheaders](https://github.com/open-ead/nnheaders)
+- [Nintendo](https://github.com/nintendo)
+- [OpenEAD](https://github.com/open-ead): [sead](https://github.com/open-ead/sead), [nnheaders](https://github.com/open-ead/nnheaders)
+- [Anto726](https://github.com/Anto726): game research
+- [PabloMK7](https://github.com/PabloMK7): game research
+- [B_squo](https://github.com/Bsquo): game research
+- [Marioiscool246](https://github.com/Marioiscool246): `Kart::NetData` research
 - _tZ: `System::RootSystem`, its nested classes, and much more
-- Marioiscool246: `Kart::NetData` research
-- Anto726: game research
-- PabloMK7: game research
-- B_squo: game research
 
 ## License
 
