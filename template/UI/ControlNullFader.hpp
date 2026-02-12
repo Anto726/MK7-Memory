@@ -4,8 +4,8 @@
 
 BEGIN_NAMESPACE(UI)
 {
-    /START_CLASS/NAME@ControlNullFader/SIZE@0x04/
+    /START_CLASS/NAME@ControlNullFader/SIZE@0x04/VTABLE@True/
     public:
-        virtual ~ControlNullFader() {};
+        virtual ~ControlNullFader() = default;
     /END/
 }

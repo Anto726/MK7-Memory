@@ -8,6 +8,11 @@ BEGIN_NAMESPACE(BoxCol)
 	class Unit;
 }
 
+BEGIN_NAMESPACE(Camera)
+{
+	class CameraEngine;
+}
+
 BEGIN_NAMESPACE(CSVUtil)
 {
 	class CSVParam;

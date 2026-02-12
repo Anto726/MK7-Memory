@@ -22,6 +22,7 @@ BEGIN_NAMESPACE(UI)
         };
 
         /START_STRUCT/NAME@CreateArg/SIZE@0x18/VTABLE@True/
+        public:
             virtual void _0x0() = 0; // 0
             virtual void userDataDefine() {} // 1
             virtual void _0x8() = 0; // 2

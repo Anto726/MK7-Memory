@@ -8,7 +8,7 @@
 
 BEGIN_NAMESPACE(UI)
 {
-    /START_CLASS/NAME@BgRaceMapControl/SIZE@0x104/BASE@VisualControl/BSIZE@0x78/VTABLE@True/
+    /START_CLASS/NAME@BgRaceMapControl/SIZE@0x104/BASE@VisualControl/BSIZE@0x7C/VTABLE@True/
     public:
         /M/sead::Vector2f m_0x88/0x8/0x88/
         /M/sead::Vector2f m_0x90/0x8/0x90/
