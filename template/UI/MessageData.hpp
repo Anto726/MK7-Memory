@@ -11,7 +11,7 @@
 BEGIN_NAMESPACE(UI)
 {
     /START_CLASS/NAME@MessageData/SIZE@0x3C/
-        /M/sead::FixedSafeString<32> m_list/0x2C/0x0/
+        /M/sead::FixedSafeString<32> m_message/0x2C/0x0/
         /M/void *m_message_binary/0x4/0x2C/   // LMS_MessageBinary *
         /M/void *m_NL1Data/0x4/0x30/
         /M/int m_0x34/0x4/0x34/
