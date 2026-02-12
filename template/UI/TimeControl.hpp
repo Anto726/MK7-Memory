@@ -9,7 +9,7 @@ BEGIN_NAMESPACE(UI)
     class TimeControl : public VisualControl
     {
     public:
-        u8 gap_0x78[0x24];
+        u8 gap_0x7C[0x20];
     };
     static_assert(sizeof(TimeControl) == 0x9C);
 }

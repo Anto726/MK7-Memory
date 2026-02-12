@@ -25,7 +25,7 @@ BEGIN_NAMESPACE(UI)
             FLAG_0x80 = 0x80
         };
 
-        /START_STRUCT/NAME@CreateArg/SIZE@0x18/
+        /START_STRUCT/NAME@CreateArg/SIZE@0x18/VTABLE@True/
         public:
             virtual void _0x0() = 0; // 0
         /END/
