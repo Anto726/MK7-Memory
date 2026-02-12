@@ -5,18 +5,14 @@
 #include <nw/lyt/Pane.hpp>
 #include <container/seadListImpl.h>
 #include "ControlNullFader.hpp"
+#include "ControlResource.hpp"
+#include "ControlAnimator.hpp"
+#include "../Sequence/Page.hpp"
 
 BEGIN_NAMESPACE(UI)
 {
     /START_CLASS/NAME@Control/SIZE@0x64/BASE@Object::Actor/BSIZE@0x08/VTABLE@True/
     public:
-        enum ControlSightType {
-            CONTROL_SIGHT_TYPE_DUMMY = 1,
-            CONTROL_SIGHT_TYPE_DEFAULT,
-            CONTROL_SIGHT_TYPE_DIV_ROOT,
-            CONTROL_SIGHT_TYPE_DIV_PART
-        };
-
         enum ControlDrawScreenFlag {
             FLAG_0x08 = 0x08,
             DRAW_ON_TOP_SCREEN = 0x10,
@@ -25,9 +21,17 @@ BEGIN_NAMESPACE(UI)
             FLAG_0x80 = 0x80
         };
 
-        /START_STRUCT/NAME@CreateArg/SIZE@0x18/
-        public:
+        /START_STRUCT/NAME@CreateArg/SIZE@0x18/VTABLE@True/
             virtual void _0x0() = 0; // 0
+            virtual void userDataDefine() {} // 1
+            virtual void _0x8() = 0; // 2
+            virtual ControlAnimator::AnimationDefine *getAnimationDefine(); // 3
+
+            /M/Page *m_page/0x4/0x4/
+            /M/u32 m_draw_screen_flag/0x4/0x8/
+            /M/s32 m_0xC/0x4/0xC/
+            /M/ControlResource *m_control_resource/0x4/0x10/
+            /M/s32 m_control_data_idx/0x4/0x14/
         /END/
 
         virtual void forceCameraDir() {}; // 18
