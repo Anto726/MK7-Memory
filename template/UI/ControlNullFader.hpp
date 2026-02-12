@@ -4,10 +4,8 @@
 
 BEGIN_NAMESPACE(UI)
 {
-    class ControlNullFader
-    {
+    /START_CLASS/NAME@ControlNullFader/SIZE@0x04/
     public:
         virtual ~ControlNullFader() {};
-    };
-    static_assert(sizeof(ControlNullFader) == 0x4);
+    /END/
 }
