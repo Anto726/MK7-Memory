@@ -4,6 +4,7 @@
 
 #include "ItemDirector.hpp"
 #include "ItemSlot.hpp"
+#include "KartItem.hpp"
 
 BEGIN_NAMESPACE(Item)
 {
