@@ -279,6 +279,8 @@ BEGIN_NAMESPACE(UI)
 	class BgRaceMapBombControl;
 	class BgRaceMapCharaControl;
 	class BgRaceMapControl;
+	class ControlAnimator;
+	class ControlAnimator::AnimationDefine;
 	class MessageData;
 	class MessageIDConverter;
 	class MessageWriter;
