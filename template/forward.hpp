@@ -280,11 +280,12 @@ BEGIN_NAMESPACE(UI)
 	class BgRaceMapCharaControl;
 	class BgRaceMapControl;
 	class ControlAnimator;
-	class ControlAnimator::AnimationDefine;
 	class MessageData;
 	class MessageIDConverter;
 	class MessageWriter;
 	class TimeControl;
+	class Page;
+	class GraphicResourceInfo;
 }
 
 BEGIN_NAMESPACE(Util)
