@@ -15,7 +15,8 @@ all: $(OUTFILES)
 
 verify:
 	@rm -rf $(CMAKE_BUILD)
-	@cmake -S . -B $(CMAKE_BUILD) -DCMAKE_REQUIRED_FLAGS=-m32
+	@cmake -S . -B $(CMAKE_BUILD)
+	@cmake --build $(CMAKE_BUILD)
 
 clean:
 	@rm -rf $(BUILD)

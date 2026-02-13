@@ -1,23 +1,61 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.15)
 
-project(MK7-Memory CXX)
+project(mk7_memory_verify LANGUAGES CXX)
 
-include(CheckIncludeFileCXX)
-set(CMAKE_REQUIRED_QUIET ON)
-
+# ---- C++ settings ----
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-file(GLOB_RECURSE HEADERS "include/*.hpp")
+# ---- Generate all_headers.hpp ----
+file(GLOB_RECURSE MK7_HEADERS
+    RELATIVE "${PROJECT_SOURCE_DIR}/include"
+    "${PROJECT_SOURCE_DIR}/include/*.hpp"
+)
 
-foreach(HEADER ${HEADERS})
-    get_filename_component(HEADER_NAME ${HEADER} NAME)
-    check_include_file_cxx("${HEADER}" ${HEADER_NAME}_CHECK)
+list(SORT MK7_HEADERS)
 
-    if (${HEADER_NAME}_CHECK)
-        message(STATUS "${HEADER_NAME} succeeded.")
-    else()
-        message(FATAL_ERROR "${HEADER_NAME} failed.")
-    endif()
+set(ALL_HEADERS_HPP "${PROJECT_BINARY_DIR}/all_headers.hpp")
+
+file(WRITE "${ALL_HEADERS_HPP}" "// Auto-generated — do not edit\n\n")
+
+foreach(h ${MK7_HEADERS})
+    file(APPEND "${ALL_HEADERS_HPP}" "#include \"${h}\"\n")
 endforeach()
+
+# ---- Dummy verification target ----
+add_library(header_verify OBJECT verify.cpp)
+
+# ---- Platform defines (Nintendo 3DS / MK7) ----
+target_compile_definitions(header_verify PRIVATE
+    NNSDK
+)
+
+# devkitPro paths
+set(DEVKITPRO $ENV{DEVKITPRO})
+set(LIBCTRU_INCLUDE "${DEVKITPRO}/libctru/include")
+
+target_include_directories(header_verify PRIVATE
+    ${LIBCTRU_INCLUDE}
+)
+
+# 32-bit ABI (important for layout verification)
+target_compile_options(header_verify PRIVATE -m32)
+
+# Include paths
+target_include_directories(header_verify PRIVATE
+    ${PROJECT_SOURCE_DIR}/include
+    ${PROJECT_BINARY_DIR}              # for all_headers.hpp
+)
+
+target_include_directories(header_verify SYSTEM PRIVATE
+    ${PROJECT_SOURCE_DIR}/vendor/sead/include
+    ${PROJECT_SOURCE_DIR}/vendor/nnheaders/include
+    ${PROJECT_SOURCE_DIR}/vendor/nw4c/include
+    ${PROJECT_SOURCE_DIR}/vendor/lms/Include
+)
+
+# Optional: nicer warnings
+target_compile_options(header_verify PRIVATE
+    -Wall -Wextra
+)
