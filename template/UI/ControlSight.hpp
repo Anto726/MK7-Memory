@@ -3,6 +3,8 @@
 #include "../forward.hpp"
 #include "../types.hpp"
 
+#include "GraphicResourceInfo.hpp"
+
 #include <math/seadVector.hpp>
 #include <prim/seadSafeString.h>
 #include <container/seadPtrArray.h>
@@ -12,10 +14,10 @@ BEGIN_NAMESPACE(UI)
 {
     /START_CLASS/NAME@ControlSight/SIZE@0x4/VTABLE@True/
         enum ControlSightType {
-            CONTROL_SIGHT_TYPE_DUMMY = 1,
-            CONTROL_SIGHT_TYPE_DEFAULT,
-            CONTROL_SIGHT_TYPE_DIV_ROOT,
-            CONTROL_SIGHT_TYPE_DIV_PART
+            CONTROL_SIGHT_TYPE_DUMMY = 1,   // NwlytDummyControlSight
+            CONTROL_SIGHT_TYPE_DEFAULT,     // NwlytControlSight
+            CONTROL_SIGHT_TYPE_DIV_ROOT,    // NwlytDivRootControlSight
+            CONTROL_SIGHT_TYPE_DIV_PART     // NwlytDivPartControlSight
         };
 
         enum class EElementType : u32
