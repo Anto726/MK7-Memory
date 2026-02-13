@@ -30,8 +30,7 @@ BEGIN_NAMESPACE(UI)
                 /M/SafeString m_0x30/0x8/0x30/
                 /M/void *m_0x38/0x4/0x38/
                 /M/SafeString m_0x3C/0x8/0x3c/
-                /M/SafeString m_0x3C/0x8/0x3c/
-                /M/sead::PtrArray<GraphicResourceInfo> *m_graphics_resource_info_array/0x4/0x40/
+                /M/sead::PtrArray<GraphicResourceInfo> *m_graphics_resource_info_array/0x4/0x44/
             /END/
     /END/
 }
