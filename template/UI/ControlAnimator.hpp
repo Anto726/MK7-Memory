@@ -9,8 +9,7 @@ BEGIN_NAMESPACE(UI)
     /START_CLASS/NAME@ControlAnimator/SIZE@0xC/VTABLE@True/
     public:
 
-        /START_CLASS/NAME@AnimationDefine/SIZE@0x18/VTABLE@True/
-        public:
+        /START_STRUCT/NAME@AnimationDefine/SIZE@0x18/VTABLE@True/
             virtual void defineAnimation(); // 0
 
             /M/ControlAnimator *m_control_animator/0x4/0x4/

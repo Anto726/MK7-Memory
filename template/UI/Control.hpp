@@ -36,19 +36,19 @@ BEGIN_NAMESPACE(UI)
 
         virtual void forceCameraDir() {}; // 18
 
-        virtual void onCreate(CreateArg *) {}; // 19
-        virtual void reset() {}; // 20
+        virtual void onCreate(const CreateArg *) {}; // 19
+        virtual void reset() = 0; // 20
 
-        virtual void readyFadein() {}; // 21
-        virtual void readyFadeout() {}; // 22
+        virtual void readyFadein() = 0; // 21
+        virtual void readyFadeout() = 0; // 22
 
-        virtual void fadeStep() {}; // 23
-        virtual void isFadeComplete() {}; // 24
+        virtual void fadeStep() = 0; // 23
+        virtual bool isFadeComplete() = 0; // 24
 
-        virtual void draw() {}; // 25
+        virtual void draw() = 0; // 25
 
         virtual nw::lyt::Pane *getRootPane() { return {}; }; // 26
-        virtual ControlNullFader *generateFader() { return {}; }; // 27
+        virtual ControlNullFader *generateFader(); // 27
 
         /M/CreateArg *m_create_arg/0x4/0x8/
         /M/void *m_0xC/0x4/0xC/
