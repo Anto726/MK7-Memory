@@ -22,7 +22,6 @@ BEGIN_NAMESPACE(UI)
         virtual void animMenuIn(); // 31
         virtual void animMenuOut(); // 32
 
-        BaseFastControl();
         void calcTextLen(void * /* nw::lyt::TextBox * */, const sead::WSafeString *);
         void calcTextLen(void * /* nw::lyt::TextBox * */, u32);
     /END/

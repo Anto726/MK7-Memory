@@ -10,6 +10,8 @@ BEGIN_NAMESPACE(Sequence)
 {
     /START_CLASS/NAME@BasePage/SIZE@0x26C/BASE@Page/BSIZE@0x5C/VTABLE@True/
     public:
+        BasePage();
+
         enum BasePageState {
             STATE_CLOSED,   // Menu is already closed
             STATE_OPEN,
@@ -47,7 +49,7 @@ BEGIN_NAMESPACE(Sequence)
         // Controls created in the `Sequence::BasePage::setupMenuControl_*` functions are appended to this array
         /M/s32 m_num_menu_controls/0x4/0x248/
         /M/sead::FixedPtrArray<UI::BaseFastControl *, 15> *m_menu_controls/0x4/0x24C/
-        // Controls are only put in here if `setItemToAllManipulators` is false?
+        // Controls are only put in here if `m_set_item_to_all_manipulators` is false?
         /M/sead::FixedPtrArray<UI::BaseFastControl *, 3> m_controls_outside_manipulator_array/0x18/0x250/
         /M/u8 m_0x268/0x1/0x268/
         /M/bool m_0x269/0x1/0x269/
