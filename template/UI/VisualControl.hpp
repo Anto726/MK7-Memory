@@ -3,6 +3,7 @@
 #include "../types.hpp"
 
 #include "Control.hpp"
+#include "ControlAnimator.hpp"
 #include "ControlSight.hpp"
 #include "MessageData.hpp"
 #include <container/seadPtrArray.h>
@@ -20,7 +21,7 @@ BEGIN_NAMESPACE(UI)
             /M/sead::PtrArray<MessageData> *m_message_data_array/0x04/0x6C/
         /END/
 
-        /M/void *m_animator/0x4/0x64/   // ControlAnimator *
+        /M/ControlAnimator *m_animator/0x4/0x64/
         /M/void *m_control_sight/0x4/0x68/   // NwlytDivPartControlSight *
         /M/MessageDataList m_message_data/0xC/0x6C/
         /M/bool m_anim_keep/0x1/0x78/
