@@ -83,7 +83,9 @@ BEGIN_NAMESPACE(Kart)
 		static_assert(sizeof(BoostFlags) == 0x4);
 
 		/M/BoostFlags m_boost_flags/0x4/0xC28/
+		/M/BoostFlags m_boost_flags_previous_frame/0x4/0xC2C/
 		/M/StatusFlags m_status_flags/0x4/0xC30/
+		/M/StatusFlags m_status_flags_previous_frame/0x4/0xC34/
 		/M/s32 m_air_frames/0x4/0xD48/
 		/M/s32 m_ground_frames/0x4/0xD50/
 		/M/sead::Vector3f m_front_pitch/0xC/0xD6C/
