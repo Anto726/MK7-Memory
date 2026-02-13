@@ -54,37 +54,78 @@ BEGIN_NAMESPACE(UI)
             /END/
             
             virtual void* getRuntimeTypeInfo(); // 0
-            virtual void _0x4() = 0; // 1 (__sub_object)
-            virtual s32 build(const CreateArg*); // 2
-            virtual void calc(); // 3
-            virtual void draw(); // 4
-            virtual ElementHandle *getElementHandle(const sead::SafeString &, EElementType); // 5
-            virtual ElementHandle *getConstElementHandle(const sead::SafeString &, EElementType) const; // 6
-            virtual void setPosImpl(u32, const sead::Vector3f&); // 7
-            virtual const sead::Vector3f &getPosImpl(u32) const; // 8
-            virtual void _0x28() = 0; // 9
-            virtual const sead::Vector2f &getSizeImpl(u32) const; // 10
-            virtual void _0x30() = 0; // 11
-            virtual void _0x34() = 0; // 12
-            virtual void _0x38() = 0; // 13
-            virtual void _0x3C() = 0; // 14
-            virtual void _0x40() = 0; // 15
-            virtual void _0x44() = 0; // 16
-            virtual const sead::Matrix34f &getGlobalMtxImpl(u32) const; // 17
-            virtual void setAlphaImpl(u32, u8); // 18
-            virtual void _0x50() = 0; // 19
-            virtual u8 getGlobalAlphaImpl(u32) const; // 20
-            virtual void setVisibleImpl(u32, bool); // 21
-            virtual void _0x5C() = 0; // 22
-            virtual bool getGlobalVisibleImpl(u32) const; // 23
-            virtual void _0x64() = 0; // 24
-            virtual nw::lyt::Pane *getPane(u32); // 25
-            virtual void _0x6C() = 0; // 26
-            virtual void replaceMessageImpl(u32, const MessageString &, const MessageArg *, LetterStepper *);
+            virtual void _0x4(); // 1 (__sub_object)
+            virtual void _0x8() = 0; // 2 (__deallocating)
+            virtual s32 build(const CreateArg*) = 0; // 3
+            virtual void calc() = 0; // 4
+            virtual void draw() = 0; // 5
+            virtual ElementHandle *getElementHandle(const sead::SafeString &, EElementType) = 0; // 6
+            virtual ElementHandle *getConstElementHandle(const sead::SafeString &, EElementType) const = 0; // 7
+            virtual void setPosImpl(u32, const sead::Vector3f&) = 0; // 8
+            virtual const sead::Vector3f &getPosImpl(u32) const = 0; // 9
+            virtual void _0x28() = 0; // 10
+            virtual const sead::Vector2f &getSizeImpl(u32) const = 0; // 11
+            virtual void _0x30() = 0; // 12
+            virtual void _0x34() = 0; // 13
+            virtual void _0x38() = 0; // 14
+            virtual void _0x3C() = 0; // 15
+            virtual void _0x40() = 0; // 16
+            virtual void _0x44() = 0; // 17
+            virtual const sead::Matrix34f &getGlobalMtxImpl(u32) const = 0; // 18
+            virtual void setAlphaImpl(u32, u8) = 0; // 19
+            virtual void _0x50() = 0; // 20
+            virtual u8 getGlobalAlphaImpl(u32) const = 0; // 21
+            virtual void setVisibleImpl(u32, bool) = 0; // 22
+            virtual void _0x5C() = 0; // 23
+            virtual bool getGlobalVisibleImpl(u32) const = 0; // 24
+            virtual void _0x64() = 0; // 25
+            virtual nw::lyt::Pane *getPane(u32); // 26
+            virtual void _0x6C() = 0; // 27
+            virtual void replaceMessageImpl(u32, const MessageString &, const MessageArg *, LetterStepper *) = 0; // 28
+            virtual void replaceGraphicImpl(u32, const SafeString &) = 0; // 29
+            virtual void _0x78() = 0; // 30
+            virtual void _0x7C() = 0; // 31
+            virtual void setRootPosImpl(const sead::Vector3f &) = 0; // 32
+            virtual const sead::Vector3f &getRootPosImpl() const = 0; // 33
+            virtual void setRootMtxImpl(const sead::Matrix34f &) = 0; // 34
+            virtual void _0x8C() = 0; // 35
+            virtual const sead::Matrix34f &getGlobalRootMtxImpl() const = 0; // 36
+            virtual void setRootAlphaImpl(u8) = 0; // 37
+            virtual void _0x98() = 0; // 38
+            virtual u8 getGlobalRootAlphaImpl() const = 0; // 39
+            virtual void setRootVisibleImpl(bool) = 0; // 40
+            virtual bool getRootVisibleImpl() const = 0; // 41
+            virtual bool getGlobalRootVisibleImpl() const = 0; // 42
+            virtual void _0xAC() = 0; // 43
+            virtual void _0xB0() = 0; // 44
+            virtual void _0xB4() = 0; // 45
     /END/
 
     /START_CLASS/NAME@NullControlSight/SIZE@0x40/BASE@ControlSight/BSIZE@0x4/VTABLE@True/
     public:
+        virtual void* getRuntimeTypeInfo(); // 0
+        virtual s32 build(const CreateArg*); // 3
+        virtual void calc(); // 4
+        virtual void draw(); // 5
+        virtual ElementHandle *getElementHandle(const sead::SafeString &, EElementType); // 6
+        virtual ElementHandle *getConstElementHandle(const sead::SafeString &, EElementType) const; // 7
+        virtual void setPosImpl(u32, const sead::Vector3f&); // 8
+        virtual const sead::Vector3f &getPosImpl(u32) const; // 9
+        virtual const sead::Vector2f &getSizeImpl(u32) const; // 11
+        virtual const sead::Matrix34f &getGlobalMtxImpl(u32) const; // 18
+        virtual void setAlphaImpl(u32, u8); // 19
+        virtual u8 getGlobalAlphaImpl(u32) const; // 21
+        virtual void setVisibleImpl(u32, bool); // 22
+        virtual bool getGlobalVisibleImpl(u32) const; // 24
+        virtual void replaceMessageImpl(u32, const MessageString &, const MessageArg *, LetterStepper *); // 28
+        virtual void replaceGraphicImpl(u32, const SafeString &); // 29
+        virtual void setRootPosImpl(const sead::Vector3f &); // 32
+        virtual const sead::Vector3f &getRootPosImpl() const; // 33
+        virtual void setRootMtxImpl(const sead::Matrix34f &); // 34
+        virtual void setRootAlphaImpl(u8); // 37
+        virtual void setRootVisibleImpl(bool); // 40
+        virtual bool getRootVisibleImpl() const; // 41
+
         /M/sead::Matrix34f m_matrix/0x30/0x4/
         /M/u8 m_alpha/0x1/0x34/
         /M/bool m_visible/0x1/0x35/

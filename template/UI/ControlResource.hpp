@@ -4,7 +4,7 @@
 
 #include "../types.hpp"
 
-#include "Control.hpp"  // ControlSightType
+#include "ControlSight.hpp"  // ControlSightType
 
 BEGIN_NAMESPACE(UI)
 {

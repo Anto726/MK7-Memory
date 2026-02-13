@@ -5,6 +5,7 @@
 #include "Control.hpp"
 #include "ControlAnimator.hpp"
 #include "ControlSight.hpp"
+#include "NwlytControlSight.hpp"
 #include "MessageData.hpp"
 #include <container/seadPtrArray.h>
 
@@ -22,8 +23,8 @@ BEGIN_NAMESPACE(UI)
         /END/
 
         /M/ControlAnimator *m_animator/0x4/0x64/
-        /M/void *m_control_sight/0x4/0x68/   // NwlytDivPartControlSight *
-        /M/MessageDataList m_message_data/0xC/0x6C/
+        /M/NwlytDivControlSight *m_control_sight/0x4/0x68/ 
+        /M/MessageDataList m_message_data_list/0xC/0x6C/
         /M/bool m_anim_keep/0x1/0x78/
         /M/bool m_apply_animation/0x1/0x79/
         /M/bool m_calc_control_sight/0x1/0x7A/
