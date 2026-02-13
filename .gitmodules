@@ -7,3 +7,6 @@
 [submodule "vendor/nw4c"]
 	path = vendor/nw4c
 	url = https://github.com/Anto726/nw4c
+[submodule "vendor/LMS"]
+	path = vendor/LMS
+	url = https://github.com/3dsdecomp/LibMessageStudio.git

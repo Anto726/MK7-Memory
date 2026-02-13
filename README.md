@@ -15,6 +15,7 @@ Finally, include the needed headers in your project and build it using C++23.
 
 - [Nintendo](https://github.com/nintendo)
 - [OpenEAD](https://github.com/open-ead): [sead](https://github.com/open-ead/sead), [nnheaders](https://github.com/open-ead/nnheaders)
+- [3DS Decompilation](https://github.com/3dsdecomp): [LibMessageStudio](https://github.com/3dsdecomp/LibMessageStudio)
 - [Anto726](https://github.com/Anto726): game research
 - [PabloMK7](https://github.com/PabloMK7): game research
 - [B_squo](https://github.com/Bsquo): game research
