@@ -17,6 +17,8 @@ BEGIN_NAMESPACE(UI)
         virtual void create(ArgumentObj const *); // 4
         virtual void reset(); // 20
 
+        BaseMenuViewControl();
+
         /M/ControlSight::ElementHandle *m_elements[4]/0x10/0x7C/
         /M/sead::Vector2f m_0x8C/0x8/0x8C/
         /M/sead::Vector3f m_follow/0xC/0x94/

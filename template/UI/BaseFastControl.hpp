@@ -4,6 +4,8 @@
 
 #include "VisualControl.hpp"
 
+#include <prim/seadSafeString.h>
+
 BEGIN_NAMESPACE(UI)
 {
     /START_CLASS/NAME@BaseFastControl/SIZE@0x7C/BASE@VisualControl/BSIZE@0x7C/VTABLE@True/
@@ -19,5 +21,9 @@ BEGIN_NAMESPACE(UI)
         virtual void calc(); // 6
         virtual void animMenuIn(); // 31
         virtual void animMenuOut(); // 32
+
+        BaseFastControl();
+        void calcTextLen(void * /* nw::lyt::TextBox * */, const sead::WSafeString *);
+        void calcTextLen(void * /* nw::lyt::TextBox * */, u32);
     /END/
 }
