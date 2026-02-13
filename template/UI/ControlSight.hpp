@@ -4,6 +4,9 @@
 #include "../types.hpp"
 
 #include "GraphicResourceInfo.hpp"
+#include "DashMessageArg.hpp"
+#include "LetterStepper.hpp"
+#include "MessageString.hpp"
 
 #include <math/seadVector.hpp>
 #include <prim/seadSafeString.h>
@@ -55,19 +58,19 @@ BEGIN_NAMESPACE(UI)
             virtual s32 build(const CreateArg*); // 2
             virtual void calc(); // 3
             virtual void draw(); // 4
-            virtual ElementHandle *getElementHandle(const sead::SafeString&, EElementType); // 5
-            virtual ElementHandle *getConstElementHandle(const sead::SafeString&, EElementType) const; // 6
+            virtual ElementHandle *getElementHandle(const sead::SafeString &, EElementType); // 5
+            virtual ElementHandle *getConstElementHandle(const sead::SafeString &, EElementType) const; // 6
             virtual void setPosImpl(u32, const sead::Vector3f&); // 7
-            virtual const sead::Vector3f& getPosImpl(u32) const; // 8
+            virtual const sead::Vector3f &getPosImpl(u32) const; // 8
             virtual void _0x28() = 0; // 9
-            virtual const sead::Vector2f& getSizeImpl(u32) const; // 10
+            virtual const sead::Vector2f &getSizeImpl(u32) const; // 10
             virtual void _0x30() = 0; // 11
             virtual void _0x34() = 0; // 12
             virtual void _0x38() = 0; // 13
             virtual void _0x3C() = 0; // 14
             virtual void _0x40() = 0; // 15
             virtual void _0x44() = 0; // 16
-            virtual const sead::Matrix34f& getGlobalMtxImpl(u32) const; // 17
+            virtual const sead::Matrix34f &getGlobalMtxImpl(u32) const; // 17
             virtual void setAlphaImpl(u32, u8); // 18
             virtual void _0x50() = 0; // 19
             virtual u8 getGlobalAlphaImpl(u32) const; // 20
@@ -77,6 +80,7 @@ BEGIN_NAMESPACE(UI)
             virtual void _0x64() = 0; // 24
             virtual nw::lyt::Pane *getPane(u32); // 25
             virtual void _0x6C() = 0; // 26
+            virtual void replaceMessageImpl(u32, const MessageString &, const MessageArg *, LetterStepper *);
     /END/
 
     /START_CLASS/NAME@NullControlSight/SIZE@0x40/BASE@ControlSight/BSIZE@0x4/VTABLE@True/
