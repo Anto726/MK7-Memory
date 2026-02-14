@@ -287,6 +287,7 @@ BEGIN_NAMESPACE(UI)
 	class Page;
 	class GraphicResourceInfo;
 	class ControlDirector;
+	class ControlInitializer;
 }
 
 BEGIN_NAMESPACE(Util)
