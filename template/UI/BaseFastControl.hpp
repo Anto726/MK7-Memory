@@ -17,7 +17,7 @@ BEGIN_NAMESPACE(UI)
             /M/s32 y/0x4/0x4/
         /END/
 
-        virtual void create(ArgumentObj const *); // 4
+        virtual void create(Object::ArgumentObj const *); // 4
         virtual void calc(); // 6
         virtual void animMenuIn(); // 31
         virtual void animMenuOut(); // 32

@@ -15,7 +15,7 @@ BEGIN_NAMESPACE(UI)
             virtual void defineAnimation(); // 0
         /END/
 
-        /START_STRUCT/NAME@CreateArg/SIZE@0x18/BASE@VisualControl::CreateArg/BSIZE@0x18/VTABLE@True/
+        /START_STRUCT/NAME@CreateArg/SIZE@0x90/BASE@VisualControl::CreateArg/BSIZE@0x90/VTABLE@True/
             virtual ControlAnimator::AnimationDefine *getAnimationDefine(); // 3
         /END/
 
@@ -23,7 +23,7 @@ BEGIN_NAMESPACE(UI)
         // virtual ??? getDTIClassInfo() const;
         // virtual ??? getDTIClass() const;
         virtual ~TimeControl() {}; // 2 (_sub_object), 3 (_deallocating)
-        virtual void onCreate(const CreateArg *) {}; // 19
+        virtual void onCreate(const Control::CreateArg *) {}; // 19
         virtual void onReset() {}; // 28
         virtual void onCalc() {}; // 29
 

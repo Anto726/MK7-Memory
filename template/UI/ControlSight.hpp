@@ -17,6 +17,7 @@
 BEGIN_NAMESPACE(UI)
 {
     /START_CLASS/NAME@ControlSight/SIZE@0x4/VTABLE@True/
+    public:
         enum ControlSightType {
             CONTROL_SIGHT_TYPE_DUMMY = 1,   // NwlytDummyControlSight
             CONTROL_SIGHT_TYPE_DEFAULT,     // NwlytControlSight
@@ -82,7 +83,7 @@ BEGIN_NAMESPACE(UI)
             virtual nw::lyt::Pane *getPane(u32); // 26
             virtual void _0x6C() = 0; // 27
             virtual void replaceMessageImpl(u32, const MessageString &, const MessageArg *, LetterStepper *) = 0; // 28
-            virtual void replaceGraphicImpl(u32, const SafeString &) = 0; // 29
+            virtual void replaceGraphicImpl(u32, const sead::SafeString &) = 0; // 29
             virtual void _0x78() = 0; // 30
             virtual void _0x7C() = 0; // 31
             virtual void setRootPosImpl(const sead::Vector3f &) = 0; // 32
@@ -118,7 +119,7 @@ BEGIN_NAMESPACE(UI)
         virtual void setVisibleImpl(u32, bool); // 22
         virtual bool getGlobalVisibleImpl(u32) const; // 24
         virtual void replaceMessageImpl(u32, const MessageString &, const MessageArg *, LetterStepper *); // 28
-        virtual void replaceGraphicImpl(u32, const SafeString &); // 29
+        virtual void replaceGraphicImpl(u32, const sead::SafeString &); // 29
         virtual void setRootPosImpl(const sead::Vector3f &); // 32
         virtual const sead::Vector3f &getRootPosImpl() const; // 33
         virtual void setRootMtxImpl(const sead::Matrix34f &); // 34

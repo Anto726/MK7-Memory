@@ -14,7 +14,7 @@ BEGIN_NAMESPACE(UI)
     /START_CLASS/NAME@BaseMenuViewControl/SIZE@0xA8/BASE@BaseFastControl/BSIZE@0x7C/VTABLE@True/
     public:
         virtual ~BaseMenuViewControl() {}; // 2 (_sub_object), 3 (_deallocating)
-        virtual void create(ArgumentObj const *); // 4
+        virtual void create(Object::ArgumentObj const *); // 4
         virtual void reset(); // 20
 
         BaseMenuViewControl();

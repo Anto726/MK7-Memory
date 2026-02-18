@@ -16,7 +16,7 @@ BEGIN_NAMESPACE(UI)
     public:
         /START_CLASS/NAME@DrawControlList/SIZE@0x14/
         public:
-            /M/sead::OffsetList m_list[1]/0x10/0x0/
+            /M/sead::OffsetList<Control> m_list[1]/0x10/0x0/
             /M/s32 m_0x10/0x4/0x10/
         /END/
 

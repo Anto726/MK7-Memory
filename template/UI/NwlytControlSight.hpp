@@ -26,7 +26,7 @@ BEGIN_NAMESPACE(UI)
         virtual bool getGlobalVisibleImpl(u32) const = 0; // 24
         virtual nw::lyt::Pane *getPane(u32); // 26
         virtual void replaceMessageImpl(u32, const MessageString &, const MessageArg *, LetterStepper *) = 0; // 28
-        virtual void replaceGraphicImpl(u32, const SafeString &) = 0; // 29
+        virtual void replaceGraphicImpl(u32, const sead::SafeString &) = 0; // 29
         virtual void setRootPosImpl(const sead::Vector3f &) = 0; // 32
         virtual const sead::Vector3f &getRootPosImpl() const = 0; // 33
         virtual void setRootMtxImpl(const sead::Matrix34f &) = 0; // 34
@@ -72,7 +72,7 @@ BEGIN_NAMESPACE(UI)
         virtual ElementHandle *getElementHandle(const sead::SafeString &, EElementType); // 6
         virtual ElementHandle *getConstElementHandle(const sead::SafeString &, EElementType) const; // 7
         virtual void replaceMessageImpl(u32, const MessageString &, const MessageArg *, LetterStepper *); // 28
-        virtual void replaceGraphicImpl(u32, const SafeString &); // 29
+        virtual void replaceGraphicImpl(u32, const sead::SafeString &); // 29
 
         /M/void *m_textbox/0x4/0x90/    // nw::lyt::TextBox *
         /M/nw::lyt::Pane *m_back/0x4/0x94/

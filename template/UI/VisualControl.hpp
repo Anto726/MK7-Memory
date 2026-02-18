@@ -22,10 +22,10 @@ BEGIN_NAMESPACE(UI)
         /END/
 
         virtual ~VisualControl() {}; // 2 (_sub_object), 3 (_deallocating)
-        virtual void create(ArgumentObj const *); // 4
+        virtual void create(Object::ArgumentObj const *); // 4
         virtual void calc(); // 6
         virtual void forceCameraDir(); // 18
-        virtual void onCreate(const CreateArg *) {}; // 19
+        virtual void onCreate(const Control::CreateArg *) {}; // 19
         virtual void reset(); // 20
         virtual void readyFadein(); // 21
         virtual void readyFadeout(); // 22

@@ -1,5 +1,7 @@
 #pragma once
 
+#include "../types.hpp"
+
 #include <prim/seadSafeString.h>
 
 BEGIN_NAMESPACE(UI)

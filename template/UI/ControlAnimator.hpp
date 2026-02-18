@@ -52,7 +52,7 @@ BEGIN_NAMESPACE(UI)
         public:
             virtual void _0x0(); // 0
             virtual void _0x4(); // 1
-            virtual void generateAnimationItem(const SafeString&); // 2
+            virtual void generateAnimationItem(const sead::SafeString&); // 2
             virtual void bindAnimation(void * /* nw::lyt::AnimTransform * */); // 3
             virtual void unbindAnimation(void * /* nw::lyt::AnimTransform * */); // 4
 
