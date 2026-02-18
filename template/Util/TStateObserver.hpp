@@ -31,7 +31,7 @@ BEGIN_NAMESPACE(Util)
             if (sci->flags.is_vtable_offset) {
                 ((void(*)(T*))((uintptr_t**)UseObject)[0][sci->call_info.vtable_offset/4])(UseObject);
             } else {
-                sci->call_info.stateFunc(UseObject);
+                sci->call_info.state_func(UseObject);
             }
         }
 
