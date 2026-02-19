@@ -15,6 +15,10 @@ BEGIN_NAMESPACE(System)
         inline auto get_render_engine() const { return m_engine_holder.get_engine<Render::RenderEngine>(Object::EEngineType::Render); }
         inline auto get_system_engine() const { return m_engine_holder.get_engine<SystemEngine>(Object::EEngineType::System); }
         inline auto get_sequence_engine() const { return m_engine_holder.get_engine<Sequence::DashSequenceEngine>(Object::EEngineType::Sequence); }
+        inline auto get_mii_engine() const { return m_engine_holder.get_engine<Mii::MiiEngine>(Object::EEngineType::Mii); }
+        inline auto get_sound_engine() const { return m_engine_holder.get_engine<Sound::SndEngine>(Object::EEngineType::Sound); }
+        inline auto get_network_engine() const { return m_engine_holder.get_engine<Net::NetworkEngine>(Object::EEngineType::Network); }
+        inline auto get_effect_engine() const { return m_engine_holder.get_engine<Effect::EffectEngine>(Object::EEngineType::Effect); }
 
         EngineHolder m_engine_holder;
     };

@@ -25,6 +25,7 @@ BEGIN_NAMESPACE(Demo)
 
 BEGIN_NAMESPACE(Effect)
 {
+	class EffectEngine;
 	class GameEffectDirector;
 	class GameParticle;
 	class KartEffect;
@@ -162,6 +163,7 @@ BEGIN_NAMESPACE(Menu3D)
 BEGIN_NAMESPACE(Mii)
 {
 	class Face;
+	class MiiEngine;
 }
 
 BEGIN_NAMESPACE(Net)
@@ -248,6 +250,7 @@ BEGIN_NAMESPACE(Sound)
 	class SndActorBase;
 	class SndActorItem;
 	class SndActorKart;
+	class SndEngine;
 	class SndHandle;
 }
 
