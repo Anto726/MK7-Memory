@@ -7,7 +7,7 @@
 #include "CursorItem.hpp"
 #include "KeyItem.hpp"
 #include "MenuCaption.hpp"
-#include "../Sequence/BaseMenuPage.hpp
+#include "../Sequence/BaseMenuPage.hpp"
 #include "../Sound/SndSeEvent.hpp"
 
 #include <math/seadVector.hpp>
