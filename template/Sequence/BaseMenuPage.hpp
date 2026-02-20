@@ -32,11 +32,14 @@ BEGIN_NAMESPACE(Sequence)
 		};
 		static_assert(sizeof(BaseMenuPageFlags) == 0x4);
 
-        virtual void onTimeUpComplete(s32);
-
         BaseMenuPage();
+        // TODO
+        // virtual ??? getDTIClassInfo() const;
+        // virtual ??? getDTIClass() const;
+        virtual ~BaseMenuPage();
+        virtual void onTimeUpComplete(s32);
         
-        /M/sead::FixedPtrArray<ControlSlider, 3> m_control_slider_array/0xC/0x26C/
+        /M/sead::FixedPtrArray<ControlSlider, 3> m_control_slider_array/0x18/0x26C/
         /M/ControlDisplayFlags m_control_display_flags/0x1/0x284/
         /M/s32 m_wifi_course_vote_timer/0x4/0x288/
         /M/u32 m_flags/0x4/0x28c/
