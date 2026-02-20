@@ -4,6 +4,8 @@
 
 #include "Page.hpp"
 #include "../UI/BaseFastControl.hpp"
+#include "../UI/CursorItem.hpp"
+#include "../UI/KeyItem.hpp"
 #include <container/seadPtrArray.h>
 
 BEGIN_NAMESPACE(Sequence)
@@ -11,6 +13,8 @@ BEGIN_NAMESPACE(Sequence)
     /START_CLASS/NAME@BasePage/SIZE@0x26C/BASE@Page/BSIZE@0x5C/VTABLE@True/
     public:
         BasePage();
+        setKeyItem(UI::KeyItem *);
+        setCursorItem(UI::CursorItem *);
 
         enum BasePageState {
             STATE_CLOSED,   // Menu is already closed
@@ -20,6 +24,9 @@ BEGIN_NAMESPACE(Sequence)
             STATE_EXIT,     // Calls onMenuExit()
             STATE_COMPLETE  // Calls onMenuComplete()
         }; 
+
+        template <typename T>
+        T* setupControl(const sead::SafeString &, const sead::SafeString &);
 
         /M/s32 m_on_back_return_code/0x4/0x5C/
         /M/u32 m_timer/0x4/0x60/

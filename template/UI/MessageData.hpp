@@ -3,6 +3,7 @@
 #include "../types.hpp"
 
 #include "Control.hpp"
+#include "MessageString.hpp"
 
 #include <container/seadPtrArray.h>
 
@@ -22,6 +23,12 @@ BEGIN_NAMESPACE(UI)
 
     /START_CLASS/NAME@MessageDataList/SIZE@0xC/
     public:
+        MessageDataList();
+        ~MessageDataList();
+        void addMessageData(MessageData const &);
+        const MessageString & getMessage(s32) const;
+        void initBuffer(u32);
+
         /M/sead::PtrArray<MessageData> m_list/0xC/0x0/
     /END/
 }
