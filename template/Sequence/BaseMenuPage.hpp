@@ -42,7 +42,7 @@ BEGIN_NAMESPACE(Sequence)
         /M/sead::FixedPtrArray<ControlSlider, 3> m_control_slider_array/0x18/0x26C/
         /M/ControlDisplayFlags m_control_display_flags/0x1/0x284/
         /M/s32 m_wifi_course_vote_timer/0x4/0x288/
-        /M/u32 m_flags/0x4/0x28c/
+        /M/BaseMenuPageFlags m_flags/0x4/0x28c/
         /M/MenuPageID m_id/0x4/0x290/
     /END/
 }
