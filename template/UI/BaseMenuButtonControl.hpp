@@ -70,17 +70,17 @@ BEGIN_NAMESPACE(UI)
         /M/KeyItem m_key_item_start/0x1c/0xd8/
         /M/KeyItem m_key_item_touch/0x1c/0xf4/
         /M/CursorItem m_cursor_item/0x30/0x130/
-        /M/sead::Delegate2<s32, EKeyID> m_key_handler_a/0x10/0x160/
-        /M/sead::Delegate2<s32, EKeyID> m_key_handler_b/0x10/0x170/
-        /M/sead::Delegate2<s32, EKeyID> m_key_handler_start/0x10/0x180/
-        /M/sead::Delegate2<s32, EKeyID> m_key_handler_cursor_a/0x10/0x190/
-        /M/sead::Delegate2<s32, sead::Vector2f const &> m_touch_handler_down/0x10/0x1a0/
-        /M/sead::Delegate2<s32, sead::Vector2f const &> m_touch_handler_slide_out/0x10/0x1b0/
-        /M/sead::Delegate2<s32, sead::Vector2f const &> m_touch_handler_slide_in/0x10/0x1c0/
-        /M/sead::Delegate2<s32, sead::Vector2f const &> m_touch_handler_slide_capture_out/0x10/0x1d0/
-        /M/sead::Delegate2<s32, sead::Vector2f const &> m_touch_handler_up/0x10/0x1e0/
-        /M/sead::Delegate2<s32, sead::Vector2f const &> m_touch_handler_on/0x10/0x1f0/
-        /M/sead::Delegate2<s32, sead::Vector2f const &> m_touch_handler_off/0x10/0x200/
+        /M/sead::Delegate2<BaseMenuButtonControl, s32, EKeyID> m_key_handler_a/0x10/0x160/
+        /M/sead::Delegate2<BaseMenuButtonControl, s32, EKeyID> m_key_handler_b/0x10/0x170/
+        /M/sead::Delegate2<BaseMenuButtonControl, s32, EKeyID> m_key_handler_start/0x10/0x180/
+        /M/sead::Delegate2<BaseMenuButtonControl, s32, EKeyID> m_key_handler_cursor_a/0x10/0x190/
+        /M/sead::Delegate2<BaseMenuButtonControl, s32, sead::Vector2f const &> m_touch_handler_down/0x10/0x1a0/
+        /M/sead::Delegate2<BaseMenuButtonControl, s32, sead::Vector2f const &> m_touch_handler_slide_out/0x10/0x1b0/
+        /M/sead::Delegate2<BaseMenuButtonControl, s32, sead::Vector2f const &> m_touch_handler_slide_in/0x10/0x1c0/
+        /M/sead::Delegate2<BaseMenuButtonControl, s32, sead::Vector2f const &> m_touch_handler_slide_capture_out/0x10/0x1d0/
+        /M/sead::Delegate2<BaseMenuButtonControl, s32, sead::Vector2f const &> m_touch_handler_up/0x10/0x1e0/
+        /M/sead::Delegate2<BaseMenuButtonControl, s32, sead::Vector2f const &> m_touch_handler_on/0x10/0x1f0/
+        /M/sead::Delegate2<BaseMenuButtonControl, s32, sead::Vector2f const &> m_touch_handler_off/0x10/0x200/
         /M/s32 m_selected_option_idx/0x4/0x210/
         /M/s32 m_0x214/0x4/0x214/
         /M/MenuCaption *m_caption/0x4/0x218/

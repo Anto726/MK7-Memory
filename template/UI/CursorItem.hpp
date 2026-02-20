@@ -3,6 +3,7 @@
 #include "../types.hpp"
 
 #include "BaseFastControl.hpp"
+#include "BaseMenuButtonControl.hpp"
 
 #include <prim/seadDelegate.h>
 
@@ -32,6 +33,9 @@ BEGIN_NAMESPACE(UI)
         /M/bool m_is_enabled/0x4/0x14/      // If `true`, the user can select the item
         /M/f32 m_0x18/0x4/0x18/
         /M/f32 m_0x1c/0x4/0x1c/
-        /M/sead::Delegate2<s32, s32> *m_handlers[4]/0x10/0x20/  // See the `ECursorEvent` enum
+        // TODO:
+        // The first argument can also be `BaseMenuInputControl`
+        // Perhaps both `BaseMenuButtonControl` and `BaseMenuInputControl` inherit from a common base?
+        /M/sead::Delegate2<BaseMenuButtonControl *, s32, s32> *m_handlers[4]/0x10/0x20/  // See the `ECursorEvent` enum
     /END/
 }
