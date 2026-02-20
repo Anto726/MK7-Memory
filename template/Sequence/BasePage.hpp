@@ -6,6 +6,7 @@
 #include "../UI/BaseFastControl.hpp"
 #include "../UI/CursorItem.hpp"
 #include "../UI/KeyItem.hpp"
+#include "../UI/Manipulator.hpp"
 #include <container/seadPtrArray.h>
 
 BEGIN_NAMESPACE(Sequence)
@@ -32,7 +33,7 @@ BEGIN_NAMESPACE(Sequence)
 
         /M/s32 m_on_back_return_code/0x4/0x5C/
         /M/u32 m_timer/0x4/0x60/
-        /M/void *m_manipulator/0x4/0x64/ // UI::Manipulator *
+        /M/UI::Manipulator *m_manipulator/0x4/0x64/
         /M/bool m_set_item_to_all_manipulators/0x1/0x68/ // See `Sequence::BasePage::setCursorItem`
         /M/void *m_control_initializer/0x4/0x6C/ // UI::ControlInitializer *
         /M/u32 m_0x70/0x4/0x70/
@@ -41,7 +42,7 @@ BEGIN_NAMESPACE(Sequence)
         /M/s32 m_0x7C/0x4/0x7C/
         /M/u8 m_0x80/0x1/0x80/
         /M/u32 m_num_manipulators/0x4/0x84/
-        /M/void **m_manipulators/0x4/0x88/  // UI::Manipulator **
+        /M/UI::Manipulator **m_manipulators/0x4/0x88/
         /M/u8 m_0x8C/0x1/0x8C/
         /M/bool m_0x8D/0x1/0x8D/
         /M/u8 m_0x8E/0x1/0x8E/

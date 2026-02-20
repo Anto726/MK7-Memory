@@ -291,6 +291,9 @@ BEGIN_NAMESPACE(UI)
 	class GraphicResourceInfo;
 	class ControlDirector;
 	class ControlInitializer;
+	class Manipulator;
+	class BaseMenuButtonControl;
+	class BaseMenuInputControl;
 }
 
 BEGIN_NAMESPACE(Util)

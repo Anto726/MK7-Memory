@@ -4,6 +4,7 @@
 
 #include "BaseFastControl.hpp"
 #include "BaseMenuButtonControl.hpp"
+#include "Manipulator.hpp"
 
 #include <prim/seadDelegate.h>
 
@@ -26,7 +27,7 @@ BEGIN_NAMESPACE(UI)
         void setCursorOff(bool);
 
         /M/CursorItem **m_0x0/0x4/0x0/
-        /M/void *m_manipulator/0x4/0x4/
+        /M/Manipulator *m_manipulator/0x4/0x4/
         /M/CursorItem *m_0x8/0x4/0x8/
         /M/BaseFastControl *m_control/0x4/0xc/
         /M/u32 m_invoke_button/0x4/0x10/    // When this button is pressed, perform the action
