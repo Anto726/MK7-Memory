@@ -4,6 +4,7 @@
 
 #include "Page.hpp"
 #include "../UI/BaseFastControl.hpp"
+#include "../UI/ControlInitializer.hpp"
 #include "../UI/CursorItem.hpp"
 #include "../UI/KeyItem.hpp"
 #include "../UI/Manipulator.hpp"
@@ -35,7 +36,7 @@ BEGIN_NAMESPACE(Sequence)
         /M/u32 m_timer/0x4/0x60/
         /M/UI::Manipulator *m_manipulator/0x4/0x64/
         /M/bool m_set_item_to_all_manipulators/0x1/0x68/ // See `Sequence::BasePage::setCursorItem`
-        /M/void *m_control_initializer/0x4/0x6C/ // UI::ControlInitializer *
+        /M/UI::ControlInitializer *m_control_initializer/0x4/0x6C/
         /M/u32 m_0x70/0x4/0x70/
         /M/u32 m_0x74/0x4/0x74/
         /M/s32 m_0x78/0x4/0x78/
