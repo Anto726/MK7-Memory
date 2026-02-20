@@ -225,6 +225,7 @@ BEGIN_NAMESPACE(Render)
 BEGIN_NAMESPACE(Sequence)
 {
 	class BaseRacePage;
+	class BaseMenuPage;
 	class CrossFadeSequence;
 	class DashSequenceEngine;
 	class DelegateSequence;

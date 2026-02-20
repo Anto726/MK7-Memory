@@ -7,6 +7,7 @@
 #include "CursorItem.hpp"
 #include "KeyItem.hpp"
 #include "MenuCaption.hpp"
+#include "../Sequence/BaseMenuPage.hpp
 #include "../Sound/SndSeEvent.hpp"
 
 #include <math/seadVector.hpp>
@@ -92,7 +93,7 @@ BEGIN_NAMESPACE(UI)
         /M/Sound::SndSeEvent::EEvent m_on_button_press_se/0x1/0x224/
         /M/Sound::SndSeEvent::EEvent m_on_invalid_button_press_se/0x1/0x225/
         /M/u32 m_on_button_press_se_param/0x4/0x228/
-        /M/void *m_page/0x4/0x22c/  // Attached page. Sequence::BaseMenuPage *
+        /M/Sequence::BaseMenuPage *m_page/0x4/0x22c/
         // The return code enum (associated to the attached page,
         // and the page's convertReturnCode function) the game will traverse
         // after pressing / touching the button
