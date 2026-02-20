@@ -12,6 +12,8 @@ BEGIN_NAMESPACE(Sequence)
 {
     /START_CLASS/NAME@BasePage/SIZE@0x26C/BASE@Page/BSIZE@0x5C/VTABLE@True/
     public:
+        virtual void initControl();
+
         BasePage();
         setKeyItem(UI::KeyItem *);
         setCursorItem(UI::CursorItem *);
