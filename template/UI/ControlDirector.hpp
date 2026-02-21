@@ -3,7 +3,7 @@
 #include "../forward.hpp"
 #include "../types.hpp"
 
-#include "../Object/TDirectorArray.hpp"
+#include "../Object/TDirectorList.hpp"
 #include "../Object/TLinkSocket.hpp"
 #include "CompositeControl.hpp"
 #include "../Sequence/Page.hpp"
