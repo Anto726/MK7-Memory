@@ -1,12 +1,12 @@
 [submodule "vendor/nnheaders"]
 	path = vendor/nnheaders
-	url = https://github.com/Anto726/nnheaders
+	url = https://github.com/mk7re/nnheaders.git
 [submodule "vendor/sead"]
 	path = vendor/sead
-	url = https://github.com/Anto726/sead
+	url = https://github.com/mk7re/sead.git
 [submodule "vendor/nw4c"]
 	path = vendor/nw4c
-	url = https://github.com/Anto726/nw4c
+	url = https://github.com/mk7re/nw4c.git
 [submodule "vendor/lms"]
 	path = vendor/lms
-	url = https://github.com/Anto726/LibMessageStudio.git
+	url = https://github.com/mk7re/LibMessageStudio.git
