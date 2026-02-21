@@ -104,6 +104,7 @@ BEGIN_NAMESPACE(Kart)
 		/M/s32 m_press_frames/0x4/0x1004/
 		/M/float m_press_size/0x4/0x1014/
 		/M/s32 m_invincibility_frames/0x4/0x102C/
+		/M/s32 m_jugem_frames/0x4/0x103C/
 		/M/float m_speed_max_forward_land_base/0x4/0x1054/
 	/END/
 }
