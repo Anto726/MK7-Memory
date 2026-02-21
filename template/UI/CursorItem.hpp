@@ -3,8 +3,6 @@
 #include "../types.hpp"
 
 #include "BaseFastControl.hpp"
-#include "BaseMenuButtonControl.hpp"
-#include "Manipulator.hpp"
 
 #include <prim/seadDelegate.h>
 

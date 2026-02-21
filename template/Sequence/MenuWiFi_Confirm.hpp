@@ -9,7 +9,7 @@
 
 BEGIN_NAMESPACE(Sequence)
 {
-    /START_CLASS/NAME@MenuWifi_Confirm/SIZE@0x2c8/BASE@BaseMenuPage/BSIZE@0x26C/VTABLE@True/
+    /START_CLASS/NAME@MenuWifi_Confirm/SIZE@0x2c8/BASE@BaseMenuPage/BSIZE@0x294/VTABLE@True/
     public:
         enum class ReturnCode : s32
         {
@@ -29,7 +29,7 @@ BEGIN_NAMESPACE(Sequence)
         void onPageComplete();
         void onTimeUpComplete(s32);
 
-        static char* convertReturnCodeImpl(ReturnCode returnCode) {
+        static char const *convertReturnCodeImpl(ReturnCode returnCode) {
             switch (returnCode) {
                 case ReturnCode::RACE:
                     return "Race";

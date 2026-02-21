@@ -20,8 +20,8 @@ BEGIN_NAMESPACE(UI)
         /M/s32 m_0x4/0x4/0x4/
         /M/s32 m_0x8/0x4/0x8/
         /M/u32 m_button/0x4/0xc/
-        /M/sead::Delegate *m_handler/0x4/0x10/
-        /M/sead::Delegate *m_key_handler/0x4/0x14/
+        /M/sead::Delegate<void *> *m_handler/0x4/0x10/
+        /M/sead::Delegate<void *> *m_key_handler/0x4/0x14/
         /M/bool m_0x18/0x1/0x18/
     /END/
 }

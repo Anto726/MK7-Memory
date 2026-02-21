@@ -31,7 +31,7 @@ BEGIN_NAMESPACE(UI)
 			    _0x200 					: 1, // 0x200
 			    _0x400 			        : 1, // 0x400
 			    _0x800 				    : 1, // 0x800
-			    _0x1000 				: 1, // 0x1000
+			    _0x1000 				: 1; // 0x1000
 		};
 		static_assert(sizeof(ActiveHandlersButton) == 0x4);
 
@@ -53,7 +53,7 @@ BEGIN_NAMESPACE(UI)
 			    TYPE_RACE_DIALOG_BUTTON 		: 1, // 0x1000
                 TYPE_OK_BUTTON 				    : 1, // 0x2000
                 _0x4000 				        : 1, // 0x4000. `TYPE_TOUCH_SELECT_FADE_BUTTON` ?
-                TYPE_MENU_BUTTON_ON_OFF 		: 1, // 0x8000
+                TYPE_MENU_BUTTON_ON_OFF 		: 1; // 0x8000
 		};
 		static_assert(sizeof(ControlAnimationTypeFlags) == 0x4);
 

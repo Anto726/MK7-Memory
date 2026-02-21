@@ -17,8 +17,8 @@ BEGIN_NAMESPACE(Sequence)
         virtual void initControl();
 
         BasePage();
-        setKeyItem(UI::KeyItem *);
-        setCursorItem(UI::CursorItem *);
+        void setKeyItem(UI::KeyItem *);
+        void setCursorItem(UI::CursorItem *);
 
         enum BasePageState {
             STATE_CLOSED,   // Menu is already closed
