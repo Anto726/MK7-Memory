@@ -2,8 +2,10 @@
 
 #include "../types.hpp"
 
+#include "ControlSight.hpp"
 #include "VisualControl.hpp"
 
+#include <math/seadVector.h>
 #include <prim/seadSafeString.h>
 
 BEGIN_NAMESPACE(UI)
@@ -24,5 +26,8 @@ BEGIN_NAMESPACE(UI)
 
         void calcTextLen(void * /* nw::lyt::TextBox * */, const sead::WSafeString *);
         void calcTextLen(void * /* nw::lyt::TextBox * */, u32);
+        void setPosX(ControlSight::ElementHandle &, float);
+        void setPosY(ControlSight::ElementHandle &, float);
+        void setPos(ControlSight::ElementHandle &, const sead::Vector3f &);
     /END/
 }

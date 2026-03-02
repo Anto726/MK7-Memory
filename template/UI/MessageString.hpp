@@ -6,8 +6,10 @@
 
 BEGIN_NAMESPACE(UI)
 {
-    /START_CLASS/NAME@MessageString/SIZE@0x8/
-    public:
-        /M/sead::WSafeString m_string/0x8/0x0/
+    /START_STRUCT/NAME@MessageString/SIZE@0x4/
+        /M/char16 *m_string/0x4/0x0/
+
+        MessageString() : m_string(nullptr) {}
+        MessageString(char16* str) : m_string(str) {}
     /END/
 }

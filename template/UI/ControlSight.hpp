@@ -52,6 +52,8 @@ BEGIN_NAMESPACE(UI)
 
             /START_STRUCT/NAME@ElementHandle/SIZE@0x4/
                 /M/void *m_element/0x4/0x0/
+
+                ElementHandle();
             /END/
             
             virtual void* getRuntimeTypeInfo(); // 0
@@ -60,8 +62,8 @@ BEGIN_NAMESPACE(UI)
             virtual s32 build(const CreateArg*) = 0; // 3
             virtual void calc() = 0; // 4
             virtual void draw() = 0; // 5
-            virtual ElementHandle *getElementHandle(const sead::SafeString &, EElementType) = 0; // 6
-            virtual ElementHandle *getConstElementHandle(const sead::SafeString &, EElementType) const = 0; // 7
+            virtual void *getElementHandle(const sead::SafeString &, EElementType) = 0; // 6
+            virtual void *getConstElementHandle(const sead::SafeString &, EElementType) const = 0; // 7
             virtual void setPosImpl(u32, const sead::Vector3f&) = 0; // 8
             virtual const sead::Vector3f &getPosImpl(u32) const = 0; // 9
             virtual void _0x28() = 0; // 10
@@ -108,8 +110,8 @@ BEGIN_NAMESPACE(UI)
         virtual s32 build(const CreateArg*); // 3
         virtual void calc(); // 4
         virtual void draw(); // 5
-        virtual ElementHandle *getElementHandle(const sead::SafeString &, EElementType); // 6
-        virtual ElementHandle *getConstElementHandle(const sead::SafeString &, EElementType) const; // 7
+        virtual void *getElementHandle(const sead::SafeString &, EElementType); // 6
+        virtual void *getConstElementHandle(const sead::SafeString &, EElementType) const; // 7
         virtual void setPosImpl(u32, const sead::Vector3f&); // 8
         virtual const sead::Vector3f &getPosImpl(u32) const; // 9
         virtual const sead::Vector2f &getSizeImpl(u32) const; // 11

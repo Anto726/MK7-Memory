@@ -26,7 +26,10 @@ BEGIN_NAMESPACE(UI)
         MessageDataList();
         ~MessageDataList();
         void addMessageData(MessageData const &);
-        const MessageString & getMessage(s32) const;
+        // NOTE: This function prototype doesn't match the symbol map,
+        // but the code suggests the order of the arguments should be like so.
+        // This is why we made the function `static` here, as a temporary solution
+        static void getMessage(MessageString &, MessageDataList *, s32);
         void initBuffer(u32);
 
         /M/sead::PtrArray<MessageData> m_list/0xC/0x0/

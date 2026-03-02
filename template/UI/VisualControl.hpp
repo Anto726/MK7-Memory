@@ -38,7 +38,7 @@ BEGIN_NAMESPACE(UI)
         virtual void onCalcPostAnim() {}; // 30
 
         /M/ControlAnimator *m_animator/0x4/0x64/
-        /M/NwlytDivControlSight *m_control_sight/0x4/0x68/ 
+        /M/NwlytControlSight *m_control_sight/0x4/0x68/ 
         /M/MessageDataList m_message_data_list/0xC/0x6C/
         /M/bool m_anim_keep/0x1/0x78/
         /M/bool m_apply_animation/0x1/0x79/

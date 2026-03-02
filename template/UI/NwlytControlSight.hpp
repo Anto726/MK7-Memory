@@ -14,8 +14,8 @@ BEGIN_NAMESPACE(UI)
         virtual s32 build(const CreateArg*) = 0; // 3
         virtual void calc() = 0; // 4
         virtual void draw(); // 5
-        virtual ElementHandle *getElementHandle(const sead::SafeString &, EElementType) = 0; // 6
-        virtual ElementHandle *getConstElementHandle(const sead::SafeString &, EElementType) const = 0; // 7
+        virtual void *getElementHandle(const sead::SafeString &, EElementType) = 0; // 6
+        virtual void *getConstElementHandle(const sead::SafeString &, EElementType) const = 0; // 7
         virtual void setPosImpl(u32, const sead::Vector3f&); // 8
         virtual const sead::Vector3f &getPosImpl(u32) const; // 9
         virtual const sead::Vector2f &getSizeImpl(u32) const; // 11
@@ -54,8 +54,8 @@ BEGIN_NAMESPACE(UI)
         virtual void _0x8(); // 2 (__deallocating)
         virtual s32 build(const CreateArg*); // 3
         virtual void calc(); // 4
-        virtual ElementHandle *getElementHandle(const sead::SafeString &, EElementType); // 6
-        virtual ElementHandle *getConstElementHandle(const sead::SafeString &, EElementType) const; // 7
+        virtual void *getElementHandle(const sead::SafeString &, EElementType); // 6
+        virtual void *getConstElementHandle(const sead::SafeString &, EElementType) const; // 7
         virtual NwlytInfo *getLayoutInfo() = 0; // 46
         virtual nw::lyt::Pane *getRootPane() = 0; // 47
         virtual const nw::lyt::Pane *getRootPane() const = 0; // 48
@@ -69,8 +69,8 @@ BEGIN_NAMESPACE(UI)
         virtual void* getRuntimeTypeInfo(); // 0
         virtual void _0x8(); // 2 (__deallocating)
         virtual s32 build(const CreateArg*); // 3
-        virtual ElementHandle *getElementHandle(const sead::SafeString &, EElementType); // 6
-        virtual ElementHandle *getConstElementHandle(const sead::SafeString &, EElementType) const; // 7
+        virtual void *getElementHandle(const sead::SafeString &, EElementType); // 6
+        virtual void *getConstElementHandle(const sead::SafeString &, EElementType) const; // 7
         virtual void replaceMessageImpl(u32, const MessageString &, const MessageArg *, LetterStepper *); // 28
         virtual void replaceGraphicImpl(u32, const sead::SafeString &); // 29
 
@@ -96,8 +96,8 @@ BEGIN_NAMESPACE(UI)
         virtual void _0x4(); // 1 (__sub_object)
         virtual s32 build(const CreateArg*) = 0; // 3
         virtual void calc() = 0; // 4
-        virtual ElementHandle *getElementHandle(const sead::SafeString &, EElementType); // 6
-        virtual ElementHandle *getConstElementHandle(const sead::SafeString &, EElementType) const; // 7
+        virtual void *getElementHandle(const sead::SafeString &, EElementType); // 6
+        virtual void *getConstElementHandle(const sead::SafeString &, EElementType) const; // 7
         virtual bool getGlobalRootVisibleImpl() const; // 42
         virtual void _0xAC() = 0; // 43
         virtual void _0xB0() = 0; // 44
