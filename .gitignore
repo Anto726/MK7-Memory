@@ -1,6 +1,7 @@
 # Visual Studio
 .vs
 .vscode
+*history/*
 
 # MK7-Memory
 build

@@ -6,8 +6,7 @@
 
 BEGIN_NAMESPACE(System)
 {
-    class KDPadInputer : public KDPadAddBase
-    {
+    /START_CLASS/NAME@KDPadInputer/SIZE@0x28/BASE@KDPadAddBase/BSIZE@0x24/VTABLE@True/
     public:
         virtual ~KDPadInputer() = default;
         virtual void calcState() {};
@@ -15,6 +14,7 @@ BEGIN_NAMESPACE(System)
         virtual void calcInput() {};
         virtual void inputButton() {};
         virtual void inputStick() {};
-    };
-    static_assert(sizeof(KDPadInputer) == 0x4);
+
+        /M/void *m_pad_director/0x4/0x24/   // KDPadDirector *
+    /END/
 }
