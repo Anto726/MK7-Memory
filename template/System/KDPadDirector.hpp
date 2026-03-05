@@ -13,7 +13,7 @@
 
 BEGIN_NAMESPACE(System)
 {
-    /START_CLASS/NAME@KDPadDirectorBase/SIZE@0x28/BASE@Object::TDirectorList<System::KDPad, Object::TLinkSocket<Object::Actor, Object::Actor>>/BSIZE@0x28/
+    /START_CLASS/NAME@KDPadDirectorBase/SIZE@0x28/BASE@Object::TDirectorArray<System::KDPad, Object::TLinkSocket<Object::Actor, Object::Actor>>/BSIZE@0x28/
     /END/
 
     /START_CLASS/NAME@KDPadDirector/SIZE@0x88/BASE@KDPadDirectorBase/BSIZE@0x28/
