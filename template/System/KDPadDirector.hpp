@@ -42,8 +42,8 @@ BEGIN_NAMESPACE(System)
         };
 
         // TODO
-        // virtual ??? getDTIClassInfo() const;
-        // virtual ??? getDTIClass() const;
+        virtual void *getDTIClassInfo() const;
+        virtual void *getDTIClass() const;
         void calc();
         void createBeforeStructure();
         void initAfterStructure();

@@ -33,10 +33,26 @@ BEGIN_NAMESPACE(System)
         };
         static_assert(sizeof(ePadType) == 0x1);
 
+        // NOTE: Name is made up
+        // Used by ghost data
+        enum class ButtonInputEnum : u32 {
+            BUTTON_A = 0x1,
+            BUTTON_B = 0x2,
+            BUTTON_X = 0x4,
+            BUTTON_Y = 0x8,
+            BUTTON_L = 0x10,
+            BUTTON_R = 0x20,
+            BUTTON_FIRST_PERSON = 0x40,
+            BUTTON_DPAD_UP = 0x80,
+            BUTTON_DPAD_DOWN = 0x100,
+            BUTTON_DPAD_LEFT = 0x200,
+            BUTTON_DPAD_RIGHT = 0x400,
+        };
+
         // TODO
-        // virtual ??? getDTIClassInfo() const;
-        // virtual ??? getDTIClass() const;
-        // static ??? getDTIClassStatic();
+        virtual void *getDTIClassInfo() const;
+        virtual void *getDTIClass() const;
+        static void *getDTIClassStatic();
         virtual void init();
         virtual void calc();
         virtual void setButton(s32);

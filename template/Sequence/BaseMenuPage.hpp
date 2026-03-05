@@ -34,8 +34,8 @@ BEGIN_NAMESPACE(Sequence)
 
         BaseMenuPage();
         // TODO
-        // virtual ??? getDTIClassInfo() const;
-        // virtual ??? getDTIClass() const;
+        virtual void *getDTIClassInfo() const;
+        virtual void *getDTIClass() const;
         virtual ~BaseMenuPage();
         virtual void onTimeUpComplete(s32);
         

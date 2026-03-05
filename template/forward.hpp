@@ -274,6 +274,7 @@ BEGIN_NAMESPACE(System)
 	class KDReplayPad;
 	class KDUIPad;
 	class KDPadDirector;
+	class KDPadControllerCore;
 	class PlayerData;
 	class ResourceLoader;
 	class RootScene;

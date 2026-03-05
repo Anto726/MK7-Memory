@@ -20,8 +20,8 @@ BEGIN_NAMESPACE(UI)
         /END/
 
         // TODO
-        // virtual ??? getDTIClassInfo() const;
-        // virtual ??? getDTIClass() const;
+        virtual void *getDTIClassInfo() const;
+        virtual void *getDTIClass() const;
         virtual ~TimeControl() {}; // 2 (_sub_object), 3 (_deallocating)
         virtual void onCreate(const Control::CreateArg *) {}; // 19
         virtual void onReset() {}; // 28

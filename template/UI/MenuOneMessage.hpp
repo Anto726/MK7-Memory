@@ -19,8 +19,8 @@ BEGIN_NAMESPACE(UI)
         /END/
 
         // TODO
-        // virtual ??? getDTIClassInfo() const;
-        // virtual ??? getDTIClass() const;
+        virtual void *getDTIClassInfo() const;
+        virtual void *getDTIClass() const;
         virtual ~MenuOneMessage() {}; // 2 (_sub_object), 3 (_deallocating)
         void setMessage(const sead::SafeString &, s32);
     /END/
