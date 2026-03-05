@@ -1,5 +1,6 @@
 #pragma once
 
+#include "../../common.hpp"
 #include "../../types.hpp"
 
 #include "../CRaceMode.hpp"
@@ -16,8 +17,6 @@
 #include "../ETitleType.hpp"
 #include "../EWingID.hpp"
 #include "../Rate.hpp"
-
-#define KART_MAX 8
 
 BEGIN_NAMESPACE(RaceSys)
 {
