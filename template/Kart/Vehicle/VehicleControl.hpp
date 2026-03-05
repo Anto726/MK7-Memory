@@ -1,6 +1,7 @@
 #pragma once
 
 #include "VehicleBase.hpp"
+#include "../../System/KDPad.hpp"
 
 BEGIN_NAMESPACE(Kart)
 {
@@ -14,6 +15,8 @@ BEGIN_NAMESPACE(Kart)
 				hop 					: 1; // 0x4
 		};
 		static_assert(sizeof(Controls) == 0x4);
+
+		void setPad(System::KDPad *);
 
 		/M/Controls m_controls/0x4/0xFC/
 		/M/float m_cpad_x/0x4/0x100/

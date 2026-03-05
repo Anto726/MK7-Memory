@@ -3,6 +3,7 @@
 #include "../types.hpp"
 
 #include "Page.hpp"
+#include "../RaceSys/EPlayerType.hpp"
 #include "../UI/BaseFastControl.hpp"
 #include "../UI/ControlInitializer.hpp"
 #include "../UI/CursorItem.hpp"
@@ -19,6 +20,8 @@ BEGIN_NAMESPACE(Sequence)
         BasePage();
         void setKeyItem(UI::KeyItem *);
         void setCursorItem(UI::CursorItem *);
+        void setPlayerType(s32, RaceSys::EPlayerType);
+        void setReplayMode(bool);
 
         enum BasePageState {
             STATE_CLOSED,   // Menu is already closed

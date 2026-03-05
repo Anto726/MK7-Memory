@@ -3,6 +3,7 @@
 #include "../common.hpp"
 #include "../types.hpp"
 #include "../forward.hpp"
+#include "../System/GhostSaveData.hpp"
 #include "RaceSys/CRaceMode.hpp"
 #include "BasePage.hpp"
 
@@ -14,6 +15,8 @@ BEGIN_NAMESPACE(Sequence)
     public:
         BaseRacePage();
         void initTime();
+        void reloadGhostReplay();
+        void reloadGhost(const System::GhostSaveData &);
 
         /M/RaceSys::CRaceMode m_race_mode/0xC/0x26C/
         /M/UI::BgRaceMapControl *m_bg_race_map_control_1/0x4/0x29C/

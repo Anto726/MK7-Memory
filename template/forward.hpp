@@ -263,12 +263,16 @@ BEGIN_NAMESPACE(System)
 	class EngineHolder;
 	class GameFramework;
 	class GameSetting;
+	class GhostSaveDataHeader;
+	class GhostSaveData;
 	class KDPad;
 	class KDAIPad;
 	class KDPadAddBase;
 	class KDPadInputer;
 	class KDPadPlayer;
 	class KDPlayerRecordPad;
+	class KDReplayPad;
+	class KDUIPad;
 	class KDPadDirector;
 	class PlayerData;
 	class ResourceLoader;
