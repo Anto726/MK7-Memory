@@ -263,10 +263,13 @@ BEGIN_NAMESPACE(System)
 	class EngineHolder;
 	class GameFramework;
 	class GameSetting;
+	class KDPad;
 	class KDAIPad;
 	class KDPadAddBase;
 	class KDPadInputer;
+	class KDPadPlayer;
 	class KDPlayerRecordPad;
+	class KDPadDirector;
 	class PlayerData;
 	class ResourceLoader;
 	class RootScene;

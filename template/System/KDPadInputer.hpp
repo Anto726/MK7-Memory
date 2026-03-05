@@ -2,19 +2,24 @@
 
 #include "../types.hpp"
 
+#include "KDPad.hpp"
 #include "KDPadAddBase.hpp"
+#include "KDPadDirector.hpp"
 
 BEGIN_NAMESPACE(System)
 {
     /START_CLASS/NAME@KDPadInputer/SIZE@0x28/BASE@KDPadAddBase/BSIZE@0x24/VTABLE@True/
     public:
         virtual ~KDPadInputer() = default;
-        virtual void calcState() {};
-        virtual void resetCore() {};
-        virtual void calcInput() {};
-        virtual void inputButton() {};
-        virtual void inputStick() {};
+        virtual void calcState();
+        virtual void resetCore();
+        virtual void calcInput();
+        virtual bool inputButton();
+        virtual bool inputStick();
 
-        /M/void *m_pad_director/0x4/0x24/   // KDPadDirector *
+        KDPadInputer(KDPad *, KDPadDataOnFrame &);
+        bool isGyroMode();
+
+        /M/KDPadDirector *m_pad_director/0x4/0x24/
     /END/
 }

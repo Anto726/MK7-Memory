@@ -1,12 +1,11 @@
 #pragma once
 
+#include "../forward.hpp"
 #include "../types.hpp"
 
-#include <math/seadVector.h>
+#include "KDPad.hpp"
 
-BEGIN_NAMESPACE(sead) {
-    using Vector2s = Vector2<s16>;
-}
+#include <math/seadVector.h>
 
 BEGIN_NAMESPACE(System)
 {
@@ -25,10 +24,14 @@ BEGIN_NAMESPACE(System)
         /END/
 
         virtual ~KDPadAddBase() = default;
-        virtual void reset() {};
-        virtual void calc() {};
+        virtual void reset();
+        virtual void calc();
         virtual void calcState() {};
         virtual void resetCore() {};
         virtual void initInner() {};
+
+        KDPadAddBase(KDPad *, KDPadDataOnFrame &);
+        void init();
+        void start();
     /END/
 }

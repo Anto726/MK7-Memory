@@ -5,10 +5,6 @@
 
 #include <math/seadVector.h>
 
-namespace sead {
-    using Vector2s = Vector2<s16>;
-}
-
 BEGIN_NAMESPACE(System)
 {
     /START_CLASS/NAME@ControllerBase/SIZE@0x6C/BASE@Object::Actor/BSIZE@0x8/
