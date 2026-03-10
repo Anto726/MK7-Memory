@@ -52,6 +52,7 @@ target_include_directories(header_verify SYSTEM PRIVATE
     ${PROJECT_SOURCE_DIR}/vendor/sead/include
     ${PROJECT_SOURCE_DIR}/vendor/nnheaders/include
     ${PROJECT_SOURCE_DIR}/vendor/nw4c/include
+    ${PROJECT_SOURCE_DIR}/vendor/libc/include
     ${PROJECT_SOURCE_DIR}/vendor/lms/Include
 )
 
