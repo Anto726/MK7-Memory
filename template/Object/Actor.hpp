@@ -35,6 +35,9 @@ BEGIN_NAMESPACE(Object)
 
 		virtual void _0x44() = 0; // 17
 
+		inline Actor *getParent() const { return m_parent; }
+		inline void setParent(Actor *parent) { m_parent = parent; }
+
 		/M/Actor *m_parent/0x4/0x4/
 	/END/
 }

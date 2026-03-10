@@ -1,14 +1,14 @@
 #pragma once
 
-#include "../types.hpp"
-#include "../Object/Actor.hpp"
-#include <nw/lyt/Pane.hpp>
-#include <container/seadListImpl.h>
+#include "ControlAnimator.hpp"
 #include "ControlNullFader.hpp"
 #include "ControlResource.hpp"
-#include "ControlAnimator.hpp"
+#include "../Object/Actor.hpp"
 #include "../Sequence/Page.hpp"
 #include "../Util/TLinkNode.hpp"
+
+#include <container/seadListImpl.h>
+#include <nw/lyt/Pane.hpp>
 
 BEGIN_NAMESPACE(UI)
 {
@@ -50,6 +50,18 @@ BEGIN_NAMESPACE(UI)
 
         virtual nw::lyt::Pane *getRootPane() { return {}; }; // 26
         virtual ControlNullFader *generateFader(); // 27
+
+        Control();
+
+        inline void initNode(UI::ControlDirector *director) {
+            if (m_control_list_node.m_value == nullptr) {
+                m_control_list_node.m_value = this;
+            }
+
+            setParent(reinterpret_cast<Object::Actor*>(director));
+            // TODO: Define the inline function below somewhere
+            //director->appendNode(&m_control_list_node);
+        }
 
         // This control's node in `ControlDirector`'s list of controls
         /M/Util::TLinkNode<Control> m_control_list_node/0xC/0x8/
