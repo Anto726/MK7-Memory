@@ -8,6 +8,7 @@
 #include "ControlResource.hpp"
 #include "ControlAnimator.hpp"
 #include "../Sequence/Page.hpp"
+#include "../Util/TLinkNode.hpp"
 
 BEGIN_NAMESPACE(UI)
 {
@@ -50,9 +51,8 @@ BEGIN_NAMESPACE(UI)
         virtual nw::lyt::Pane *getRootPane() { return {}; }; // 26
         virtual ControlNullFader *generateFader(); // 27
 
-        /M/CreateArg *m_create_arg/0x4/0x8/
-        /M/void *m_0xC/0x4/0xC/
-        /M/Control *m_0x10/0x4/0x10/
+        // This control's node in `ControlDirector`'s list of controls
+        /M/Util::TLinkNode<Control> m_control_list_node/0xC/0x8/
         /M/f32 m_0x14/0x4/0x14/
         /M/ControlNullFader *m_fader/0x4/0x18/
         /M/u32 m_draw_screen_flag/0x4/0x1C/
