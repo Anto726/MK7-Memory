@@ -28,7 +28,7 @@ BEGIN_NAMESPACE(UI)
             virtual void _0x8() = 0; // 2
             virtual ControlAnimator::AnimationDefine *getAnimationDefine(); // 3
 
-            /M/Page *m_page/0x4/0x4/
+            /M/Sequence::Page *m_page/0x4/0x4/
             /M/u32 m_draw_screen_flag/0x4/0x8/
             /M/s32 m_0xC/0x4/0xC/
             /M/ControlResource *m_control_resource/0x4/0x10/
@@ -53,7 +53,7 @@ BEGIN_NAMESPACE(UI)
 
         // This control's node in `ControlDirector`'s list of controls
         /M/Util::TLinkNode<Control> m_control_list_node/0xC/0x8/
-        /M/f32 m_0x14/0x4/0x14/
+        /M/Sequence::Page *m_page/0x4/0x14/
         /M/ControlNullFader *m_fader/0x4/0x18/
         /M/u32 m_draw_screen_flag/0x4/0x1C/
         /M/u8 m_0x20/0x1/0x20/
