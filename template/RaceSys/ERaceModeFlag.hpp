@@ -14,8 +14,9 @@ BEGIN_NAMESPACE(RaceSys)
             multiplayer_or_online : 1,
             replay_grand_prix : 1,
             time_trials : 1,
-            live_view : 1,
+            live_view : 1;
 #if ALL_V11 || ALL_V12
+        u32
             // --- Added in v1.1 ---
             // If set, the game will load the KMP for the following courses
             // from the `Patch/Course` directory inside the game's (or patch's) filesystem:
