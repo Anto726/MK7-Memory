@@ -7,9 +7,12 @@ jobs:
     runs-on: ubuntu-latest
     
     container:
-      image: pablomk7/libctrpf:0.8.0
+      image: devkitpro/devkitarm
 
     steps:
+    - name: setup
+      run: apt update && apt install -y build-essential cmake g++-multilib
+
     - name: clone
       uses: actions/checkout@v4
       with:
