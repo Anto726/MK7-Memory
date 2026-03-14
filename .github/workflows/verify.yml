@@ -5,7 +5,9 @@ on: [push, pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: devkitpro/devkitarm
+    
+    container:
+      image: pablomk7/libctrpf:0.8.0
 
     steps:
     - name: clone
