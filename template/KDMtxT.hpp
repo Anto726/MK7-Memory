@@ -4,13 +4,22 @@
 
 BEGIN_GLOBAL_NAMESPACE
 
-class KDMtxT
-{
+/START_CLASS/NAME@KDMtxT/SIZE@0x30/
 public:
-    KDAttT m_kd_att;
-    sead::Vector3f m_vec;
-};
-static_assert(sizeof(KDMtxT) == 0x30);
+    inline void reset()
+    {
+        m_kd_att.reset();
+        m_vec = sead::Vector3f::zero;
+    }
+
+    inline void init()
+    {
+        m_kd_att.init();
+        m_vec = sead::Vector3f::zero;
+    }
+
+    /M/KDAttT m_kd_att/0x24/0x0/
+    /M/sead::Vector3f m_vec/0xC/0x24/
+/END/
 
 END_GLOBAL_NAMESPACE
-
