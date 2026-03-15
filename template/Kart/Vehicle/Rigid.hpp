@@ -32,7 +32,10 @@ BEGIN_NAMESPACE(Kart)
 			*m_position += reject;
 		}
 
-		void inputForceW(sead::Vector3f const &, void (KDMinMax::*)(sead::Vector3f const &));
+		void inputForceW(sead::Vector3f const &vec, void (KDMinMax::*func)(sead::Vector3f const &))
+		{
+			(m_kd_min_max.*func)(vec);
+		}
 
 		void reset()
 		{
@@ -53,7 +56,8 @@ BEGIN_NAMESPACE(Kart)
 
 		void updateVel(sead::Vector3f const &vel)
 		{
-			auto res = m_kd_min_max.m_min + m_kd_min_max.m_max;
+			auto res = m_kd_min_max.m_min;
+			res += m_kd_min_max.m_max;
 
 			// TODO: implement sead::Vector operator
 			m_velocity.x *= vel.x;
