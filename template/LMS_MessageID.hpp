@@ -153,12 +153,13 @@ BEGIN_GLOBAL_NAMESPACE
         CourseRaceRetro_N64KoopaBeach = 1714,
         CourseRaceRetro_SNESRainbowRoad = 1715,
 
-        CourseBattle_HoneybeeHive = 1800,
-        CourseBattle_SherbetRink = 1801,
-        CourseBattle_WuhuTown = 1802,
-        CourseBattle_GBABattleCourse1 = 1803,
-        CourseBattle_N64BigDonut = 1804,
-        CourseBattle_DSPalmShore = 1805,
+        CourseBattleNitro_HoneybeeHive = 1800,
+        CourseBattleNitro_SherbetRink = 1801,
+        CourseBattleNitro_WuhuTown = 1802,
+
+        CourseBattleRetro_GBABattleCourse1 = 1803,
+        CourseBattleRetro_N64BigDonut = 1804,
+        CourseBattleRetro_DSPalmShore = 1805,
 
         Course_Random = 1806,
 
