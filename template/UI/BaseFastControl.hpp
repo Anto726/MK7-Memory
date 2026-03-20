@@ -5,7 +5,7 @@
 #include "ControlSight.hpp"
 #include "VisualControl.hpp"
 
-#include <nw/lyt/Pane.hpp>
+#include <nw/lyt/TextBox.hpp>
 #include <math/seadVector.h>
 #include <prim/seadSafeString.h>
 
