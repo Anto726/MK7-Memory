@@ -14,11 +14,17 @@ BEGIN_NAMESPACE(UI)
     /START_CLASS/NAME@VisualControl/SIZE@0x7C/BASE@Control/BSIZE@0x64/VTABLE@True/
     public:
         /START_STRUCT/NAME@CreateArg/SIZE@0x90/BASE@Control::CreateArg/BSIZE@0x18/VTABLE@True/
-            virtual ControlAnimator::AnimationDefine *getAnimationDefine(); // 3
+            virtual const ControlAnimator::AnimationDefine *getAnimationDefine() const; // 3
+
+            void __sub_object();
+            CreateArg() {
+                 __sub_object();
+            }
 
             /M/ControlSight::CreateArg m_control_sight_create_arg/0x48/0x18/
             /M/u8 m_control_sight_type/0x01/0x68/
             /M/sead::PtrArray<MessageData> *m_message_data_array/0x04/0x6C/
+            /M/ControlAnimator::AnimationDefine m_animation_define/0x18/0x78/
         /END/
 
         virtual ~VisualControl() {}; // 2 (_sub_object), 3 (_deallocating)

@@ -15,7 +15,7 @@ BEGIN_NAMESPACE(UI)
         /END/
 
         /START_STRUCT/NAME@CreateArg/SIZE@0x90/BASE@VisualControl::CreateArg/BSIZE@0x90/VTABLE@True/
-            virtual ControlAnimator::AnimationDefine *getAnimationDefine(); // 3
+            virtual const ControlAnimator::AnimationDefine *getAnimationDefine() const; // 3
         /END/
 
         // TODO

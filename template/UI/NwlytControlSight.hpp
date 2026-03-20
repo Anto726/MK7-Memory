@@ -4,6 +4,7 @@
 #include "NwlytInfo.hpp"
 
 #include <nw/lyt/Pane.hpp>
+#include <nw/lyt/TextBox.hpp>
 
 BEGIN_NAMESPACE(UI)
 {
@@ -74,7 +75,7 @@ BEGIN_NAMESPACE(UI)
         virtual void replaceMessageImpl(u32, const MessageString &, const MessageArg *, LetterStepper *); // 28
         virtual void replaceGraphicImpl(u32, const sead::SafeString &); // 29
 
-        /M/void *m_textbox/0x4/0x90/    // nw::lyt::TextBox *
+        /M/nw::lyt::TextBox *m_textbox/0x4/0x90/
         /M/nw::lyt::Pane *m_back/0x4/0x94/
         /M/nw::lyt::Pane *m_bounding/0x4/0x98/
         /M/bool m_pane_width_or_height_is_zero/0x1/0x9C/

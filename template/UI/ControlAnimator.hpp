@@ -10,7 +10,13 @@ BEGIN_NAMESPACE(UI)
     public:
 
         /START_STRUCT/NAME@AnimationDefine/SIZE@0x18/VTABLE@True/
+            // TODO: This is pure virtual
             virtual void defineAnimation(); // 0
+
+            void __sub_object();
+            AnimationDefine() {
+                __sub_object();
+            }
 
             /M/ControlAnimator *m_control_animator/0x4/0x4/
             /M/s32 m_animation_family_index/0x4/0x8/

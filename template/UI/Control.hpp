@@ -1,5 +1,7 @@
 #pragma once
 
+#include "../forward.hpp"
+
 #include "ControlAnimator.hpp"
 #include "ControlNullFader.hpp"
 #include "ControlResource.hpp"
@@ -26,7 +28,7 @@ BEGIN_NAMESPACE(UI)
             virtual void _0x0() = 0; // 0
             virtual void userDataDefine() {} // 1
             virtual void _0x8() = 0; // 2
-            virtual ControlAnimator::AnimationDefine *getAnimationDefine(); // 3
+            virtual const ControlAnimator::AnimationDefine *getAnimationDefine() const; // 3
 
             /M/Sequence::Page *m_page/0x4/0x4/
             /M/u32 m_draw_screen_flag/0x4/0x8/
@@ -34,6 +36,8 @@ BEGIN_NAMESPACE(UI)
             /M/ControlResource *m_control_resource/0x4/0x10/
             /M/s32 m_control_data_idx/0x4/0x14/
         /END/
+
+        virtual void init() {};
 
         virtual void forceCameraDir() {}; // 18
 
@@ -58,9 +62,7 @@ BEGIN_NAMESPACE(UI)
                 m_control_list_node.m_value = this;
             }
 
-            setParent(reinterpret_cast<Object::Actor*>(director));
-            // TODO: Define the inline function below somewhere
-            //director->appendNode(&m_control_list_node);
+            setParent(reinterpret_cast<Object::Actor *>(director));
         }
 
         // This control's node in `ControlDirector`'s list of controls

@@ -20,6 +20,11 @@ BEGIN_NAMESPACE(UI)
             /M/s32 m_0x10/0x4/0x10/
         /END/
 
+        // Calls `Util::TIndLinkList<UI::Control>::append(Util::TLinkNode<UI::Control>*)`
+        void appendNode(UI::Control *control) {
+            this->m_it.append(&control->m_control_list_node);
+        }
+
         /M/DrawControlList m_draw_lists[7]/0x8C/0x28/
         /M/Page *m_page/0x4/0xB4/
         /M/CompositeControl *m_composite_control/0x4/0xB8/

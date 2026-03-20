@@ -27,10 +27,10 @@ BEGIN_NAMESPACE(UI)
 
         enum class EElementType : u32
         {
-            ELEMENT_TYPE_PANE,
-            ELEMENT_TYPE_TEXTBOX,
+            ELEMENT_TYPE_PANE,      // `nw::lyt::Pane`, or derived
+            ELEMENT_TYPE_TEXTBOX,   // `nw::lyt::TextBox`
             ELEMENT_TYPE_2,
-            ELEMENT_TYPE_BOUNDING,
+            ELEMENT_TYPE_BOUNDING,  // `nw::lyt::Bounding`
             ELEMENT_TYPE_BACK
         };
 

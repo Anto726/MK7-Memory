@@ -5,6 +5,7 @@
 #include "ControlSight.hpp"
 #include "VisualControl.hpp"
 
+#include <nw/lyt/Pane.hpp>
 #include <math/seadVector.h>
 #include <prim/seadSafeString.h>
 
@@ -13,7 +14,7 @@ BEGIN_NAMESPACE(UI)
     /START_CLASS/NAME@BaseFastControl/SIZE@0x7C/BASE@VisualControl/BSIZE@0x7C/VTABLE@True/
     public:
         /START_STRUCT/NAME@TextScale/SIZE@0x8/
-            TextScale(void * /* nw::lyt::TextBox * */);
+            TextScale(nw::lyt::TextBox *);
 
             /M/s32 x/0x4/0x0/
             /M/s32 y/0x4/0x4/
@@ -24,8 +25,8 @@ BEGIN_NAMESPACE(UI)
         virtual void animMenuIn(); // 31
         virtual void animMenuOut(); // 32
 
-        void calcTextLen(void * /* nw::lyt::TextBox * */, const sead::WSafeString *);
-        void calcTextLen(void * /* nw::lyt::TextBox * */, u32);
+        void calcTextLen(nw::lyt::TextBox *, const sead::WSafeString *);
+        void calcTextLen(nw::lyt::TextBox *, u32);
         void setPosX(ControlSight::ElementHandle &, float);
         void setPosY(ControlSight::ElementHandle &, float);
         void setPos(ControlSight::ElementHandle &, const sead::Vector3f &);
