@@ -211,7 +211,7 @@ BEGIN_NAMESPACE(RaceSys)
 
 BEGIN_NAMESPACE(Render)
 {
-	BEGIN_NAMESPACE(RaceLight)
+	namespace RaceLight
 	{
 		class LightObj;
 	}
