@@ -15,7 +15,20 @@ BEGIN_NAMESPACE(Sequence)
 {
     /START_CLASS/NAME@BasePage/SIZE@0x26C/BASE@Page/BSIZE@0x5C/VTABLE@True/
     public:
+        // TODO
+        virtual void *getDTIClassInfo() const;
+        virtual void *getDTIClass() const;
+        virtual ~BasePage();
+        virtual void onPagePreStep();
+        virtual void onPageEnter();
+        virtual bool canFinishFadein();
         virtual void initControl();
+        virtual void enterCursor(s32);
+        virtual void buttonHandler_OK(s32);
+        virtual void procOpenMenu();
+        virtual void onMenuEnter();
+        virtual void onMenuComplete();
+        virtual void onMenuExit();
 
         BasePage();
         void setKeyItem(UI::KeyItem *);

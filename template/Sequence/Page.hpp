@@ -8,6 +8,14 @@ BEGIN_NAMESPACE(Sequence)
 {
     /START_CLASS/NAME@Page/SIZE@0x5C/BASE@ExecutableSection/BSIZE@0x50/VTABLE@True/
     public:
+        // TODO
+        virtual void *getDTIClassInfo() const;
+        virtual void *getDTIClass() const;
+        virtual ~Page();
+        virtual void onPagePreStep();
+        virtual void onPageEnter();
+        virtual bool canFinishFadein();
+
         Page();
 
         /M/u32 m_fade_delay/0x4/0x54/

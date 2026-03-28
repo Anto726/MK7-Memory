@@ -24,6 +24,18 @@ BEGIN_NAMESPACE(UI)
             FLAG_0x80 = 0x80
         };
 
+         enum class EDrawScreen : u32
+        {
+            DRAW_SCREEN_0,
+            DRAW_SCREEN_1,
+            DRAW_SCREEN_2,
+            DRAW_SCREEN_3,
+            DRAW_SCREEN_4,
+            DRAW_SCREEN_5,
+            DRAW_SCREEN_6,
+            DRAW_SCREEN_MAX,
+        };
+
         /START_STRUCT/NAME@CreateArg/SIZE@0x18/VTABLE@True/
             virtual void _0x0() = 0; // 0
             virtual void userDataDefine() {} // 1

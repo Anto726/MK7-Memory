@@ -8,8 +8,10 @@
 #include "../UI/HomeDisableIcon.hpp"
 #include "../Sound/SndSeEvent.hpp"
 
+#include <prim/seadSafeString.hpp>
 #include <container/seadPtrArray.h>
 #include <math/seadVector.hpp>
+#include <nw/lyt/Pane.hpp>
 
 BEGIN_NAMESPACE(Sequence)
 {
@@ -62,6 +64,20 @@ BEGIN_NAMESPACE(Sequence)
             RESULT_ERROR
         };
 
+        enum class EnterCode : s32
+        {
+            SINGLE,
+            MULTI,
+            WIFI
+        };
+
+        enum class ReturnCode : s32
+        {
+            NORMAL,
+            ERROR,
+            SIMPLE_ERROR
+        };
+
         /START_CLASS/NAME@SystemDialogData/SIZE@0x1C/
             SystemDialogData();
 
@@ -87,6 +103,54 @@ BEGIN_NAMESPACE(Sequence)
             /M/bool m_0x13d/0x1/0x13d/
         /END/
 
+        // TODO
+        void *getDTIClassInfo() const;
+        void *getDTIClass() const;
+        ~Common_SystemDialog();
+        void onPagePreStep();
+        void onPageEnter();
+        bool canFinishFadein();
+        void initControl();
+        void enterCursor(s32);
+        void buttonHandler_OK(s32);
+        void procOpenMenu();
+        void onMenuEnter();
+        void onMenuComplete();
+        void onMenuExit();
+        
+        void fadeInWindow_(Sequence::Common_SystemDialog::SystemDialogState &, bool);
+        void fadeOutWindow_(Sequence::Common_SystemDialog::SystemDialogState &, bool);
+        void closeSystemDialog_();
+        void *createSystemDialogBody_(s32);             // UI::MenuDialogBody *
+        void *createSystemDialogButton_(s32);           // UI::SystemDialogButton *
+        void *createSystemDialogHalfBody_(s32);         // UI::MenuDialogHalfBody *
+        void *createSystemDialogWaitMark_(s32, s32);    // UI::MenuWaitMark *
+        void *createSystemDialogButton2_No_(s32);       // UI::SystemDialogButton *
+        void *createSystemDialogButton2_Yes_(s32);      // UI::SystemDialogButton *
+        void setupSystemDialog_(s32);
+        void setupSystemDialogMessage_(s32, s32, const UI::DashMessageArg *, s32, s32, s32);
+        void closeSystemWindow(bool);
+        void noHomeDisableIcon();
+        void startSystemWindow(SystemDialogType, s32, const UI::DashMessageArg *, bool, bool, s32, s32, s32);
+        void changeSystemWindow(SystemDialogType, s32, const UI::DashMessageArg *, bool, s32, s32, s32, bool);
+        void drawHomeDisableIcon(void * /* nw::lyt::Drawer * */, void * /* nw::lyt::DrawInfo & */);
+        void setOKSound_YesButton(Sound::SndSeEvent::EEvent);
+        void setOKSound_NoButton(Sound::SndSeEvent::EEvent);
+        void setOKSound_OKButton(Sound::SndSeEvent::EEvent);
+        void showHomeDisableIcon();
+        bool isSystemWindowClosed(SystemDialogOwner);
+        bool isSystemWindowOpened(SystemDialogOwner);
+        bool isSystemWindowStable(SystemDialogOwner);
+        bool isSystemWindowDecided(SystemDialogOwner);
+        void setupHomeDisableIcon();
+        void vanishHomeDisableIcon();
+        void setDisableSystemWindow();
+        void draw(UI::Control::EDrawScreen, void * /* nw::lyt::Drawer * */, void * /* nw::lyt::DrawInfo & */);
+        Common_SystemDialog();
+
+        static ReturnCode convertEnterCodeImpl(const sead::SafeString &);
+        static char const *convertReturnCodeImpl(s32);
+
         /M/UI::HomeDisableIcon *m_home_disable_icon/0x4/0x26C/
         /M/SystemDialogData m_dialog_data_array[7]/0xc4/0x270/
         /M/s32 m_0x334/0x4/0x334/
@@ -105,9 +169,23 @@ BEGIN_NAMESPACE(Sequence)
         /M/SystemDialogState m_system_dialog_state_2/0x140/0x4c4/
         /M/bool m_is_system_window_decided/0x1/0x604/
         /M/sead::Vector2f m_0x608/0x8/0x608/
-        // Here goes the controls associated exclusively to UIControlDrawScreen's DRAW_SCREEN_4
+        // Here goes the controls associated exclusively to UI::Control::EDrawScreen's DRAW_SCREEN_4
         /M/sead::PtrArray<UI::Control> m_0x610/0xC/0x610/
         // List of controls set up in `Sequence::Common_SystemDialog::setupSystemDialog_`
         /M/sead::PtrArray<UI::BaseMenuViewControl> m_controls/0xC/0x66c/
     /END/
+
+    void CloseDialog();
+    void CloseWatchDialogRequest();
+    void SetDialogDefaultButton(Common_SystemDialog::SystemDialogResult);
+    void SetDialogOKSound_YesButton(Sound::SndSeEvent::EEvent);
+    void SetDialogOKSound_NoButton(Sound::SndSeEvent::EEvent);
+    void OpenWatchDialog();
+    void OpenDialog(EDialogType, s32, const UI::DashMessageArg *);
+    bool IsCloseDialog();
+    bool IsDialogNo();
+    bool IsDialogYes();
+    bool IsOpenDialog();
+    void FadeOverDialog();
+    void FadeUnderDialog();
 }
