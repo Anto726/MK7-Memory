@@ -227,12 +227,14 @@ BEGIN_NAMESPACE(Sequence)
 	class BasePage;
 	class BaseRacePage;
 	class BaseMenuPage;
+	class Common_SystemDialog;
 	class CrossFadeSequence;
 	class DashSequenceEngine;
 	class DelegateSequence;
 	class ExecutableSection;
 	class LayeredSequence;
 	class MenuData;
+	class NetworkErrorChecker;
 	class Page;
 	class ParallelSequence;
 	class PracticalSection;
