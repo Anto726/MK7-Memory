@@ -2,6 +2,7 @@
 
 #include "../types.hpp"
 #include "Common_SystemDialog.hpp"
+#include "FaderPage.hpp"
 #include "../RaceSys/ECourseID.hpp"
 #include "../Utility/Random.hpp"
 
@@ -17,6 +18,7 @@ BEGIN_NAMESPACE(Sequence)
         /END/
 
         /M/Utility::Random m_random/0x18/0x0/
+        /M/FaderPage *m_fader_page/0x4/0x18/
         /M/Common_SystemDialog *m_common_system_dialog/0x4/0x1c/
         /M/BaseRacePage *m_base_race_page/0x4/0x30/
         /M/sead::PtrArray<CourseVote> m_course_votes/0xc/0x72c/
