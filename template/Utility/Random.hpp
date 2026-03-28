@@ -6,13 +6,12 @@
 
 BEGIN_NAMESPACE(Utility)
 {
-    class Random
-    {
+    /START_CLASS/NAME@Random/SIZE@0x18/VTABLE@True/
     public:
         virtual ~Random() = default;
+        Random();
 
-        sead::Random m_random;
-        s32 m_tick;
-    };
-    static_assert(sizeof(Random) == 0x18);
+        /M/sead::Random m_random/0x10/0x4/
+        /M/s32 m_tick/0x4/0x14/
+    /END/
 }

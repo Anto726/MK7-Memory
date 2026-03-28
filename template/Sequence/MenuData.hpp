@@ -1,27 +1,24 @@
 #pragma once
 
 #include "../types.hpp"
+#include "Common_SystemDialog.hpp"
 #include "../RaceSys/ECourseID.hpp"
+#include "../Utility/Random.hpp"
 
 #include <container/seadPtrArray.h>
 
 BEGIN_NAMESPACE(Sequence)
 {
-    class MenuData
-    {
+    /START_CLASS/NAME@MenuData/SIZE@0x978/
     public:
-        struct CourseVote
-        {
-            s32 station_id;
-            RaceSys::ECourseID course_id;
-        };
-        static_assert(sizeof(CourseVote) == 0x8);
+        /START_STRUCT/NAME@CourseVote/SIZE@0x8/
+            /M/s32 station_id/0x4/0x0/
+            /M/RaceSys::ECourseID course_id/0x4/0x4/
+        /END/
 
-        u8 gap_0x0[0x30];
-        BaseRacePage *m_base_race_page;
-        u8 gap_0x34[0x6F8];
-        sead::PtrArray<CourseVote> m_course_votes;
-        u8 gap_0x738[0x240];
-    };
-    static_assert(sizeof(MenuData) == 0x978);
+        /M/Utility::Random m_random/0x18/0x0/
+        /M/Common_SystemDialog *m_common_system_dialog/0x4/0x1c/
+        /M/BaseRacePage *m_base_race_page/0x4/0x30/
+        /M/sead::PtrArray<CourseVote> m_course_votes/0xc/0x72c/
+    /END/
 }
