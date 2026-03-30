@@ -15,6 +15,8 @@
 #include "../Object/TDirectorArray.hpp"
 #include "../Object/TLinkSocket.hpp"
 
+#include "../RaceSys/ModeManagerBase.hpp"
+
 #include "../System/RootSystem.hpp"
 
 #include <container/seadBuffer.h>
@@ -25,6 +27,11 @@ BEGIN_NAMESPACE(Item)
 {
     /START_CLASS/NAME@ItemDirector/SIZE@0x12C/BASE@Object::TDirectorArray<Object::Actor, Object::TLinkSocket<Object::Actor, Object::Actor>>/BSIZE@0x28/
     public:
+        s16 getDetailKartID()
+        {
+            return m_mode_manager->m_race_info.m_detail_kart_id;
+        }
+
         ItemObjDirectorBase *getDirector_FromItemSlot(eItemSlot item)
         {
             switch (item)
