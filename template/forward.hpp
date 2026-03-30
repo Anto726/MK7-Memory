@@ -234,6 +234,7 @@ BEGIN_NAMESPACE(Sequence)
 	class ExecutableSection;
 	class LayeredSequence;
 	class MenuData;
+	class MenuTitle;
 	class NetworkErrorChecker;
 	class Page;
 	class ParallelSequence;
@@ -294,11 +295,15 @@ BEGIN_NAMESPACE(UI)
 	class BgRaceMapBombControl;
 	class BgRaceMapCharaControl;
 	class BgRaceMapControl;
+	class Control;
 	class ControlAnimator;
+	class ControlInitializer;
 	class MessageData;
 	class MessageIDConverter;
 	class MessageWriter;
 	class TimeControl;
+	class TitleInfoIcon;
+	class TitleInfoIcon2;
 	class Page;
 	class GraphicResourceInfo;
 	class ControlDirector;

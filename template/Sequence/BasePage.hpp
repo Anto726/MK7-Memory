@@ -9,24 +9,65 @@
 #include "../UI/CursorItem.hpp"
 #include "../UI/KeyItem.hpp"
 #include "../UI/Manipulator.hpp"
+
+#include <prim/seadSafeString.hpp>
 #include <container/seadPtrArray.h>
 
 BEGIN_NAMESPACE(Sequence)
 {
     /START_CLASS/NAME@BasePage/SIZE@0x26C/BASE@Page/BSIZE@0x5C/VTABLE@True/
     public:
+        enum class EnterCode : s32
+        {
+            NEXT,
+            BACK
+        };
+
+        enum class ReturnCode : s32
+        {
+            NEXT_00,
+            NEXT_01,
+            NEXT_02,
+            NEXT_03,
+            NEXT_04,
+            NEXT_05,
+            NEXT_06,
+            NEXT_07,
+            BACK
+        };
+
+        enum class Mode : s32
+        {
+            DEFAULT
+        };
+
         // TODO
         virtual void *getDTIClassInfo() const;
         virtual void *getDTIClass() const;
         virtual ~BasePage();
-        virtual void onPagePreStep();
-        virtual void onPageEnter();
+        virtual void step();
+        virtual void enter();
+        virtual void start();
+        virtual void complete();
+        virtual void cancel();
+        virtual void exit();
+        virtual void pageStep(bool);
+        virtual void onGenerateControl(UI::ControlInitializer *);
         virtual bool canFinishFadein();
+        virtual bool canFinishFadeout();
         virtual void initControl();
+        virtual void calcItemIcon();
+        virtual void onPageFadein();
+        virtual void onPageFadeout();
         virtual void enterCursor(s32);
+        virtual void buttonHandler_SelectOn(s32);
         virtual void buttonHandler_OK(s32);
+        virtual void inputHandler(s32, s32);
         virtual void procOpenMenu();
+        virtual void procCloseMenu();
+        virtual void procExitMenu();
         virtual void onMenuEnter();
+        virtual void onMenuStart();
         virtual void onMenuComplete();
         virtual void onMenuExit();
 
@@ -35,6 +76,10 @@ BEGIN_NAMESPACE(Sequence)
         void setCursorItem(UI::CursorItem *);
         void setPlayerType(s32, RaceSys::EPlayerType);
         void setReplayMode(bool);
+
+        void convertEnterCodeImpl(const sead::SafeString &);
+        void convertReturnCodeImpl(const sead::SafeString &);
+        void convertModeImpl(const sead::SafeString &);
 
         enum BasePageState {
             STATE_CLOSED,   // Menu is already closed

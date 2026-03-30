@@ -18,16 +18,17 @@ BEGIN_NAMESPACE(Sequence)
             COIN_RUNNERS
         };
 
-        MenuWifi_Confirm();
         // TODO
-        // ??? getDTIClassInfo() const;
-        // ??? getDTIClass() const;
+        void *getDTIClassInfo() const;
+        void *getDTIClass() const;
         ~MenuWifi_Confirm(); // 2 (_sub_object), 3 (_deallocating)
-        void initControl();
-        void onPageEnter();
         void onPagePreStep();
+        void onPageEnter();
         void onPageComplete();
+        void initControl();
         void onTimeUpComplete(s32);
+
+        MenuWifi_Confirm();
 
         static char const *convertReturnCodeImpl(ReturnCode returnCode) {
             switch (returnCode) {

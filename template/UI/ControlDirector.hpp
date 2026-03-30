@@ -1,5 +1,6 @@
 #pragma once
 
+#include "Control.hpp"
 #include "../forward.hpp"
 #include "../types.hpp"
 

@@ -32,12 +32,26 @@ BEGIN_NAMESPACE(Sequence)
 		};
 		static_assert(sizeof(BaseMenuPageFlags) == 0x1);
 
-        BaseMenuPage();
         // TODO
         virtual void *getDTIClassInfo() const;
         virtual void *getDTIClass() const;
         virtual ~BaseMenuPage();
+        virtual void step();
+        virtual void enter();
+        virtual void complete();
+        virtual void exit();
+        virtual bool canFinishFadein();
+        virtual bool canFinishFadeout();
+        virtual void onSliderSetting(bool, bool);
+        virtual bool canStartSlideIn();
+        virtual bool canStartSlideOut();
+        virtual void onTimeUp(s32);
         virtual void onTimeUpComplete(s32);
+        virtual void onTimeUpCompleteStep(s32);
+        virtual s32 getBackEnterCode();
+        virtual s32 getBackReturnCode();
+
+        BaseMenuPage();
         
         /M/sead::FixedPtrArray<ControlSlider, 3> m_control_slider_array/0x18/0x26C/
         /M/ControlDisplayFlags m_control_display_flags/0x1/0x284/

@@ -25,9 +25,9 @@ BEGIN_NAMESPACE(Sequence)
             START,
             /**
              * - State is `COMPLETE` only when `Section.nextState == FINISH_OR_REENTER`
-             * - Otherwise state is `CANCEL`
+             * - Otherwise state is `CALC` or `CANCEL`
              */
-            COMPLETE_OR_CANCEL,
+            CALC_COMPLETE_OR_CANCEL,
             /**
              * - State is `FINISH` only when `Section.nextState == EXIT`
              * - Otherwise state is `REENTER`
@@ -36,8 +36,34 @@ BEGIN_NAMESPACE(Sequence)
             EXIT,
             CLEAR
         };
+
+		virtual ~Section(); // 2 (_sub_object), 3 (_deallocating)
+		virtual void create(Object::ArgumentObj const *); // 4
+		virtual void init(); // 5
+		virtual void calc(); // 6
+		virtual void callbackInvokeEventID(s32);
+        virtual void destroy();
+        virtual s32 getSectionType() const = 0;    // See `SectionType` in `SequenceResource.hpp`
+        virtual bool isCompletable() const = 0;
+        virtual bool isSyncFadein() const = 0;
+        virtual s32 getFadeFelay() const;
+        virtual u32 updateState();
+        virtual void step() = 0;
+        virtual void ready() = 0;
+        virtual void enter() = 0;
+        virtual void standby() = 0;
+        virtual void start() = 0;
+        virtual void complete() = 0;
+        virtual void cancel() = 0;
+        virtual void finish() = 0;
+        virtual void reenter() = 0;
+        virtual void exit() = 0;
+        virtual void clear() = 0;
+        virtual void sceneStart(s32) = 0;
+        virtual void sceneFinish(s32) = 0;
+
+        Section();
         
-    private:
         /M/SequenceResource *m_resource/0x4/0x8/
         /M/SequenceLayer *m_parent_layer/0x4/0xC/
         /M/SequenceResource::SectionBlock *m_block/0x4/0x10/

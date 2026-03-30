@@ -26,7 +26,7 @@ BEGIN_NAMESPACE(Object)
 		virtual void _0x2C() = 0; // 11
 
 		virtual void accept(ActorVisitor *); // 12
-		virtual void callbackInvokeEventID(int) {}; // 13
+		virtual void callbackInvokeEventID(s32) {}; // 13
 
 		virtual void _0x38() = 0; // 14
 
