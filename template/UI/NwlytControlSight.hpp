@@ -5,6 +5,7 @@
 
 #include <nw/lyt/Pane.hpp>
 #include <nw/lyt/TextBox.hpp>
+#include <nw/lyt/Bounding.hpp>
 
 BEGIN_NAMESPACE(UI)
 {
@@ -77,7 +78,7 @@ BEGIN_NAMESPACE(UI)
 
         /M/nw::lyt::TextBox *m_textbox/0x4/0x90/
         /M/nw::lyt::Pane *m_back/0x4/0x94/
-        /M/nw::lyt::Pane *m_bounding/0x4/0x98/
+        /M/nw::lyt::Bounding *m_bounding/0x4/0x98/
         /M/bool m_pane_width_or_height_is_zero/0x1/0x9C/
     /END/
 
