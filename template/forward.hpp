@@ -311,6 +311,8 @@ BEGIN_NAMESPACE(UI)
 	class Manipulator;
 	class BaseMenuButtonControl;
 	class BaseMenuInputControl;
+	class CursorItem;
+	class TouchItem;
 }
 
 BEGIN_NAMESPACE(Util)

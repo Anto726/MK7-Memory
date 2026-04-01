@@ -1,16 +1,12 @@
 #pragma once
 
 #include "../types.hpp"
+#include "EKeyID.hpp"
 
 #include <prim/seadDelegate.h>
 
 BEGIN_NAMESPACE(UI)
 {
-    // TODO: I'm not sure if this belongs here
-    enum class EKeyID : u32
-    {
-    };
-
     /START_STRUCT/NAME@KeyItem/SIZE@0x1C/
         KeyItem();
         void manipulate();

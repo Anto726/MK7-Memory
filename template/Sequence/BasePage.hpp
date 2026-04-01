@@ -74,6 +74,7 @@ BEGIN_NAMESPACE(Sequence)
         BasePage();
         void setKeyItem(UI::KeyItem *);
         void setCursorItem(UI::CursorItem *);
+        void setTouchItem(UI::TouchItem *);
         void setPlayerType(s32, RaceSys::EPlayerType);
         void setReplayMode(bool);
 
