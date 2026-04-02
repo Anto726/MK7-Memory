@@ -298,6 +298,14 @@ BEGIN_NAMESPACE(UI)
 	class Control;
 	class ControlAnimator;
 	class ControlInitializer;
+	class ControlSight;
+	class CursorMove;
+	class NullControlSight;
+	class NwlytControlSight;
+	class NwlytDummyControlSight;
+	class NwlytDivControlSight;
+	class NwlytDivPartControlSight;
+	class NwlytDivRootControlSight;
 	class MessageData;
 	class MessageIDConverter;
 	class MessageWriter;

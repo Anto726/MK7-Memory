@@ -1,0 +1,44 @@
+#pragma once
+
+#include "../types.hpp"
+
+#include <prim/seadDelegate.h>
+
+BEGIN_NAMESPACE(UI)
+{
+    /START_CLASS/NAME@CursorMove/SIZE@0x24/
+    public:
+         enum class EType : u8
+        {
+            NEXT_ROW,
+            NEXT_COL,
+            NEXT_MATRIX,
+            NEXT_CHARA_SELECT,
+            NEXT_CUP_SELECT,
+            NEXT_PARTS_SLOT,
+            NEXT_GAME_SETTING,
+            NEXT_DONT_MOVE
+        };
+
+        s32 next_DontMove(CursorItem *);
+        s32 next_CupSelect(CursorItem *);
+        s32 next_PartsSlot(CursorItem *);
+        s32 next_CharaSelect(CursorItem *);
+        s32 next_GameSetting(CursorItem *);
+        s32 next_Matrix(CursorItem *);
+        s32 next_Matrix_Impl(CursorItem *, s32, s32);
+        s32 next(CursorItem *);
+        s32 getDir(CursorItem *);
+        s32 setType(EType);
+        s32 next_Col(CursorItem *);
+        s32 next_Row(CursorItem *);
+
+        /M/EType m_type/0x1/0x0/
+        /M/sead::Delegate1R<CursorMove, CursorItem *, s32> m_on_next_delegate/0x10/0x4/
+        /M/s32 m_0x14/0x4/0x14/
+        /M/s32 m_0x18/0x4/0x18/
+        /M/u8 m_0x1c/0x1/0x1c/
+        /M/bool m_0x1d/0x1/0x1d/
+        /M/s32 m_0x20/0x4/0x20/
+    /END/
+}

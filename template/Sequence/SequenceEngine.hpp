@@ -18,4 +18,6 @@ BEGIN_NAMESPACE(Sequence)
         /M/System::EArchiveID m_archive_id/0x4/0x80/    // Archive ID associated with the current scene
         /M/sead::PtrArray<Sequence::Page> m_active_pages/0xC/0x88/
     /END/
+
+    UI::ManipulatorManager *GetManipulatorManager();
 }

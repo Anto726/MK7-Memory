@@ -13,6 +13,17 @@ BEGIN_NAMESPACE(UI)
 {
     /START_CLASS/NAME@ManipulatorManager/SIZE@0x40/
     public:
+        void calc();
+        void procOpenMenu();
+        void clear();
+        void attach(UI::Manipulator *);
+        void detach();
+        void enable();
+        void disable();
+        void calcStick();
+        ManipulatorManager();
+        const sead::Vector2f &getStick() const;
+
         /M/u8 m_0x0/0x1/0x0/
         /M/bool m_0x1/0x1/0x1/
         /M/bool m_disable_inputs/0x1/0x2/

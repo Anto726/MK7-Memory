@@ -15,4 +15,6 @@ BEGIN_NAMESPACE(Sequence)
         /M/bool m_exit_app/0x1/0xD0/
         /M/UI::MessageIDConverter *m_message_id_converter/0x4/0xD8/
     /END/
+
+    DashSequenceEngine *GetDashSequenceEngine();
 }
