@@ -8,7 +8,6 @@ BEGIN_NAMESPACE(UI)
 {
     /START_CLASS/NAME@ControlAnimator/SIZE@0xC/VTABLE@True/
     public:
-
         /START_STRUCT/NAME@AnimationDefine/SIZE@0x18/VTABLE@True/
             // TODO: This is pure virtual
             virtual void defineAnimation(); // 0
@@ -88,6 +87,13 @@ BEGIN_NAMESPACE(UI)
                 __sub_object(name, anim_count);
             }
 
+            inline AnimationItem* getAnimationItem(s32 index) const {
+                if (index < 0 || index >= m_anim_count)
+                    return nullptr;
+
+                return m_anims[index];
+            }
+
             /M/sead::SafeString m_name/0x8/0x4/
             /M/s32 m_anim_count/0x4/0xC/
             /M/AnimationItem **m_anims/0x4/0x10/
@@ -108,6 +114,13 @@ BEGIN_NAMESPACE(UI)
 
         ControlAnimator() {
             __sub_object();
+        }
+
+        inline AnimationFamily* getAnimationFamily(s32 index) const {
+            if (index < 0 || index >= m_anim_family_count)
+                return nullptr;
+
+            return m_anim_family[index];
         }
 
         /M/s32 m_anim_family_count/0x4/0x4/
