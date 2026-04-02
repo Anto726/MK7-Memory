@@ -24,6 +24,36 @@ BEGIN_NAMESPACE(RaceSys)
     public:
         /START_CLASS/NAME@CKartInfo/SIZE@0x2C/
         public:
+            CKartInfo()
+            {
+                m_body_id = EBodyID::Standard;
+                m_tire_id = ETireID::Standard;
+                m_wing_id = EWingID::SuperGlider;
+                m_screw_id = EScrewID::Standard;
+                m_driver_id = EDriverID::Bowser;
+                m_player_type = EPlayerType::Master;
+                m_team_type = ETeamType::Red;
+                m_title_type = ETitleType::DEFAULT;
+                m_rate.value = RATE_DEFAULT;
+            }
+
+            void init()
+            {
+                m_body_id = EBodyID::INVALID;
+                m_tire_id = ETireID::INVALID;
+                m_wing_id = EWingID::INVALID;
+                m_screw_id = EScrewID::INVALID;
+                m_driver_id = EDriverID::INVALID;
+                m_player_type = EPlayerType::INVALID;
+                m_team_type = ETeamType::INVALID;
+                m_title_type = ETitleType::DEFAULT;
+                m_race_point = 0;
+                m_race_rank = 1;
+                m_total_rank = 1;
+                m_unique_total_rank = 1;
+                m_rate.value = RATE_DEFAULT;
+            }
+
             /M/EBodyID m_body_id/0x4/0x0/
             /M/ETireID m_tire_id/0x4/0x4/
             /M/EWingID m_wing_id/0x4/0x8/
