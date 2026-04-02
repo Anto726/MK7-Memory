@@ -13,7 +13,13 @@ BEGIN_NAMESPACE(UI)
             // TODO: This is pure virtual
             virtual void defineAnimation(); // 0
 
+            void initAnimation(s32, const sead::SafeString &, s32);
+            void initAnimationFamily(s32, const sead::SafeString &, s32);
+            void initAnimationReverse(s32, const sead::SafeString &, s32);
+            void initAnimationFamilyList(s32);
+            void initAnimationStopByRate(s32, const sead::SafeString &, f32);
             void __sub_object();
+
             AnimationDefine() {
                 __sub_object();
             }
@@ -49,6 +55,15 @@ BEGIN_NAMESPACE(UI)
             virtual void setFrameImpl(f32); // 6
             virtual bool isLoopImpl(); // 7
 
+            f32 getCurrentFrame();
+            void setFrame(f32);
+            f32 getFrameSize();
+            void __sub_object(const sead::SafeString &);
+
+            AnimationItem(const sead::SafeString &name) {
+                __sub_object(name);
+            }
+
             /M/sead::SafeString m_name/0x8/0x4/
             /M/s32 m_animation_kind/0x4/0xC/
             /M/u8 m_animation_type/0x1/0x10/
@@ -62,6 +77,17 @@ BEGIN_NAMESPACE(UI)
             virtual void bindAnimation(void * /* nw::lyt::AnimTransform * */); // 3
             virtual void unbindAnimation(void * /* nw::lyt::AnimTransform * */); // 4
 
+            void setAnimation(s32, f32);
+            void changeAnimation(s32, f32);
+            void changeAnimationByRate(s32, f32);
+            void step();
+            f32 getAnimationRate() const;
+            void __sub_object(const sead::SafeString &, s32);
+
+            AnimationFamily(const sead::SafeString &name, s32 anim_count) {
+                __sub_object(name, anim_count);
+            }
+
             /M/sead::SafeString m_name/0x8/0x4/
             /M/s32 m_anim_count/0x4/0xC/
             /M/AnimationItem **m_anims/0x4/0x10/
@@ -71,6 +97,18 @@ BEGIN_NAMESPACE(UI)
         /END/
 
         virtual void _0x0(); // 0
+        virtual void _0x4(); // 1
+        virtual void _0x8(); // 2
+        virtual void applyAnimation(); // 3
+        virtual void generateAnimationFamily(const sead::SafeString &, s32); // 4
+
+        void create(AnimationDefine *);
+        void step();
+        void __sub_object();
+
+        ControlAnimator() {
+            __sub_object();
+        }
 
         /M/s32 m_anim_family_count/0x4/0x4/
         /M/AnimationFamily **m_anim_family/0x4/0x8/
