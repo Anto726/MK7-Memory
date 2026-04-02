@@ -306,6 +306,8 @@ BEGIN_NAMESPACE(UI)
 	class NwlytDivControlSight;
 	class NwlytDivPartControlSight;
 	class NwlytDivRootControlSight;
+	class NwlytControlAnimator;
+	class NwlytDivControlAnimator;
 	class MessageData;
 	class MessageIDConverter;
 	class MessageWriter;
