@@ -22,6 +22,7 @@ BEGIN_NAMESPACE(System)
         inline auto get_item_director() const { return m_scene_manager->get_character_engine_director_list()->m_item_director; }
 
         inline auto get_game_setting() const { return m_root_scene->get_system_engine()->m_game_setting; }
+        inline auto get_pad_director() const { return m_root_scene->get_system_engine()->m_pad_director; }
 
         inline auto get_menu_data() const { return m_root_scene->get_sequence_engine()->m_menu_data; }
         inline auto get_message_id_converter() const { return m_root_scene->get_sequence_engine()->m_message_id_converter; }
