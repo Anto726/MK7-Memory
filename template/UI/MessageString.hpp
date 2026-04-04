@@ -11,5 +11,6 @@ BEGIN_NAMESPACE(UI)
 
         MessageString() : m_string(nullptr) {}
         MessageString(char16_t *str) : m_string(str) {}
+        operator const wchar_t *() const { return reinterpret_cast<const wchar_t *>(m_string); }
     /END/
 }

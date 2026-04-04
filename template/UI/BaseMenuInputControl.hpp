@@ -10,6 +10,7 @@
 #include <prim/seadDelegate.h>
 #include <prim/seadSafeString.hpp>
 #include <math/seadVector.h>
+#include <nw/lyt/TextBox.hpp>
 
 BEGIN_NAMESPACE(UI)
 {
@@ -69,8 +70,10 @@ BEGIN_NAMESPACE(UI)
         /M/s32 m_option/0x4/0x7c/
         /M/s32 m_0x80/0x4/0x80/
         /M/s32 m_num_options/0x4/0x84/
-        /M/ControlSight::ElementHandle m_0x88[3]/0xc/0x88/
-        /M/void *m_0x9c/0x4/0x9c/
+        /M/ControlSight::ElementHandle m_elements[3]/0xc/0x88/
+        /M/nw::lyt::TextBox *m_val_textbox/0x4/0x94/
+        /M/nw::lyt::TextBox *m_0x98/0x4/0x98/
+        /M/s32 m_val_message_ids[33]/0x84/0x9c/     // An array of text message IDs for `m_val_textbox`. Up to 33 entries.
         /M/ActiveHandlersInput m_active_handlers/0x4/0x120/
         /M/CursorItem m_cursor_item/0x30/0x124/
         /M/TouchItem m_capture/0x3c/0x154/
