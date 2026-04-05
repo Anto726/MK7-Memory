@@ -3,9 +3,12 @@
 #include "../forward.hpp"
 #include "../types.hpp"
 
+#include "../Object/Actor.hpp"
+#include "../Object/TDirectorArray.hpp"
+
 BEGIN_NAMESPACE(System)
 {
-    /START_CLASS/NAME@SystemEngine/SIZE@0xFC/
+    /START_CLASS/NAME@SystemEngine/SIZE@0xFC/BASE@Object::TDirectorArray<Object::Actor, Object::ActorEngine>/BSIZE@0x1C/
     public:
         /M/ControllerBase *m_controller_base/0x4/0x1C/
         /M/ResourceLoader *m_resource_loader/0x4/0x20/
