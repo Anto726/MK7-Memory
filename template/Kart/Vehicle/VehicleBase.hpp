@@ -28,6 +28,15 @@ BEGIN_NAMESPACE(Kart)
 			/M/Render::RaceLight::LightObj *light_obj/0x4/0x20/
 		/END/
 
+		void changeToCPU(bool is_cpu)
+		{
+			m_is_ai_path_controlled = true;
+			m_0x99 = 1;
+
+			if (is_cpu)
+				m_is_ai_pad_controlled = true;
+		}
+
 		/M/Vehicle *m_vehicle/0x4/0x74/
 		/M/Director *m_director/0x4/0x78/
 		/M/Driver *m_driver/0x4/0x7C/
