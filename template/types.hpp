@@ -17,6 +17,7 @@
 #endif
 
 #define TYPE_MAX(T) std::numeric_limits<std::underlying_type_t<T>>::max()
+#define ENUM_BIT(e) (1U << std::to_underlying(e))
 
 using s8 = std::int8_t;
 using s16 = std::int16_t;
