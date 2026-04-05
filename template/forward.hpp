@@ -261,27 +261,31 @@ BEGIN_NAMESPACE(Sound)
 
 BEGIN_NAMESPACE(System)
 {
+	class BackgroundLoadThread;
+	class BackgroundThread;
+	class BackupManager;
 	class BootRenderThread;
 	class ControllerBase;
 	class EngineHolder;
 	class GameFramework;
 	class GameSetting;
-	class GhostSaveDataHeader;
 	class GhostSaveData;
-	class KDPad;
+	class GhostSaveDataHeader;
 	class KDAIPad;
+	class KDPad;
 	class KDPadAddBase;
+	class KDPadControllerCore;
+	class KDPadDirector;
 	class KDPadInputer;
 	class KDPadPlayer;
 	class KDPlayerRecordPad;
 	class KDReplayPad;
 	class KDUIPad;
-	class KDPadDirector;
-	class KDPadControllerCore;
 	class PlayerData;
 	class ResourceLoader;
 	class RootScene;
 	class RootSystem;
+	class SaveDataManager;
 	class Scene;
 	class SceneManager;
 	class SystemEngine;
