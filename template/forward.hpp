@@ -296,6 +296,9 @@ BEGIN_NAMESPACE(System)
 
 BEGIN_NAMESPACE(UI)
 {
+	class BackButton;
+	class BackButtonB;
+	class BackButtonT;
 	class BgRaceMapBombControl;
 	class BgRaceMapCharaControl;
 	class BgRaceMapControl;
@@ -312,6 +315,8 @@ BEGIN_NAMESPACE(UI)
 	class NwlytDivRootControlSight;
 	class NwlytControlAnimator;
 	class NwlytDivControlAnimator;
+	class MenuButton;
+	class MenuButtonMch;
 	class MessageData;
 	class MessageIDConverter;
 	class MessageWriter;
