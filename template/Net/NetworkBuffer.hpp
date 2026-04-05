@@ -2,6 +2,7 @@
 
 #include "eNetworkBufferType.hpp"
 #include "../types.hpp"
+#include "../versions.h"
 
 BEGIN_NAMESPACE(Net)
 {
@@ -15,8 +16,10 @@ BEGIN_NAMESPACE(Net)
 
 		void add(void *new_data, size_t new_data_size)
 		{
+#if ALL_V12
 			if (m_current + new_data_size > m_size)
 				return;
+#endif
 
 			memcpy(m_data + m_current, new_data, new_data_size);
 			m_current += new_data_size;
@@ -30,8 +33,10 @@ BEGIN_NAMESPACE(Net)
 
         void set(void *new_data, size_t new_data_size)
 		{
+#if ALL_V12
 			if (new_data_size > m_size)
 				return;
+#endif
 
 			memcpy(m_data, new_data, new_data_size);
 			m_current = new_data_size;
