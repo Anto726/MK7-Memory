@@ -94,6 +94,9 @@ BEGIN_NAMESPACE(Sequence)
         template <typename T>
         T* setupControl(const sead::SafeString &, const sead::SafeString &);
 
+        template <typename T>
+        T* setupBothControl(const sead::SafeString &, const sead::SafeString &);
+
         /M/s32 m_on_back_return_code/0x4/0x5C/
         /M/u32 m_timer/0x4/0x60/
         /M/UI::Manipulator *m_manipulator/0x4/0x64/
