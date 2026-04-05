@@ -83,6 +83,6 @@ BEGIN_NAMESPACE(UI)
         /M/bool m_is_mirror_unlocked/0x1/0x421/
         /M/BaseMenuButtonControl *m_button/0x4/0x424/
         /M/EKeyID m_key_handler_button/0x4/0x428/
-        /M/u8 m_0x42c/0x1/0x42c/
+        /M/u8 m_selected_option_idx/0x1/0x42c/
     /END/
 }

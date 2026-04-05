@@ -23,5 +23,7 @@ BEGIN_NAMESPACE(UI)
         virtual void *getDTIClass() const;
         virtual ~LRSelectBg(); // 2 (_sub_object), 3 (_deallocating)
         virtual void onCreate(const Control::CreateArg *); // 19
+
+        LRSelectBg() = default;
     /END/
 }
