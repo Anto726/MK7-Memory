@@ -16,7 +16,7 @@ BEGIN_NAMESPACE(UI)
 {
     /START_CLASS/NAME@Control/SIZE@0x64/BASE@Object::Actor/BSIZE@0x08/VTABLE@True/
     public:
-        enum ControlDrawScreenFlag {
+        enum class EDrawScreenFlag : u32 {
             FLAG_0x08 = 0x08,
             DRAW_ON_TOP_SCREEN = 0x10,
             FLAG_0x20 = 0x20,
@@ -56,18 +56,19 @@ BEGIN_NAMESPACE(UI)
         virtual void onCreate(const CreateArg *) {}; // 19
         virtual void reset() = 0; // 20
 
-        virtual void readyFadein() = 0; // 21
-        virtual void readyFadeout() = 0; // 22
+        virtual void readyFadein(s32) = 0; // 21
+        virtual void readyFadeout(s32) = 0; // 22
 
         virtual void fadeStep() = 0; // 23
         virtual bool isFadeComplete() = 0; // 24
 
-        virtual void draw() = 0; // 25
+        virtual void draw(EDrawScreen) = 0; // 25
 
         virtual nw::lyt::Pane *getRootPane() { return {}; }; // 26
         virtual ControlNullFader *generateFader(); // 27
 
         Control();
+        void setDrawScreenFlag(EDrawScreenFlag, s32);
 
         inline void initNode(UI::ControlDirector *director) {
             if (m_control_list_node.m_value == nullptr) {
@@ -85,6 +86,6 @@ BEGIN_NAMESPACE(UI)
         /M/u8 m_0x20/0x1/0x20/
         /M/u32 m_0x24/0x4/0x24/
         /M/bool m_visible/0x1/0x28/
-        /M/sead::ListNode m_list_nodes[7]/0x38/0x2C/
+        /M/sead::ListNode m_list_nodes[7]/0x38/0x2C/    // One per `EDrawScreen` ?
     /END/
 }

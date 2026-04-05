@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../types.hpp"
+#include "../forward.hpp"
 
 #include "BaseFastControl.hpp"
 #include "ControlSight.hpp"
@@ -11,6 +12,8 @@
 #include "../Sound/SndSeEvent.hpp"
 
 #include <math/seadVector.hpp>
+#include <prim/seadSafeString.hpp>
+#include <nw/lyt/Pane.hpp>
 
 BEGIN_NAMESPACE(UI)
 {
@@ -57,7 +60,104 @@ BEGIN_NAMESPACE(UI)
 		};
 		static_assert(sizeof(ControlAnimationTypeFlags) == 0x4);
 
+        /START_STRUCT/NAME@AnimationDefine_Dummy/SIZE@0x18/BASE@ControlAnimator::AnimationDefine/BSIZE@0x18/VTABLE@True/
+            void defineAnimation(); // 0
+        /END/
+
+        /START_STRUCT/NAME@AnimationDefine_TouchSelect/SIZE@0x18/BASE@ControlAnimator::AnimationDefine/BSIZE@0x18/VTABLE@True/
+            void defineAnimation(); // 0
+        /END/
+
+        /START_STRUCT/NAME@AnimationDefine_Common/SIZE@0x18/BASE@ControlAnimator::AnimationDefine/BSIZE@0x18/VTABLE@True/
+            void defineAnimation(); // 0
+        /END/
+
+        /START_STRUCT/NAME@AnimationDefine_OKButton/SIZE@0x18/BASE@ControlAnimator::AnimationDefine/BSIZE@0x18/VTABLE@True/
+            void defineAnimation(); // 0
+        /END/
+
+        /START_STRUCT/NAME@AnimationDefine_CupButton/SIZE@0x18/BASE@ControlAnimator::AnimationDefine/BSIZE@0x18/VTABLE@True/
+            void defineAnimation(); // 0
+        /END/
+
+        /START_STRUCT/NAME@AnimationDefine_BackButton/SIZE@0x18/BASE@ControlAnimator::AnimationDefine/BSIZE@0x18/VTABLE@True/
+            void defineAnimation(); // 0
+        /END/
+
+        /START_STRUCT/NAME@AnimationDefine_MenuButton/SIZE@0x18/BASE@ControlAnimator::AnimationDefine/BSIZE@0x18/VTABLE@True/
+            void defineAnimation(); // 0
+        /END/
+
+        /START_STRUCT/NAME@AnimationDefine_CharaButton/SIZE@0x18/BASE@ControlAnimator::AnimationDefine/BSIZE@0x18/VTABLE@True/
+            void defineAnimation(); // 0
+        /END/
+
+        /START_STRUCT/NAME@AnimationDefine_TitleButton/SIZE@0x18/BASE@ControlAnimator::AnimationDefine/BSIZE@0x18/VTABLE@True/
+            void defineAnimation(); // 0
+        /END/
+
+        /START_STRUCT/NAME@AnimationDefine_CourseButton/SIZE@0x18/BASE@ControlAnimator::AnimationDefine/BSIZE@0x18/VTABLE@True/
+            void defineAnimation(); // 0
+        /END/
+
+        /START_STRUCT/NAME@AnimationDefine_TitleChButton/SIZE@0x18/BASE@ControlAnimator::AnimationDefine/BSIZE@0x18/VTABLE@True/
+            void defineAnimation(); // 0
+        /END/
+
+        /START_STRUCT/NAME@AnimationDefine_MenuButtonOnOff/SIZE@0x18/BASE@ControlAnimator::AnimationDefine/BSIZE@0x18/VTABLE@True/
+            void defineAnimation(); // 0
+        /END/
+
+        /START_STRUCT/NAME@AnimationDefine_TouchSelectFade/SIZE@0x18/BASE@ControlAnimator::AnimationDefine/BSIZE@0x18/VTABLE@True/
+            void defineAnimation(); // 0
+        /END/
+
+        /START_STRUCT/NAME@AnimationDefine_TouchSelectLoop/SIZE@0x18/BASE@ControlAnimator::AnimationDefine/BSIZE@0x18/VTABLE@True/
+            void defineAnimation(); // 0
+        /END/
+
+        /START_STRUCT/NAME@AnimationDefine_TouchSelectFadeLoop/SIZE@0x18/BASE@ControlAnimator::AnimationDefine/BSIZE@0x18/VTABLE@True/
+            void defineAnimation(); // 0
+        /END/
+
+        /START_STRUCT/NAME@CreateArg/SIZE@0x90/BASE@VisualControl::CreateArg/BSIZE@0x90/VTABLE@True/
+            CreateArg(): VisualControl::CreateArg() {}
+        
+            const ControlAnimator::AnimationDefine *getAnimationDefine () const; // 3
+        /END/
+
+        virtual ~BaseMenuButtonControl();
+        virtual void create(Object::ArgumentObj const *); // 4
+        virtual void calc(); // 6
+        virtual void reset(); // 20
+        virtual void animMenuIn(); // 31
+        virtual void animMenuOut(); // 32
+
+        BaseMenuButtonControl();
+        void changeAnim(s32, s32);
+        void changeLoop();
+        void setCaption(MenuCaption *, u32);
+        void bindHitPane(nw::lyt::Pane *);
+        void initHandler();
+        void keyHandlerB(s32, EKeyID);
+        void completeNext();
+        bool canManipulate();
+        void touchHandlerUp(s32, const sead::Vector2f &);
+        void keyHandlerStart(s32, EKeyID);
+        void selectHandlerOn(s32, s32);
+        void keyHandlerA(s32, EKeyID);
         void keyHandlerCommon(s32, EKeyID);
+        void touchHandlerDown(s32, const sead::Vector2f &);
+        void keyHandlerCursorA(s32, s32);
+        void touchHandlerSlideIn(s32, const sead::Vector2f &);
+        void touchHandlerSlideOut(s32, const sead::Vector2f &);
+        void setBg(BaseFastControl *, const sead::SafeString &);
+        void follow();
+        void setTex(s32, s32);
+        void animKeep();
+        void stopLoop();
+        void setCursor(BaseFastControl *, const sead::SafeString &);
+        void selectHandlerOff(s32, s32);
 
         /M/ActiveHandlersButton m_active_handlers/0x4/0x7c/
         /M/ControlAnimationTypeFlags m_animation_type_flags/0x4/0x80/
@@ -99,6 +199,6 @@ BEGIN_NAMESPACE(UI)
         // after pressing / touching the button
         /M/s32 m_return_code/0x4/0x230/
         /M/s32 m_0x234/0x4/0x234/
-        /M/s32 m_0x238/0x4/0x238/
+        /M/s32 m_sync_return_code/0x4/0x238/
     /END/
 }

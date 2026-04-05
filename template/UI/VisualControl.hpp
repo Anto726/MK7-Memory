@@ -33,15 +33,18 @@ BEGIN_NAMESPACE(UI)
         virtual void forceCameraDir(); // 18
         virtual void onCreate(const Control::CreateArg *) {}; // 19
         virtual void reset(); // 20
-        virtual void readyFadein(); // 21
-        virtual void readyFadeout(); // 22
+        virtual void readyFadein(s32); // 21
+        virtual void readyFadeout(s32); // 22
         virtual void fadeStep(); // 23
         virtual bool isFadeComplete(); // 24
-        virtual void draw(); // 25
+        virtual void draw(Control::EDrawScreen); // 25
         virtual nw::lyt::Pane *getRootPane(); // 26
         virtual void onReset() {}; // 28
         virtual void onCalc() {}; // 29
         virtual void onCalcPostAnim() {}; // 30
+
+        void buildGraphic(const CreateArg *);
+        VisualControl();
 
         /M/ControlAnimator *m_animator/0x4/0x64/
         /M/NwlytControlSight *m_control_sight/0x4/0x68/ 

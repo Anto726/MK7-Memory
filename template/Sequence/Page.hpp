@@ -3,6 +3,7 @@
 #include "../types.hpp"
 #include "../forward.hpp"
 
+#include "../UI/Control.hpp"
 #include "ExecutableSection.hpp"
 
 BEGIN_NAMESPACE(Sequence)
@@ -45,6 +46,7 @@ BEGIN_NAMESPACE(Sequence)
         virtual s32 getFadeoutType(s32);
 
         Page();
+        void draw(UI::Control::EDrawScreen, s32);
 
         /M/u32 m_fade_delay/0x4/0x54/
         // Prevents `Sequence::Section::exitOuter` to be called in `Sequence::Page::cancel`

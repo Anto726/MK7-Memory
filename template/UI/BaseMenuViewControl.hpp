@@ -18,6 +18,9 @@ BEGIN_NAMESPACE(UI)
         virtual void reset(); // 20
 
         BaseMenuViewControl();
+        void startFollowAcc(const sead::Vector3f &);
+        void follow(const sead::Vector3f &);
+        void followAcc();
 
         /M/ControlSight::ElementHandle *m_elements[4]/0x10/0x7C/
         /M/sead::Vector2f m_0x8C/0x8/0x8C/
