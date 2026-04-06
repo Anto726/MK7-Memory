@@ -320,6 +320,9 @@ BEGIN_NAMESPACE(UI)
 	class MessageData;
 	class MessageIDConverter;
 	class MessageWriter;
+	class OKButton;
+	class OKButton2;
+	class OKButton3;
 	class TimeControl;
 	class TitleInfoIcon;
 	class TitleInfoIcon2;
