@@ -9,7 +9,7 @@
 
 BEGIN_NAMESPACE(System)
 {
-    /START_CLASS/NAME@SDMCManager/SIZE@0x94/
+    /START_CLASS/NAME@SDMCManager/SIZE@0x94/VTABLE@True/
     public:
         // 0x00162e44
         virtual ~SDMCManager();
