@@ -2,14 +2,14 @@
 
 #include "../types.hpp"
 
+#include "OpponentList.hpp"
 #include "PlayerFlagSaveData.hpp"
 
 BEGIN_NAMESPACE(System)
 {
-    struct SystemSaveData
-    {
-        u8 gap_0x0[0x48D0];
-        PlayerFlagSaveData m_player_flag_save_data;
-    };
-    static_assert(sizeof(SystemSaveData) == 0x50D0);
+    /START_CLASS/NAME@SystemSaveData/SIZE@0x50D0/
+    public:
+        /M/OpponentList m_opponent_list/0x41A0/0x730/
+        /M/PlayerFlagSaveData m_player_flag_save_data/0x800/0x48D0/
+    /END/
 }
