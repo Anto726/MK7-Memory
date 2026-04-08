@@ -69,6 +69,29 @@ BEGIN_NAMESPACE(RaceSys)
             /M/Rate m_rate/0x4/0x28/
         /END/
 
+        CRaceInfo()
+        {
+            for (auto i = 0; i < KART_MAX; ++i)
+                m_kart_infos[i] = CKartInfo();
+
+            m_course_id = ECourseID::Gctr_MarioCircuit;
+
+            m_race_mode.m_play_mode = ERacePlayMode::SinglePlayer;
+            m_race_mode.m_rule_mode = ERaceRuleMode::GrandPrix;
+            m_race_mode.m_type = CRaceMode::RaceType::Race;
+
+            m_engine_level = EEngineLevel::_50cc;
+            m_race_mode_flag = {};
+            m_item_pattern = EItemPattern::All;
+
+            init();
+        }
+
+        void init()
+        {
+            // TODO
+        }
+
         /M/CKartInfo m_kart_infos[KART_MAX]/0x160/0x0/
         /M/ECourseID m_course_id/0x4/0x160/
         /M/CRaceMode m_race_mode/0xC/0x164/
