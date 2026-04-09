@@ -34,26 +34,28 @@ BEGIN_NAMESPACE(Effect)
 
 BEGIN_NAMESPACE(Enemy)
 {
-	class AIRankManager;
-	class AIPathManager;
-	class AIParamLoader;
-	class AIObjectManager;
-	class AIBattleManager;
-	class DriveInfo;
-	class AIStuck;
-	class AIRank;
-	class AIProbabilityBase;
-	class AIPathPoint;
-	class AIPathManager;
-	class AIPathHandler;
-	class AIParamLoader;
-	class AIManager;
-	class AIItemBase;
-	class AIInfo;
-	class AIDriftDrive;
-	class AIBlockLine;
-	class AIAutoSteer;
 	class AI;
+	class AIAutoSteer;
+	class AIBattleManager;
+	class AIBlockLine;
+	class AIControlBase;
+	class AIDriftDrive;
+	class AIInfo;
+	class AIItemBase;
+	class AIManager;
+	class AIObjectManager;
+	class AIParamLoader;
+	class AIParamLoader;
+	class AIPathHandler;
+	class AIPathManager;
+	class AIPathManager;
+	class AIPathPoint;
+	class AIProbabilityBase;
+	class AIRank;
+	class AIRankManager;
+	class AISpeedRaceBase;
+	class AIStuck;
+	class DriveInfo;
 }
 
 BEGIN_NAMESPACE(Field)

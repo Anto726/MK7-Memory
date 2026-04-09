@@ -9,6 +9,7 @@
 BEGIN_NAMESPACE(Enemy)
 {
     /START_CLASS/NAME@AIManager/SIZE@0xA8/
+    public:
         /M/AIRankManager *m_ai_rank_manager/0x4/0x0/
         /M/AIPathManager *m_ai_path_manager/0x4/0x4/
         /M/AIParamLoader *m_ai_param_loader/0x4/0x8/
