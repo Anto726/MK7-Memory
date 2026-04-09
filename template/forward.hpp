@@ -34,6 +34,11 @@ BEGIN_NAMESPACE(Effect)
 
 BEGIN_NAMESPACE(Enemy)
 {
+	class AIRankManager;
+	class AIPathManager;
+	class AIParamLoader;
+	class AIObjectManager;
+	class AIBattleManager;
 	class DriveInfo;
 	class AIStuck;
 	class AIRank;
@@ -340,4 +345,9 @@ BEGIN_NAMESPACE(UI)
 BEGIN_NAMESPACE(Util)
 {
 	class Shape;
+}
+
+BEGIN_NAMESPACE(Utility)
+{
+	class Random;
 }
