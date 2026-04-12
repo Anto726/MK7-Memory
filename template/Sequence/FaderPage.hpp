@@ -12,10 +12,10 @@ BEGIN_NAMESPACE(Sequence)
     {
         enum class EFaderType : u32
         {
-            BLACK_UP,
-            BLACK_DOWN,
-            WHITE_UP,
-            WHITE_DOWN
+            FADE_IN_BLACK,
+            FADE_IN_WHITE,
+            FADE_OUT_BLACK,
+            FADE_OUT_WHITE
         };
 
         enum class EFaderScreen : u32

@@ -7,10 +7,10 @@
 BEGIN_NAMESPACE(UI)
 {
     /START_STRUCT/NAME@MessageString/SIZE@0x4/
-        /M/char16_t *m_string/0x4/0x0/
+        /M/const char16_t *m_string/0x4/0x0/
 
         MessageString() : m_string(nullptr) {}
-        MessageString(char16_t *str) : m_string(str) {}
+        MessageString(const char16_t *str) : m_string(str) {}
         operator const wchar_t *() const { return reinterpret_cast<const wchar_t *>(m_string); }
     /END/
 }

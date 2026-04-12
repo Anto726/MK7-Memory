@@ -8,6 +8,7 @@ BEGIN_NAMESPACE(Sound)
     public:
         enum class EEvent : u8
         {
+            SE_SYS_CANCEL_L = 0x09,
             SE_SYS_DECIDE_M_8A = 0x8A
         };
     /END/
