@@ -262,6 +262,7 @@ BEGIN_NAMESPACE(Sound)
 	class SndActorBase;
 	class SndActorItem;
 	class SndActorKart;
+	class SndBase;
 	class SndEngine;
 	class SndHandle;
 }
