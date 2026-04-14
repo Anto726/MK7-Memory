@@ -263,8 +263,18 @@ BEGIN_NAMESPACE(Sound)
 	class SndActorItem;
 	class SndActorKart;
 	class SndBase;
+	class SndBgm;
 	class SndEngine;
 	class SndHandle;
+	class SndSceneBase;
+	class SndSceneBoot;
+	class SndSceneDemo;
+	class SndSceneEnding;
+	class SndSceneMenu;
+	class SndSceneRace;
+	class SndSceneThankyou;
+	class SndSceneTrophy;
+	class SndSysSe;
 }
 
 BEGIN_NAMESPACE(System)
