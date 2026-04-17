@@ -23,11 +23,17 @@ BEGIN_NAMESPACE(Sequence)
         /M/UI::BgRaceMapControl *m_bg_race_map_control_2/0x4/0x2A0/
         /M/UI::BgRaceMapControl *m_bg_race_zoom_map_control/0x4/0x2A4/
         /M/UI::BgRaceMapCharaControl *m_bg_race_map_chara_control[KART_MAX]/0x20/0x2A8/
+        /M/u32 m_player_num/0x4/0x39c/
+        /M/u32 m_target_player_id/0x4/0x3a0/
+        /M/bool m_display_rankboard/0x1/0x3a4/
+        /M/bool m_update_rankboard/0x1/0x3a5/
         /M/u32 m_result_bar_point_timer/0x4/0x2E34/
         /M/u32 m_result_bar_point_sound_timer/0x4/0x2E38/
         /M/u32 m_result_bar_point_increment/0x4/0x2E48/
         /M/u32 m_result_bar_point_interval/0x4/0x2E4C/
         /M/u32 m_result_bar_point_sound_interval/0x4/0x2E50/
         /M/sead::PtrArray<UI::BgRaceMapBombControl> m_bg_race_map_bomb_controls/0xC/0x3198/
+        /M/bool m_is_live_view/0x1/0x31f8/
+        /M/u8 m_live_view_state/0x1/0x31f9/
     /END/
 }
