@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../types.hpp"
+#include "../versions.h"
 
 BEGIN_NAMESPACE(Sequence)
 {
