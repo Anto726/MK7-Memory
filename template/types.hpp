@@ -5,6 +5,7 @@
 
 #include <limits>
 #include <type_traits>
+#include <utility>
 
 #ifndef MK7MEMORY_NAMESPACE
   #define BEGIN_NAMESPACE(sub) namespace sub
