@@ -299,6 +299,7 @@ BEGIN_NAMESPACE(System)
 	class KDPlayerRecordPad;
 	class KDReplayPad;
 	class KDUIPad;
+	class KDThread;
 	class PlayerData;
 	class ResourceLoader;
 	class RootScene;
