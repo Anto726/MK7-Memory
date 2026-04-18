@@ -82,6 +82,18 @@ BEGIN_NAMESPACE(Kart)
 		};
 		static_assert(sizeof(BoostFlags) == 0x4);
 
+		enum class DashType: u32 {
+			COIN_OR_SLIPSTREAM,
+			MINITURBO_OR_TRICK,
+			START_OR_RESPAWN_BOOST,
+			WATER_NOSEDIVE,
+			STAR_RING,
+			TRICK_WATER_DIVE,
+			DASH_PANEL,
+			MUSHROOM,
+			NO_DASH
+		};
+
 		/M/BoostFlags m_boost_flags/0x4/0xC28/
 		/M/BoostFlags m_boost_flags_previous_frame/0x4/0xC2C/
 		/M/StatusFlags m_status_flags/0x4/0xC30/
@@ -91,10 +103,21 @@ BEGIN_NAMESPACE(Kart)
 		/M/sead::Vector3f m_front_pitch/0xC/0xD6C/
 		/M/s32 m_dokan_warp/0x4/0xDA8/
 		/U/bool/0x1/0xE81/
-		/M/float m_miniturbo_charge/0x4/0xF08/
-		/M/float m_yaw_strength/0x4/0xF24/
-		/M/float m_forward_speed/0x4/0xF2C/
+		/M/f32 m_miniturbo_charge/0x4/0xF08/
+		/M/f32 m_yaw_strength/0x4/0xF24/
+		/M/f32 m_forward_speed/0x4/0xF2C/
+		// The current max speed of the vehicle, including the current coin amount.
+		// Doesn't count the max speed when in offroad, etc.
+		/M/f32 m_current_max_speed_base/0x4/0xF80/
+		/M/f32 m_current_max_speed_2/0x4/0xF84/
+		// The actual, true current max speed, taking into account other speed limiters,
+		// such as the lightning or star. Also includes CPU rubberbanding
+		/M/f32 m_current_max_speed/0x4/0xF88/
+		/M/DashType m_current_boost_type/0x4/0xF98/
 		/M/s32 m_boost_frames/0x4/0xF9C/
+		/M/s32 m_boost_duration_per_type[8]/0x20/0xFA0/
+		/M/f32 m_boost_speed/0x4/0xFC0/	// Maximum speed when the boost is applied
+		/M/f32 m_boost_accel/0x4/0xFC4/
 		/M/s32 m_draft_frames/0x4/0xFD8/
 		/M/s32 m_trick_frames/0x4/0xFF0/
 		/M/s32 m_star_frames/0x4/0xFF4/
@@ -102,9 +125,11 @@ BEGIN_NAMESPACE(Kart)
 		/M/s32 m_stun_frames/0x4/0xFFC/
 		/M/s32 m_thunder_frames/0x4/0x1000/
 		/M/s32 m_press_frames/0x4/0x1004/
-		/M/float m_press_size/0x4/0x1014/
+		/M/f32 m_press_size/0x4/0x1014/
 		/M/s32 m_invincibility_frames/0x4/0x102C/
 		/M/s32 m_jugem_frames/0x4/0x103C/
-		/M/float m_speed_max_forward_land_base/0x4/0x1054/
+		/M/f32 m_speed_max_forward_land_base/0x4/0x1054/
+		/M/f32 m_Dash_FrmMiniT_Lv1/0x4/0x1128/
+		/M/f32 m_Dash_FrmMiniT_Lv2/0x4/0x112c/
 	/END/
 }
