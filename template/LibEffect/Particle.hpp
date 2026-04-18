@@ -22,6 +22,8 @@ BEGIN_NAMESPACE(LibEffect)
         virtual void setMtx(const sead::Matrix34f &, const sead::Vector3f &);
         virtual void setMtx(const sead::Matrix34f &, f32);
         virtual void setMtx_RemoveScale(const sead::Matrix34f &);
+        virtual void vf_0x2c();
+        virtual void vf_0x30();
         virtual bool isAlive() const;
         virtual void kill();
         virtual void vf_0x3c();
