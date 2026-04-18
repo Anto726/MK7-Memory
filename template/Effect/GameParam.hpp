@@ -9,6 +9,7 @@
 BEGIN_NAMESPACE(Effect)
 {
     // NOTE: Name is made up
+    // From `RaceCommon.szs/Effect/EffectParam.bin`
     /START_CLASS/NAME@EffectParamEffectHeaderEntry/SIZE@0x40/
     public:
         /M/char m_name[32]/0x20/0x0/
@@ -20,6 +21,7 @@ BEGIN_NAMESPACE(Effect)
     /END/
 
     // NOTE: Name is made up
+    // From `RaceCommon.szs/Effect/EffectParam.bin`
     /START_CLASS/NAME@EffectParamEffectEntry/SIZE@0x13D0/
     public:
     /END/
