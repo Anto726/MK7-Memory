@@ -3,8 +3,9 @@
 #include "../forward.hpp"
 #include "../types.hpp"
 
-#include "KDPad.hpp"
+#include "KDPadData.hpp"
 
+#include <container/seadPtrArray.h>
 #include <math/seadVector.h>
 
 BEGIN_NAMESPACE(System)
@@ -33,5 +34,14 @@ BEGIN_NAMESPACE(System)
         KDPadAddBase(KDPad *, KDPadDataOnFrame &);
         void init();
         void start();
+
+        /M/s32 m_0x4/0x4/0x4/
+        /M/s32 m_0x8/0x4/0x8/
+        /M/KDPadAddBase *m_prev_pad_add_base/0x4/0xc/
+        // [0] -> TKDPadDataBase<System::KDPadButtonFormat>
+        // [1] -> TKDPadDataBase<System::KDPadStickFormat>
+        /M/sead::PtrArray<KDPadDataBase> m_pad_data_array/0xc/0x10/
+        /M/KDPadDataOnFrame *m_data_on_frame/0x4/0x1c/
+        /M/KDPad *m_pad/0x4/0x20/
     /END/
 }
