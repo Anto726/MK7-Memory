@@ -29,6 +29,7 @@ add_library(header_verify OBJECT verify.cpp)
 # ---- Platform defines (Nintendo 3DS / MK7) ----
 target_compile_definitions(header_verify PRIVATE
     NNSDK
+    GAME_VERSION=VERSION_USA_REV1
 )
 
 # devkitPro paths

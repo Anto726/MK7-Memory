@@ -1,5 +1,6 @@
 #pragma once
 
+#include "../forward.hpp"
 #include "../types.hpp"
 
 #include "../Object/Actor.hpp"
@@ -8,8 +9,9 @@
 
 BEGIN_NAMESPACE(Render)
 {
-    /START_CLASS/NAME@RenderEngine/SIZE@0xDC/BASE@Object::TDirectorList<Object::Actor, Object::ActorEngine>/BSIZE@0x1C/
-	public:
+    // NOTE: Size: 0x84 in ALL_DLP
+    /START_CLASS/NAME@RenderEngine/SIZE@0x88/BASE@Object::TDirectorList<Object::Actor, Object::ActorEngine>/BSIZE@0x1C/
+    public:
         // NOTE: guessed name
         /START_STRUCT/NAME@SDirectorList/SIZE@0x44/
             /M/UIDrawDirector *m_ui_draw_director/0x4/0x20/
@@ -22,5 +24,8 @@ BEGIN_NAMESPACE(Render)
         
         /M/SDirectorList *m_director_list/0x4/0x1C/
         /M/creator_t m_creator_list[8]/0x20/0x20/
+#if GAME_VERSION != ALL_DLP
+        /M/System::MobiClipThread *m_mobiclip_thread/0x4/0x84/
+#endif
     /END/
 }

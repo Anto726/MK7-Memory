@@ -300,6 +300,8 @@ BEGIN_NAMESPACE(System)
 	class KDReplayPad;
 	class KDUIPad;
 	class KDThread;
+	class MobiClipThread;
+	class MobiClipThreadProxy;
 	class PlayerData;
 	class ResourceLoader;
 	class RootScene;
@@ -311,6 +313,7 @@ BEGIN_NAMESPACE(System)
 	class ThreadManager;
 	struct PlayerDataNoMii;
 	struct SystemSaveData;
+	class VideoDrawerThread;
 }
 
 BEGIN_NAMESPACE(UI)

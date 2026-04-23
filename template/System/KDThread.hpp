@@ -7,10 +7,10 @@
 BEGIN_NAMESPACE(System)
 {
     // TODO: Inherits from sead::Thread
-    /START_CLASS/NAME@KDThread/SIZE@0xa4/VTABLE@True/
+    /START_CLASS/NAME@KDThread/SIZE@0xA4/VTABLE@True/
     public:
         virtual ~KDThread();
-        virtual void vf_0x8();
+        virtual void destroy();
         virtual void sendMessage();
         virtual void vf_0x10();
         virtual bool start();

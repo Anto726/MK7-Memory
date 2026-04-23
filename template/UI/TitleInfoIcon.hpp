@@ -39,7 +39,7 @@ BEGIN_NAMESPACE(UI)
         void onCreate(const UI::Control::CreateArg *);
         void onReset();
 
-#if GAME_VERSION == ALL_RETAIL
+#if GAME_VERSION != ALL_DLP
         // 0x00157360 (VERSION_USA_REV1)
         void changeType(EType);
 #endif
