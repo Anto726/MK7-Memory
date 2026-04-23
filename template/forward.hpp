@@ -227,6 +227,8 @@ BEGIN_NAMESPACE(Render)
 	class RenderEngine;
 	class ShadowVolume;
 	class UIDrawDirector;
+	class UIDrawDirectorFast;
+	class UIDrawDirectorProxy;
 }
 
 BEGIN_NAMESPACE(Sequence)
@@ -337,6 +339,7 @@ BEGIN_NAMESPACE(UI)
 	class NwlytDivRootControlSight;
 	class NwlytControlAnimator;
 	class NwlytDivControlAnimator;
+	class NwlytResourceAccessor;
 	class MenuButton;
 	class MenuButtonMch;
 	class MessageData;

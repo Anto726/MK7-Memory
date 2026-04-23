@@ -4,6 +4,8 @@
 #include "../types.hpp"
 #include "EArchiveID.hpp"
 
+#include <prim/seadSafeString.hpp>
+
 BEGIN_NAMESPACE(System)
 {
     /START_CLASS/NAME@ResourceLoader/SIZE@0x90/
@@ -16,6 +18,9 @@ BEGIN_NAMESPACE(System)
             /U/bool/0x1/0xC/
             /M/EArchiveID m_archive_id/0x4/0x10/
         /END/
+
+        void *loadDirect(const sead::SafeString &, const LoadArg &);
+
         /M/void *m_last_loaded_file_address/0x4/0x80/
         /M/u32 m_last_loaded_file_size/0x4/0x84/
     /END/
