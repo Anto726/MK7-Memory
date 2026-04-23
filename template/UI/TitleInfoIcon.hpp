@@ -40,6 +40,7 @@ BEGIN_NAMESPACE(UI)
         void onReset();
 
 #if GAME_VERSION == ALL_RETAIL
+        // 0x00157360 (VERSION_USA_REV1)
         void changeType(EType);
 #endif
 
