@@ -4,6 +4,8 @@
 #include "../forward.hpp"
 
 #include "../Object/Actor.hpp"
+#include "../Object/ArgumentObj.hpp"
+
 #include "GameParticle.hpp"
 
 #include <container/seadPtrArray.h>
@@ -12,9 +14,17 @@ BEGIN_NAMESPACE(Effect)
 {
     /START_CLASS/NAME@KartEffect/SIZE@0x834/BASE@Object::Actor/BSIZE@0x8/
     public:
+        virtual void *getDTIClassInfo() const; // 0
+		virtual void *getDTIClass() const; // 1
+
+        virtual void create(Object::ArgumentObj const *); // 4
+		virtual void init(); // 5
+		virtual void calc(); // 6
+
         /M/sead::FixedPtrArray<GameParticle, 116> m_particles/0x1DC/0x14/
         /M/RaceSys::ModeManagerBase *m_mode_manager/0x4/0x1f0/
         /M/RaceSys::CRaceInfo *m_race_info/0x4/0x1f4/
+        /M/s32 m_player_id/0x4/0x1f8/
         /M/Kart::InfoProxy *m_info_proxy/0x4/0x1fc/
         /M/Item::KartItemProxy *m_item_proxy/0x4/0x200/
         /M/bool m_was_drifting/0x1/0x204/
