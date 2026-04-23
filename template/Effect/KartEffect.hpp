@@ -32,7 +32,7 @@ BEGIN_NAMESPACE(Effect)
         /M/bool m_is_drifting/0x1/0x206/
         /M/bool m_was_miniturbo_over_lvl_1/0x1/0x207/
         /M/bool m_was_miniturbo_over_lvl_2/0x1/0x208/
-        /M/bool m_display_miniturbo_lvl_3/0x1/0x209/
+        /M/bool m_display_miniturbo_lvl_1/0x1/0x209/
         /M/bool m_display_miniturbo_lvl_2/0x1/0x20a/
         /M/bool m_is_miniturbo_over_lvl_1/0x1/0x20b/
         /M/bool m_is_miniturbo_over_lvl_2/0x1/0x20c/
