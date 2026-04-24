@@ -3,6 +3,7 @@
 #include "../types.hpp"
 
 #include <prim/seadSafeString.h>
+#include <nw/lyt/AnimTransform.hpp>
 
 BEGIN_NAMESPACE(UI)
 {
@@ -73,8 +74,8 @@ BEGIN_NAMESPACE(UI)
             virtual void _0x0(); // 0
             virtual void _0x4(); // 1
             virtual void generateAnimationItem(const sead::SafeString&); // 2
-            virtual void bindAnimation(void * /* nw::lyt::AnimTransform * */); // 3
-            virtual void unbindAnimation(void * /* nw::lyt::AnimTransform * */); // 4
+            virtual void bindAnimation(nw::lyt::AnimTransform *); // 3
+            virtual void unbindAnimation(nw::lyt::AnimTransform *); // 4
 
             void setAnimation(s32, f32);
             void changeAnimation(s32, f32);

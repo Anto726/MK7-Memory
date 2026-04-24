@@ -12,6 +12,8 @@
 #include <container/seadPtrArray.h>
 #include <math/seadVector.hpp>
 #include <nw/lyt/Pane.hpp>
+#include <nw/lyt/Drawer.hpp>
+#include <nw/lyt/DrawInfo.hpp>
 
 BEGIN_NAMESPACE(Sequence)
 {
@@ -133,7 +135,7 @@ BEGIN_NAMESPACE(Sequence)
         void noHomeDisableIcon();
         void startSystemWindow(SystemDialogType, s32, const UI::DashMessageArg *, bool, bool, s32, s32, s32);
         void changeSystemWindow(SystemDialogType, s32, const UI::DashMessageArg *, bool, s32, s32, s32, bool);
-        void drawHomeDisableIcon(void * /* nw::lyt::Drawer * */, void * /* nw::lyt::DrawInfo & */);
+        void drawHomeDisableIcon(nw::lyt::Drawer *, nw::lyt::DrawInfo &);
         void setOKSound_YesButton(Sound::SndSeEvent::EEvent);
         void setOKSound_NoButton(Sound::SndSeEvent::EEvent);
         void setOKSound_OKButton(Sound::SndSeEvent::EEvent);
@@ -145,7 +147,7 @@ BEGIN_NAMESPACE(Sequence)
         void setupHomeDisableIcon();
         void vanishHomeDisableIcon();
         void setDisableSystemWindow();
-        void draw(UI::Control::EDrawScreen, void * /* nw::lyt::Drawer * */, void * /* nw::lyt::DrawInfo & */);
+        void draw(UI::Control::EDrawScreen, nw::lyt::Drawer *, nw::lyt::DrawInfo &);
         Common_SystemDialog();
 
         static ReturnCode convertEnterCodeImpl(const sead::SafeString &);

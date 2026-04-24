@@ -6,6 +6,7 @@
 
 #include <prim/seadSafeString.h>
 #include <container/seadPtrArray.h>
+#include <nw/lyt/AnimTransform.hpp>
 #include <nw/lyt/Pane.hpp>
 
 BEGIN_NAMESPACE(UI)
@@ -17,8 +18,8 @@ BEGIN_NAMESPACE(UI)
             virtual void _0x0(); // 0
             virtual void _0x4(); // 1
             virtual void generateAnimationItem(const sead::SafeString &); // 2
-            virtual void bindAnimation(void * /* nw::lyt::AnimTransform * */); // 3
-            virtual void unbindAnimation(void * /* nw::lyt::AnimTransform * */); // 4
+            virtual void bindAnimation(nw::lyt::AnimTransform *); // 3
+            virtual void unbindAnimation(nw::lyt::AnimTransform *); // 4
 
             NwlytAnimationFamily(NwlytControlAnimator *, const sead::SafeString &, s32);
 
@@ -56,8 +57,8 @@ BEGIN_NAMESPACE(UI)
     public:
         /START_CLASS/NAME@NwlytDivAnimationFamily/SIZE@0x38/BASE@NwlytAnimationFamily/BSIZE@0x2C/VTABLE@True/
         public:
-            virtual void bindAnimation(void * /* nw::lyt::AnimTransform * */); // 3
-            virtual void unbindAnimation(void * /* nw::lyt::AnimTransform * */); // 4
+            virtual void bindAnimation(nw::lyt::AnimTransform *); // 3
+            virtual void unbindAnimation(nw::lyt::AnimTransform *); // 4
 
             NwlytDivAnimationFamily(NwlytDivControlAnimator *, const sead::SafeString &, s32);
 
