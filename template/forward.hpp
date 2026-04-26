@@ -11,6 +11,7 @@ BEGIN_NAMESPACE(BoxCol)
 BEGIN_NAMESPACE(Camera)
 {
 	class CameraEngine;
+	class KartCameraDirector;
 }
 
 BEGIN_NAMESPACE(CSVUtil)
@@ -284,6 +285,7 @@ BEGIN_NAMESPACE(Sound)
 
 BEGIN_NAMESPACE(System)
 {
+	class KDPlayerPad;
 	class BackgroundLoadThread;
 	class BackgroundThread;
 	class BackupManager;
