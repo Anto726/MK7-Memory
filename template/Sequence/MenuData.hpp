@@ -23,4 +23,6 @@ BEGIN_NAMESPACE(Sequence)
         /M/BaseRacePage *m_base_race_page/0x4/0x30/
         /M/sead::PtrArray<CourseVote> m_course_votes/0xc/0x72c/
     /END/
+
+    Utility::Random *GetRandom();
 }

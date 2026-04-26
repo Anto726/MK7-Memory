@@ -63,6 +63,28 @@ BEGIN_NAMESPACE(Sequence)
         virtual void sceneFinish(s32) = 0;
 
         Section();
+        void clearOuter();
+        void enterOuter(u16, EFadeKind, u32);
+        void readyOuter(u32, u16);
+        void startOuter();
+        void cancelOuter(EFadeKind, u32);
+        void finishOuter(EFadeKind, u32);
+        void reenterOuter(u16);
+        void standbyOuter();
+        void stepOuter();
+        void completeOuter(u16);
+        void exitOuter();
+        u32 updateStateOuter();
+        void detachLayer();
+        void createForPracticalSection(u32);
+        void destroyForPracticalSection();
+        EFadeKind getFadeKind() const;
+        const char *getModeName(u16) const;
+        const char *getSectionName() const;
+        const char **getStringTable() const;
+        const char *getEnterCodeName(u16) const;
+        const char *getReturnCodeName(u16) const;
+        SectionDirector *getSectionDirector() const;
         
         /M/SequenceResource *m_resource/0x4/0x8/
         /M/SequenceLayer *m_parent_layer/0x4/0xC/

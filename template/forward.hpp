@@ -256,6 +256,7 @@ BEGIN_NAMESPACE(Sequence)
 	class SceneSequence;
 	class SceneSequenceProxy;
 	class Section;
+	class SectionDirector;
 	class SectionClassInfoBase;
 	class SequenceEngine;
 	class SequenceLayer;
