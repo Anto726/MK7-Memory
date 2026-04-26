@@ -133,6 +133,9 @@ BEGIN_NAMESPACE(Jugem)
 
 BEGIN_NAMESPACE(Kart)
 {
+	class GhostVisible;
+	class WingPathData;
+	class PullPathData;
 	class Camera;
 	class Director;
 	class DispBody;
