@@ -2,6 +2,7 @@
 
 #include "../forward.hpp"
 #include "../types.hpp"
+#include "../versions.h"
 
 #include "../Object/Actor.hpp"
 #include "../Object/ActorEngine.hpp"
