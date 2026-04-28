@@ -1,9 +1,9 @@
 #pragma once
 
+#include "../forward.hpp"
 #include "../types.hpp"
 
 #include "Section.hpp"
-#include "SectionClassInfo.hpp"
 
 BEGIN_NAMESPACE(Sequence)
 {
