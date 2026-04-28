@@ -137,9 +137,9 @@ BEGIN_NAMESPACE(Sequence)
         void setMirror(bool);
         void setRaceNo(s32);
 
-        void convertEnterCodeImpl(const sead::SafeString &);
-        void convertReturnCodeImpl(const sead::SafeString &);
-        void convertModeImpl(const sead::SafeString &);
+        static void convertEnterCodeImpl(const sead::SafeString &);
+        static void convertReturnCodeImpl(const sead::SafeString &);
+        static void convertModeImpl(const sead::SafeString &);
 
         enum BasePageState {
             STATE_CLOSED,   // Menu is already closed

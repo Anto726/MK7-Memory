@@ -237,12 +237,14 @@ BEGIN_NAMESPACE(Render)
 
 BEGIN_NAMESPACE(Sequence)
 {
+	class BgPage;
 	class BasePage;
 	class BaseRacePage;
 	class BaseMenuPage;
 	class Common_SystemDialog;
 	class CrossFadeSequence;
 	class DashSequenceEngine;
+	class DummyPage;
 	class DelegateSequence;
 	class ExecutableSection;
 	class LayeredSequence;
@@ -262,6 +264,7 @@ BEGIN_NAMESPACE(Sequence)
 	class SequenceLayer;
 	class SequenceResource;
 	class SerialSequence;
+	class TimerPage;
 }
 
 BEGIN_NAMESPACE(Sound)
@@ -366,6 +369,7 @@ BEGIN_NAMESPACE(UI)
 	class BaseMenuInputControl;
 	class CursorItem;
 	class TouchItem;
+	class SelectTimer;
 }
 
 BEGIN_NAMESPACE(Util)
