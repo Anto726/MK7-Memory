@@ -2,12 +2,13 @@
 
 #include "../types.hpp"
 #include "Page.hpp"
+#include "../UI/Control.hpp"
+
+#include <nw/lyt/Drawer.hpp>
+#include <nw/lyt/DrawInfo.hpp>
 
 BEGIN_NAMESPACE(Sequence)
 {
-    /START_CLASS/NAME@FaderPage/SIZE@0x13C/BASE@Page/BSIZE@0x5C/VTABLE@True/
-    /END/
-
     BEGIN_NAMESPACE(Fader)
     {
         enum class EFaderType : u32
@@ -26,6 +27,43 @@ BEGIN_NAMESPACE(Sequence)
         };
     }
 
+    /START_CLASS/NAME@FaderPage/SIZE@0x13C/BASE@Page/BSIZE@0x5C/VTABLE@True/
+    public:
+        virtual void *getDTIClassInfo() const; // 0
+        virtual void *getDTIClass() const; // 1
+        virtual ~FaderPage();
+        virtual void onGenerateControl(UI::ControlInitializer *);
+        virtual void onPagePreStep();
+
+        static void convertEnterCodeImpl(const sead::SafeString &);
+        static void convertReturnCodeImpl(const sead::SafeString &);
+        static void convertModeImpl(const sead::SafeString &);
+
+        FaderPage();
+        void draw(UI::Control::EDrawScreen, nw::lyt::Drawer *, nw::lyt::DrawInfo &);
+        void forceEnd(Fader::EFaderScreen);
+        void StartFadein(Fader::EFaderType, u32, Fader::EFaderScreen);
+        void StartFadeout(Fader::EFaderType, u32, Fader::EFaderScreen);
+        void ReserveFadein(Fader::EFaderType, u32, Fader::EFaderScreen);
+        void setClearColor();
+        bool isFade();
+    /END/
+
+    enum class EnterCode : s32
+    {
+        DEFAULT
+    };
+
+    enum class ReturnCode : s32
+    {
+        DEFAULT
+    };
+
+    enum class Mode : s32
+    {
+        DEFAULT
+    };
+
     void ResumeFade();
     void DisableFade();
     void StartFadein(Fader::EFaderType, u32, Fader::EFaderScreen);
@@ -35,4 +73,5 @@ BEGIN_NAMESPACE(Sequence)
     void SetFaderClearColor();
     bool isFade();
     void WaitFade();
+    void setClearColor();
 }
