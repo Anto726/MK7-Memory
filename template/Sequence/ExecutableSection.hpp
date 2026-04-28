@@ -11,11 +11,12 @@ BEGIN_NAMESPACE(Sequence)
         virtual ~ExecutableSection();
         virtual bool isCompletable() const;
         virtual void ready();
-        virtual void enter();
+        virtual void enter(Section::EFadeKind, u32);
         virtual void reenter();
         virtual void clear();
 
         ExecutableSection();
+        void setReturnCodeEnum(s32);
 
         /M/s32 m_enter_code/0x4/0x48/
         /M/s32 m_return_code/0x4/0x4C/

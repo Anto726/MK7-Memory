@@ -50,12 +50,12 @@ BEGIN_NAMESPACE(Sequence)
         virtual u32 updateState();
         virtual void step() = 0;
         virtual void ready() = 0;
-        virtual void enter() = 0;
+        virtual void enter(EFadeKind, u32) = 0;
         virtual void standby() = 0;
         virtual void start() = 0;
         virtual void complete() = 0;
-        virtual void cancel() = 0;
-        virtual void finish() = 0;
+        virtual void cancel(EFadeKind, u32) = 0;
+        virtual void finish(EFadeKind, u32) = 0;
         virtual void reenter() = 0;
         virtual void exit() = 0;
         virtual void clear() = 0;

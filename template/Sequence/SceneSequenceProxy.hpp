@@ -12,6 +12,32 @@
 BEGIN_NAMESPACE(Sequence)
 {
     /START_CLASS/NAME@SceneSequenceProxy/SIZE@0x60/BASE@Section/BSIZE@0x34/VTABLE@True/
+        virtual void *getDTIClassInfo() const; // 0
+		virtual void *getDTIClass() const; // 1
+        virtual ~SceneSequenceProxy(); // 2 (_sub_object), 3 (_deallocating)
+        virtual void accept(Object::ActorVisitor &);
+        virtual s32 getSectionType() const;    // See `SectionType` in `SequenceResource.hpp`
+        virtual bool isCompletable() const;
+        virtual bool isSyncFadein() const;
+        virtual s32 getFadeFelay() const;
+        virtual u32 updateState();
+        virtual void step();
+        virtual void ready();
+        virtual void enter(Section::EFadeKind, u32);
+        virtual void standby();
+        virtual void start();
+        virtual void complete();
+        virtual void cancel(Section::EFadeKind, u32);
+        virtual void finish(Section::EFadeKind, u32);
+        virtual void reenter();
+        virtual void exit();
+        virtual void clear();
+        virtual void sceneStart(s32);
+        virtual void sceneFinish(s32);
+
+        SceneSequenceProxy();
+        void enter_post();
+
         /M/SequenceResource::SceneSequenceProxyBlock *m_block/0x4/0x34/
         /M/System::SceneID m_scene_id/0x4/0x38/
         /M/u32 m_fade_delay/0x4/0x3C/

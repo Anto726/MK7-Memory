@@ -12,17 +12,17 @@ BEGIN_NAMESPACE(Sequence)
     public:
         virtual ~Page();
         virtual void create(Object::ArgumentObj const *);
-        virtual void accept(Object::ActorVisitor *);
+        virtual void accept(Object::ActorVisitor &);
         s32 getSectionType() const;
         virtual bool isSyncFadein() const;
         virtual s32 getFadeFelay() const;
         virtual void step();
-        virtual void enter();
+        virtual void enter(Section::EFadeKind, u32);
         virtual void standby();
         virtual void start();
         virtual void complete();
-        virtual void cancel();
-        virtual void finish();
+        virtual void cancel(Section::EFadeKind, u32);
+        virtual void finish(Section::EFadeKind, u32);
         virtual void reenter();
         virtual void exit();
         virtual void clear();
@@ -47,6 +47,10 @@ BEGIN_NAMESPACE(Sequence)
 
         Page();
         void draw(UI::Control::EDrawScreen, s32);
+        void enterPreDecideEC(Section::EFadeKind, u32);
+        void enterPreAfterEC(EFadeKind, u32);
+        void generateControl(UI::ControlInitializer *);
+        void enterPost();
 
         /M/u32 m_fade_delay/0x4/0x54/
         // Prevents `Sequence::Section::exitOuter` to be called in `Sequence::Page::cancel`

@@ -28,7 +28,7 @@ BEGIN_NAMESPACE(Item)
 
         virtual void _0x2C() = 0; // 11
 
-        virtual void accept(Object::ActorVisitor *) {}; // 12
+        virtual void accept(Object::ActorVisitor &) {}; // 12
 
         virtual void _0x38() = 0; // 14
 

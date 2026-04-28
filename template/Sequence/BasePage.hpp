@@ -1,9 +1,21 @@
 #pragma once
 
+#include "../forward.hpp"
 #include "../types.hpp"
 
 #include "Page.hpp"
+#include "ECup.hpp"
+#include "../RaceSys/CRaceMode.hpp"
+#include "../RaceSys/ECourseID.hpp"
+#include "../RaceSys/EBodyID.hpp"
+#include "../RaceSys/ETireID.hpp"
+#include "../RaceSys/EWingID.hpp"
+#include "../RaceSys/EScrewID.hpp"
+#include "../RaceSys/EEngineLevel.hpp"
+#include "../RaceSys/EItemPattern.hpp"
 #include "../RaceSys/EPlayerType.hpp"
+#include "../RaceSys/ETeamType.hpp"
+#include "../RaceSys/Rate.hpp"
 #include "../UI/BaseFastControl.hpp"
 #include "../UI/ControlInitializer.hpp"
 #include "../UI/CursorItem.hpp"
@@ -46,10 +58,10 @@ BEGIN_NAMESPACE(Sequence)
         virtual void *getDTIClass() const;
         virtual ~BasePage();
         virtual void step();
-        virtual void enter();
+        virtual void enter(Section::EFadeKind, u32);
         virtual void start();
         virtual void complete();
-        virtual void cancel();
+        virtual void cancel(Section::EFadeKind, u32);
         virtual void exit();
         virtual void pageStep(bool);
         virtual void onGenerateControl(UI::ControlInitializer *);
@@ -75,8 +87,55 @@ BEGIN_NAMESPACE(Sequence)
         void setKeyItem(UI::KeyItem *);
         void setCursorItem(UI::CursorItem *);
         void setTouchItem(UI::TouchItem *);
+        void enterPost();
+        void clearEnemy(int);
+        void initRaceNo();
+        void loadCourse();
+        void setCourseID(ECup, s32);
+        void setDemoMode();
+        void setRaceMode(RaceSys::CRaceMode);
+        void setRaceRank(s32, u16);
+        void setTeamMode(bool);
+        void setTeamType(s32, RaceSys::ETeamType);
+        void setWiFiRate(s32, const RaceSys::Rate &);
+        void completeNext(s32);
+        void copyRaceInfo();
+        void setRacePoint(s32, u16);
+        void setTotalRank(s32, u16);
+        void clearRaceInfo();
+        void completeScene(s32);
         void setPlayerType(s32, RaceSys::EPlayerType);
         void setReplayMode(bool);
+        void clearAllPlayer();
+        void clearRacePoint();
+        void loadNextCourse(bool);
+        void saveRandomSeed(RaceSys::RaceDirector *);
+        void setItemPattern(RaceSys::EItemPattern);
+        void setRawCourseID(RaceSys::ECourseID);
+        void updateRaceInfo();
+        void restoreRaceInfo();
+        void updateMenuState();
+        void setUniqTotalRank(s32, u16);
+        void calcNormalControl();
+        void setMasterPlayerID(s32);
+        u32 getFixedRandomSeed();
+        void setFixedRandomSeed(u32);
+        void setHalfFixedRandomSeed(u32);
+        void setCameraTargetPlayerID(s32);
+        void setCC(RaceSys::EEngineLevel);
+        void setCup(ECup);
+        void setBody(s32, RaceSys::EBodyID);
+        void setTire(s32, RaceSys::ETireID);
+        void setWing(s32, RaceSys::EWingID);
+        void enterPre(Section::EFadeKind, u32);
+        void initMenu(s32);
+        void openMenu(u32);
+        void setParts(s32, RaceSys::EBodyID, RaceSys::ETireID, RaceSys::EWingID, RaceSys::EScrewID);
+        void setScrew(s32, RaceSys::EScrewID);
+        void closeMenu();
+        void setDriver(s32, RaceSys::EDriverID, RaceSys::EPlayerType);
+        void setMirror(bool);
+        void setRaceNo(s32);
 
         void convertEnterCodeImpl(const sead::SafeString &);
         void convertReturnCodeImpl(const sead::SafeString &);
@@ -96,6 +155,9 @@ BEGIN_NAMESPACE(Sequence)
 
         template <typename T>
         T* setupBothControl(const sead::SafeString &, const sead::SafeString &);
+
+        template <typename T>
+        T* setupMenuControl(const sead::SafeString &, const sead::SafeString &, u32);
 
         /M/s32 m_on_back_return_code/0x4/0x5C/
         /M/u32 m_timer/0x4/0x60/

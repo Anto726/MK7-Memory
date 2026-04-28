@@ -5,6 +5,7 @@
 #include "BasePage.hpp"
 #include "ControlSlider.hpp"
 #include "MenuPageID.hpp"
+#include "../RaceSys/EDriverID.hpp"
 
 #include <container/seadPtrArray.h>
 
@@ -37,7 +38,7 @@ BEGIN_NAMESPACE(Sequence)
         virtual void *getDTIClass() const;
         virtual ~BaseMenuPage();
         virtual void step();
-        virtual void enter();
+        virtual void enter(Section::EFadeKind, u32);
         virtual void complete();
         virtual void exit();
         virtual bool canFinishFadein();
@@ -52,6 +53,17 @@ BEGIN_NAMESPACE(Sequence)
         virtual s32 getBackReturnCode();
 
         BaseMenuPage();
+        void initSlider(s32);
+        void applySetting_GP();
+        void applySetting_CPU_(s32, s32, RaceSys::EDriverID);
+        void applySetting_Battle();
+        void applySetting_MasterCPU_();
+        void applySetting_WinningRun();
+        void applySetting_TimeAttackPre();
+        void applySetting_TitleDemo_Race();
+        void applySetting_TitleDemo_BattleCoin();
+        void applySetting_TitleDemo_BattleBalloon();
+        void onSliderSettingImpl(bool, bool, s32);
         
         /M/sead::FixedPtrArray<ControlSlider, 3> m_control_slider_array/0x18/0x26C/
         /M/ControlDisplayFlags m_control_display_flags/0x1/0x284/
