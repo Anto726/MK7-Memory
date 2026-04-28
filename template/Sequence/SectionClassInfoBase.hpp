@@ -12,18 +12,19 @@ BEGIN_NAMESPACE(Sequence)
 {
     /START_CLASS/NAME@SectionClassInfoBase/SIZE@0x24/VTABLE@True/
     public:
-        virtual const char *getClassName() const = 0;
-        virtual void *getClassInfo() const = 0;
-        virtual void m_0x8() = 0;
-        virtual s32 convertMode(const sead::SafeString &) const = 0;
-        virtual s32 convertEnterCode(const sead::SafeString &) const = 0;
-        virtual s32 convertReturnCode(s32) const = 0;
-        virtual void constructSection(SectionDirector *) = 0;
+        // TODO: These are all pure virtual
+        virtual const char *getClassName() const;
+        virtual void *getClassInfo() const;
+        virtual void m_0x8();
+        virtual s32 convertMode(const sead::SafeString &) const;
+        virtual s32 convertEnterCode(const sead::SafeString &) const;
+        virtual s32 convertReturnCode(s32) const;
+        virtual void constructSection(SectionDirector *);
         // We name it `writeReportDefine` in VERSION_E3_2010, but the actual name is unknown. Always 0 in the final game.
-        virtual void m_0x1c() = 0;
+        virtual void m_0x1c();
 
         SectionClassInfoBase();
-        void createSection(SectionDirector *);
+        PracticalSection *createSection(SectionDirector *);
         void destroySection(PracticalSection *);
         PracticalSection *searchNearestSection(const PracticalSection *) const;
 

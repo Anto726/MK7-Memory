@@ -244,6 +244,7 @@ BEGIN_NAMESPACE(Sequence)
 	class Common_SystemDialog;
 	class CrossFadeSequence;
 	class DashSequenceEngine;
+	class DashSectionClassManager;
 	class DummyPage;
 	class DelegateSequence;
 	class ExecutableSection;
@@ -259,6 +260,7 @@ BEGIN_NAMESPACE(Sequence)
 	class SceneSequenceProxy;
 	class Section;
 	class SectionDirector;
+	class SectionClassManager;
 	class SectionClassInfoBase;
 	class SequenceEngine;
 	class SequenceLayer;
