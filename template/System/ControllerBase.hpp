@@ -2,6 +2,7 @@
 
 #include "../Object/Actor.hpp"
 #include "../types.hpp"
+#include "../forward.hpp"
 #include "GyroscopeReaderThread.hpp"
 
 #include <controller/ctr/seadCtrHidDevice.h>
@@ -17,6 +18,15 @@ BEGIN_NAMESPACE(System)
 
             /M/GyroscopeReaderThread::SStatus m_status/0x40/0x0/
         /END/
+
+        virtual Object::DTIClassInfo *getDTIClassInfo() const; // 0
+		virtual Object::DTIClassInfo *getDTIClass() const; // 1
+        virtual void init();
+        virtual void calc();
+        virtual void initImpl();
+        virtual void calcImpl();
+
+        ControllerBase();
 
         /M/KDPadControllerCore *m_pad_controller_core/0x4/0x8/
         /M/bool m_0xc/0x1/0xc/
