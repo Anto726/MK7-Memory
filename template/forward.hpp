@@ -216,6 +216,7 @@ BEGIN_NAMESPACE(RaceSys)
 	class LapRankChecker;
 	class LogRecorder;
 	class ModeManagerBase;
+	class ModeManagerBattle;
 	class RaceDirector;
 	class RaceTimer;
 }
@@ -372,6 +373,8 @@ BEGIN_NAMESPACE(UI)
 	class CursorItem;
 	class TouchItem;
 	class SelectTimer;
+	class RaceRankNameControl;
+	class BgRaceMapLoopControl;
 }
 
 BEGIN_NAMESPACE(Util)

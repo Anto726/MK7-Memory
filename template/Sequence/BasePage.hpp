@@ -88,7 +88,7 @@ BEGIN_NAMESPACE(Sequence)
         void setCursorItem(UI::CursorItem *);
         void setTouchItem(UI::TouchItem *);
         void enterPost();
-        void clearEnemy(int);
+        void clearEnemy(s32);
         void initRaceNo();
         void loadCourse();
         void setCourseID(ECup, s32);
