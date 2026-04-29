@@ -338,6 +338,7 @@ BEGIN_NAMESPACE(UI)
 	class BackButton;
 	class BackButtonB;
 	class BackButtonT;
+	class BaseResultBar;
 	class BgRaceMapBombControl;
 	class BgRaceMapCharaControl;
 	class BgRaceMapControl;

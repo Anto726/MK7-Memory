@@ -144,7 +144,6 @@ BEGIN_NAMESPACE(Sequence)
         void initDrawPriorityBar();
         void swapDrawPriorityBar(UI::RaceRankNameControl *, UI::RaceRankNameControl *);
         void initDrawPriorityItem();
-        void convertReturnCodeImpl(s32);
         void showForceFinishCaption(u32);
         void animWin();
         void initLap();
@@ -172,7 +171,7 @@ BEGIN_NAMESPACE(Sequence)
         void reloadGhostReplay();
         void reloadGhost(const System::GhostSaveData &);
 
-        static void convertReturnCodeImpl(const sead::SafeString &);
+        static void convertReturnCodeImpl(s32);
 
         template <typename T>
         T *setupResultControl(const sead::SafeString &, const sead::SafeString &);
