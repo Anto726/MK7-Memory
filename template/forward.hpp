@@ -210,6 +210,8 @@ BEGIN_NAMESPACE(Object)
 
 BEGIN_NAMESPACE(RaceSys)
 {
+	class BalloonRankChecker;
+	class CoinRankChecker;
 	class CRaceInfo;
 	class CRaceMode;
 	class CTime;
