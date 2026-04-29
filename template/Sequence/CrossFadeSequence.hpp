@@ -14,8 +14,8 @@ BEGIN_NAMESPACE(Sequence)
     };
 
     /START_CLASS/NAME@CrossFadeSequence/SIZE@0x50/BASE@Section/BSIZE@0x34/VTABLE@True/
-        virtual void *getDTIClassInfo() const; // 0
-		virtual void *getDTIClass() const; // 1
+        virtual Object::DTIClassInfo *getDTIClassInfo() const; // 0
+		virtual Object::DTIClassInfo *getDTIClass() const; // 1
         virtual ~CrossFadeSequence(); // 2 (_sub_object), 3 (_deallocating)
         virtual s32 getSectionType() const;    // See `SectionType` in `SequenceResource.hpp`
         virtual bool isCompletable() const;

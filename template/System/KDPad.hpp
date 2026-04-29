@@ -50,9 +50,9 @@ BEGIN_NAMESPACE(System)
         };
 
         // TODO
-        virtual void *getDTIClassInfo() const;
-        virtual void *getDTIClass() const;
-        static void *getDTIClassStatic();
+        virtual Object::DTIClassInfo *getDTIClassInfo() const;
+        virtual Object::DTIClassInfo *getDTIClass() const;
+        static Object::DTIClassInfo *getDTIClassStatic();
         virtual void init();
         virtual void calc();
         virtual void setButton(s32);

@@ -14,8 +14,8 @@ BEGIN_NAMESPACE(Effect)
 {
     /START_CLASS/NAME@KartEffect/SIZE@0x834/BASE@Object::Actor/BSIZE@0x8/
     public:
-        virtual void *getDTIClassInfo() const; // 0
-		virtual void *getDTIClass() const; // 1
+        virtual Object::DTIClassInfo *getDTIClassInfo() const; // 0
+		virtual Object::DTIClassInfo *getDTIClass() const; // 1
 
         virtual void create(Object::ArgumentObj const *); // 4
 		virtual void init(); // 5

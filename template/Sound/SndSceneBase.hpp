@@ -10,9 +10,9 @@ BEGIN_NAMESPACE(Sound){
     // TODO: Inherits from TDirectorBase
     /START_CLASS/NAME@SndSceneBase/SIZE@0x40/VTABLE@True/
     public:
-        virtual void *getDTIClassInfo() const;
-        virtual void *getDTIClass() const;
-        static void *getDTIClassStatic();
+        virtual Object::DTIClassInfo *getDTIClassInfo() const;
+        virtual Object::DTIClassInfo *getDTIClass() const;
+        static Object::DTIClassInfo *getDTIClassStatic();
         virtual ~SndSceneBase();
         virtual void calc();
         virtual void pauseOn(s32);

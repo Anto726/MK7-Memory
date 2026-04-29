@@ -34,8 +34,8 @@ BEGIN_NAMESPACE(Sequence)
 		static_assert(sizeof(BaseMenuPageFlags) == 0x1);
 
         // TODO
-        virtual void *getDTIClassInfo() const;
-        virtual void *getDTIClass() const;
+        virtual Object::DTIClassInfo *getDTIClassInfo() const;
+        virtual Object::DTIClassInfo *getDTIClass() const;
         virtual ~BaseMenuPage();
         virtual void step();
         virtual void enter(Section::EFadeKind, u32);

@@ -204,6 +204,7 @@ BEGIN_NAMESPACE(Object)
     class ActorVisitor;
 	class BattleObjectMgrBase;
 	class CharacterEngine;
+	class DTIClassInfo;
 	class Trophy3DModelManager;
 }
 

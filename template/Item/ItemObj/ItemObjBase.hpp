@@ -26,8 +26,8 @@ BEGIN_NAMESPACE(Item)
             Stand,
         };
 
-        virtual void *getDTIClassInfo() const { return {}; }; // 0
-		virtual void *getDTIClass() const { return {}; }; // 1
+        virtual Object::DTIClassInfo *getDTIClassInfo() const { return {}; }; // 0
+		virtual Object::DTIClassInfo *getDTIClass() const { return {}; }; // 1
 
 		virtual void create(Object::ArgumentObj const *) {}; // 4
 		virtual void init() = 0; // 5

@@ -29,8 +29,8 @@ BEGIN_NAMESPACE(Sequence)
 
     /START_CLASS/NAME@FaderPage/SIZE@0x13C/BASE@Page/BSIZE@0x5C/VTABLE@True/
     public:
-        virtual void *getDTIClassInfo() const; // 0
-        virtual void *getDTIClass() const; // 1
+        virtual Object::DTIClassInfo *getDTIClassInfo() const; // 0
+        virtual Object::DTIClassInfo *getDTIClass() const; // 1
         virtual ~FaderPage();
         virtual void onGenerateControl(UI::ControlInitializer *);
         virtual void onPagePreStep();

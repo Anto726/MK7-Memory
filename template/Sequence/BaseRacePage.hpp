@@ -67,8 +67,8 @@ BEGIN_NAMESPACE(Sequence)
             ON_NEXT_MENU
         };
 
-        virtual void *getDTIClassInfo() const;
-        virtual void *getDTIClass() const;
+        virtual Object::DTIClassInfo *getDTIClassInfo() const;
+        virtual Object::DTIClassInfo *getDTIClass() const;
         virtual ~BaseRacePage();
         virtual void enter(Section::EFadeKind, u32);
         virtual void complete();

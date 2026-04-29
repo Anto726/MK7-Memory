@@ -8,8 +8,8 @@
 BEGIN_NAMESPACE(Sequence)
 {
     /START_CLASS/NAME@SerialSequence/SIZE@0x48/BASE@Section/BSIZE@0x34/VTABLE@True/
-        virtual void *getDTIClassInfo() const; // 0
-		virtual void *getDTIClass() const; // 1
+        virtual Object::DTIClassInfo *getDTIClassInfo() const; // 0
+		virtual Object::DTIClassInfo *getDTIClass() const; // 1
         virtual ~SerialSequence(); // 2 (_sub_object), 3 (_deallocating)
         virtual s32 getSectionType() const;
         virtual bool isCompletable() const;

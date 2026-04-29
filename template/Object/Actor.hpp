@@ -9,8 +9,8 @@ BEGIN_NAMESPACE(Object)
 {
 	/START_CLASS/NAME@Actor/SIZE@0x8/VTABLE@True/
 	public:
-		virtual void *getDTIClassInfo() const { return {}; }; // 0
-		virtual void *getDTIClass() const { return {}; }; // 1
+		virtual Object::DTIClassInfo *getDTIClassInfo() const { return {}; }; // 0
+		virtual Object::DTIClassInfo *getDTIClass() const { return {}; }; // 1
 
 		virtual ~Actor() {}; // 2 (_sub_object), 3 (_deallocating)
 

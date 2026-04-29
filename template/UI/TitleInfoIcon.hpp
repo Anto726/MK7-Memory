@@ -33,8 +33,8 @@ BEGIN_NAMESPACE(UI)
             virtual const ControlAnimator::AnimationDefine *getAnimationDefine() const; // 3
         /END/
 
-        void *getDTIClassInfo() const;
-        void *getDTIClass() const;
+        Object::DTIClassInfo *getDTIClassInfo() const;
+        Object::DTIClassInfo *getDTIClass() const;
         ~TitleInfoIcon();
         void onCreate(const UI::Control::CreateArg *);
         void onReset();
@@ -58,8 +58,8 @@ BEGIN_NAMESPACE(UI)
             virtual const ControlAnimator::AnimationDefine *getAnimationDefine() const; // 3
         /END/
 
-        void *getDTIClassInfo() const;
-        void *getDTIClass() const;
+        Object::DTIClassInfo *getDTIClassInfo() const;
+        Object::DTIClassInfo *getDTIClass() const;
         ~TitleInfoIcon2();
         void onCreate(const UI::Control::CreateArg *);
         void onReset();

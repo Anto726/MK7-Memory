@@ -28,8 +28,8 @@ BEGIN_NAMESPACE(UI)
         /END/
 
         // TODO
-        virtual void *getDTIClassInfo() const;
-        virtual void *getDTIClass() const;
+        virtual Object::DTIClassInfo *getDTIClassInfo() const;
+        virtual Object::DTIClassInfo *getDTIClass() const;
         virtual ~MenuSimpleMessage() {}; // 2 (_sub_object), 3 (_deallocating)
         virtual void onCreate(const Control::CreateArg *);
         virtual void onReset();

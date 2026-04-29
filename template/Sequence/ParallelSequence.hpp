@@ -5,8 +5,8 @@
 BEGIN_NAMESPACE(Sequence)
 {
     /START_CLASS/NAME@ParallelSequence/SIZE@0x4C/BASE@LayeredSequence/BSIZE@0x48/VTABLE@True/
-        virtual void *getDTIClassInfo() const; // 0
-		virtual void *getDTIClass() const; // 1    
+        virtual Object::DTIClassInfo *getDTIClassInfo() const; // 0
+		virtual Object::DTIClassInfo *getDTIClass() const; // 1    
         virtual ~ParallelSequence();
         virtual void create(Object::ArgumentObj const *); // 4
         virtual void destroy();

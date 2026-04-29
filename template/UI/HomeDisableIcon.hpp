@@ -15,8 +15,8 @@ BEGIN_NAMESPACE(UI)
         /END/
 
         // TODO
-        virtual void *getDTIClassInfo() const;
-        virtual void *getDTIClass() const;
+        virtual Object::DTIClassInfo *getDTIClassInfo() const;
+        virtual Object::DTIClassInfo *getDTIClass() const;
         virtual ~HomeDisableIcon() {}; // 2 (_sub_object), 3 (_deallocating)
         virtual void onReset() {}; // 28
         virtual void onCalc() {}; // 29

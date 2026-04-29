@@ -12,8 +12,8 @@
 BEGIN_NAMESPACE(Sequence)
 {
     /START_CLASS/NAME@SceneSequenceProxy/SIZE@0x60/BASE@Section/BSIZE@0x34/VTABLE@True/
-        virtual void *getDTIClassInfo() const; // 0
-		virtual void *getDTIClass() const; // 1
+        virtual Object::DTIClassInfo *getDTIClassInfo() const; // 0
+		virtual Object::DTIClassInfo *getDTIClass() const; // 1
         virtual ~SceneSequenceProxy(); // 2 (_sub_object), 3 (_deallocating)
         virtual void accept(Object::ActorVisitor &);
         virtual s32 getSectionType() const;    // See `SectionType` in `SequenceResource.hpp`

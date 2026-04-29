@@ -12,8 +12,8 @@ BEGIN_NAMESPACE(UI)
     /START_CLASS/NAME@OKButton/SIZE@0x240/BASE@BaseMenuButtonControl/BSIZE@0x23C/VTABLE@True/
     public:
         // TODO
-        virtual void *getDTIClassInfo() const;
-        virtual void *getDTIClass() const;
+        virtual Object::DTIClassInfo *getDTIClassInfo() const;
+        virtual Object::DTIClassInfo *getDTIClass() const;
         virtual ~OKButton();
         virtual void onCreate(const Control::CreateArg *);
 
@@ -24,8 +24,8 @@ BEGIN_NAMESPACE(UI)
     /START_CLASS/NAME@OKButton2/SIZE@0x240/BASE@BaseMenuButtonControl/BSIZE@0x23C/VTABLE@True/
     public:
         // TODO
-        virtual void *getDTIClassInfo() const;
-        virtual void *getDTIClass() const;
+        virtual Object::DTIClassInfo *getDTIClassInfo() const;
+        virtual Object::DTIClassInfo *getDTIClass() const;
         virtual ~OKButton2();
         virtual void onCreate(const Control::CreateArg *);
 
@@ -36,8 +36,8 @@ BEGIN_NAMESPACE(UI)
     /START_CLASS/NAME@OKButton3/SIZE@0x240/BASE@BaseMenuButtonControl/BSIZE@0x23C/VTABLE@True/
     public:
         // TODO
-        virtual void *getDTIClassInfo() const;
-        virtual void *getDTIClass() const;
+        virtual Object::DTIClassInfo *getDTIClassInfo() const;
+        virtual Object::DTIClassInfo *getDTIClass() const;
         virtual ~OKButton3();
         virtual void onCreate(const Control::CreateArg *);
 

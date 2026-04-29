@@ -12,8 +12,8 @@ BEGIN_NAMESPACE(UI)
     /START_CLASS/NAME@BackButtonB/SIZE@0x240/BASE@BaseMenuButtonControl/BSIZE@0x23C/VTABLE@True/
     public:
         // TODO
-        virtual void *getDTIClassInfo() const;
-        virtual void *getDTIClass() const;
+        virtual Object::DTIClassInfo *getDTIClassInfo() const;
+        virtual Object::DTIClassInfo *getDTIClass() const;
         virtual ~BackButtonB();
 
         void animOuter(bool);

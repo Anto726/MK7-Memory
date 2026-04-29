@@ -12,8 +12,8 @@ BEGIN_NAMESPACE(Item)
 {
     /START_CLASS/NAME@ItemObjDirectorBase/SIZE@0xBC/BASE@Object::TDirectorArray<ItemObjBase, Object::Actor>/BSIZE@0x1C/ 
     public:
-        virtual void *getDTIClassInfo() const { return {}; }; // 0
-        virtual void *getDTIClass() const { return {}; }; // 1
+        virtual Object::DTIClassInfo *getDTIClassInfo() const { return {}; }; // 0
+        virtual Object::DTIClassInfo *getDTIClass() const { return {}; }; // 1
 
         virtual ~ItemObjDirectorBase() {}; // 2 (_sub_object), 3 (_deallocating)
 

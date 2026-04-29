@@ -19,8 +19,8 @@ BEGIN_NAMESPACE(Sequence)
         };
 
         // TODO
-        void *getDTIClassInfo() const;
-        void *getDTIClass() const;
+        Object::DTIClassInfo *getDTIClassInfo() const;
+        Object::DTIClassInfo *getDTIClass() const;
         ~MenuTitle(); // 2 (_sub_object), 3 (_deallocating)
         void onPagePreStep();
         void onPageEnter();

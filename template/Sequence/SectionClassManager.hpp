@@ -17,7 +17,7 @@ BEGIN_NAMESPACE(Sequence)
         public:
             static s32 compareByName(const SectionClassInfoBase *, const sead::SafeString *);
             static s32 compareByName(const SectionClassInfoBase *, const SectionClassInfoBase *);
-            static s32 compareByClassInfo(const SectionClassInfoBase*, const void * /* Object::DTIClassInfo * */);
+            static s32 compareByClassInfo(const SectionClassInfoBase*, const Object::DTIClassInfo *);
             static s32 compareByClassInfo(const SectionClassInfoBase*, const SectionClassInfoBase *);
             void addSectionClassInfo(SectionClassInfoBase *);
             void endDefine();
@@ -34,7 +34,7 @@ BEGIN_NAMESPACE(Sequence)
         virtual void defineDataHolderClassInfoList(SectionClassInfoList *) = 0;
 
         SectionClassManager();
-        SectionClassInfoBase *findSectionClassInfo(const void * /* Object::DTIClassInfo * */);
+        SectionClassInfoBase *findSectionClassInfo(const Object::DTIClassInfo *);
         void create();
         PracticalSection *constructSection(SectionDirector*, const SequenceResource *, s32);
 
