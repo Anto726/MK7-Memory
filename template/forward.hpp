@@ -391,6 +391,7 @@ BEGIN_NAMESPACE(UI)
 
 BEGIN_NAMESPACE(Util)
 {
+	class ExcelORManager;
 	class Shape;
 }
 
