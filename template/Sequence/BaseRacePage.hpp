@@ -187,6 +187,8 @@ BEGIN_NAMESPACE(Sequence)
         /M/u32 m_target_player_id/0x4/0x3a0/
         /M/bool m_display_rankboard/0x1/0x3a4/
         /M/bool m_update_rankboard/0x1/0x3a5/
+        /M/u8 m_calc_save_state/0x1/0x440/
+        /M/bool m_change_calc_save_state/0x1/0x441/
         /M/u32 m_result_bar_point_timer/0x4/0x2E34/
         /M/u32 m_result_bar_point_sound_timer/0x4/0x2E38/
         /M/u32 m_result_bar_point_increment/0x4/0x2E48/
