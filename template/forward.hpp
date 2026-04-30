@@ -241,12 +241,15 @@ BEGIN_NAMESPACE(Render)
 
 BEGIN_NAMESPACE(Sequence)
 {
+	class AIRivalTableLoader;
 	class BgPage;
 	class BasePage;
 	class BaseRacePage;
 	class BaseMenuPage;
 	class Common_SystemDialog;
 	class CrossFadeSequence;
+	class DashEngineCreatorManager;
+	class DashSceneIDConverter;
 	class DashSequenceEngine;
 	class DashSectionClassManager;
 	class DummyPage;
@@ -268,6 +271,7 @@ BEGIN_NAMESPACE(Sequence)
 	class SectionClassManager;
 	class SectionClassInfoBase;
 	class SequenceEngine;
+	class SequenceIDTable;
 	class SequenceLayer;
 	class SequenceResource;
 	class SerialSequence;
@@ -348,6 +352,8 @@ BEGIN_NAMESPACE(UI)
 	class ControlInitializer;
 	class ControlSight;
 	class CursorMove;
+	class DashMessageWriter;
+	class FontManager;
 	class NullControlSight;
 	class NwlytControlSight;
 	class NwlytDummyControlSight;
@@ -365,6 +371,7 @@ BEGIN_NAMESPACE(UI)
 	class OKButton;
 	class OKButton2;
 	class OKButton3;
+	class TexIDConverter;
 	class TimeControl;
 	class TitleInfoIcon;
 	class TitleInfoIcon2;
