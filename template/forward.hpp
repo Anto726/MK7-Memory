@@ -254,6 +254,7 @@ BEGIN_NAMESPACE(Sequence)
 	class ExecutableSection;
 	class LayeredSequence;
 	class MenuData;
+	class MenuSingle_GhostLoad;
 	class MenuTitle;
 	class NetworkErrorChecker;
 	class Page;
