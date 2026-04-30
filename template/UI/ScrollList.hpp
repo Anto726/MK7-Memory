@@ -21,7 +21,7 @@ BEGIN_NAMESPACE(UI)
             COMMUNITY_LIST,
             COMMUNITY_CREATE_MARK_LIST,
             STREETPASS_LIST,
-            COMMUNIYU_LOBBY_MESSAGE_LIST
+            COMMUNITY_LOBBY_MESSAGE_LIST
         };
 
         s32 getSelectedOption() const;                       // 0x004e18dc (VERSION_USA_REV1)
@@ -30,7 +30,7 @@ BEGIN_NAMESPACE(UI)
         void setSelectedOption(s32);                         // 0x001478d0 (VERSION_USA_REV1)
         void setupControlSlider(Sequence::ControlSlider *);  // 0x001478dc (VERSION_USA_REV1)
         void setupMenuCommunity_CreateMark();                // 0x001460e0 (VERSION_USA_REV1)
-        void FUN_00145df0();                                 // 0x00145944 (VERSION_USA_REV1)
+        void FUN_00145df0();                                 // 0x00145df0 (VERSION_USA_REV1)
         void clearEntries();                                 // 0x00147830 (VERSION_USA_REV1)
         void FUN_00145ab8();                                 // 0x00145ab8 (VERSION_USA_REV1)
 
