@@ -3,6 +3,8 @@
 #include "../forward.hpp"
 #include "../types.hpp"
 
+#include "Vehicle/Vehicle.hpp"
+
 #include "../Object/Actor3DMdl.hpp"
 #include "../Object/TDirectorList.hpp"
 #include "../Object/TLinkSocket.hpp"
@@ -11,6 +13,12 @@ BEGIN_NAMESPACE(Kart)
 {
 	/START_CLASS/NAME@Unit/SIZE@0x400/BASE@Object::TDirectorList<Object::Actor3DMdl, Object::TLinkSocket<Object::Actor, Object::Actor>>/BSIZE@0x28/
 	public:
+		void changeToNetStop()
+		{
+			m_vehicle->m_is_net_send = false;
+			m_vehicle->m_is_net_recv = false;
+		}
+
 		/M/s32 m_player_id/0x4/0x28/
 		/M/Vehicle *m_vehicle/0x4/0x2C/
 		/M/ReplayInfo *m_replay_info/0x4/0x30/
