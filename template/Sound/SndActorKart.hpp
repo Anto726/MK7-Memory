@@ -19,6 +19,7 @@ BEGIN_NAMESPACE(Sound)
         /M/Kart::Vehicle* m_vehicle/0x4/0x1E0/
         /U/bool/0x1/0x1F1/
         /M/s8 m_miniturbo_level/0x1/0x1FC/
-        /U/bool/0x1/0x1FE/
+        /M/bool m_killer_state/0x1/0x1FE/
+        /M/bool m_star_state/0x1/0x1FF/
     /END/
 }
