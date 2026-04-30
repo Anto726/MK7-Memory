@@ -3,6 +3,7 @@
 #include "../types.hpp"
 
 #include "BaseMenuViewControl.hpp"
+#include "../versions.h"
 
 #include <nw/lyt/Material.hpp>
 #include <nw/lyt/TextureInfo.hpp>
@@ -30,8 +31,8 @@ BEGIN_NAMESPACE(UI)
             virtual const ControlAnimator::AnimationDefine *getAnimationDefine() const; // 3
         /END/
 
-        Object::DTIClassInfo *getDTIClassInfo() const;
-        Object::DTIClassInfo *getDTIClass() const;
+        virtual Object::DTIClassInfo *getDTIClassInfo() const;
+        virtual Object::DTIClassInfo *getDTIClass() const;
         virtual ~TitleBG();
         virtual void draw(Control::EDrawScreen); // 25
 #if GAME_VERSION != ALL_DLP

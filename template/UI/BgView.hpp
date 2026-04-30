@@ -16,8 +16,8 @@ BEGIN_NAMESPACE(UI)
             virtual const ControlAnimator::AnimationDefine *getAnimationDefine() const; // 3
         /END/
 
-        Object::DTIClassInfo *getDTIClassInfo() const;
-        Object::DTIClassInfo *getDTIClass() const;
+        virtual Object::DTIClassInfo *getDTIClassInfo() const;
+        virtual Object::DTIClassInfo *getDTIClass() const;
         virtual ~BgView();
     /END/
 }

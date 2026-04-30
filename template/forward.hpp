@@ -387,6 +387,9 @@ BEGIN_NAMESPACE(UI)
 	class SelectTimer;
 	class RaceRankNameControl;
 	class BgRaceMapLoopControl;
+	class ScrollList;
+	class ScrollListFrame;
+	class ScrollListBg;
 }
 
 BEGIN_NAMESPACE(Util)

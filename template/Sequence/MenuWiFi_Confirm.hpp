@@ -19,8 +19,8 @@ BEGIN_NAMESPACE(Sequence)
         };
 
         // TODO
-        Object::DTIClassInfo *getDTIClassInfo() const;
-        Object::DTIClassInfo *getDTIClass() const;
+        virtual Object::DTIClassInfo *getDTIClassInfo() const;
+        virtual Object::DTIClassInfo *getDTIClass() const;
         ~MenuWifi_Confirm(); // 2 (_sub_object), 3 (_deallocating)
         void onPagePreStep();
         void onPageEnter();

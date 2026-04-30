@@ -3,6 +3,7 @@
 #include "KDThread.hpp"
 #include "../forward.hpp"
 #include "../types.hpp"
+#include "../versions.h"
 
 #include <heap/seadExpHeap.h>
 #include <nw/lyt/Picture.hpp>

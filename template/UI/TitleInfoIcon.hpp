@@ -1,7 +1,7 @@
 #pragma once
 
 #include "../types.hpp"
-
+#include "../versions.h"
 #include "BaseFastControl.hpp"
 #include "../Sequence/MenuTitle.hpp"
 
@@ -33,8 +33,8 @@ BEGIN_NAMESPACE(UI)
             virtual const ControlAnimator::AnimationDefine *getAnimationDefine() const; // 3
         /END/
 
-        Object::DTIClassInfo *getDTIClassInfo() const;
-        Object::DTIClassInfo *getDTIClass() const;
+        virtual Object::DTIClassInfo *getDTIClassInfo() const;
+        virtual Object::DTIClassInfo *getDTIClass() const;
         ~TitleInfoIcon();
         void onCreate(const UI::Control::CreateArg *);
         void onReset();
@@ -58,8 +58,8 @@ BEGIN_NAMESPACE(UI)
             virtual const ControlAnimator::AnimationDefine *getAnimationDefine() const; // 3
         /END/
 
-        Object::DTIClassInfo *getDTIClassInfo() const;
-        Object::DTIClassInfo *getDTIClass() const;
+        virtual Object::DTIClassInfo *getDTIClassInfo() const;
+        virtual Object::DTIClassInfo *getDTIClass() const;
         ~TitleInfoIcon2();
         void onCreate(const UI::Control::CreateArg *);
         void onReset();

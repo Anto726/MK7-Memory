@@ -106,8 +106,8 @@ BEGIN_NAMESPACE(Sequence)
         /END/
 
         // TODO
-        Object::DTIClassInfo *getDTIClassInfo() const;
-        Object::DTIClassInfo *getDTIClass() const;
+        virtual Object::DTIClassInfo *getDTIClassInfo() const;
+        virtual Object::DTIClassInfo *getDTIClass() const;
         ~Common_SystemDialog();
         void onPagePreStep();
         void onPageEnter();
