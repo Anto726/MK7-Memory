@@ -6,7 +6,10 @@
 #include "VisualControl.hpp"
 #include "../RaceSys/EDriverID.hpp"
 
+#include <nw/lyt/Layout.hpp>
 #include <nw/lyt/TextBox.hpp>
+#include <nw/lyt/TextureInfo.hpp>
+#include <nw/lyt/internal/TexCoordAry.hpp>
 #include <math/seadVector.h>
 #include <prim/seadSafeString.h>
 
@@ -44,7 +47,7 @@ BEGIN_NAMESPACE(UI)
         void calcAnim();
         void animOnOff(s32, s32);
         void animOnOff(s32, s32, UI::ControlSight::ElementHandle&);
-        void *getLayout();   // nw::lyt::Layout *
+        nw::lyt::Layout *getLayout();
         void scaleText(nw::lyt::TextBox *, const sead::SafeString *, const TextScale &);
         void scaleText(nw::lyt::TextBox *, u32, const TextScale &);
         void CalculateMtx(ControlSight::ElementHandle&);
@@ -52,8 +55,8 @@ BEGIN_NAMESPACE(UI)
         void CalculateAlpha(ControlSight::ElementHandle &);
         void CalculateScale(ControlSight::ElementHandle &);
         void animOnOffAlpha(s32, s32, ControlSight::ElementHandle &);
-        void replaceTexture(const ControlSight::ElementHandle &, const void * /* const nw::lyt::TextureInfo & */ );
-        void replaceMiiTexture(const ControlSight::ElementHandle &, ECharaIconType, s32, void * /* const nn::math::VEC2(*)[4] */);
+        void replaceTexture(const ControlSight::ElementHandle &, const nw::lyt::TextureInfo &);
+        void replaceMiiTexture(const ControlSight::ElementHandle &, ECharaIconType, s32, const nw::lyt::detail::TexCoord *);
         void CalculateAlphaImpl(nw::lyt::Pane *, f32);
         void CalculateScaleImpl(nw::lyt::Pane *, const sead::Vector2f &);
         void getCharaTextureName(sead::FixedSafeString<(s32)64> *, ECharaIconType, RaceSys::EDriverID, s32);
