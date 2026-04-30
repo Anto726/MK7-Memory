@@ -2,7 +2,7 @@
 
 #include "../types.hpp"
 
-#include <controller/ctr/seadCtrController.h>
+#include "KDPadControllerCore.hpp"
 
 BEGIN_NAMESPACE(System)
 {
