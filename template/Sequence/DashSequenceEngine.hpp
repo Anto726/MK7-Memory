@@ -28,4 +28,5 @@ BEGIN_NAMESPACE(Sequence)
     /END/
 
     DashSequenceEngine *GetDashSequenceEngine();
+    UI::TexIDConverter *GetTexIDConverter();
 }
