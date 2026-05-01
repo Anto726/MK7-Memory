@@ -138,7 +138,7 @@ BEGIN_NAMESPACE(Sequence)
         void setRaceNo(s32);
 
         static void convertEnterCodeImpl(const sead::SafeString &);
-        static void convertReturnCodeImpl(const sead::SafeString &);
+        static void convertReturnCodeImpl(s32);
         static void convertModeImpl(const sead::SafeString &);
 
         enum BasePageState {
