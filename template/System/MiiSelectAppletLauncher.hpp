@@ -1,10 +1,7 @@
 #pragma once
 
 #include "../forward.hpp"
-#include "../types.hpp"
-#include "KDThread.hpp"
-
-#include <nn/hid/hid_DeviceStatus.h>
+#include "AppletLauncher.hpp"
 
 BEGIN_NAMESPACE(System)
 {
