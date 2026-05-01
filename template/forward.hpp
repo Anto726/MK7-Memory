@@ -336,6 +336,8 @@ BEGIN_NAMESPACE(System)
 	struct PlayerDataNoMii;
 	struct SystemSaveData;
 	class VideoDrawerThread;
+	class AppletLauncher;
+	class AppletLaunchThread;
 }
 
 BEGIN_NAMESPACE(UI)

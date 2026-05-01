@@ -7,6 +7,7 @@
 
 BEGIN_NAMESPACE(System)
 {
+    // KDThread name: "GyroReader"
     /START_CLASS/NAME@GyroscopeReaderThread/SIZE@0x1628/BASE@KDThread/BSIZE@0xa4/
     public:
         /START_CLASS/NAME@SStatus/SIZE@0x40/
