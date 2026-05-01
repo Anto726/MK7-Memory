@@ -4,8 +4,6 @@
 #include "../types.hpp"
 #include "KDThread.hpp"
 
-#include <nn/hid/hid_DeviceStatus.h>
-
 BEGIN_NAMESPACE(System)
 {
     // KDThread name: "AppletLaunch"
