@@ -191,6 +191,6 @@ BEGIN_NAMESPACE(Sequence)
         // / Controls created in the `Sequence::BasePage::setupBothControl_*` functions are appended to this array
         /M/sead::FixedPtrArray<UI::BaseFastControl, 3> m_both_controls/0x18/0x250/
         /M/u8 m_0x268/0x1/0x268/
-        /M/bool m_0x269/0x1/0x269/
+        /M/bool m_in_MMenCheckPage/0x1/0x269/
     /END/
 }
