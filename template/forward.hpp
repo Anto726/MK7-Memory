@@ -177,6 +177,12 @@ BEGIN_NAMESPACE(Mii)
 	class MiiEngine;
 }
 
+BEGIN_NAMESPACE(miisel)
+{
+	class Parameter;
+	class Result;
+}
+
 BEGIN_NAMESPACE(Net)
 {
 	class NetworkBuffer;
