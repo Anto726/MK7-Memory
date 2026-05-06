@@ -1,7 +1,6 @@
 #pragma once
 
 #include "../forward.hpp"
-#include "../callback.hpp"
 
 #include "eInvalidFlag.hpp"
 #include "eItemSlot.hpp"
