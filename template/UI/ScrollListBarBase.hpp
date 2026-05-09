@@ -12,6 +12,8 @@ BEGIN_NAMESPACE(UI)
     // NOTE: The name is made up
     /START_CLASS/NAME@ScrollListBarBase/SIZE@0xB0/BASE@BaseMenuViewControl/BSIZE@0xA8/VTABLE@True/
     public:
+        virtual void onScrollUpdate(s32);
+
         /M/ScrollListFrame *m_frame/0x4/0xa8/
         /M/s32 m_option/0x4/0xac/
     /END/
