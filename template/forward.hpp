@@ -279,9 +279,9 @@ BEGIN_NAMESPACE(Sequence)
 	class SequenceEngine;
 	class SequenceIDTable;
 	class SequenceLayer;
-	class SequenceResource;
 	class SerialSequence;
 	class TimerPage;
+	class SequenceResource;
 }
 
 BEGIN_NAMESPACE(Sound)
@@ -315,6 +315,7 @@ BEGIN_NAMESPACE(System)
 	class EngineHolder;
 	class GameFramework;
 	class GameSetting;
+	class GameScene;
 	class GhostSaveData;
 	class GhostSaveDataHeader;
 	class KDAIPad;

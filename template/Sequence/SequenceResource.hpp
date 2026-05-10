@@ -2,6 +2,8 @@
 
 #include "../types.hpp"
 
+#include <prim/seadSafeString.hpp>
+
 /**
  * NOTE: All "name_offset"s are offsets relative to the start of the BSEQ's 
  * nametable, unless stated otherwise.
@@ -76,15 +78,33 @@ BEGIN_NAMESPACE(Sequence)
 
     /START_CLASS/NAME@SequenceResource/SIZE@0x14/
     public:
+        // Forward declarations
+        class SequenceBlock;
+        class NameTableBlock;
+        class PracticalSectionBlock;
+        class CrossFadeSequenceBlock;
+        class SceneSequenceProxyBlock;
+
         /START_CLASS/NAME@NameTableBlockEntry/SIZE@0x4/
         public:
             /M/u16 m_index/0x2/0x00/
             /M/u16 m_name_offset/0x2/0x02/
         /END/
 
+        /START_CLASS/NAME@StringTableBlock/SIZE@0x4/
+        public:
+            char *getString(u16) const;
+
+            /M/char *m_strings/0x4/0x00/
+        /END/
+
         // Right after this block ends, an array of `NameTableBlockEntry`.
         /START_CLASS/NAME@NameTableBlock/SIZE@0x4/
         public:
+            const NameTableBlockEntry &searchItem(const sead::SafeString &, const StringTableBlock *) const;
+            const NameTableBlockEntry &searchItem(u16) const;
+            const NameTableBlockEntry &getItem(s32) const;
+
             /M/u16 m_num_entries/0x2/0x00/
             /M/u16 m_field_0x02/0x2/0x02/
         /END/
@@ -92,6 +112,13 @@ BEGIN_NAMESPACE(Sequence)
         // Header of the section block. The size and exact contents of the whole SectionBlock can vary.
         /START_CLASS/NAME@SectionBlock/SIZE@0x14/
         public:
+            const SequenceBlock &getSequence() const;
+            const NameTableBlock &getEnterCodeTable() const;
+            const NameTableBlock &getReturnCodeTable() const;
+            const PracticalSectionBlock &getPracticalSection() const;
+            const CrossFadeSequenceBlock &getCrossFadeSequence() const;
+            const SceneSequenceProxyBlock &getSceneSequenceProxy() const;
+
             // See the `SectionType` enum
             /M/u8 m_section_type/0x1/0x00/
             /M/u16 field_0x02/0x2/0x02/
@@ -121,17 +148,19 @@ BEGIN_NAMESPACE(Sequence)
             /M/u16 m_class_name_offset/0x2/0x02/
         /END/
 
-        // Right after this ends, an array of `SubsectionListBlockEntry` entries starts.
-        /START_CLASS/NAME@SubsectionListBlock/SIZE@0x4/
-        public:
-            /M/u16 m_num_entries/0x2/0x00/
-        /END/
-
         /START_CLASS/NAME@SubsectionListBlockEntry/SIZE@0x8/
         public:
             /M/u32 m_sequence_id/0x4/0x00/
             // Offset within the modeTable section associated to the sequenceId above
             /M/u16 m_mode_name_item_offset/0x2/0x04/
+        /END/
+
+        // Right after this ends, an array of `SubsectionListBlockEntry` entries starts.
+        /START_CLASS/NAME@SubsectionListBlock/SIZE@0x4/
+        public:
+            const SubsectionListBlockEntry &getItem(s32) const;
+
+            /M/u16 m_num_entries/0x2/0x00/
         /END/
 
         // Right after this ends, an array of `SequenceBlockFlowListEntry` (or `CrossFadeSequenceBlockFlowListEntry`) entries starts.
@@ -159,6 +188,8 @@ BEGIN_NAMESPACE(Sequence)
         
         /START_CLASS/NAME@PracticalSectionBlock/SIZE@0x8/
         public:
+            const NameTableBlock &getModeTable() const;
+
             /M/SectionBlockDataHeader m_header/0x4/0x00/
             // Offset within this block where you will find the modeTable
             // Type: NameTableBlock
@@ -167,6 +198,9 @@ BEGIN_NAMESPACE(Sequence)
 
         /START_CLASS/NAME@SequenceBlock/SIZE@0x8/
         public:
+            const SequenceBlockFlowList &getFlowList() const;
+            const SubsectionListBlock &getSubsectionList() const;
+
             /M/SectionBlockDataHeader m_header/0x4/0x00/
             // Offset within this block to the subsection list
             // Type: SubsectionList
@@ -178,6 +212,8 @@ BEGIN_NAMESPACE(Sequence)
 
         /START_CLASS/NAME@CrossFadeSequenceBlock/SIZE@0x8/
         public:
+            const SequenceBlockFlowList &getCrossFadeFlowList() const;
+
             /M/SectionBlockDataHeader m_header/0x4/0x00/
             // Offset within this block to the subsection list
             // Type: SubsectionList
@@ -192,6 +228,13 @@ BEGIN_NAMESPACE(Sequence)
             /M/SectionBlockDataHeader m_header/0x4/0x00/
             /M/u16 m_scene_name_offset/0x2/0x04/
         /END/
+
+        void create(const sead::SafeString &, const sead::SafeString &, bool);
+        s32 searchSectionType(u32) const;
+        const SequenceBlock &searchSequenceBlock(u32, u16) const;
+        const PracticalSectionBlock &searchPracticalSectionBlock(u32) const; 
+        SequenceResource();
+        ~SequenceResource();
 
         /M/BSEQ *m_bseq_file_buffer/0x4/0x00/
         /M/BSEQ *m_bseq/0x4/0x04/
