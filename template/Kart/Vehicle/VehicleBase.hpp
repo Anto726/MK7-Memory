@@ -47,13 +47,13 @@ BEGIN_NAMESPACE(Kart)
 		/M/RaceSys::ETireID m_tire_id/0x4/0x90/
 		/M/RaceSys::EWingID m_wing_id/0x4/0x94/
 		/M/bool m_is_master/0x1/0x98/
-		/M/u8 m_0x99/0x1/0x99/ // ai_id? weird usage
+		/U/u8/0x1/0x99/ // ai_id? weird usage
 		/M/bool m_is_ai_path_controlled/0x1/0x9A/
 		/M/bool m_is_ai_pad_controlled/0x1/0x9B/
 		/M/bool m_is_net_object/0x1/0x9C/
 		/M/bool m_is_net_send/0x1/0x9D/
 		/M/bool m_is_net_recv/0x1/0x9E/
-		/M/bool m_0x9F/0x1/0x9F/ // is_player_or_takeover?
+		/U/bool/0x1/0x9F/ // is_player_or_takeover?
 		/M/bool m_is_live_view/0x1/0xA0/
 		/M/bool m_is_detail/0x1/0xA1/
 		/M/bool m_is_ghost/0x1/0xA2/
@@ -73,7 +73,7 @@ BEGIN_NAMESPACE(Kart)
 		/M/KartPartsCustomedParam *m_kart_parts_customed_param/0x4/0xC8/
 		/M/f32 m_wing_offset_y/0x4/0xCC/
 		/M/f32 m_ground_offset_y/0x4/0xD0/
-		/M/f32 m_0xD4/0x4/0xD4/ // shaft_rotation?
+		/U/f32/0x4/0xD4/ // shaft_rotation?
 		/M/f32 m_body_scale_y/0x4/0xD8/
 		/M/Sound::SndActorKart *m_snd_actor_kart/0x4/0xDC/
 	/END/
