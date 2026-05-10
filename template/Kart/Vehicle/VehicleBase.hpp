@@ -31,7 +31,7 @@ BEGIN_NAMESPACE(Kart)
 		void changeToCPU(bool is_cpu)
 		{
 			m_is_ai_path_controlled = true;
-			m_0x99 = 1;
+			unk_0x99 = 1;
 
 			if (is_cpu)
 				m_is_ai_pad_controlled = true;
