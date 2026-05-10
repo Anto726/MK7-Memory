@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Base.hpp"
+#include "base.hpp"
 
 #include "../Entry/EnemyPoint.hpp"
 
