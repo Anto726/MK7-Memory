@@ -272,6 +272,7 @@ BEGIN_NAMESPACE(Sequence)
 	class ExecutableSection;
 	class LayeredSequence;
 	class MenuData;
+	class MenuSingle_Ghost;
 	class MenuSingle_GhostLoad;
 	class MenuTitle;
 	class NetworkErrorChecker;
@@ -323,6 +324,7 @@ BEGIN_NAMESPACE(System)
 	class ControllerBase;
 	class EngineHolder;
 	class GameFramework;
+	class GhostLoader;
 	class GameSetting;
 	class GameScene;
 	class GhostSaveData;

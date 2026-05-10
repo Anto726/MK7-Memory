@@ -1,5 +1,6 @@
 #pragma once
 
+#include "../common.hpp"
 #include "../types.hpp"
 
 #include "GhostSaveData.hpp"
@@ -31,8 +32,7 @@ BEGIN_NAMESPACE(System)
         RaceSys::ECourseID init();                                      // TODO. Double check if the return type is correct.
         void update(RaceSys::ECourseID, bool);                          // TODO. Double check if the return type is correct.
 
-        // 1 player ghost + 2 staff ghosts + 20 ranking (SpotPass) ghosts
-        /M/GhostData m_ghosts[1 + 2 + 20]/0x1254/0x0/
+        /M/GhostData m_ghosts[GHOST_LIST_MAX]/0x1254/0x0/
         /M/sead::Delegate<GhostLoader> m_update_inner/0x10/0x1254/
         /U/RaceSys::ECourseID/0x4/0x1264/
         /U/bool/0x1/0x1269/

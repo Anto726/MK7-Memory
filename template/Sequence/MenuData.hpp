@@ -21,6 +21,7 @@ BEGIN_NAMESPACE(Sequence)
         /M/FaderPage *m_fader_page/0x4/0x18/
         /M/Common_SystemDialog *m_common_system_dialog/0x4/0x1c/
         /M/TimerPage *m_timer_page/0x4/0x20/
+        /M/MenuSingle_Ghost *m_menu_single_ghost/0x4/0x2c/
         /M/BaseRacePage *m_base_race_page/0x4/0x30/
         /M/sead::PtrArray<CourseVote> m_course_votes/0xc/0x72c/
     /END/
