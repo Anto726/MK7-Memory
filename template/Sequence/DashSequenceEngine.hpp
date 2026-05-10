@@ -1,5 +1,6 @@
 #pragma once
 
+#include "../common.hpp"
 #include "../forward.hpp"
 
 #include "System/GhostSaveData.hpp"
@@ -28,7 +29,7 @@ BEGIN_NAMESPACE(Sequence)
         /M/bool m_is_player_ghost_ready/0x1/0xEC/
         /M/s32 m_player_ghost_idx/0x4/0xF0/
         /M/System::GhostSaveDataHeader m_player_ghost_header/0xc0/0xF4/
-        /M/System::GhostSaveData m_ghosts[8]/0x144c0/0x1B4/
+        /M/System::GhostSaveData m_ghosts[KART_MAX]/0x144c0/0x1B4/
         /U/bool/0x1/0x14674/
         /M/System::GhostSaveData m_player_ghost/0x2898/0x14678/
     /END/
