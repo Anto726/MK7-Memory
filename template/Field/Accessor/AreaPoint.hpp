@@ -10,8 +10,8 @@
 
 BEGIN_NAMESPACE(Field)
 {
-    class MapdataAreaAccessor : public MapdataAccessorBase<MapdataAreaPoint, MapdataAreaPoint::SData> {};
-    static_assert(sizeof(MapdataAreaAccessor) == 0x18);
+    /START_CLASS/NAME@MapdataAreaAccessor/SIZE@0x18/BASE@MapdataAccessorBase<MapdataAreaPoint, MapdataAreaPointData>/BSIZE@0x18/
+    /END/
 
     inline auto GetAreaAccessor()
     {

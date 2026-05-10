@@ -70,7 +70,7 @@ class ClassParser(Parser):
         def repr(self, withComment: bool):
             name = self.name
             if self.unknown:
-                name = self.name + " m_unk_0x{:X}".format(self.offset)
+                name = self.name + " unk_0x{:X}".format(self.offset)
             if (withComment and not self.isGap):
                 if self.reprPadding is None:
                     maxLen = self.parent.getLongestElementReprLen()
