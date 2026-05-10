@@ -5,24 +5,25 @@
 #include "../../forward.hpp"
 #include "../../types.hpp"
 
+#include "base.hpp"
+
 BEGIN_NAMESPACE(Field)
 {
-    /START_CLASS/NAME@MapdataAreaPoint/SIZE@0x8/
-    public:
-        /START_STRUCT/NAME@SData/SIZE@0x30/
-            /M/u8 m_shape/0x1/0x0/
-            /M/u8 m_type/0x1/0x1/
-            /M/s8 m_came_index/0x1/0x2/
-            /M/sead::Vector3f position/0xC/0x4/
-            /M/sead::Vector3f rotation/0xC/0x10/
-            /M/sead::Vector3f scale/0xC/0x1C/
-            /M/u16 m_setting1/0x2/0x28/
-            /M/u16 m_setting2/0x2/0x2A/
-            /M/s8 m_route_id/0x1/0x2C/
-            /M/s8 m_enemy_id/0x1/0x2D/
-        /END/
+    /START_STRUCT/NAME@MapdataAreaPointData/SIZE@0x30/
+        /M/u8 m_shape/0x1/0x0/
+        /M/u8 m_type/0x1/0x1/
+        /M/s8 m_came_index/0x1/0x2/
+        /M/sead::Vector3f position/0xC/0x4/
+        /M/sead::Vector3f rotation/0xC/0x10/
+        /M/sead::Vector3f scale/0xC/0x1C/
+        /M/u16 m_setting1/0x2/0x28/
+        /M/u16 m_setting2/0x2/0x2A/
+        /M/s8 m_route_id/0x1/0x2C/
+        /M/s8 m_enemy_id/0x1/0x2D/
+    /END/
 
-        /M/SData *m_data/0x4/0x0/
+    /START_CLASS/NAME@MapdataAreaPoint/SIZE@0x8/BASE@MapdataPointDataBase<MapdataAreaPointData>/BSIZE@0x4/
+    public:
         /M/MapdataAreaCalcBase *m_area_calc/0x4/0x4/
     /END/
 
@@ -30,7 +31,8 @@ BEGIN_NAMESPACE(Field)
     public:
         virtual bool isInside(sead::Vector3f &position); // 0
         virtual bool isInsideShape(sead::Vector3f &position); // 0
-        /M/MapdataAreaPoint::SData *m_area_point/0x4/0x38/
+        
+        /M/MapdataAreaPointData *m_area_point_data/0x4/0x38/
         /M/u8 m_area_shape/0x1/0x3C/
         /M/u8 m_area_type/0x1/0x3D/
     /END/
