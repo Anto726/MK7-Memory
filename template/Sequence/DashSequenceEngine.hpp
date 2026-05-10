@@ -2,7 +2,7 @@
 
 #include "../forward.hpp"
 
-#include "System/GhostSaveDataHeader.hpp"
+#include "System/GhostSaveData.hpp"
 #include "SequenceEngine.hpp"
 
 BEGIN_NAMESPACE(Sequence)
@@ -25,8 +25,15 @@ BEGIN_NAMESPACE(Sequence)
         /M/AIRivalTableLoader *m_ai_rival_table_loader/0x4/0xDC/
         // Array with the selected options from the LRSelect (and maybe other UI elements too). Up to 23 entries.
         /M/s32 *m_selected_cursor_item_idx_array/0x4/0xE8/
+        /M/bool m_is_player_ghost_ready/0x1/0xEC/
+        /M/s32 m_player_ghost_idx/0x4/0xF0/
+        /M/System::GhostSaveDataHeader m_player_ghost_header/0xc0/0xF4/
+        /M/System::GhostSaveData m_ghosts[8]/0x144c0/0x1B4/
+        /U/bool/0x1/0x14674/
+        /M/System::GhostSaveData m_player_ghost/0x2898/0x14678/
     /END/
 
     DashSequenceEngine *GetDashSequenceEngine();
     UI::TexIDConverter *GetTexIDConverter();
+    System::GhostSaveData *GetGhostDataPtr(s32);
 }
