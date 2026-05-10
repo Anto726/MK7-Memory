@@ -167,6 +167,7 @@ BEGIN_NAMESPACE(KDGndCol)
 BEGIN_NAMESPACE(Menu3D)
 {
 	class GarageDirector;
+	class MiiManager;
 	class ModelCreateManager;
 	class SimpleModelManager;
 }
@@ -174,7 +175,15 @@ BEGIN_NAMESPACE(Menu3D)
 BEGIN_NAMESPACE(Mii)
 {
 	class Face;
+	class FaceManager;
+	class Factory;
+	class HiddenDatabase;
+	class Icon;
+	class IconManager;
+	class MiddleDatabase;
 	class MiiEngine;
+	class MiiRenderCommand;
+	class RandomDatabase;
 }
 
 BEGIN_NAMESPACE(miisel)
@@ -397,6 +406,7 @@ BEGIN_NAMESPACE(UI)
 	class RaceRankNameControl;
 	class BgRaceMapLoopControl;
 	class ScrollList;
+	class ScrollListBarBase;
 	class ScrollListFrame;
 	class ScrollListBg;
 }
