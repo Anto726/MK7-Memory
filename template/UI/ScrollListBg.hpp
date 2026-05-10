@@ -14,8 +14,8 @@ BEGIN_NAMESPACE(UI)
         virtual Object::DTIClassInfo *getDTIClassInfo() const;
         virtual Object::DTIClassInfo *getDTIClass() const;
         virtual ~ScrollListBg();
-        virtual void onCalc();
         virtual void onReset();
+        virtual void onCalc();
 
         /M/ScrollListFrame *m_frame/0x4/0xa8/
     /END/
