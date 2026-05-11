@@ -1,9 +1,6 @@
 #pragma once
 
 #include "BaseFastControl.hpp"
-#include "UnitTextPane.hpp"
-
-#include <nw/lyt/Pane.hpp>
 
 BEGIN_NAMESPACE(UI)
 {
