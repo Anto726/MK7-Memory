@@ -81,6 +81,7 @@ BEGIN_NAMESPACE(Field)
 	class MapdataJugemPoint;
 	class MapdataJugemPointAccessor;
 	class MapdataMissionPointAccessor;
+	class MapdataPath;
 	class MapdataPathAccessor;
 	class MapdataStageAccessor;
 	class MapdataStartPointAccessor;
