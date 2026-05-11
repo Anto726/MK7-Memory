@@ -411,6 +411,7 @@ BEGIN_NAMESPACE(UI)
 	class RacePauseControl;
 	class CoinControl;
 	class LapControl;
+	class PointControl;
 	class BgRaceMapLoopControl;
 	class ScrollList;
 	class ScrollListBarBase;
