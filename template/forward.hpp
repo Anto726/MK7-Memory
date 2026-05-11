@@ -406,7 +406,11 @@ BEGIN_NAMESPACE(UI)
 	class CursorItem;
 	class TouchItem;
 	class SelectTimer;
+	class RaceRankControl;
 	class RaceRankNameControl;
+	class RacePauseControl;
+	class CoinControl;
+	class LapControl;
 	class BgRaceMapLoopControl;
 	class ScrollList;
 	class ScrollListBarBase;

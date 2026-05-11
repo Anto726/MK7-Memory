@@ -177,10 +177,14 @@ BEGIN_NAMESPACE(Sequence)
         T *setupResultControl(const sead::SafeString &, const sead::SafeString &);
 
         /M/RaceSys::CRaceMode m_race_mode/0xC/0x26C/
+        /M/UI::RaceRankControl *m_race_rank_control/0x4/0x288/
         /M/UI::BgRaceMapControl *m_bg_race_map_control_1/0x4/0x29C/
         /M/UI::BgRaceMapControl *m_bg_race_map_control_2/0x4/0x2A0/
         /M/UI::BgRaceMapControl *m_bg_race_zoom_map_control/0x4/0x2A4/
         /M/UI::BgRaceMapCharaControl *m_bg_race_map_chara_control[KART_MAX]/0x20/0x2A8/
+        /M/UI::RacePauseControl *m_race_pause_control/0x4/0x288/
+        /M/UI::LapControl *m_lap_control/0x4/0x290/
+        /M/UI::CoinControl *m_coin_control/0x4/0x294/
         /M/RaceSys::ModeManagerBase *m_mode_manager/0x4/0x388/
         /M/RaceSys::ModeManagerBattle *m_mode_manager_battle/0x4/0x38c/
         /M/u32 m_player_num/0x4/0x39c/
