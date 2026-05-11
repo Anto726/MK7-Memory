@@ -417,6 +417,7 @@ BEGIN_NAMESPACE(UI)
 	class ScrollListBarBase;
 	class ScrollListFrame;
 	class ScrollListBg;
+	class MenuCaption;
 }
 
 BEGIN_NAMESPACE(Util)

@@ -185,15 +185,22 @@ BEGIN_NAMESPACE(Sequence)
         /M/UI::BgRaceMapControl *m_bg_race_map_control_2/0x4/0x2A0/
         /M/UI::BgRaceMapControl *m_bg_race_zoom_map_control/0x4/0x2A4/
         /M/UI::BgRaceMapCharaControl *m_bg_race_map_chara_control[KART_MAX]/0x20/0x2A8/
+        /M/UI::MenuCaption *m_menu_caption/0x4/0x318/
+        /M/UI::SelectTimer *m_select_timer/0x4/0x31c/
         /M/UI::RacePauseControl *m_race_pause_control/0x4/0x374/
         /M/RaceSys::ModeManagerBase *m_mode_manager/0x4/0x388/
         /M/RaceSys::ModeManagerBattle *m_mode_manager_battle/0x4/0x38c/
+        /M/Kart::InfoProxy *m_player/0x4/0x390/
+        /M/ERaceState m_race_state/0x1/0x398/
         /M/u32 m_player_num/0x4/0x39c/
         /M/u32 m_target_player_id/0x4/0x3a0/
         /M/bool m_display_rankboard/0x1/0x3a4/
         /M/bool m_update_rankboard/0x1/0x3a5/
+        /M/s32 m_on_back_return_code/0x4/0x3b4/
+        /M/u8 m_fader_type/0x4/0x3b8/
         /M/u8 m_calc_save_state/0x1/0x440/
         /M/bool m_change_calc_save_state/0x1/0x441/
+        /M/s32 m_gp_hidden_score/0x4/0x448/
         /M/u32 m_result_bar_point_timer/0x4/0x2E34/
         /M/u32 m_result_bar_point_sound_timer/0x4/0x2E38/
         /M/u32 m_result_bar_point_increment/0x4/0x2E48/
