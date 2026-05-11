@@ -10,8 +10,8 @@
 
 BEGIN_NAMESPACE(Field)
 {
-    class MapdataItemPointAccessor : public MapdataAccessorBase<MapdataItemPoint, MapdataItemPoint::SData> {};
-    static_assert(sizeof(MapdataItemPointAccessor) == 0x18);
+    /START_CLASS/NAME@MapdataItemPointAccessor/SIZE@0x18/BASE@MapdataAccessorBase<MapdataItemPoint, MapdataItemPoint::SData>/BSIZE@0x18/
+    /END/
 
     inline auto GetItemPointAccessor()
     {

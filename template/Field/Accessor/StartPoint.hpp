@@ -10,8 +10,8 @@
 
 BEGIN_NAMESPACE(Field)
 {
-    class MapdataStartPointAccessor : public MapdataAccessorBase<MapdataStartPoint, MapdataStartPoint::SData> {};
-    static_assert(sizeof(MapdataStartPointAccessor) == 0x18);
+    /START_CLASS/NAME@MapdataStartPointAccessor/SIZE@0x18/BASE@MapdataAccessorBase<MapdataStartPoint, MapdataStartPoint::SData>/BSIZE@0x18/
+    /END/
 
     inline auto GetStartPointAccessor()
     {
