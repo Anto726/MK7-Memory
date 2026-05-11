@@ -374,6 +374,7 @@ BEGIN_NAMESPACE(UI)
 	class ControlSight;
 	class CursorMove;
 	class DashMessageWriter;
+	class DashFontManager;
 	class FontManager;
 	class NullControlSight;
 	class NwlytControlSight;
