@@ -6,12 +6,11 @@
 
 BEGIN_NAMESPACE(Field)
 {
-    /START_CLASS/NAME@MapdataItemPoint/SIZE@0x30/
-    public:
-        /START_STRUCT/NAME@SData/SIZE@0x14/
-            /M/sead::Vector3f position/0xC/0x0/
-        /END/
+    /START_STRUCT/NAME@MapdataItemPointData/SIZE@0x14/
+        /M/sead::Vector3f position/0xC/0x0/
+    /END/
 
-        /M/SData *m_data/0x4/0x0/
+    /START_CLASS/NAME@MapdataItemPoint/SIZE@0x30/BASE@MapdataPointDataBase<MapdataItemPointData>/BSIZE@0x4/
+    public:
     /END/
 }
