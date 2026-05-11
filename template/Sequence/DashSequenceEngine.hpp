@@ -3,15 +3,22 @@
 #include "../common.hpp"
 #include "../forward.hpp"
 
-#include "System/GhostSaveData.hpp"
 #include "SequenceEngine.hpp"
+#include "../System/Flag.hpp"
+#include "../System/GhostSaveData.hpp"
 
 BEGIN_NAMESPACE(Sequence)
 {
     /START_CLASS/NAME@DashSequenceEngine/SIZE@0x16F5C/BASE@SequenceEngine/BSIZE@0xAC/VTABLE@True/
     public:
+        virtual DashSectionClassManager *getSectionClassManager();
+        virtual DashSceneIDConverter *getSceneIDConverter();
+        virtual DashEngineCreatorManager *getEngineCreatorManager();
+        virtual UI::DashFontManager *getFontManager();
+        virtual UI::DashMessageWriter *getMessageWriter();
+
+        DashSequenceEngine();
         void setPlayerGhostHeader(const System::GhostSaveDataHeader &);
-        DashSectionClassManager *getSectionClassManager();
 
         /M/SectionClassManager *m_section_class_manager/0x4/0xAC/
         /M/DashSceneIDConverter *m_scene_id_converter/0x4/0xB0/
@@ -24,6 +31,7 @@ BEGIN_NAMESPACE(Sequence)
         /M/UI::TexIDConverter *m_tex_id_converter/0x4/0xD4/
         /M/UI::MessageIDConverter *m_message_id_converter/0x4/0xD8/
         /M/AIRivalTableLoader *m_ai_rival_table_loader/0x4/0xDC/
+        /M/System::Flag::Checker *m_flag_checker/0x4/0xE4/
         // Array with the selected options from the LRSelect (and maybe other UI elements too). Up to 23 entries.
         /M/s32 *m_selected_cursor_item_idx_array/0x4/0xE8/
         /M/bool m_is_player_ghost_ready/0x1/0xEC/
