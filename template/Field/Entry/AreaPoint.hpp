@@ -32,7 +32,7 @@ BEGIN_NAMESPACE(Field)
         virtual bool isInside(sead::Vector3f &position); // 0
         virtual bool isInsideShape(sead::Vector3f &position); // 0
         
-        /M/MapdataAreaPointData *m_area_point_data/0x4/0x38/
+        /M/MapdataAreaPoint::SData *m_area_point_data/0x4/0x38/
         /M/u8 m_area_shape/0x1/0x3C/
         /M/u8 m_area_type/0x1/0x3D/
     /END/
