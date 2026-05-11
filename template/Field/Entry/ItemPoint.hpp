@@ -4,6 +4,8 @@
 
 #include "../../types.hpp"
 
+#include "base.hpp"
+
 BEGIN_NAMESPACE(Field)
 {
     /START_STRUCT/NAME@MapdataItemPointData/SIZE@0x14/
