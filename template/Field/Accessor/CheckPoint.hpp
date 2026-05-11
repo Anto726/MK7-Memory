@@ -10,7 +10,7 @@
 
 BEGIN_NAMESPACE(Field)
 {
-    /START_CLASS/NAME@MapdataCheckPointAccessor/SIZE@0x18/BASE@MapdataAccessorBase<MapdataCheckPoint, MapdataCheckPointData>/BSIZE@0x18/
+    /START_CLASS/NAME@MapdataCheckPointAccessor/SIZE@0x18/BASE@MapdataAccessorBase<MapdataCheckPoint, MapdataCheckPoint::SData>/BSIZE@0x18/
     /END/
 
     inline auto GetCheckPointAccessor()

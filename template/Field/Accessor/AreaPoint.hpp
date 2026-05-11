@@ -10,7 +10,7 @@
 
 BEGIN_NAMESPACE(Field)
 {
-    /START_CLASS/NAME@MapdataAreaAccessor/SIZE@0x18/BASE@MapdataAccessorBase<MapdataAreaPoint, MapdataAreaPointData>/BSIZE@0x18/
+    /START_CLASS/NAME@MapdataAreaAccessor/SIZE@0x18/BASE@MapdataAccessorBase<MapdataAreaPoint, MapdataAreaPoint::SData>/BSIZE@0x18/
     /END/
 
     inline auto GetAreaAccessor()
