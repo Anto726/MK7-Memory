@@ -1,5 +1,6 @@
 #pragma once
 
+#include "../common.hpp"
 #include "../forward.hpp"
 #include "BaseFastControl.hpp"
 
@@ -34,7 +35,7 @@ BEGIN_NAMESPACE(UI)
         void setTeamR();
 
         /M/nw::lyt::Pane *m_P_pos_00/0x4/0x7c/
-        /M/nw::lyt::TextureInfo m_rank_textures[8]/0xa0/0x80/
+        /M/nw::lyt::TextureInfo m_rank_textures[KART_MAX]/0xa0/0x80/
         /M/RaceSys::ModeManagerBase *m_mode_manager/0x4/0x120/
         /M/s32 m_target_player_id/0x4/0x124/
         /M/s32 m_previous_rank/0x4/0x128/
