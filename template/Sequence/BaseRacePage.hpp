@@ -187,6 +187,8 @@ BEGIN_NAMESPACE(Sequence)
         /M/UI::BgRaceMapCharaControl *m_bg_race_map_chara_control[KART_MAX]/0x20/0x2A8/
         /M/UI::MenuCaption *m_menu_caption/0x4/0x318/
         /M/UI::SelectTimer *m_select_timer/0x4/0x31c/
+        /M/UI::RaceNoTextControl *m_race_no_text_control/0x4/0x368/
+        /M/UI::RaceTextControl *m_race_text_control/0x4/0x36c/
         /M/UI::RacePauseControl *m_race_pause_control/0x4/0x374/
         /M/RaceSys::ModeManagerBase *m_mode_manager/0x4/0x388/
         /M/RaceSys::ModeManagerBattle *m_mode_manager_battle/0x4/0x38c/

@@ -407,6 +407,8 @@ BEGIN_NAMESPACE(UI)
 	class CursorItem;
 	class TouchItem;
 	class SelectTimer;
+	class RaceNoTextControl;
+	class RaceTextControl;
 	class RaceRankControl;
 	class RaceRankNameControl;
 	class RacePauseControl;
