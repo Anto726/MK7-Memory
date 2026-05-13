@@ -238,6 +238,7 @@ BEGIN_NAMESPACE(RaceSys)
 	class ModeManagerBattle;
 	class RaceDirector;
 	class RaceTimer;
+	class CFrameWatch;
 }
 
 BEGIN_NAMESPACE(Render)

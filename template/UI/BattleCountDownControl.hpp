@@ -12,7 +12,7 @@ BEGIN_NAMESPACE(UI)
             BLUE
         };
 
-         /START_STRUCT/NAME@AnimationDefine/SIZE@0x18/BASE@ControlAnimator::AnimationDefine/BSIZE@0x18/VTABLE@True/
+        /START_STRUCT/NAME@AnimationDefine/SIZE@0x18/BASE@ControlAnimator::AnimationDefine/BSIZE@0x18/VTABLE@True/
             virtual void defineAnimation(); // 0
         /END/
 

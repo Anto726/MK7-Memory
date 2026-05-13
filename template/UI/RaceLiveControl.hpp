@@ -6,7 +6,7 @@ BEGIN_NAMESPACE(UI)
 {
     /START_CLASS/NAME@RaceLiveControl/SIZE@0x7C/BASE@BaseFastControl/BSIZE@0x7C/VTABLE@True/
     public:
-         /START_STRUCT/NAME@AnimationDefine/SIZE@0x18/BASE@ControlAnimator::AnimationDefine/BSIZE@0x18/VTABLE@True/
+        /START_STRUCT/NAME@AnimationDefine/SIZE@0x18/BASE@ControlAnimator::AnimationDefine/BSIZE@0x18/VTABLE@True/
             virtual void defineAnimation(); // 0
         /END/
 
