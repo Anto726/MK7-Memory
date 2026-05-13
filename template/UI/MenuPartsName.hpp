@@ -25,7 +25,7 @@ BEGIN_NAMESPACE(UI)
         
         void setName(u32);
 
-        /M/nw::lyt::TextBox *m_T_chara_name/0x4/0xa8/
+        /M/nw::lyt::TextBox *m_T_parts_name/0x4/0xa8/
         /M/BaseFastControl::TextScale m_text_scale/0x8/0xac/
     /END/
 }
