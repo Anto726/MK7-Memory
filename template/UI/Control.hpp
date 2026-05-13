@@ -15,7 +15,7 @@ BEGIN_NAMESPACE(UI)
 {
     /START_CLASS/NAME@Control/SIZE@0x64/BASE@Object::Actor/BSIZE@0x08/VTABLE@True/
     public:
-        enum class EDrawScreenFlag : u32 {
+        enum EDrawScreenFlag : u32 {
             FLAG_0x08 = 0x08,
             DRAW_ON_TOP_SCREEN = 0x10,
             FLAG_0x20 = 0x20,
