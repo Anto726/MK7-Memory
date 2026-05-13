@@ -400,6 +400,8 @@ BEGIN_NAMESPACE(UI)
 	class TitleInfoIcon;
 	class TitleInfoIcon2;
 	class Page;
+	class PresentBox;
+	class PresentBoxBg;
 	class GraphicResourceInfo;
 	class ControlDirector;
 	class ControlInitializer;
