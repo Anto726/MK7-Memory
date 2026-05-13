@@ -18,9 +18,9 @@ BEGIN_NAMESPACE(Sequence)
 			u8
 				DISPLAY_BACK_BUTTON 				: 1, // 0x1
 				_0x2 				                : 1, // 0x2
-			 	_0x4 				                : 1, // 0x4
-			    _0x8 			                    : 1, // 0x8
-			    _0x10 			                    : 1, // 0x10
+			 	ENABLE_SLIDE_ENTER 				    : 1, // 0x4. Allows the control slider to work when entering the menu
+			    ENABLE_SLIDE_COMPLETE 			    : 1, // 0x8. Allows the control slider to work when exiting the menu
+			    FORCE_SLIDE_ON_PAGE_EXIT 			: 1, // 0x10. See `Sequence::BaseMenuPage::step`
 			    DISPLAY_WIFI_COUNTDOWN_TIMER 	    : 1, // 0x20. When in the Wifi character selection screen
 			    ERASE_TIMER 		                : 1; // 0x40. Used in `Sequence::BaseMenuPage::complete`
 		};
