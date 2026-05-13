@@ -389,6 +389,10 @@ BEGIN_NAMESPACE(UI)
 	class NwlytResourceAccessor;
 	class MenuButton;
 	class MenuButtonMch;
+	class MenuCharaName;
+	class MenuCourseName;
+	class MenuPartsName;
+	class MenuWaitMark;
 	class MessageData;
 	class MessageIDConverter;
 	class MessageWriter;
