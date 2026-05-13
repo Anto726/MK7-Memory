@@ -67,6 +67,25 @@ BEGIN_NAMESPACE(Sequence)
             ON_NEXT_MENU
         };
 
+        // NOTE: Name is made up
+        /START_STRUCT/NAME@PauseButtons/SIZE@0x18/
+            /M/UI::RaceCloseButton *m_button_1/0x4/0x0/
+            /M/UI::RaceBasicButton *m_button_2/0x4/0x4/
+            /M/UI::RaceBasicButton *m_button_3/0x4/0x8/
+            /M/UI::RaceCloseButton *m_button_4/0x4/0xc/
+            /M/UI::RaceBasicButton *m_button_5/0x4/0x10/
+            /M/UI::RaceBasicButton *m_button_6/0x4/0x14/
+        /END/
+
+        // NOTE: Name is made up
+        /START_STRUCT/NAME@NextButtons/SIZE@0x14/
+            /M/UI::RaceBasicButton *m_button_1/0x4/0x0/
+            /M/UI::RaceBasicButton *m_button_2/0x4/0x4/
+            /M/UI::RaceBasicButton *m_button_3/0x4/0x8/
+            /M/UI::RaceBasicButton *m_button_4/0x4/0xc/
+            /M/UI::RaceBasicButton *m_button_5/0x4/0x10/
+        /END/
+
         virtual Object::DTIClassInfo *getDTIClassInfo() const;
         virtual Object::DTIClassInfo *getDTIClass() const;
         virtual ~BaseRacePage();
@@ -187,6 +206,8 @@ BEGIN_NAMESPACE(Sequence)
         /M/UI::BgRaceMapCharaControl *m_bg_race_map_chara_control[KART_MAX]/0x20/0x2A8/
         /M/UI::MenuCaption *m_menu_caption/0x4/0x318/
         /M/UI::SelectTimer *m_select_timer/0x4/0x31c/
+        /M/PauseButtons m_pause_buttons/0x18/0x324/
+        /M/NextButtons m_next_buttons/0x14/0x33c/
         /M/UI::RaceNoTextControl *m_race_no_text_control/0x4/0x368/
         /M/UI::RaceTextControl *m_race_text_control/0x4/0x36c/
         /M/UI::RacePauseControl *m_race_pause_control/0x4/0x374/

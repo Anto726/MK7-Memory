@@ -412,6 +412,8 @@ BEGIN_NAMESPACE(UI)
 	class RaceRankControl;
 	class RaceRankNameControl;
 	class RacePauseControl;
+	class RaceBasicButton;
+	class RaceCloseButton;
 	class CoinControl;
 	class LapControl;
 	class PointControl;
