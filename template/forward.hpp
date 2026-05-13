@@ -361,6 +361,7 @@ BEGIN_NAMESPACE(System)
 
 BEGIN_NAMESPACE(UI)
 {
+	class BattleCountDownControl;
 	class BackButton;
 	class BackButtonB;
 	class BackButtonT;
@@ -414,6 +415,9 @@ BEGIN_NAMESPACE(UI)
 	class RacePauseControl;
 	class RaceBasicButton;
 	class RaceCloseButton;
+	class RaceLiveControl;
+	class RaceNewRecordControl;
+	class RaceTimeupControl;
 	class CoinControl;
 	class LapControl;
 	class PointControl;

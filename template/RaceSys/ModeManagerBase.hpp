@@ -66,4 +66,6 @@ BEGIN_NAMESPACE(RaceSys)
         /M/u32 m_frame_since_countdown/0x4/0x4D8/
         /M/u32 m_frame_since_sync/0x4/0x4DC/
     /END/
+
+    bool IsCountDownState();
 }

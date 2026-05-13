@@ -210,7 +210,11 @@ BEGIN_NAMESPACE(Sequence)
         /M/NextButtons m_next_buttons/0x14/0x33c/
         /M/UI::RaceNoTextControl *m_race_no_text_control/0x4/0x368/
         /M/UI::RaceTextControl *m_race_text_control/0x4/0x36c/
+        /M/UI::RaceTimeupControl *m_race_timeup_control/0x4/0x370/
         /M/UI::RacePauseControl *m_race_pause_control/0x4/0x374/
+        /M/UI::RaceNewRecordControl *m_race_new_record_control/0x4/0x378/
+        /M/UI::RaceLiveControl *m_race_live_control/0x4/0x37c/
+        /M/UI::BattleCountDownControl *m_battle_countdown_control/0x4/0x384/
         /M/RaceSys::ModeManagerBase *m_mode_manager/0x4/0x388/
         /M/RaceSys::ModeManagerBattle *m_mode_manager_battle/0x4/0x38c/
         /M/Kart::InfoProxy *m_player/0x4/0x390/
@@ -233,4 +237,6 @@ BEGIN_NAMESPACE(Sequence)
         /M/bool m_is_live_view/0x1/0x31f8/
         /M/u8 m_live_view_state/0x1/0x31f9/
     /END/
+
+    void StartCountDown();
 }
