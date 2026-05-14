@@ -14,6 +14,7 @@ BEGIN_NAMESPACE(Sequence)
     };
 
     /START_CLASS/NAME@CrossFadeSequence/SIZE@0x50/BASE@Section/BSIZE@0x34/VTABLE@True/
+    public:
         virtual Object::DTIClassInfo *getDTIClassInfo() const; // 0
 		virtual Object::DTIClassInfo *getDTIClass() const; // 1
         virtual ~CrossFadeSequence(); // 2 (_sub_object), 3 (_deallocating)

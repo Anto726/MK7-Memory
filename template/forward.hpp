@@ -263,6 +263,7 @@ BEGIN_NAMESPACE(Sequence)
 	class BasePage;
 	class BaseRacePage;
 	class BaseMenuPage;
+	class ClearRaceInfoTask;
 	class Common_SystemDialog;
 	class CrossFadeSequence;
 	class DashEngineCreatorManager;
