@@ -23,11 +23,7 @@ BEGIN_NAMESPACE(Sequence)
         virtual void reenter();
         virtual void exit();
         virtual bool onCreate();
-        virtual s32 onTaskStep() = 0;
-        virtual s32 onTaskStart();
-        virtual s32 onTaskCancel();
-        virtual s32 onTaskCancelStep();
-        virtual s32 onTaskFinally();
+        virtual u8 onTaskMain() = 0;
 
         InstantTask();
 

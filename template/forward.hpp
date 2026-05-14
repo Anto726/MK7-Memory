@@ -323,6 +323,8 @@ BEGIN_NAMESPACE(System)
 	class BackgroundThread;
 	class BackupManager;
 	class BootRenderThread;
+	class BootPictureBase;
+	class BootPictureIcon;
 	class ControllerBase;
 	class EngineHolder;
 	class GameFramework;

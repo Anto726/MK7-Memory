@@ -2,6 +2,7 @@
 
 #include "../forward.hpp"
 #include "../types.hpp"
+#include "../versions.h"
 
 #include "Page.hpp"
 #include "ECup.hpp"
@@ -136,6 +137,9 @@ BEGIN_NAMESPACE(Sequence)
         void setDriver(s32, RaceSys::EDriverID, RaceSys::EPlayerType);
         void setMirror(bool);
         void setRaceNo(s32);
+#if GAME_VERSION != ALL_DLP
+        void FUN_004d337c();    // 0x004d337c (VERSION_USA_REV1)
+#endif
 
         static void convertEnterCodeImpl(const sead::SafeString &);
         static void convertReturnCodeImpl(s32);
