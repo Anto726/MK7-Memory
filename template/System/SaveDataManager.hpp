@@ -24,13 +24,7 @@ BEGIN_NAMESPACE(System)
         // NOTE: Name is made up
         enum class EErrorCode : s32
         {
-            INITIALIZE = 1,
-            SAVE_SYSTEM,
-            COMMAND_3,
-            LOAD_GHOST,
-            SAVE_GHOST,
-            FORMAT,
-            LOAD_GHOST_LIST
+            
         };
 
         virtual ~SaveDataManager();
