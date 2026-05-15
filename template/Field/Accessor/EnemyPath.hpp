@@ -11,6 +11,7 @@
 BEGIN_NAMESPACE(Field)
 {
     /START_CLASS/NAME@MapdataEnemyPathAccessor/SIZE@0x20/BASE@MapdataAccessorBase<MapdataEnemyPath, MapdataEnemyPath::SData>/BSIZE@0x18/
+    public:
         /M/MapdataEnemyPointAccessor *m_enemy_point_accessor/0x4/0x18/
         /U/s32/0x4/0x1C/
     /END/

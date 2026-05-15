@@ -1,6 +1,5 @@
 #pragma once
 
-#include <math/seadVector.h>
 #include <container/seadPtrArray.h>
 
 #include "../../types.hpp"
