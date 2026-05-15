@@ -15,6 +15,8 @@ BEGIN_NAMESPACE(Field)
 
     /START_CLASS/NAME@MapdataPathDataBase/TEMPLATE@template <typename T>/SIZE@0x8/SIZEOF@MapdataPathDataBase<void>/VTABLE@True/
     public:
+        using SData = T;
+
         virtual int getStartPoint();
         virtual int getPointNum();
         virtual int getEndPoint();
