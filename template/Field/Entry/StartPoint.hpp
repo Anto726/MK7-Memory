@@ -14,7 +14,7 @@ BEGIN_NAMESPACE(Field)
         /M/s16 kart_index/0x2/0x18/
     /END/
 
-    /START_CLASS/NAME@MapdataStartPoint/SIZE@0x2C/BASE@MapdataPointDataBase<MapdataStartPointData>/BSIZE@0x4/
+    /START_CLASS/NAME@MapdataStartPoint/SIZE@0x2C/BASE@MapdataDataBase<MapdataStartPointData>/BSIZE@0x4/
     public:
     /END/
 }

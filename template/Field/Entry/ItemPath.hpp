@@ -13,6 +13,6 @@ BEGIN_NAMESPACE(Field)
         /M/u16 m_next_points[6]/0xC/0x10/
     /END/
 
-    /START_CLASS/NAME@MapdataItemPath/SIZE@0x4/BASE@MapdataPointDataBase<MapdataItemPathData>/BSIZE@0x4/
+    /START_CLASS/NAME@MapdataItemPath/SIZE@0x4/BASE@MapdataDataBase<MapdataItemPathData>/BSIZE@0x4/
     /END/
 }

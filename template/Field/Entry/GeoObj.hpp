@@ -18,7 +18,7 @@ BEGIN_NAMESPACE(Field)
         /M/sead::Vector3f scale/0xC/0x1C/
     /END/
     
-    /START_CLASS/NAME@MapdataGeoObj/SIZE@0x60/BASE@MapdataPointDataBase<MapdataGeoObjData>/BSIZE@0x4/
+    /START_CLASS/NAME@MapdataGeoObj/SIZE@0x60/BASE@MapdataDataBase<MapdataGeoObjData>/BSIZE@0x4/
     public:
         /M/MapdataPath *m_mapdata_path/0x4/0x4/
         /U/sead::Matrix33f/0x24/0x8/

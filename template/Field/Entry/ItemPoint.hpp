@@ -12,7 +12,7 @@ BEGIN_NAMESPACE(Field)
         /M/sead::Vector3f position/0xC/0x0/
     /END/
 
-    /START_CLASS/NAME@MapdataItemPoint/SIZE@0x30/BASE@MapdataPointDataBase<MapdataItemPointData>/BSIZE@0x4/
+    /START_CLASS/NAME@MapdataItemPoint/SIZE@0x30/BASE@MapdataDataBase<MapdataItemPointData>/BSIZE@0x4/
     public:
     /END/
 }

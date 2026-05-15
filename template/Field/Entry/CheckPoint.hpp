@@ -18,7 +18,7 @@ BEGIN_NAMESPACE(Field)
         /U/s32/0x4/0x14/
     /END/
     
-    /START_CLASS/NAME@MapdataCheckPoint/SIZE@0xD0/BASE@MapdataPointDataBase<MapdataCheckPointData>/BSIZE@0x4/
+    /START_CLASS/NAME@MapdataCheckPoint/SIZE@0xD0/BASE@MapdataDataBase<MapdataCheckPointData>/BSIZE@0x4/
     public:
     /END/
 }

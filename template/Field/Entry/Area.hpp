@@ -25,7 +25,7 @@ BEGIN_NAMESPACE(Field)
         /M/s8 m_enemy_id/0x1/0x2D/
     /END/
 
-    /START_CLASS/NAME@MapdataArea/SIZE@0x8/BASE@MapdataPointDataBase<MapdataAreaData>/BSIZE@0x4/
+    /START_CLASS/NAME@MapdataArea/SIZE@0x8/BASE@MapdataDataBase<MapdataAreaData>/BSIZE@0x4/
     public:
         /M/MapdataAreaCalcBase *m_area_calc/0x4/0x4/
     /END/

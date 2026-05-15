@@ -16,7 +16,7 @@ BEGIN_NAMESPACE(Field)
         /U/u32/0x4/0x44/
     /END/
 
-    /START_CLASS/NAME@MapdataEnemyPath/SIZE@0x40/BASE@MapdataPointDataBase<MapdataEnemyPathData>/BSIZE@0x4/
+    /START_CLASS/NAME@MapdataEnemyPath/SIZE@0x40/BASE@MapdataDataBase<MapdataEnemyPathData>/BSIZE@0x4/
     public:
         /U/sead::FixedPtrArray<void, 8>/0x2C/0x14/
     /END/
