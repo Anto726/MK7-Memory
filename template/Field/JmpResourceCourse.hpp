@@ -1,10 +1,9 @@
 #pragma once
 
 #include "../forward.hpp"
+#include "../types.hpp"
 
 #include "../Util/JmpResource.hpp"
-
-#include "../types.hpp"
 
 BEGIN_NAMESPACE(Field)
 {
