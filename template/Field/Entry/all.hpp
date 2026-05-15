@@ -1,6 +1,6 @@
 #pragma once
 
-#include "AreaPoint.hpp"
+#include "Area.hpp"
 #include "CannonPoint.hpp"
 #include "CheckPoint.hpp"
 #include "EnemyPoint.hpp"

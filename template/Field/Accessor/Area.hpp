@@ -2,7 +2,7 @@
 
 #include "base.hpp"
 
-#include "../Entry/AreaPoint.hpp"
+#include "../Entry/Area.hpp"
 
 #include "../../System/RootSystem.hpp"
 #include "../CourseInfo.hpp"
@@ -10,7 +10,7 @@
 
 BEGIN_NAMESPACE(Field)
 {
-    /START_CLASS/NAME@MapdataAreaAccessor/SIZE@0x18/BASE@MapdataAccessorBase<MapdataAreaPoint, MapdataAreaPoint::SData>/BSIZE@0x18/
+    /START_CLASS/NAME@MapdataAreaAccessor/SIZE@0x18/BASE@MapdataAccessorBase<MapdataArea, MapdataArea::SData>/BSIZE@0x18/
     /END/
 
     inline auto GetAreaAccessor()

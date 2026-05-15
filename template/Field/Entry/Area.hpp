@@ -12,9 +12,9 @@
 
 BEGIN_NAMESPACE(Field)
 {
-    /START_STRUCT/NAME@MapdataAreaPointData/SIZE@0x30/
-        /M/u8 m_shape/0x1/0x0/
-        /M/u8 m_type/0x1/0x1/
+    /START_STRUCT/NAME@MapdataAreaData/SIZE@0x30/
+        /M/eMapdataAreaShape m_shape/0x1/0x0/
+        /M/eMapdataAreaType m_type/0x1/0x1/
         /M/s8 m_came_index/0x1/0x2/
         /M/sead::Vector3f position/0xC/0x4/
         /M/sead::Vector3f rotation/0xC/0x10/
@@ -25,7 +25,7 @@ BEGIN_NAMESPACE(Field)
         /M/s8 m_enemy_id/0x1/0x2D/
     /END/
 
-    /START_CLASS/NAME@MapdataAreaPoint/SIZE@0x8/BASE@MapdataPointDataBase<MapdataAreaPointData>/BSIZE@0x4/
+    /START_CLASS/NAME@MapdataArea/SIZE@0x8/BASE@MapdataPointDataBase<MapdataAreaData>/BSIZE@0x4/
     public:
         /M/MapdataAreaCalcBase *m_area_calc/0x4/0x4/
     /END/
@@ -35,7 +35,7 @@ BEGIN_NAMESPACE(Field)
         virtual bool isInside(sead::Vector3f &position); // 0
         virtual bool isInsideShape(sead::Vector3f &position); // 0
         
-        /M/MapdataAreaPoint::SData *m_area_point_data/0x4/0x38/ // SMapdataAreaCalcData?
+        /M/MapdataArea::SData *m_area_point_data/0x4/0x38/ // SMapdataAreaCalcData?
         /M/eMapdataAreaShape m_area_shape/0x1/0x3C/
         /M/eMapdataAreaType m_area_type/0x1/0x3D/
     /END/
