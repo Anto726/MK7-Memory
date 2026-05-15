@@ -5,7 +5,7 @@
 // https://mk3ds.com/index.php/KMP_(File_Format)
 BEGIN_NAMESPACE(Field)
 {
-    // NOTE: guessed name (was previously named MapdataDataBase but it is also used for paths)
+    // NOTE: guessed name (was previously named MapdataPointDataBase but it is also used for paths)
     /START_CLASS/NAME@MapdataDataBase/TEMPLATE@template <typename T>/SIZE@0x4/SIZEOF@MapdataDataBase<void>/
     public:
         using SData = T;
