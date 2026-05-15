@@ -7,6 +7,9 @@
 
 #include "base.hpp"
 
+#include "../eMapdataAreaShape.hpp"
+#include "../eMapdataAreaType.hpp"
+
 BEGIN_NAMESPACE(Field)
 {
     /START_STRUCT/NAME@MapdataAreaPointData/SIZE@0x30/
@@ -32,9 +35,9 @@ BEGIN_NAMESPACE(Field)
         virtual bool isInside(sead::Vector3f &position); // 0
         virtual bool isInsideShape(sead::Vector3f &position); // 0
         
-        /M/MapdataAreaPoint::SData *m_area_point_data/0x4/0x38/
-        /M/u8 m_area_shape/0x1/0x3C/
-        /M/u8 m_area_type/0x1/0x3D/
+        /M/MapdataAreaPoint::SData *m_area_point_data/0x4/0x38/ // SMapdataAreaCalcData?
+        /M/eMapdataAreaShape m_area_shape/0x1/0x3C/
+        /M/eMapdataAreaType m_area_type/0x1/0x3D/
     /END/
 
     class MapdataAreaCalcBox : public MapdataAreaCalcBase
