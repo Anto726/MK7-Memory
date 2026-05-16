@@ -85,6 +85,7 @@ BEGIN_NAMESPACE(Field)
 	class MapdataPathAccessor;
 	class MapdataStageAccessor;
 	class MapdataStartPointAccessor;
+	class MenuVRModel;
 	class ObjectDirector;
 	class QuadTree;
 }
@@ -145,6 +146,7 @@ BEGIN_NAMESPACE(Kart)
 	class DispWing;
 	class Driver;
 	class InfoProxy;
+	class KartPartsConstructParam;
 	class KartPartsCustomedParam;
 	struct NetData;
 	class PartsDriveParam;
@@ -167,9 +169,14 @@ BEGIN_NAMESPACE(KDGndCol)
 
 BEGIN_NAMESPACE(Menu3D)
 {
+	class CameraManager;
+	class EarthModel;
+	class FaderModel;
 	class GarageDirector;
+	class GarageModel;
 	class MiiManager;
 	class ModelCreateManager;
+	class PreviewPartsManager;
 	class SimpleModelManager;
 }
 
@@ -249,6 +256,7 @@ BEGIN_NAMESPACE(Render)
 	}
 
 	class DrawMdl;
+	class LightSet;
 	class RenderEngine;
 	class ShadowVolume;
 	class UIDrawDirector;
