@@ -22,10 +22,10 @@ BEGIN_NAMESPACE(Menu3D)
         onCup,              // "カップ"
         onCourse,           // "コース"
         onTimeTrialGhost,   // "ゴースト"
-        onChannel,          // "投票"
-        onOK,               // "チャンネル"
-        onEnd,              // "OK"
-        Default,            // "ホワイトアウト"
+        onChannel,          // "チャンネル"
+        onOK,               // "OK"
+        onEnd,              // "ホワイトアウト"
+        Default,
         MAX
     };
 }
