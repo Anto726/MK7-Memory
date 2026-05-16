@@ -19,7 +19,7 @@ BEGIN_NAMESPACE(Field)
         return System::g_root_system->get_field_director()->m_course_info->m_stage_accessor;
     }
 
-    inline Field::MapdataStage *GetStageInfo()
+    inline MapdataStage *GetStageInfo()
     {
         auto const stage_accessor = GetStageAccessor();
 

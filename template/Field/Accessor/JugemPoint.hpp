@@ -17,4 +17,14 @@ BEGIN_NAMESPACE(Field)
     {
         return System::g_root_system->get_field_director()->m_course_info->m_jugem_point_accessor;
     }
+
+    inline MapdataJugemPoint *GetJugemPoint(s32 index)
+    {
+        auto const jugem_point_accessor = GetJugemPointAccessor();
+        
+        if (index < jugem_point_accessor->m_datas.size())
+            return jugem_point_accessor->m_entries(index);
+        
+        return nullptr;
+    }
 }
