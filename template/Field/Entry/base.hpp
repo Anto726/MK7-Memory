@@ -3,6 +3,7 @@
 #include "../../types.hpp"
 
 // https://mk3ds.com/index.php/KMP_(File_Format)
+// https://github.com/PabloMK7/KMPExpander/tree/master/KMPExpander/Class/KMPs
 BEGIN_NAMESPACE(Field)
 {
     // NOTE: guessed name (was previously named MapdataPointDataBase but it is also used for paths)
