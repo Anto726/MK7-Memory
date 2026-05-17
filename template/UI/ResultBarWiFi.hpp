@@ -2,11 +2,11 @@
 
 #include "../forward.hpp"
 
-#include "BaseResultBar.hpp"
+#include "ResultBar.hpp"
 
 BEGIN_NAMESPACE(UI)
 {
-    /START_CLASS/NAME@ResultBarWiFi/SIZE@0x130/BASE@BaseResultBar/BSIZE@0x130/VTABLE@True/
+    /START_CLASS/NAME@ResultBarWiFi/SIZE@0x130/BASE@ResultBar/BSIZE@0x130/VTABLE@True/
     public:
         /START_STRUCT/NAME@AnimationDefine/SIZE@0x18/BASE@ControlAnimator::AnimationDefine/BSIZE@0x18/VTABLE@True/
             virtual void defineAnimation(); // 0

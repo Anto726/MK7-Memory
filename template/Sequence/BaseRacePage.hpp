@@ -206,6 +206,7 @@ BEGIN_NAMESPACE(Sequence)
         /M/UI::BgRaceMapCharaControl *m_bg_race_map_chara_control[KART_MAX]/0x20/0x2A8/
         /M/UI::MenuCaption *m_menu_caption/0x4/0x318/
         /M/UI::SelectTimer *m_select_timer/0x4/0x31c/
+        /M/UI::ResultBg *m_result_bg/0x4/0x320/
         /M/PauseButtons m_pause_buttons/0x18/0x324/
         /M/NextButtons m_next_buttons/0x14/0x33c/
         /M/UI::RaceNoTextControl *m_race_no_text_control/0x4/0x368/

@@ -1,9 +1,13 @@
 #pragma once
 
+#include "common.hpp"
 #include "../forward.hpp"
 #include "../types.hpp"
 
 #include "BaseRacePage.hpp"
+
+#include <container/seadPtrArray.h>
+#include <math/seadVector.hpp>
 
 BEGIN_NAMESPACE(Sequence)
 {
@@ -54,5 +58,11 @@ BEGIN_NAMESPACE(Sequence)
         void genResult();
         bool resBarOut(s32);
         void resInitTA();
+
+        /M/UI::ResultBgTA *m_result_bg_TA/0x4/0x31fc/
+        /M/UI::ResultBattlePoint *m_result_battle_point/0x4/0x3200/
+        /M/sead::FixedPtrArray<UI::ResultBar, KART_MAX> m_result_bar_array/0x2C/0x3204/
+        /M/sead::FixedPtrArray<UI::ResultBarTeam, KART_MAX> m_result_bar_team_array/0x2C/0x3230/
+        /M/sead::Vector3f m_result_bar_pos[KART_MAX]/0x60/0x325c/
     /END/
 }
