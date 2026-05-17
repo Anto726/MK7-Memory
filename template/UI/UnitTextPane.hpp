@@ -22,8 +22,8 @@ BEGIN_NAMESPACE(UI)
         void copyText(const nw::lyt::TextBox *, const wchar_t *, s32, EFontType);
         void createR(nw::lyt::Layout *, const char *, const wchar_t *, s32, EFontType, bool);
 
-        /U/f32/0x4/0x34/
-        /U/f32/0x4/0x38/
-        /U/f32/0x4/0x3c/
+        /M/f32 m_char_space/0x4/0x34/
+        /M/f32 m_line_spacing_offset/0x4/0x38/
+        /M/f32 m_baseline_offset/0x4/0x3c/
     /END/
 }

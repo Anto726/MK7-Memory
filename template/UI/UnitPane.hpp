@@ -15,18 +15,23 @@ BEGIN_NAMESPACE(UI)
 {
     /START_CLASS/NAME@UnitPane/SIZE@0x34/
     public:
-        /START_STRUCT/NAME@CopyArg/SIZE@0x38/
+        /START_STRUCT/NAME@CopyArg/SIZE@0x3C/
+            // `copyEdgeFont`
+            // `copyNonEdgeFont`
+            // `copyLA8`
+            // `copyRGBA8`
+            /M/void (*m_copy_function)(u8 *, const u8 *, s32)/0x4/0x38/
         /END/
 
-        void copyEdgeFont(u8 *, const u8 *, s32);
         void createPane(const nw::lyt::Pane *, const nw::ut::Color8 &, const nw::ut::Color8 &);
         void deletePane(nw::lyt::Layout *, nw::lyt::Pane *);
         void copyTexture(CopyArg &);
         static void replacePane(nw::lyt::Layout *, nw::lyt::Pane *, nw::lyt::Pane *);
         static void calcGlobalPos(const nw::lyt::Pane *);
         static s32 getGLTexFormat(nw::lyt::TexFormat, u32 *, u32*, s32 *);
-        void copyNonEdgeFont(u8 *, const u8 *, s32);
         void copyTextureImpl(const CopyArg &);
+        void copyEdgeFont(u8 *, const u8 *, s32);
+        void copyNonEdgeFont(u8 *, const u8 *, s32);
         void copyLA8(u8 *, const u8 *, s32);
         void copyRGBA8(u8 *, const u8 *, s32);
         UnitPane();

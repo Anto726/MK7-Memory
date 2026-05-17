@@ -16,6 +16,7 @@ BEGIN_NAMESPACE(UI)
 
         /M/sead::Vector2i m_global_pos/0x8/0x34/
         /U/s32/0x4/0x3c/
+        /U/s32/0x4/0x40/
         /U/void */0x4/0x44/
     /END/
 }
