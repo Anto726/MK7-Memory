@@ -7,6 +7,7 @@
 #include "../RaceSys/EDriverID.hpp"
 #include "../RaceSys/EGrandPrixRecord.hpp"
 
+#include <nn/cfg/CTR/cfg.h>
 #include <nw/lyt/Picture.hpp>
 #include <nw/lyt/TextBox.hpp>
 
