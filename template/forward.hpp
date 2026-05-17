@@ -407,6 +407,7 @@ BEGIN_NAMESPACE(UI)
 	class MessageData;
 	class MessageIDConverter;
 	class MessageWriter;
+	class MessageString;
 	class OKButton;
 	class OKButton2;
 	class OKButton3;
@@ -435,6 +436,14 @@ BEGIN_NAMESPACE(UI)
 	class RaceCloseButton;
 	class RaceLiveControl;
 	class RaceNewRecordControl;
+	class ResultBg;
+	class ResultBgTA;
+	class ResultBar;
+	class ResultBarBT;
+	class ResultBarTA;
+	class ResultBarTeam;
+	class ResultBarWiFi;
+	class ResultBattlePoint;
 	class RaceTimeupControl;
 	class CoinControl;
 	class LapControl;

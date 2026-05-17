@@ -16,6 +16,7 @@ BEGIN_NAMESPACE(UI)
     /START_CLASS/NAME@UnitPane/SIZE@0x34/
     public:
         /START_STRUCT/NAME@CopyArg/SIZE@0x3C/
+            // The following functions can be assigned to this function pointer:
             // `copyEdgeFont`
             // `copyNonEdgeFont`
             // `copyLA8`
@@ -26,14 +27,14 @@ BEGIN_NAMESPACE(UI)
         void createPane(const nw::lyt::Pane *, const nw::ut::Color8 &, const nw::ut::Color8 &);
         void deletePane(nw::lyt::Layout *, nw::lyt::Pane *);
         void copyTexture(CopyArg &);
+        void copyTextureImpl(const CopyArg &);
         static void replacePane(nw::lyt::Layout *, nw::lyt::Pane *, nw::lyt::Pane *);
         static void calcGlobalPos(const nw::lyt::Pane *);
         static s32 getGLTexFormat(nw::lyt::TexFormat, u32 *, u32*, s32 *);
-        void copyTextureImpl(const CopyArg &);
-        void copyEdgeFont(u8 *, const u8 *, s32);
-        void copyNonEdgeFont(u8 *, const u8 *, s32);
-        void copyLA8(u8 *, const u8 *, s32);
-        void copyRGBA8(u8 *, const u8 *, s32);
+        static void copyEdgeFont(u8 *, const u8 *, s32);
+        static void copyNonEdgeFont(u8 *, const u8 *, s32);
+        static void copyLA8(u8 *, const u8 *, s32);
+        static void copyRGBA8(u8 *, const u8 *, s32);
         UnitPane();
         ~UnitPane();
 
