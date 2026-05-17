@@ -20,7 +20,7 @@ BEGIN_NAMESPACE(UI)
         virtual void onReset();
         virtual void onCalc();
 
-        void BaseResultBar();
+        BaseResultBar();
         void animAppear();
         void animDisappear();
         void setCountry(nn::cfg::CTR::CfgCountryCode);
