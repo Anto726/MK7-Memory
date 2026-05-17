@@ -18,14 +18,18 @@ BEGIN_NAMESPACE(UI)
         virtual void reset(); // 20
 
         BaseMenuViewControl();
-        void startFollowAcc(const sead::Vector3f &);
+        // Sets the origin root position before moving.
         void follow(const sead::Vector3f &);
+        // Sets the target position and starts moving.
+        void startFollowAcc(const sead::Vector3f &);
+        // Updates the movement smoothly.
         void followAcc();
 
         /M/ControlSight::ElementHandle *m_elements[4]/0x10/0x7C/
-        /M/sead::Vector2f m_0x8C/0x8/0x8C/
-        /M/sead::Vector3f m_follow/0xC/0x94/
-        /M/bool m_is_follow/0x1/0xA0/
+        /M/f32 m_move_speed/0x4/0x8C/               // The speed at which the UI element moves towards `m_target_pos`.
+        /M/f32 m_snap_distance/0x4/0x90/            // If remaining distance is smaller than this value, movement ends. Prevents endless tiny increments.
+        /M/sead::Vector3f m_target_pos/0xC/0x94/    // The UI element will move from its current root position to this target position.
+        /M/bool m_is_moving/0x1/0xA0/               // If `true`, the UI element is currently moving.
         /M/Sequence::BasePage *m_page/0x4/0xA4/
     /END/
 }
