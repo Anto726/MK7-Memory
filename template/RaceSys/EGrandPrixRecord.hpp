@@ -4,14 +4,18 @@
 
 BEGIN_NAMESPACE(RaceSys)
 {
-    enum class EGrandPrixRecord : u8
+    enum GrandPrixRecord : u32
     {
         NO_RECORD,
-        RECORD_1,   // Unused. Likely record "A"
-        RECORD_2,   // Unused. Likely record "B"
-        RECORD_3,   // Unused. Likely record "C"
+        RECORD_1,   // Unused. Maybe unused rank "C"?
+        RECORD_2,   // Unused. Maybe unused rank "B"?
+        RECORD_3,   // Unused. Maybe unused rank "A"?
         RECORD_1_STAR,
         RECORD_2_STAR,
         RECORD_3_STAR
     };
+
+    /START_STRUCT/NAME@EGrandPrixRecord/SIZE@0x4/
+        /M/s32 m_record/0x4/0x0/
+    /END/
 }
