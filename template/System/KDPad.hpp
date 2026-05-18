@@ -35,7 +35,7 @@ BEGIN_NAMESPACE(System)
 
         // NOTE: Name is made up
         // Used by ghost data
-        enum class ButtonInputEnum : u32 {
+        enum ButtonInputEnum : u32 {
             BUTTON_A = 0x1,
             BUTTON_B = 0x2,
             BUTTON_X = 0x4,
