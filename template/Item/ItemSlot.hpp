@@ -31,8 +31,8 @@ BEGIN_NAMESPACE(Item)
 		/M/eItemSlot m_item_id/0x1/0x2C/
 		/M/s32 m_current_id/0x4/0x30/
 		/M/s32 m_next_id/0x4/0x34/
-		/M/float m_ratio/0x4/0x38/
-		/M/float m_0x3C/0x4/0x3C/ // spin speed?
+		/M/f32 m_ratio/0x4/0x38/
+		/U/f32/0x4/0x3C/ // spin speed?
 		/M/s32 m_spinning_frames/0x4/0x40/
 		/M/Net::NetworkItemSlotMgr::EStockItemState m_stock_item_state/0x4/0x44/
 	/END/

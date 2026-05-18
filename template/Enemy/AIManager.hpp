@@ -18,8 +18,8 @@ BEGIN_NAMESPACE(Enemy)
         /M/Utility::Random *m_utility_random/0x4/0x14/
         /M/s32 m_kart_num/0x4/0x18/
         /M/s32 m_player_kart_num/0x4/0x1C/
-        /M/s32 m_0x20/0x4/0x20/ // gamer type 1?
-        /M/s32 m_0x24/0x4/0x24/ // gamer type 2?
+        /U/s32/0x4/0x20/ // gamer type 1?
+        /U/s32/0x4/0x24/ // gamer type 2?
         /M/s32 m_player_num/0x4/0x28/
         /M/EAILevel m_ai_level/0x4/0x2C/
         /M/AI *m_ais[KART_MAX]/0x20/0x38/
