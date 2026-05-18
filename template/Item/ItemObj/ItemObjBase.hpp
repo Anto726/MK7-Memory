@@ -102,45 +102,49 @@ BEGIN_NAMESPACE(Item)
         /M/Util::TStateObserver<ItemObjBase> m_state_observer_base/0x20/0x58/ // some ItemObjs also have a specialized Observer
         /M/sead::Matrix34f m_draw_mtx/0x30/0x78/
         /M/sead::Vector3f m_position/0xC/0xA8/
-        /M/sead::Vector3f m_0xB4/0xC/0xB4/ // velocity or angle related?
-        /M/float m_equip_scale/0x4/0xC0/
+        /M/sead::Vector3f m_starting_velocity/0xC/0xB4/
+        /M/f32 m_equip_scale/0x4/0xC0/
         /M/sead::Vector3f m_velocity/0xC/0xC4/
-        /M/float m_gravity/0x4/0xD0/
-        /M/sead::Vector3f m_0xD4/0xC/0xD4/
+        /M/f32 m_gravity/0x4/0xD0/
+        /U/sead::Vector3f/0xC/0xD4/
         /M/s32 m_multi_id/0x4/0xE0/
         /M/sead::Vector2f m_multi_position/0x8/0xE4/
         /M/s32 m_multi_amount/0x4/0xEC/
         /M/Render::ShadowVolume *m_shadow_volume/0x4/0xF0/
         /M/bool m_is_thrown_backwards/0x1/0xF4/
         /M/sead::Vector2f m_stick/0x8/0xF8/
-        /M/u8 m_0x100/0x1/0x100/ // unknown
-        /M/sead::Vector3f m_0x104/0xC/0x104/
+        /U/u8/0x1/0x100/
+        /U/sead::Vector3f/0xC/0x104/
         /M/Effect::GameParticle *m_game_particle_1/0x4/0x110/
         /M/ItemReactProxy *m_item_react_proxy/0x4/0x114/
         /M/KDGndCol::CheckIF_EX m_check_if_ex/0x10/0x118/
+        /U/u32/0x4/0x128/ // ground flags 1
+        /U/u32/0x4/0x12C/ // ground flags 2
         /M/RaceSys::ModeManagerBase *m_mode_manager/0x4/0x130/
         /M/RaceSys::CRaceInfo *m_race_info/0x4/0x134/
         /M/RaceSys::LogRecorder *m_log_recorder/0x4/0x138/
-        /M/sead::Vector3f m_0x13C/0xC/0x13C/
-        /M/bool m_0x148/0x1/0x148/
+        /U/sead::Vector3f/0xC/0x13C/
+        /U/bool/0x1/0x148/
         /M/bool m_has_vanish_effect/0x1/0x149/
         /M/bool m_has_shadow/0x1/0x14A/
         /M/bool m_is_tc_board_area/0x1/0x14B/
-        /M/bool m_0x14C/0x1/0x14C/
+        /U/bool/0x1/0x14C/
         /M/bool m_is_multi_trail/0x1/0x14D/
-        /M/u8 m_0x14E/0x1/0x14E/
+        /U/u8/0x1/0x14E/
         /M/s32 m_serial/0x4/0x150/
+        /U/u8/0x1/0x154/
+        /U/u8/0x1/0x155/ // state init circle related?
         /M/eItemType m_item_type/0x1/0x156/
         /M/Kart::InfoProxy *m_info_proxy/0x4/0x158/
-        /M/float m_compare/0x4/0x15C/
+        /M/f32 m_compare/0x4/0x15C/
         /M/s32 m_item_id/0x4/0x160/
         /M/s32 m_owner_player_id/0x4/0x164/
         /M/s32 m_current_life/0x4/0x168/
-        /M/s32 m_0x16C/0x4/0x16C/ // collisionless num?
+        /U/s32/0x4/0x16C/ // collisionless num?
         /M/eColMode m_col_mode/0x1/0x170/
         /M/u32 m_exit_frame/0x4/0x174/
         /M/u32 m_exit_director_frame/0x4/0x178/
-        /M/void *m_light_obj/0x4/0x17C/ // Render::RaceLight::LightObj *
+        /M/Render::RaceLight::LightObj *m_light_obj/0x4/0x17C/
         /M/sead::Vector3f m_position_previous/0xC/0x180/
         /M/sead::Vector3f m_move/0xC/0x18C/
         /M/bool m_is_draw/0x1/0x198/
@@ -153,20 +157,20 @@ BEGIN_NAMESPACE(Item)
         /M/bool m_is_collisionless/0x1/0x1AD/
         /M/bool m_is_dropped/0x1/0x1AE/
         /M/bool m_is_awaiting_delete/0x1/0x1AF/
-        /M/bool m_0x1B0/0x1/0x1B0/ // related to drop?
-        /M/float m_water_box/0x4/0x1B4/
-        /M/void *m_0x1B8/0x4/0x1B8/ // water box object?
-        /M/float m_moon_box/0x4/0x1BC/
-        /M/s32 m_0x1C0/0x4/0x1C0/
-        /M/sead::Vector3f m_0x1C4/0xC/0x1C4/ // scale anim?
-        /M/sead::Vector3f m_0x1D0/0xC/0x1D0/ // angular velocity?
+        /U/bool/0x1/0x1B0/ // related to drop?
+        /M/f32 m_water_box/0x4/0x1B4/
+        /U/void */0x4/0x1B8/ // Field::ObjectWaterBox?
+        /M/f32 m_moon_box/0x4/0x1BC/
+        /U/s32/0x4/0x1C0/
+        /U/sead::Vector3f/0xC/0x1C4/ // scale anim?
+        /U/sead::Vector3f/0xC/0x1D0/ // angular velocity?
         /M/bool m_is_exiting/0x1/0x1DC/
-        /M/s32 m_0x1E0/0x4/0x1E0/ // player ID equipped?
-        /M/s32 m_0x1E4/0x4/0x1E4/ // player ID unequipped?
-        /M/bool m_0x1E8/0x1/0x1E8/
+        /U/s32/0x4/0x1E0/ // player ID equipped?
+        /U/s32/0x4/0x1E4/ // player ID unequipped?
+        /U/bool/0x1/0x1E8/
         /M/u32 m_delay_frame/0x4/0x1EC/
-        /M/float m_speed/0x4/0x1F0/
+        /M/f32 m_speed/0x4/0x1F0/
         /M/bool m_is_doing_recovery/0x1/0x1F4/
-        /M/u8 m_0x1F5/0x1/0x1F5/
+        /U/u8/0x1/0x1F5/
     /END/
 }
