@@ -348,6 +348,7 @@ BEGIN_NAMESPACE(System)
 	class KDPadControllerCore;
 	class KDPadDirector;
 	class KDPadInputer;
+	class KDPadMirrorInputer;
 	class KDPadPlayer;
 	class KDPlayerRecordPad;
 	class KDReplayPad;

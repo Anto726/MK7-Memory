@@ -18,7 +18,7 @@ BEGIN_NAMESPACE(System)
 
     /START_CLASS/NAME@KDPadDirector/SIZE@0x88/BASE@KDPadDirectorBase/BSIZE@0x28/
     public:
-        enum class eKDPadListIndex : u32
+        enum class eKDPadListIndex : s32
         {
             PLAYER,
             UI,
