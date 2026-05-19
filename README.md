@@ -4,12 +4,16 @@ A collection of data structures for Mario Kart 7.
 
 ## Usage
 
+The data structures are generated from template files located in the [template](template) folder. These files have a special syntax so that it's easier to add new members to the data structures while doing reverse engineering.
+
+## Build
+
+- [git](https://git-scm.com/downloads)
 - [python3](https://www.python.org/downloads)
 
-The data structures are generated from template files located in the [template](template) folder.\
-These files have a special syntax so that it's easier to add new members to the data structures while doing reverse engineering.\
-To generate the output usable header files, run `make` in the repository root directory, which will generate an `include` folder.\
-Finally, include the needed headers in your project and build it using C++23.
+1. Clone the repository locally by running `git clone <repo url> --depth=1 --recurse-submodules --shallow-submodules`.
+2. Run `make` in the repository root directory to generate the header files in the `include` folder.
+3. Include the needed header files in your project and build it using C++23.
 
 ## Credits
 
