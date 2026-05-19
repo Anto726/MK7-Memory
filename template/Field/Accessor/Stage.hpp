@@ -4,7 +4,6 @@
 
 #include "../Entry/Stage.hpp"
 
-#include "../../System/RootSystem.hpp"
 #include "../CourseInfo.hpp"
 #include "../FieldDirector.hpp"
 
@@ -16,7 +15,7 @@ BEGIN_NAMESPACE(Field)
     // NOTE: guessed name
     inline auto GetStageAccessor()
     {
-        return System::g_root_system->get_field_director()->m_course_info->m_stage_accessor;
+        return GetDirector()->m_course_info->m_stage_accessor;
     }
 
     inline MapdataStage *GetStageInfo()

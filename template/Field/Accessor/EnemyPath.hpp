@@ -4,7 +4,6 @@
 
 #include "../Entry/EnemyPath.hpp"
 
-#include "../../System/RootSystem.hpp"
 #include "../CourseInfo.hpp"
 #include "../FieldDirector.hpp"
 
@@ -18,6 +17,6 @@ BEGIN_NAMESPACE(Field)
 
     inline auto GetEnemyPathAccessor()
     {
-        return System::g_root_system->get_field_director()->m_course_info->m_enemy_path_accessor;
+        return GetDirector()->m_course_info->m_enemy_path_accessor;
     }
 }

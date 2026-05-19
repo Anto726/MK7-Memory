@@ -4,7 +4,6 @@
 
 #include "../Entry/Area.hpp"
 
-#include "../../System/RootSystem.hpp"
 #include "../CourseInfo.hpp"
 #include "../FieldDirector.hpp"
 
@@ -15,6 +14,6 @@ BEGIN_NAMESPACE(Field)
 
     inline auto GetAreaAccessor()
     {
-        return System::g_root_system->get_field_director()->m_course_info->m_area_accessor;
+        return GetDirector()->m_course_info->m_area_accessor;
     }
 }

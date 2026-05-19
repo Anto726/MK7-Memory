@@ -4,7 +4,6 @@
 
 #include "../Entry/JugemPoint.hpp"
 
-#include "../../System/RootSystem.hpp"
 #include "../CourseInfo.hpp"
 #include "../FieldDirector.hpp"
 
@@ -15,7 +14,7 @@ BEGIN_NAMESPACE(Field)
 
     inline auto GetJugemPointAccessor()
     {
-        return System::g_root_system->get_field_director()->m_course_info->m_jugem_point_accessor;
+        return GetDirector()->m_course_info->m_jugem_point_accessor;
     }
 
     inline MapdataJugemPoint *GetJugemPoint(s32 index)

@@ -1,6 +1,10 @@
 #pragma once
 
 #include "../Object/ActorEngine.hpp"
+#include "../Object/TDirectorList.hpp"
+#include "../Object/TLinkSocket.hpp"
+
+#include "../System/RootSystem.hpp"
 
 #include "../types.hpp"
 
@@ -10,4 +14,9 @@ BEGIN_NAMESPACE(Field)
     public:
         /M/CourseInfo *m_course_info/0x4/0x38/
     /END/
+
+    inline static auto GetDirector()
+    {
+        return System::g_root_system->get_field_director();
+    }
 }

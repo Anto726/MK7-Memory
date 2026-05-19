@@ -4,7 +4,6 @@
 
 #include "../Entry/GeoObj.hpp"
 
-#include "../../System/RootSystem.hpp"
 #include "../CourseInfo.hpp"
 #include "../FieldDirector.hpp"
 
@@ -17,6 +16,6 @@ BEGIN_NAMESPACE(Field)
 
     inline auto GetGeoObjAccessor()
     {
-        return System::g_root_system->get_field_director()->m_course_info->m_geo_obj_accessor;
+        return GetDirector()->m_course_info->m_geo_obj_accessor;
     }
 }
