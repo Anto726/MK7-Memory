@@ -14,7 +14,7 @@
 #include "../Object/TDirectorArray.hpp"
 #include "../Object/TLinkSocket.hpp"
 
-#include "../RaceSys/ModeManagerBase.hpp"
+#include "../RaceSys/ModeManager/ModeManagerBase.hpp"
 
 #include "../System/RootSystem.hpp"
 

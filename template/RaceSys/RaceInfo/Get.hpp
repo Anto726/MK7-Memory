@@ -2,7 +2,7 @@
 
 #include "../../types.hpp"
 
-#include "../ModeManagerBase.hpp"
+#include "../ModeManager/ModeManagerBase.hpp"
 #include "../RaceDirector.hpp"
 
 #include "../../System/RootSystem.hpp"

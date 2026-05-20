@@ -1,15 +1,15 @@
 #pragma once
 
-#include "../common.hpp"
-#include "../types.hpp"
+#include "../../common.hpp"
+#include "../../types.hpp"
 
-#include "../Util/TStateObserver.hpp"
+#include "../../Util/TStateObserver.hpp"
 
-#include "../Object/TDirectorArray.hpp"
-#include "../Object/TLinkSocket.hpp"
+#include "../../Object/TDirectorArray.hpp"
+#include "../../Object/TLinkSocket.hpp"
 
-#include "RaceInfo/CRaceInfo.hpp"
-#include "ERaceEvent.hpp"
+#include "../RaceInfo/CRaceInfo.hpp"
+#include "../ERaceEvent.hpp"
 
 BEGIN_NAMESPACE(RaceSys)
 {

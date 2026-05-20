@@ -4,7 +4,7 @@
 
 #include "VisualControl.hpp"
 #include "../RaceSys/CTime.hpp"
-#include "../RaceSys/ModeManagerBase.hpp"
+#include "../RaceSys/ModeManager/ModeManagerBase.hpp"
 #include "../RaceSys/RaceDirector.hpp"
 
 BEGIN_NAMESPACE(UI)
